@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
+
 import bgimg from '../assets/images/bgimg.jpg';
 import RKL from '../assets/icons/headicon.svg';
+import RKL2 from '../assets/icons/Rkl2.svg';
+import aboutus from "../assets/icons/aboutusicon.svg"
+import stay from "../assets/icons/stayicon.svg"
+import lkdnicon2 from "../assets/icons/drpdwicon2.svg"
+import fbicon2 from "../assets/icons/drpdwicon3.svg"
+import twittericon2 from "../assets/icons/drpdwicon4.svg"
+import icon1 from "../assets/icons/drpdwicon1.svg"
 import fbicon from '../assets/icons/fbicon.svg';
 import lkdnicon from '../assets/icons/lkdnicon.svg';
 import twittericon from '../assets/icons/twitter.svg';
 import menuicon from '../assets/icons/menicon.png';
 import './style.css';
 
-const Header = ({ backgroundImg, logo, socialIcons, menuIcon, mainTitle, mainDescription, buttonText }) => {
+const Header = ({ backgroundImg, logo, socialIcons,socialIcons2, menuIcon, mainTitle, mainDescription, buttonText,icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,63 +24,150 @@ const Header = ({ backgroundImg, logo, socialIcons, menuIcon, mainTitle, mainDes
 
   return (
     <div
-      className="bg-cover bg-center h-screen"
+      className="bg-cover overflow-x-hidden bg-center h-screen"
       style={{
         backgroundImage: `url(${backgroundImg})`,
       }}
     >
-      <div className="flex justify-between p-8 lg:px-24 lg:py-12">
+      <div className="flex  overflow-x-hidden justify-between  p-8 lg:px-24 lg:py-12">
         <div>
           <img src={logo} alt="Logo" className="" />
         </div>
         <div>
-
-        <div className="hidden md:flex  space-x-4 lg:space-x-8">
-          <span>
-
-          <div className="flex space-x-4">
-            <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
-              Login
-            </button>
-            <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDDB6]">
-              Online Payment
-            </button>
-          </div>
-          </span>
-          <div className="flex space-x-3 pt-2">
-            {socialIcons.map((icon, index) => (
-              <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
-            ))}
-          </div>
-        </div>
-        <div className="flex items-center justify-end pt-8 ">
-          <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" onClick={toggleMenu} />
-        </div>
-        </div>
-
-      </div>
-
-      {menuOpen && (
-        <div className="md:hidden bg-[transparent] p-4  relative mx-7 max-w-[23rem] shadow-lg rounded-lg">
-          <div className="flex flex-col space-y-4">
-            <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDDB6]">
-              Online Payment
-            </button>
-            <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
-              Login
-            </button>
-            
-            <div className="flex space-x-3 justify-center">
+          <div className=" md:flex ">
+            <span>
+              <div className="flex space-x-4 xs:hidden">
+                <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
+                  Login
+                </button>
+                <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDDB6]">
+                  Online Payment
+                </button>
+                <div className="flex space-x-3 pt-2">
               {socialIcons.map((icon, index) => (
                 <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
               ))}
             </div>
-            
+              </div>
+            </span>
+           
+          </div>
+          <div className="flex items-center justify-end pt-8">
+            <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" onClick={toggleMenu} />
           </div>
         </div>
+      </div>
+
+      {menuOpen && (
+        
+        <div className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
+           <div className="flex justify-between xs:p-2 p-8 lg:px-24 lg:py-12">
+           <div>
+  <img 
+    src={icon} 
+    alt="Logo" 
+    className="w-48 sm:w-48 md:w-72 lg:w-72 xl:w-72" 
+  />
+</div>
+
+<div>
+          <div className=" md:flex ">
+            <span>
+              <div className="flex space-x-4 xs:hidden">
+                <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
+                  Login
+                </button>
+                <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
+                  Online Payment
+                </button>
+                <div className="flex space-x-3 pt-2">
+              {socialIcons2.map((icon, index) => (
+                <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
+              ))}
+            </div>
+              </div>
+            </span>
+           
+          </div>
+          <div className="flex items-center justify-end pt-8">
+            <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" onClick={toggleMenu} />
+          </div>
+        </div>
+
+{/* <div className="flex xs:flex-col  xs:space-x-4 xs:items-center xs:justify-between p-4">
+  <div className="flex xs:flex-col  gap-4 xs:space-x-4 xs:items-center xs:justify-start mb-4 xs:mb-0">
+    <div className='flex gap-[10px]'>
+    <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] xs:px-2 rounded-full border-2 px-6 py-1 border-[#E6A358] mb-2 xs:mb-0">
+      Login
+    </button>
+    <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
+      Payment
+    </button>
+    </div>
+    <div className="flex items-center justify-center xs:justify-end space-x-3 pt-2 xs:pt-0 text-[#E6A358]">
+    {socialIcons2.map((icon, index) => (
+      <img 
+        key={index} 
+        src={icon} 
+        alt={`Social Icon ${index}`} 
+        className="w-6 h-6"
+      />
+    ))}
+  </div>
+  </div>
+
+ 
+
+  <div className="flex items-center justify-end pt-4 xs:pt-8">
+    <img src={menuIcon} alt="Menu Icon" className=" cursor-pointer" onClick={toggleMenu} />
+  </div>
+</div> */}
+
+      </div>
+      <div className='w-9/12'>
+      <div className='flex justify-between xs:w-screen xs:px-6  xs:flex-col  w-full  px-8'>
+        
+        <span className='flex flex-col gap-2 text-black'>
+          <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={icon1} alt="" />  Practice Areas</h1>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Business Law</p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'> BOIR Compliance</p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Immigration Law</p>
+        </span>
+        
+        <span className='flex flex-col gap-2 text-black'>
+          <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap '><img src={aboutus} alt="" /> About Us
+          </h1>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Contact Us</p>
+        
+        
+        
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'> Founders</p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Careers </p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Testimonials </p>
+        </span>
+        
+        <span className='flex flex-col gap-2 text-black'>
+          <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={stay} alt="" /> Stay Informed</h1>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Blogs</p>
+        
+        
+        
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>News & Events</p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Press Releases & Publications</p>
+          <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Subscribe to Newsletter</p>
+        </span>
+        
+        
+        
+                </div>
+      </div>
+     
+        </div>
+       
+
       )}
 
-      <div className="flex justify-end  px-8  lg:pr-24  mt-[10rem]">
+      <div className="flex justify-end xs:hidden px-8 lg:pr-24 mt-[10rem]">
         <div className="max-w-2xl bg-white py-8 px-8 lg:px-12 rounded-md">
           <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
             {mainTitle}
@@ -80,7 +175,7 @@ const Header = ({ backgroundImg, logo, socialIcons, menuIcon, mainTitle, mainDes
           <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
             {mainDescription}
           </p>
-          <button className="bg-[#EEB26D] px-8 lg:px-12 py-3 rounded-md">
+          <button className="bg-[#EEB26D] px-8 lg:px-12 py-3  rounded-md">
             {buttonText}
           </button>
         </div>
@@ -91,11 +186,14 @@ const Header = ({ backgroundImg, logo, socialIcons, menuIcon, mainTitle, mainDes
 
 const App = () => {
   const socialIcons = [lkdnicon, fbicon, twittericon];
+  const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
 
   return (
     <Header
       backgroundImg={bgimg}
       logo={RKL}
+      icon={RKL2}
+      socialIcons2={socialIcons2}
       socialIcons={socialIcons}
       menuIcon={menuicon}
       mainTitle="We Make Law Make Sense"

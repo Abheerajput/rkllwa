@@ -13,8 +13,8 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
         backgroundColor: '#403C5C'
       }}
     >
-      <div className="flex flex-col lg:flex-row justify-between py-16 px-8 lg:px-24">
-        <div className="lg:w-1/2">
+      <div className="flex xs:flex-col flex-row justify-between py-16 px-8 lg:px-24">
+        <div className="w-1/2 xs:w-full">
           <h1 className="text-[40px] lg:text-[50px] fgt-ff-medium text-white leading-tight">
             {title}
           </h1>
@@ -25,7 +25,7 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
             {buttonText}
           </button>
         </div>
-        <div className="lg:w-1/2 flex justify-center lg:justify-end pt-8 lg:pt-0">
+        <div className="w-1/2 xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">
           <img src={sideImg} alt="Group" className="max-w-full h-auto" />
         </div>
       </div>

@@ -10,11 +10,10 @@ import insta from "../assets/icons/inst.svg"
 const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
   return (
     <div
-      className=""
+      className=" bg-[#042537]"
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundSize: 'cover',
-        backgroundColor: '#042537'
       }}
     >
       <div className="flex flex-col  justify-center items-center py-24 px-8 lg:px-24">
