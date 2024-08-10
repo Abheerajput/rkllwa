@@ -57,9 +57,10 @@ const Founderscreen = ({socialIcons2}) => {
     </div>
 <div className='flex justify-evenly py-12  xs:flex-col xs:items-center md:items-center md:flex-col '>
     <p>
+        <Link to="/profile">
         <img src={founder1} alt="" />
         <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Ava Johnson</span> <br /> Principal</h3>
-
+        </Link>
     </p>
     <p>
         <img src={founder2} alt="" />
