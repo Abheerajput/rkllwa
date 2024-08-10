@@ -5,6 +5,8 @@ import './style.css';
 
 const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) => {
   return (
+    <>
+   
     <div
       className=""
       style={{
@@ -30,6 +32,8 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
         </div>
       </div>
     </div>
+   
+    </>
   );
 };
 
@@ -52,7 +56,9 @@ const App = () => {
       backgroundImg={img1}
       sideImg={groupimg}
     />
+    
   );
+  
 };
 
 export default App;
