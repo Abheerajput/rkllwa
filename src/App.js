@@ -7,6 +7,7 @@ import Section1 from './Components/Section1';
 import Solution from './Components/Solution';
 import Footer from './Components/Footer';
 import Secondscreen from './Components/Secondscreen';
+import Founderscreen from "./Components/Founderscreen"
 // Import the ImmigrationLaw component
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
        <Routes>
         <Route path="/" element={<Header />} />
         <Route path="/secondscreen" element={<Secondscreen />} />
+        <Route path="/founders" element={<Founderscreen />} />
       </Routes>
       
      

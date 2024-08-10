@@ -147,7 +147,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
 
 
-                <p className='text-[20px] fgt-ff-light text-[#403C5C]'> Founders</p>
+                <p className='text-[20px] fgt-ff-light text-[#403C5C]'> <Link to="/founders">Founders</Link> </p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Careers </p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'>Testimonials </p>
               </span>
