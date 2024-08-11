@@ -37,7 +37,7 @@ const ProfileCard = () => {
       <div className="bg-gray-50 grid grid-cols-2 xs:flex xs:flex-col md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
         <div> 
-          <div className="flex px-4 mt-[24px] gap-12 items-start md:items-center">
+          <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
