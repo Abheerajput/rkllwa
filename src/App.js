@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
-import ProfileCard from './Components/Profile';
+import Profile1 from './Components/Profile';
+import Profile2 from './Components/Profile2';
+import Profile3 from './Components/Profile3';
 import Secondscreen from './Components/Secondscreen';
 import Founderscreen from "./Components/Founderscreen"
 // Import the ImmigrationLaw component
@@ -15,7 +17,9 @@ function App() {
         <Route path="/" element={<Header />} />
         <Route path="/secondscreen" element={<Secondscreen />} />
         <Route path="/founders" element={<Founderscreen />} />
-        <Route path="/profile" element={<ProfileCard/>} />
+        <Route path="/profile/Ava Johnson" element={<Profile1/>} />
+        <Route path="/profile/Taylor Morgan" element={<Profile2/>} />
+        <Route path="/profile/Jordan Taylor" element={<Profile3/>} />
       </Routes>
       
      

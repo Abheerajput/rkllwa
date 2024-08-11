@@ -57,18 +57,22 @@ const Founderscreen = ({socialIcons2}) => {
     </div>
 <div className='flex justify-evenly py-12  xs:flex-col xs:items-center md:items-center md:flex-col '>
     <p>
-        <Link to="/profile">
+        <Link to="/profile/Ava Johnson">
         <img src={founder1} alt="" />
         <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Ava Johnson</span> <br /> Principal</h3>
         </Link>
     </p>
     <p>
+      <Link to="/profile/Taylor Morgan">
         <img src={founder2} alt="" />
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Taylor Morgan </span> <br />Principal</h3>
+        </Link>
     </p>
     <p>
+      <Link to="/profile/Jordan Taylor">
         <img src={founder3} alt="" />
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Jordan Taylor </span><br /> Attorney</h3>
+        </Link>
     </p>
 </div>
     <Footer/>
