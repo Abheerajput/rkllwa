@@ -34,3 +34,31 @@
 .icon-colors {
     fill: #E6A358; 
   }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -64px !important;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: #E6A358 !important;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .slick-dots li.slick-active button::before {
+    opacity: .75;
+    color: #E6A358 !important;
+  }

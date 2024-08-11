@@ -12,7 +12,7 @@ import lkdnicon from '../assets/icons/lkdnicon.svg';
 import twittericon from '../assets/icons/twitter.svg';
 import menuicon from '../assets/icons/menicon.png';
 import './style.css';
-const  SecondHeader = ({socialIcons2}) => {
+const  SecondHeader = ({ socialIcons2, mainTitle }) => {
   return (
     <header className="bg-gray-800  px-8  p-4 text-white" style={{
       backgroundImage: `url(${img1})`,
@@ -40,7 +40,9 @@ const  SecondHeader = ({socialIcons2}) => {
           </div>
         </div>
 
-        <h1 className="text-[50px] fgt-ff-medium pb-8">we make our practice your solution</h1>
+        <h1 className="text-[50px] fgt-ff-medium pb-8">
+        {mainTitle || 'we make our practice your solution'}
+      </h1>
     </header>
   );
 }
@@ -56,7 +58,7 @@ const App = () => {
       socialIcons2={socialIcons2}
       socialIcons={socialIcons}
       menuIcon={menuicon}
-      mainTitle="We Make Law Make Sense"
+      mainTitle=""
       mainDescription="RKL Holzapfel Sperry & Ebberson is a full-service law firm that understands legal issues can be overwhelming. Our attorneys work tirelessly for individuals, families, and businesses alike."
       buttonText="Learn More"
     />
