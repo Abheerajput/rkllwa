@@ -112,7 +112,7 @@ const Content = () => {
 
   return (
     <div className=" ">
-      <div className="grid grid-cols-2 xs:flex xs:flex-col  md:flex md:flex-col   gap-4">
+      <div className="grid grid-cols-2 xs:flex xs:flex-col pl-8  md:flex md:flex-col   gap-4">
         <div className="p-4">
           <SectionHeader iconSrc={icon} title="IMMIGRATION LAW" />
           <Paragraph text="Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. We are dedicated to preserving your financial and personal well being as you navigate the many options for your new beginning." className="pt-5" />

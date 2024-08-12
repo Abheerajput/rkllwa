@@ -8,7 +8,7 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
     <>
    
     <div
-      className=""
+      className=" px-8"
       style={{
         backgroundImage: `url(${backgroundImg})`,
         backgroundSize: 'cover',

@@ -47,7 +47,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
         </div>
       </div>
       {menuOpen && (
-        <div className="absolute overflow-hidden px-0 top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg">
+        <div className="absolute overflow-hidden px-8 px-0 top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg">
           <div className="flex justify-between pt-4 xs:p-2 px-2 lg:px-24 lg:py-12">
             <div>
               <img
