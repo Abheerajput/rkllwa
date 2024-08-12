@@ -63,7 +63,7 @@ const Post = ({ text }) => (
 
 const Sidebar = ({ posts }) => (
   <div className="flex justify-end mr-32 xs:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
-    <div className="w-full sm:w-4/5 px-4 mt-8 max-h-[800px] max-w-[408px] bg-[#FFEDD7]">
+    <div className="w-full sm:w-4/5 px-4  xs:mx-4 mt-8 max-h-[800px] max-w-[408px] bg-[#FFEDD7]">
       <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center pt-14">
         <img src={icon2} alt="Posts Icon" />
         Latest Posts
@@ -121,12 +121,12 @@ const Content = () => {
 
 Recognizing that disputes about child custody are one of the most delicate and emotional aspects of the separation process, we approach each case with individualized attention and care, in an effort to minimize the impact of parenting issues on our clients’ children." className="pt-4" />
           <div className="w-full flex justify-center py-8">
-            <img src={icon3} alt="Decorative Icon" className="max-w-2xl xs:max-w-96" />
+            <img src={icon3} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" />
           </div>
           <Paragraph text="Working as a team, our goal is to guide you and your family to find the best way forward..." className="py-2" />
           <ListSection title="DIVORCE" items={divorceItems} />
           <div className="w-full flex justify-center py-8">
-            <img src={icon4} alt="Decorative Icon" className="max-w-2xl xs:max-w-96" />
+            <img src={icon4} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" />
           </div>
           <Paragraph text="We can help you determine which assets can be included in the divorce process and what they are worth..." className="py-2" />
           <ListSection title="PROPERTY DIVISION IN DIVORCE" items={propertyDivisionItems} />

@@ -9,11 +9,15 @@ import icon3 from "../assets/icons/profileicon3.svg";
 import icon4 from "../assets/icons/phone.svg"
 import icon5 from "../assets/icons/msg.svg"
 import icon6 from "../assets/icons/print.svg"
-import SecondHeader from "../Components/SecondHeader";
+import SecondHeader from './SecondHeader';
+import lkdnicon2 from '../assets/icons/drpdwicon2.svg';
+import fbicon2 from '../assets/icons/drpdwicon3.svg';
+import twittericon2 from '../assets/icons/drpdwicon4.svg';
 import Footer from "../Components/Footer"
 import './style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard3 = () => {
+  const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const testimonialSettings = {
     dots: true,
     infinite: true,
@@ -26,7 +30,10 @@ const ProfileCard3 = () => {
 
   return (
     <>
-      <SecondHeader mainTitle="Ava Johnson" />
+      <SecondHeader
+        socialIcons2={socialIcons2}
+        mainTitle="Taylor Morgan"
+      />
 
       <div className="text-sm pl-11 bg-[#F7F6F1] py-4">
         <Link  to="/"className="hover:underline">Home</Link> {'>'} 
