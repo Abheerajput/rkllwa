@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../assets/icons/doc.svg';
-import img2 from '../assets/icons/doc2.svg';
-import img3 from '../assets/icons/people.svg';
+import img1 from '../../assets/icons/doc.svg';
+import img2 from '../../assets/icons/doc2.svg';
+import img3 from '../../assets/icons/people.svg';
 
 const Solution = ({ title, description, buttonText, sections }) => {
   return (

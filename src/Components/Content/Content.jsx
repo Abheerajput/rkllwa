@@ -1,8 +1,8 @@
 import React from 'react';
-import icon from '../assets/icons/lawicon.svg';
-import icon2 from '../assets/icons/Posts.svg';
-import icon3 from '../assets/icons/lawicon2.svg';
-import icon4 from '../assets/icons/law3icon.svg';
+import icon from '../../assets/icons/lawicon.svg';
+import icon2 from '../../assets/icons/Posts.svg';
+import icon3 from '../../assets/icons/lawicon2.svg';
+import icon4 from '../../assets/icons/law3icon.svg';
 
 const SectionHeader = ({ iconSrc, title, className }) => (
   <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 flex ${className}`}>

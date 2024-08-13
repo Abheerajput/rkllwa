@@ -1,20 +1,20 @@
 import React from 'react'
-import RKL from '../assets/icons/headicon.svg';
-import RKL2 from '../assets/icons/Rkl2.svg';
-import img1 from '../assets/images/img1.png';
-import lkdnicon2 from "../assets/icons/drpdwicon2.svg"
-import fbicon2 from "../assets/icons/drpdwicon3.svg"
-import twittericon2 from "../assets/icons/drpdwicon4.svg"
+import RKL from '../../assets/icons/headicon.svg';
+import RKL2 from '../../assets/icons/Rkl2.svg';
+import img1 from '../../assets/images/img1.png';
+import lkdnicon2 from "../../assets/icons/drpdwicon2.svg"
+import fbicon2 from "../../assets/icons/drpdwicon3.svg"
+import twittericon2 from "../../assets/icons/drpdwicon4.svg"
 import { FaGreaterThan } from "react-icons/fa6";
-import fbicon from '../assets/icons/fbicon.svg';
-import lkdnicon from '../assets/icons/lkdnicon.svg';
-import twittericon from '../assets/icons/twitter.svg';
-import menuicon from '../assets/icons/menicon.png';
-import Footer from "../Components/Footer"
-import founder1 from "../assets/icons/founder4.svg"
-import founder2 from "../assets/icons/founder5.svg"
-import founder3 from "../assets/icons/founder6.svg"
-import './style.css';
+import fbicon from '../../assets/icons/fbicon.svg';
+import lkdnicon from '../../assets/icons/lkdnicon.svg';
+import twittericon from '../../assets/icons/twitter.svg';
+import menuicon from '../../assets/icons/menicon.png';
+import Footer from "../../Layout/Footer/Footer"
+import founder1 from "../../assets/icons/founder4.svg"
+import founder2 from "../../assets/icons/founder5.svg"
+import founder3 from "../../assets/icons/founder6.svg"
+import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const Founderscreen = ({socialIcons2}) => {
   return (

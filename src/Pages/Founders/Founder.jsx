@@ -1,8 +1,8 @@
 import React from 'react';
-import img1 from "../assets/icons/founder.svg";
-import img2 from "../assets/icons/founder2.svg";
-import img3 from "../assets/icons/founder3.svg";
-import arrow from "../assets/icons/arrow.svg"
+import img1 from "../../assets/icons/founder.svg";
+import img2 from "../../assets/icons/founder2.svg";
+import img3 from "../../assets/icons/founder3.svg";
+import arrow from "../../assets/icons/arrow.svg"
 
 const founders = [
   {

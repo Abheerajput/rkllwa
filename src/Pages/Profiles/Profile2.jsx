@@ -2,19 +2,19 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import profile from "../assets/icons/tylor.svg";
-import icon1 from "../assets/icons/profileicon1.svg";
-import icon2 from "../assets/icons/profileicon2.svg";
-import icon3 from "../assets/icons/profileicon3.svg";
-import icon4 from "../assets/icons/phone.svg"
-import icon5 from "../assets/icons/msg.svg"
-import icon6 from "../assets/icons/print.svg"
-import SecondHeader from './SecondHeader';
-import lkdnicon2 from '../assets/icons/drpdwicon2.svg';
-import fbicon2 from '../assets/icons/drpdwicon3.svg';
-import twittericon2 from '../assets/icons/drpdwicon4.svg';
-import Footer from "../Components/Footer"
-import './style.css';
+import profile from "../../assets/icons/tylor.svg";
+import icon1 from "../../assets/icons/profileicon1.svg";
+import icon2 from "../../assets/icons/profileicon2.svg";
+import icon3 from "../../assets/icons/profileicon3.svg";
+import icon4 from "../../assets/icons/phone.svg"
+import icon5 from "../../assets/icons/msg.svg"
+import icon6 from "../../assets/icons/print.svg"
+import SecondHeader from '../../Layout/Header/SecondHeader';
+import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
+import fbicon2 from '../../assets/icons/drpdwicon3.svg';
+import twittericon2 from '../../assets/icons/drpdwicon4.svg';
+import Footer from "../../Layout/Footer/Footer"
+import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard2 = () => {
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];

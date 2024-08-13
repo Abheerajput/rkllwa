@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../assets/images/img1.png';
-import groupimg from '../assets/images/groupimg.png';
-import './style.css';
+import img1 from '../../assets/images/img1.png';
+import groupimg from '../../assets/images/groupimg.png';
+import '../../Style/style.css';
 
 const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) => {
   return (

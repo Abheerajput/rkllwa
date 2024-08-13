@@ -1,6 +1,6 @@
 import React from 'react';
-import icon1 from "../assets/icons/navbaricon.svg";
-import "./style.css";
+import icon1 from "../../assets/icons/navbaricon.svg";
+import '../../Style/style.css';
 
 const Navbar = () => {
   return (

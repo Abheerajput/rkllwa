@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import RKL2 from '../assets/icons/Rkl2.svg';
+import RKL2 from '../../assets/icons/Rkl2.svg';
 
-import img1 from '../assets/images/img1.png';
-import menuicon from '../assets/icons/menicon.png';
-import icon1 from "../assets/icons/drpdwicon1.svg";
-import aboutus from "../assets/icons/aboutusicon.svg";
-import stay from "../assets/icons/stayicon.svg";
-import lkdnicon2 from "../assets/icons/drpdwicon2.svg";
-import fbicon2 from "../assets/icons/drpdwicon3.svg";
-import twittericon2 from "../assets/icons/drpdwicon4.svg";
+import img1 from '../../assets/images/img1.png';
+import menuicon from '../../assets/icons/menicon.png';
+import icon1 from "../../assets/icons/drpdwicon1.svg";
+import aboutus from "../../assets/icons/aboutusicon.svg";
+import stay from "../../assets/icons/stayicon.svg";
+
 import { Link } from 'react-router-dom'; // Ensure you have react-router-dom installed
 
 const SecondHeader = ({ socialIcons2, mainTitle }) => {

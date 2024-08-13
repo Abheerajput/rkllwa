@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
-import Header from './Components/Header';
-import Navbar from './Components/Navbar';
-import Profile1 from './Components/Profile';
-import Profile2 from './Components/Profile2';
-import Profile3 from './Components/Profile3';
-import Secondscreen from './Components/Secondscreen';
-import Founderscreen from "./Components/Founderscreen"
+import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar';
+import Profile1 from './Pages/Profiles/Profile';
+import Profile2 from './Pages/Profiles/Profile2';
+import Profile3 from './Pages/Profiles/Profile3';
+import Secondscreen from './Routes/Secondscreen/Secondscreen';
+import Founderscreen from "./Pages/Founders/Founderscreen"
 // Import the ImmigrationLaw component
 
 function App() {

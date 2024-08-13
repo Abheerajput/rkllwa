@@ -1,6 +1,6 @@
   import React from 'react';
-  import News from "../assets/icons/news.svg"
-  import calender from "../assets/icons/calender.svg"
+  import News from "../../assets/icons/news.svg"
+  import calender from "../../assets/icons/calender.svg"
   const SectionCard = ({ icon, title, items, bgColor }) => {
     return (
       <div className={`flex flex-col items-center py-[125px] ${bgColor} `}>

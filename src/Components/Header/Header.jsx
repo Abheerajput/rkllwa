@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import NewsAndEvents from './NewsAndEvents';
-import Section1 from './Section1';
-import Solution from './Solution';
-import Footer from './Footer';
-import bgimg from '../assets/images/bgimg.jpg';
-import RKL from '../assets/icons/headicon.svg';
-import RKL2 from '../assets/icons/Rkl2.svg';
-import aboutus from "../assets/icons/aboutusicon.svg"
-import stay from "../assets/icons/stayicon.svg"
-import lkdnicon2 from "../assets/icons/drpdwicon2.svg"
-import fbicon2 from "../assets/icons/drpdwicon3.svg"
-import twittericon2 from "../assets/icons/drpdwicon4.svg"
-import icon1 from "../assets/icons/drpdwicon1.svg"
-import fbicon from '../assets/icons/fbicon.svg';
-import lkdnicon from '../assets/icons/lkdnicon.svg';
-import twittericon from '../assets/icons/twitter.svg';
-import menuicon from '../assets/icons/menicon.png';
-import './style.css';
+import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
+import Section1 from '../Section/Section1';
+import Solution from '../../Pages/Solutions/Solution';
+import Footer from '../../Layout/Footer/Footer';
+import bgimg from '../../assets/images/bgimg.jpg';
+import RKL from '../../assets/icons/headicon.svg';
+import RKL2 from '../../assets/icons/Rkl2.svg';
+import aboutus from "../../assets/icons/aboutusicon.svg"
+import stay from "../../assets/icons/stayicon.svg"
+import lkdnicon2 from "../../assets/icons/drpdwicon2.svg"
+import fbicon2 from "../../assets/icons/drpdwicon3.svg"
+import twittericon2 from "../../assets/icons/drpdwicon4.svg"
+import icon1 from "../../assets/icons/drpdwicon1.svg"
+import fbicon from '../../assets/icons/fbicon.svg';
+import lkdnicon from '../../assets/icons/lkdnicon.svg';
+import twittericon from '../../assets/icons/twitter.svg';
+import menuicon from '../../assets/icons/menicon.png';
+import '../../Style/style.css';
 
 const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
