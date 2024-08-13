@@ -41,7 +41,7 @@ const ProfileCard3 = () => {
         <span className="">Jordan Taylor </span>
       </div>
 
-      <div className="bg-gray-50 grid grid-cols-2 xs:flex xs:flex-col md:flex md:flex-col sm:p-10">
+      <div className="bg-gray-50 grid pl-8 grid-cols-2 xs:flex xs:flex-col md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
         <div> 
           <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
