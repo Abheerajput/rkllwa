@@ -8,7 +8,7 @@ import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 
-const  Secondscreen = ()=> {
+const  ImmigrationLaw = ()=> {
   const socialIcons = [lkdnicon2, fbicon2, twittericon2];
 
   return (
@@ -27,4 +27,4 @@ const  Secondscreen = ()=> {
   );
 }
 
-export default Secondscreen
+export default ImmigrationLaw

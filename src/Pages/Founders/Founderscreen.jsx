@@ -4,6 +4,7 @@ import RKL2 from '../../assets/icons/Rkl2.svg';
 import img1 from '../../assets/images/img1.png';
 import lkdnicon2 from "../../assets/icons/drpdwicon2.svg"
 import fbicon2 from "../../assets/icons/drpdwicon3.svg"
+import SecondHeader from '../../Layout/Header/SecondHeader';
 import twittericon2 from "../../assets/icons/drpdwicon4.svg"
 import { FaGreaterThan } from "react-icons/fa6";
 import fbicon from '../../assets/icons/fbicon.svg';
@@ -14,13 +15,22 @@ import Footer from "../../Layout/Footer/Footer"
 import founder1 from "../../assets/icons/founder4.svg"
 import founder2 from "../../assets/icons/founder5.svg"
 import founder3 from "../../assets/icons/founder6.svg"
+// import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
+// import fbicon2 from '../../assets/icons/drpdwicon3.svg';
+// import twittericon2 from '../../assets/icons/drpdwicon4.svg';
+
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
-const Founderscreen = ({socialIcons2}) => {
+const Founderscreen = () => {
+  const socialIcons = [lkdnicon2, fbicon2, twittericon2];
   return (
     <>
     <div>
-    <header className="bg-gray-800  px-8  p-4 text-white" style={{
+    <SecondHeader
+        socialIcons2={socialIcons}
+        mainTitle="Our Founders"
+      />
+    {/* <header className="bg-gray-800  px-8  p-4 text-white" style={{
       backgroundImage: `url(${img1})`,
     }}>
         <div className='flex justify-end pt-4'>
@@ -47,7 +57,8 @@ const Founderscreen = ({socialIcons2}) => {
         </div>
 
         <h1 className="text-[50px] fgt-ff-medium pb-8">Our Founders</h1>
-    </header>
+    </header> */}
+
   </div>
   <div className="p-4 bg-[#F7F6F1]">
 

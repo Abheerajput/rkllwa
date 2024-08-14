@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 import Section1 from '../Section/Section1';
@@ -16,15 +16,30 @@ import icon1 from "../../assets/icons/drpdwicon1.svg"
 import fbicon from '../../assets/icons/fbicon.svg';
 import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
-import menuicon from '../../assets/icons/menicon.png';
+import menuicon from '../../assets/icons/logo2.svg';
 import '../../Style/style.css';
 
 const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const menuRef = useRef(null); 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false); 
+      }
+    };
+
+   
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
 
   return (
     <>
@@ -37,7 +52,9 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
     >
       <div className="flex  overflow-x-hidden justify-between  p-8 lg:px-24 lg:py-12">
         <div>
+          <Link to="/">
           <img src={logo} alt="Logo" className="" />
+          </Link>
         </div>
         <div>
           <div className=" md:flex ">
@@ -46,7 +63,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                 <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
                   Login
                 </button>
-                <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDDB6]">
+                <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDD00]">
                   Online Payment
                 </button>
                 <div className="flex space-x-3 pt-2">
@@ -66,7 +83,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
       {menuOpen && (
 
-        <div className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
+        <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
           <div className="flex justify-between xs:p-2 p-8 lg:px-24 lg:py-12">
             <div>
               <img
@@ -83,7 +100,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                     <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
                       Login
                     </button>
-                    <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
+                    <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#FFDD00]">
                       Online Payment
                     </button>
                     <div className="flex space-x-3 pt-2">
@@ -137,7 +154,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                 <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={icon1} alt="" />  Practice Areas</h1>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Business Law</p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'> BOIR Compliance</p>
-                <p className='text-[20px] fgt-ff-light text-[#403C5C]'>   <Link to="/secondscreen">Immigration Law</Link></p>
+                <p className='text-[20px] fgt-ff-light text-[#403C5C]'>   <Link to="/Immigration-Law">Immigration Law</Link></p>
               </span>
 
               <span className='flex flex-col gap-2 text-black'>
@@ -181,7 +198,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
           <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
             {mainDescription}
           </p>
-          <button className="bg-[#EEB26D] px-8 lg:px-12 py-3  rounded-md">
+          <button className="bg-[#FFDD00] px-8 lg:px-12 py-3  rounded-md">
             {buttonText}
           </button>
         </div>
