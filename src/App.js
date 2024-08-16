@@ -7,6 +7,7 @@ import Profile2 from './Pages/Profiles/Profile2';
 import Profile3 from './Pages/Profiles/Profile3';
 import ImmigrationLaw from './Routes/ImmigrationLaw/ImmigrationLaw';
 import Founderscreen from "./Pages/Founders/Founderscreen"
+import Bior from "./Components/BIOR/Boir"
 // Import the ImmigrationLaw component
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/profile/Ava Johnson" element={<Profile1/>} />
         <Route path="/profile/Taylor Morgan" element={<Profile2/>} />
         <Route path="/profile/Jordan Taylor" element={<Profile3/>} />
+        <Route path="/boir" element={<Bior/>} />
       </Routes>
       
      

@@ -114,7 +114,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
                 </h1>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Business Law</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">BOIR Compliance</p>
+                <p className="text-[20px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C]">
                   <Link to="/Immigration-Law">Immigration Law</Link>
                 </p>

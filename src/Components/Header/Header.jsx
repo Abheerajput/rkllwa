@@ -153,7 +153,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
               <span className='flex flex-col gap-2 text-black'>
                 <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={icon1} alt="" />  Practice Areas</h1>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Business Law</p>
-                <p className='text-[20px] fgt-ff-light text-[#403C5C]'> BOIR Compliance</p>
+                <p className='text-[20px] fgt-ff-light text-[#403C5C]'><Link to="/boir">BOIR Compliance</Link> </p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'>   <Link to="/Immigration-Law">Immigration Law</Link></p>
               </span>
 

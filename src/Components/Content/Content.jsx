@@ -33,11 +33,11 @@ const ContactForm = () => (
       <div className='flex w-full gap-4'>
          <div className="flex flex-col w-1/2  text-[14px] font-medium my-2">
         <label>First Name</label>
-        <input type="text" placeholder="First Name" className="border py-2 my-2 rounded-sm" />
+        <input type="text" placeholder="First Name" className="border  ps-3 py-2 my-2 rounded-sm" />
       </div>
       <div className="flex flex-col w-1/2 text-[14px] font-medium my-2">
         <label>Last Name</label>
-        <input type="text" placeholder="Last Name" className="border py-2 my-2  rounded-sm" />
+        <input type="text" placeholder="Last Name" className="border ps-3 py-2 my-2  rounded-sm" />
       </div>
    
      
@@ -45,7 +45,7 @@ const ContactForm = () => (
     </div>
     <div className="flex flex-col w-full text-[14px] font-medium my-2">
       <label>Email</label>
-      <input type="email" placeholder="Email" className="border py-2 my-2 w-full rounded-sm" />
+      <input type="email" placeholder="Email" className="border ps-3 py-2 my-2 w-full rounded-sm" />
     </div>
     <button className="bg-[#E6A358] text-white mt-4 py-2 px-12 text-[20px] fgt-ff-normal rounded">
       Submit
