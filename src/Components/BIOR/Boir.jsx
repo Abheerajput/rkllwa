@@ -172,7 +172,7 @@ const Boir = () => {
     <>
       <SecondHeader
         socialIcons2={socialIcons2}
-        mainTitle="Ava Jhonson"
+        mainTitle="BOIR Compliance"
       />
 
 
