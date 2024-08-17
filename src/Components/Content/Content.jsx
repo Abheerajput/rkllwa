@@ -62,8 +62,8 @@ const Post = ({ text }) => (
 );
 
 const Sidebar = ({ posts }) => (
-  <div className="flex justify-end mr-32 xs:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
-    <div className="w-full sm:w-4/5 px-4  xs:mx-4 mt-8 max-h-[800px] max-w-[408px] bg-[#FFEDD7]">
+  <div className="flex justify-end mr-32 xs:justify-center sm:mx-4 sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
+    <div className="w-full  xs:max-w-full sm:max-w-full px-4  xs:mx-4 mt-8 max-h-[800px] min-h-[500px] max-w-[408px] bg-[#FFEDD7]">
       <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center pt-14">
         <img src={icon2} alt="Posts Icon" />
         Latest Posts
@@ -112,7 +112,7 @@ const Content = () => {
 
   return (
     <div className=" ">
-      <div className="grid grid-cols-2 xs:flex xs:flex-col pl-8  md:flex md:flex-col   gap-4">
+      <div className="grid grid-cols-2 xs:flex xs:flex-col xs:px-4 sm:px-4 md:px-6 pl-8     gap-4">
         <div className="p-4">
           <SectionHeader iconSrc={icon} title="IMMIGRATION LAW" />
           <Paragraph text="Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. We are dedicated to preserving your financial and personal well being as you navigate the many options for your new beginning." className="pt-5" />

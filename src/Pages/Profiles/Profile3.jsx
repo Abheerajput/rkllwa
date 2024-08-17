@@ -41,7 +41,7 @@ const ProfileCard3 = () => {
         <span className="">Jordan Taylor </span>
       </div>
 
-      <div className="bg-gray-50 grid pl-12 grid-cols-2 xs:flex xs:flex-col md:flex md:flex-col sm:p-10">
+      <div className="bg-gray-50 grid pl-12 grid-cols-2 xs:flex xs:flex-col sm:flex sm:flex-col md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
         <div> 
           <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
@@ -101,8 +101,8 @@ Mario is well-recognized in his field, having been selected for inclusion to the
 
         {/* Sidebar */}
         <div className="flex justify-end md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 mr-20 pr-0">
-          <div className="mt-6 md:mt-0 w-1/2">
-            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8">
+          <div className="mt-6 sm:w-full md:mt-0 w-1/2">
+            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sm:flex sm:flex-col sm:items-center sm:pl-0">
               <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
                 <li className='text-[24px] fgt-ff-normal flex gap-4 items-center py-5'><img src={icon1} alt="" /> Business Law</li>
@@ -135,7 +135,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         {/* Contact Form */}
         <div className="mt-10 px-4">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
-          <form className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <form className="grid grid-cols-1  gap-4">
             
             <div className='flex w-full gap-7'>
               <label className="block text-sm w-1/2 text-gray-700">First Name

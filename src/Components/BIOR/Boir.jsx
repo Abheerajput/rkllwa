@@ -185,14 +185,14 @@ const Boir = () => {
       <div className="bg-white pt-8 grid sm:px-8 md:px-8 xs:px-8 pl-12 grid-cols-3 xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
         <div className=' col-span-2'>
-<div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center"><h1 className='text-[50px]  fgt-ff-medium flex gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
+<div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center"><h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
 <span>
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
 
 </span>
 </div>
 
-<table className='border w-[40%] md:w-[50%] sm:w-[60%] xs:w-[80%] mt-12'>
+<table className='border w-[40%] md:w-[50%] sm:w-[60%] xs:w-[100%] mt-12'>
   <tr className=''>
     <th className='border text-start ps-3 py-2 bg-[#E5E5E5] text-[17px] fgt-ff-bold text'>Table of Contents </th>
   </tr>
@@ -278,7 +278,7 @@ Business owners and senior officers are responsible for accurate and timely repo
 <p className='text-[20px] fgt-ff-light text-[#212121]'>
 Beneficial Ownership information refers to identifying information about the individuals who directly or indirectly own or control a company.  Every Reporting Company that is not exempt must file a BOI Report that discloses five specific items of Personal Identifiable Information (PII) for each of its Beneficial Owners (BO), including a copy of a valid, government-issued ID (such a driver’s license or passport) verifying the BO’s identity.  Entities formed (or registered to do business) on or after January 1, 2024, must also identify and provide the same five items of PII for the entity’s Company Applicant. An individual is a Company Applicant if the individual directly files the document that creates (or registers) the Reporting Company and/or if the individual is primarily responsible for directing or controlling such filing if more than one individual is involved in the filing. Each Reporting Company will have to be analyzed on a case-by-case basis to determine who the Company Applicant(s) is/are for accurate reporting.</p>
 </div>
-<div className='w-full text-center'>
+<div className='w-full text-center  xs:py-4 sm:py-4' >
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
 
 </div>
@@ -380,27 +380,31 @@ Beneficial Ownership information refers to identifying information about the ind
         </div>
 
         {/* Sidebar */}
-        <div className="flex col-span-1  md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 mx-12  pr-0">
-          <div className="mt-6 md:mt-0 md:w-[70%] xs:w-[100%] sm:w-[100%] text-start">
-            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 ">
+        <div className="flex col-span-1  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 mx-12 md:mx-0 md:ml-3  pr-0">
+          <div className="mt-6 md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
+            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  ">
               <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
-                <p className=' flex gap-4 items-center flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
+                <p className=' flex gap-4 items-start flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
+                 <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
                 </p>
-                <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
+               
                 <hr />
-                <p className=' flex gap-4 items-center flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
-                </p>
+                <p className=' flex gap-4 items-start flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                 <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
-                <hr />
-                <p className=' flex gap-4 items-center flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                 </p>
+            
+                <hr />
+                <p className=' flex gap-4 items-start flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                 <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
-                <hr />
-                <p className=' flex gap-4 items-center flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                 </p>
+           
+                <hr />
+                <p className=' flex gap-4 items-start flex-col py-5 text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                 <p className=' flex  text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3 pb-5'>Read More <FaArrowRightLong /> </p>
+                </p>
+          
               
              
               </div>
