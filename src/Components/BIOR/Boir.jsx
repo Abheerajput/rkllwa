@@ -187,7 +187,7 @@ const Boir = () => {
         <div className=' col-span-2'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center"><h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
 <span>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
+<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </span>
 </div>
@@ -197,56 +197,47 @@ const Boir = () => {
     <th className='border text-start ps-3 py-2 bg-[#E5E5E5] text-[17px] fgt-ff-bold text'>Table of Contents </th>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>The Corporate Transparency Act - What is it?</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+    <a href="#what-is-cta">The Corporate Transparency Act - What is it?</a>
+      </td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Reporting Company - Who needs to file?</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+    <a href="#who-needs-to-file">Reporting Company - Who needs to file?</a>
+      </td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Reporting Company - Who needs to file?</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+      <a href="#who-needs-to-filed">
+      Reporting Company - Who needs to file?
+        </a></td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Deadlines</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+      <a href="#deadline">
+
+      Deadlines
+      </a>
+      </td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Penalties for non-compliance with the CTA</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+    <a href="#penalties">Penalties for non-compliance with the CTA</a>      </td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Get compliant with RKL Law</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+    <a href="#get-compliant">Get compliant with RKL Law</a>
+      </td>
   </tr>
   <tr>
-    <td className='border text-[19px] ps-3 inter font-normal py-2'>Frequently Asked Questions</td>
+    <td className='border text-[19px] ps-3 inter font-normal py-2'>
+    <a href="#faqs">Frequently Asked Questions</a>
+      </td>
   </tr>
 </table>
-          {/* <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
-            <img
-              src={profile}
-              alt="Ava Johnson"
-              className=" rounded-md object-cover mb-4"
-            />
-            <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] fgt-ff-medium mb-1">Ava Johnson</h1>
-              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Principal</h2>
-              <div className="space-y-2">
-                <div className="flex items-center">
-                  <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(206)-654-2429</Link>
-                </div>
-                <div className="flex items-center">
-                  <span className="mr-4"><img src={icon5} alt="" /> </span>
-                  <a href="mailto:bianchi@lasher.com" className="">bianchi@lasher.com</a>
-                </div>
-                <div className="flex items-center">
-                  <span className="mr-4">
-                    <img src={icon6} alt="" />
-                  </span>
-                  <Link to="" className="">Print Attorney Profile</Link>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          
 <div>
-  <h2 className='text-[24px] fgt-ff-bold text-[#212121] py-8'>What is the Corporate Transparency Act (CTA)?</h2>
+  <h2 id="what-is-cta" className='text-[24px] fgt-ff-bold text-[#212121] py-8'>What is the Corporate Transparency Act (CTA)?</h2>
   <p className='text-[20px] fgt-ff-light text-[#212121]'>
 Beginning on January 1, 2024, many companies in the United States will have to report information about their beneficial owners, i.e., the individuals who ultimately own or control the company. They will have to report the information to the Financial Crimes Enforcement Network (FinCEN). FinCEN is a bureau of the U.S. Department of the Treasury.  It is crucial to note that this reporting requirement will not be satisfied merely by filing your tax returns to the IRS.  It is an entirely separate reporting requirement submitted to a different bureau of the Treasury Department than the IRS, namely FinCEN.
 The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt reporting companies to file a Beneficial Ownership Information (BOI) Report with FinCEN as part of the U.S. government’s efforts to make it harder for bad actors to hide or benefit from their ill-gotten gains through shell companies or other opaque ownership structures.
@@ -256,7 +247,7 @@ The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt r
 <p className='w-full text-center flex flex-col gap-4 items-center justify-center py-6'>
   <img src={img1} alt=""  className='w-[70%]'/>
   <span>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
+<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </span>
 </p>
@@ -264,7 +255,7 @@ The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt r
 
 
 <div>
-  <h2 className='text-[24px] fgt-ff-bold text-[#212121] py-8'>Reporting Company - Who needs to file?</h2>
+  <h2 id="who-needs-to-file" className='text-[24px] fgt-ff-bold text-[#212121] py-8'>Reporting Company - Who needs to file?</h2>
   <p className='text-[20px] fgt-ff-light text-[#212121]'>
 
 Companies required to report are called Reporting Companies. More specifically, Reporting Companies are non-exempt corporations, limited liability companies, or other entities that are (i) created by the filing of a document with a secretary of state or any similar office under the law of the State or Indian Tribe or (ii) formed under the law of a foreign country and registered to do business in any State or tribal jurisdiction by the filing of a document with a secretary of state or any similar office under the laws of a State or Indian Tribe. Oftentimes, Reporting Companies do not have the required information for filing and may have to obtain information from their BOs to report that information to FinCEN.
@@ -274,26 +265,26 @@ Tens of millions of businesses and holding companies in the US will be impacted 
 Business owners and senior officers are responsible for accurate and timely reporting. Responsibility rests with each senior officer of the Reporting Company, and any person who provides information (or fails to provide accurate information) required to make the BOI report true.</p>
 
 
-<h2 className='text-[24px] fgt-ff-bold text-[#212121] py-8'>BOIR Compliance - What needs to be filed?</h2>
+<h2 id="who-needs-to-filed" className='text-[24px] fgt-ff-bold text-[#212121] py-8'>BOIR Compliance - What needs to be filed?</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121]'>
 Beneficial Ownership information refers to identifying information about the individuals who directly or indirectly own or control a company.  Every Reporting Company that is not exempt must file a BOI Report that discloses five specific items of Personal Identifiable Information (PII) for each of its Beneficial Owners (BO), including a copy of a valid, government-issued ID (such a driver’s license or passport) verifying the BO’s identity.  Entities formed (or registered to do business) on or after January 1, 2024, must also identify and provide the same five items of PII for the entity’s Company Applicant. An individual is a Company Applicant if the individual directly files the document that creates (or registers) the Reporting Company and/or if the individual is primarily responsible for directing or controlling such filing if more than one individual is involved in the filing. Each Reporting Company will have to be analyzed on a case-by-case basis to determine who the Company Applicant(s) is/are for accurate reporting.</p>
 </div>
 <div className='w-full text-center  xs:py-4 sm:py-4' >
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
+<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg  xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </div>
 <div>
-  <h3 className='text-[#844C0D] text-[26px] fgt-ff-bold'>Deadlines</h3>
+  <h3 id="deadline" className='text-[#844C0D] text-[26px] fgt-ff-bold'>Deadlines</h3>
   <p className="underline-offset-8 underline">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
   <p>• If your company was created or registered prior to January 1, 2024, you will have until January 1, 2025 to report BOI. <br />
 • If your company is created or registered in 2024, you must report BOI within 90 calendar days after receiving actual or public notice that your company’s creation or registration is effective, whichever is earlier.<br />
 • If your company is created or registered on or after January 1, 2025, you must file BOI within 30 calendar days after receiving actual or public notice that its creation or registration is effective. <br />
 • Any updates or corrections to beneficial ownership information that you previously filed with FinCEN must be submitted within 30 days.</p>
 
-<h2 className='text-[24px] fgt-ff-bold text-[#212121] py-8'>What are the penalties for non-compliance with the CTA?</h2>
+<h2 id="penalties" className='text-[24px] fgt-ff-bold text-[#212121] py-8'>What are the penalties for non-compliance with the CTA?</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121]'>Civil and criminal penalties, including fines and imprisonment. Civil penalties up to $500 per day (adjusted for inflation) may be assessed against the Reporting Company and its Beneficial Owners.  Beneficial owners may also be subject to criminal penalties of up to two-year imprisonment and a fine of up to $10,000 for willful non-compliance or deception.</p>
 
-<h2 className='text-[24px] fgt-ff-bold text-[#212121] py-8'>Get Compliant with RKL Law</h2>
+<h2 id="get-compliant" className='text-[24px] fgt-ff-bold text-[#212121] py-8'>Get Compliant with RKL Law</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121]'>We know.  It’s a lot to consider, process, and understand.  The good news is that RKL Law is here to help.  We have spent the last several months diligently streamlining the intake process so that we may accurately and efficiently file the BOIR on your behalf.  Although the reporting requirements are straightforward, there are legal definitions, facts, and factors that must be understood and carefully analyzed to make the appropriate identifications and report correctly.  As this is a legal inquiry requiring understanding and application of the law, in most cases one would be best served to hire a lawyer, not a law-adjacent on-line service provider to perform BOI reporting.</p>
 <br />
 
@@ -343,14 +334,14 @@ Beneficial Ownership information refers to identifying information about the ind
 </div>
 
 <div className='py-4 text-center'>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
+<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13]'>START YOUR COMPLIANCE NOW</button>
 
 </div>
 
 </div>
 
 <div className="bg-white">
-            <h2 className="text-[53px] text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
+            <h2 id="faqs" className="text-[53px] text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
             <div className="mt-8 w-full sm:px-8 xs:px-4 mx-auto">
                 {faqs.map((faq, index) => (
                     <div key={index} className=" my-6">
@@ -374,7 +365,7 @@ Beneficial Ownership information refers to identifying information about the ind
             </div>
         </div>
         <div className='py-4 text-center pb-8'>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg'>START YOUR COMPLIANCE NOW</button>
+<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </div>
         </div>
