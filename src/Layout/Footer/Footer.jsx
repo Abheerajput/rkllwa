@@ -20,7 +20,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
         <div className=" flex flex-col text-center items-center ">
           <img src={RKL} alt="RKL Icon" className="mb-4" />
          
-          <p className="text-[18px] lg:text-[20px] fgt-ff-light text-white mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
+          <p className="text-[18px] text-start lg:text-[20px] fgt-ff-light text-white mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
           <div className="flex justify-center ">
           <img src={insta} alt="Instagram"className="mr-4" />
@@ -39,7 +39,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
 };
 
 const App = () => {
-  const description = "601 Union St., Suite 2600 <br/> Seattle, WA 98101-4000 <br/> Phone: (206) 624-1230 <br/> Fax: (206) 340-2563"
+  const description = "    RKL LAW2625 <br/> Townsgate Road Suite 330 <br/>Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
 const title = "RKL Law, A Professional Corporation.  All Rights Reserved."
   return (
     <Footer

@@ -1,5 +1,6 @@
 import React, { useState,useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
+import crossIcon from "../../assets/images/pngwing.png"
 import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 import Section1 from '../Section/Section1';
 import Solution from '../../Pages/Solutions/Solution';
@@ -45,12 +46,12 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
     <>
    
     <div
-      className="bg-cover overflow-x-hidden bg-center h-screen"
+      className="bg-cover  overflow-x-hidden bg-center h-screen"
       style={{
         backgroundImage: `url(${backgroundImg})`,
       }}
     >
-      <div className="flex  overflow-x-hidden justify-between  p-8 lg:px-24 lg:py-12">
+      <div className="flex  overflow-x-hidden justify-between   p-8 ">
         <div>
           <Link to="/">
           <img src={logo} alt="Logo" className="" />
@@ -84,7 +85,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
       {menuOpen && (
 
         <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
-          <div className="flex justify-between xs:p-2 p-8 lg:px-24 lg:py-12">
+          <div className="flex justify-between xs:p-2 p-8 px-4 lg:py-12">
             <div>
               <img
                 src={icon}
@@ -113,38 +114,18 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
               </div>
               <div className="flex items-center justify-end pt-8">
-                <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" onClick={toggleMenu} />
+              
+                <img
+                    src={menuOpen ? crossIcon : menuicon}
+                    alt={menuOpen ? "Close Icon" : "Menu Icon"}
+                    className="w-16 h-16 cursor-pointer"
+                    onClick={toggleMenu}
+
+                  />
               </div>
             </div>
 
-            {/* <div className="flex xs:flex-col  xs:space-x-4 xs:items-center xs:justify-between p-4">
-  <div className="flex xs:flex-col  gap-4 xs:space-x-4 xs:items-center xs:justify-start mb-4 xs:mb-0">
-    <div className='flex gap-[10px]'>
-    <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] xs:px-2 rounded-full border-2 px-6 py-1 border-[#E6A358] mb-2 xs:mb-0">
-      Login
-    </button>
-    <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
-      Payment
-    </button>
-    </div>
-    <div className="flex items-center justify-center xs:justify-end space-x-3 pt-2 xs:pt-0 text-[#E6A358]">
-    {socialIcons2.map((icon, index) => (
-      <img 
-        key={index} 
-        src={icon} 
-        alt={`Social Icon ${index}`} 
-        className="w-6 h-6"
-      />
-    ))}
-  </div>
-  </div>
-
- 
-
-  <div className="flex items-center justify-end pt-4 xs:pt-8">
-    <img src={menuIcon} alt="Menu Icon" className=" cursor-pointer" onClick={toggleMenu} />
-  </div>
-</div> */}
+           
 
           </div>
           <div className='w-9/12'>
@@ -152,7 +133,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
               <span className='flex flex-col gap-2 text-black'>
                 <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={icon1} alt="" />  Practice Areas</h1>
-                <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Business Law</p>
+                <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'><Link to="/business">Business Law</Link></p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'><Link to="/boir">BOIR Compliance</Link> </p>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C]'>   <Link to="/Immigration-Law">Immigration Law</Link></p>
               </span>
@@ -190,14 +171,16 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
       )}
 
-      <div className="flex justify-end xs:hidden px-8 lg:pr-24 mt-[10rem]">
-        <div className="max-w-2xl bg-white py-8 px-8 lg:px-12 rounded-md">
+      <div className="flex justify-end xs:hidden px-8 pr-28 mt-4">
+        <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
           <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
             {mainTitle}
           </h1>
           <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
-            {mainDescription}
-          </p>
+  {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
+    <React.Fragment key={index}>{line}</React.Fragment>
+  )) : mainDescription}
+</p>
           <button className="bg-[#FFDD00] px-8 lg:px-12 py-3  rounded-md">
             {buttonText}
           </button>
@@ -226,9 +209,14 @@ const App = () => {
       socialIcons={socialIcons}
       menuIcon={menuicon}
       mainTitle="We Make Law Make Sense"
-      mainDescription="RKL Holzapfel Sperry & Ebberson is a full-service law firm that understands legal issues can be overwhelming. Our attorneys work tirelessly for individuals, families, and businesses alike."
+      mainDescription={[
+        "RKL Holzapfel Sperry & Ebberson is a full-service ",<br />,
+        
+        " law firm that understands legal issues can be "
+      ]}
       buttonText="Learn More"
     />
+    
   );
 };
 

@@ -5,7 +5,7 @@ import img3 from '../../assets/icons/people.svg';
 
 const Solution = ({ title, description, buttonText, sections }) => {
   return (
-    <div className="  bg-[#F7F6F1] py-16">
+    <div className="  bg-[#F7F6F1]  py-16">
       <div className="grid grid-cols-2 xs:flex xs:flex-col gap-9 py-[120px]">
         <div className="flex  flex-wrap justify-center items-center gap-8">
           {sections.map((section, index) => (

@@ -4,16 +4,20 @@ import icon2 from '../../assets/icons/Posts.svg';
 import icon3 from '../../assets/icons/lawicon2.svg';
 import icon4 from '../../assets/icons/law3icon.svg';
 
-const SectionHeader = ({ iconSrc, title, className }) => (
-  <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 flex ${className}`}>
-    <img src={iconSrc} alt="" className='xs:w-48' /> {title}
-  </h2>
+const SectionHeader = ({ iconSrc, title, className, text }) => (
+  <>
+    <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 flex ${className}`}>
+      <img src={iconSrc} alt="" className='xs:w-48' />
+      <span>{title}</span>
+      {text && <Paragraph text={text} className="pt-5" />}
+    </h2>
+  </>
 );
-
 const Paragraph = ({ text, className }) => (
-  <p className={`text-[20px] fgt-ff-light ${className}`}>
-    {text}
-  </p>
+  <p
+    className={`text-[20px] fgt-ff-light ${className}`}
+    dangerouslySetInnerHTML={{ __html: text }}
+  />
 );
 
 const ListSection = ({ title, items }) => (
@@ -62,8 +66,8 @@ const Post = ({ text }) => (
 );
 
 const Sidebar = ({ posts }) => (
-  <div className="flex justify-end mr-32 xs:justify-center sm:mx-4 sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
-    <div className="w-full  xs:max-w-full sm:max-w-full px-4  xs:mx-4 mt-8 max-h-[800px] min-h-[500px] max-w-[408px] bg-[#FFEDD7]">
+  <div className="flex justify-center mx-6 xs:justify-center sm:mx-4 sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
+    <div className="w-full   px-4  xs:mx-4 mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
       <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center pt-14">
         <img src={icon2} alt="Posts Icon" />
         Latest Posts
@@ -112,14 +116,12 @@ const Content = () => {
 
   return (
     <div className=" ">
-      <div className="grid grid-cols-2 xs:flex xs:flex-col xs:px-4 sm:px-4 md:px-6 pl-8     gap-4">
-        <div className="p-4">
+      <div className="flex w-full xs:flex sm:flex-col md:flex-col xs:flex-col xs:px-4 sm:px-4 md:px-6 pl-8     gap-4">
+        <div className="p-4 w-[70%] md:w-[100%]">
           <SectionHeader iconSrc={icon} title="IMMIGRATION LAW" />
-          <Paragraph text="Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. We are dedicated to preserving your financial and personal well being as you navigate the many options for your new beginning." className="pt-5" />
-          <Paragraph text="With a combined over 150 years of experience in all facets of Washington divorce and family restructuring, we are here to help you choose the best path forward. Whether you want to proceed with traditional divorce litigation, mediation, or collaborative divorce, we have many years of success representing clients through legal separations, committed intimate relationships, child custody, child support and parenting plans, as well as prenuptial and postnuptial agreements." className="pt-4" />
-          <Paragraph text="
-
-Recognizing that disputes about child custody are one of the most delicate and emotional aspects of the separation process, we approach each case with individualized attention and care, in an effort to minimize the impact of parenting issues on our clients’ children." className="pt-4" />
+          <Paragraph text={"Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. <br /> We  are dedicated to preserving your financial and personal  well being as you navigate the many  options for your <br /> new beginning."} className="pt-5" />
+          <Paragraph text={"With a combined over 150 years of experience in all facets of Washington divorce and family restructuring, <br/> we are here to help you choose the best path forward. Whether you want to proceed with traditional divorce <br/> litigation, mediation, or collaborative divorce, we have many years of success representing clients through <br/> legal separations, committed intimate relationships, child custody, child support and parenting plans, as well <br/> as prenuptial and postnuptial agreements."} className="pt-4" />
+          <Paragraph text={"Recognizing that disputes about child custody are one of the most delicate and emotional aspects of the  <br/> separation process, we approach each case with individualized attention and care, in an effort to minimize <br /> the impact of parenting issues on our clients’ children."} className="pt-4" />
           <div className="w-full flex justify-center py-8">
             <img src={icon3} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" />
           </div>
@@ -134,7 +136,10 @@ Recognizing that disputes about child custody are one of the most delicate and e
           <Paragraph text="If you are looking for a trusted divorce attorney, we are here to help..." className="py-2" />
           <ContactForm />
         </div>
-        <Sidebar posts={latestPosts} />
+        <div className="w-[30%] sm:w-[100%] sm:px-4 xs:w-full md:w-[100%] xs:px-4 md:px-4" >
+
+        <Sidebar  posts={latestPosts} />
+        </div>
       </div>
     </div>
   );

@@ -62,3 +62,7 @@
     opacity: .75;
     color: #E6A358 !important;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  

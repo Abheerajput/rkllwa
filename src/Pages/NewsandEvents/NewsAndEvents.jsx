@@ -3,7 +3,7 @@
   import calender from "../../assets/icons/calender.svg"
   const SectionCard = ({ icon, title, items, bgColor }) => {
     return (
-      <div className={`flex flex-col items-center py-[125px] ${bgColor} `}>
+      <div className={`flex flex-col  items-center py-[125px] ${bgColor} `}>
         <div className="text-[#EEB26D] mb-4 text-4xl">
         <img src={icon} alt={title} />
           </div>

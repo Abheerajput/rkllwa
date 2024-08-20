@@ -1,5 +1,6 @@
-import React, { useState,useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import crossIcon from "../../assets/images/pngwing.png"
 import RKL2 from '../../assets/icons/Rkl2.svg';
 import fbicon from '../../assets/icons/fbicon.svg';
 import lkdnicon from '../../assets/icons/lkdnicon.svg';
@@ -14,32 +15,35 @@ import { Link } from 'react-router-dom'; // Ensure you have react-router-dom ins
 
 const SecondHeader = ({ socialIcons2, mainTitle }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); 
+  const menuRef = useRef(null);
   const socialIcons = [lkdnicon, fbicon, twittericon];
   const toggleMenu = () => {
     setMenuOpen(prevState => !prevState);
   };
 
 
-    // Close the menu if clicked outside
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (menuRef.current && !menuRef.current.contains(event.target)) {
-          setMenuOpen(false); // Close the menu if clicked outside
-        }
-      };
-  
-      // Add event listener
-      document.addEventListener('mousedown', handleClickOutside);
-  
-      // Cleanup event listener
-      return () => {
-        document.removeEventListener('mousedown', handleClickOutside);
-      };
-    }, [menuRef]);
-  
+  // Close the menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false); // Close the menu if clicked outside
+      }
+    };
+
+    // Add event listener
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup event listener
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
-    <header className="bg-gray-800 py-4 text-white" style={{ backgroundImage: `url(${img1})` }}>
+    <header className="bg-[#212138]   py-4 text-white" style={{ backgroundImage: `url(${img1})`,
+      backgroundSize:"cover",
+      backgroundPosition:"center"
+     }}>
       <div className="flex justify-end pt-4">
         <div className="md:flex items-center pr-4 ">
           <div className="flex space-x-4 xs:hidden ">
@@ -56,6 +60,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
             </div>
           </div>
           <div className="flex items-center justify-end pt-8">
+
             <img
               src={menuicon}
               alt="Menu Icon"
@@ -70,12 +75,12 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
           <div className="flex justify-between pt-4 xs:p-2 px-2 lg:px-24 lg:py-12">
             <div>
               <Link to="/">
-              <img
-                src={RKL2}
-                alt="Logo"
-                className="w-48 sm:w-48 md:w-72 lg:w-72 xl:w-72"
+                <img
+                  src={RKL2}
+                  alt="Logo"
+                  className="w-48 sm:w-48 md:w-72 lg:w-72 xl:w-72"
                 />
-                </Link>
+              </Link>
             </div>
             <div>
               <div className="md:flex">
@@ -97,13 +102,14 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
               </div>
               <div className="flex items-center justify-end pt-8">
                 <Link to="/">
-                <img
-                  src={menuicon}
-                  alt="Menu Icon"
-                  className="w-16 h-16 cursor-pointer"
-                  onClick={toggleMenu}
+                  <img
+                    src={menuOpen ? crossIcon : menuicon}
+                    alt={menuOpen ? "Close Icon" : "Menu Icon"}
+                    className="w-16 h-16 cursor-pointer"
+                    onClick={toggleMenu}
+
                   />
-                  </Link>
+                </Link>
               </div>
             </div>
           </div>
@@ -113,7 +119,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 <h1 className="fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap">
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
                 </h1>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Business Law</p>
+                <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C]">
                   <Link to="/Immigration-Law">Immigration Law</Link>
