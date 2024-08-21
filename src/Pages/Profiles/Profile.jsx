@@ -43,9 +43,10 @@ const ProfileCard = () => {
         <span className="">Ava Johnson</span>
       </div>
 
-      <div className="bg-gray-50 grid px-[5.2%] xs:pl-0 grid-cols-2 xs:flex xs:flex-col sm:flex sm:flex-col md:flex md:flex-col sm:p-10">
+      <div className="bg-gray-50 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
-        <div> 
+        <div className='w-full flex md:flex-col xs:flex xs:flex-col sm:flex sm:flex-col '>
+        <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
           <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center  mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
@@ -133,9 +134,11 @@ Mario is well-recognized in his field, having been selected for inclusion to the
             </div>
           </div>
         </div>
+        </div>
+
 
         {/* Contact Form */}
-        <div className="mt-10 px-4">
+        <div className="mt-10 px-4 w-1/2">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
           <form className="grid grid-cols-1  gap-4">
             

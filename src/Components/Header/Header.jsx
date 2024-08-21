@@ -51,9 +51,9 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
         backgroundImage: `url(${backgroundImg})`,
       }}
     >
-      <div className='absolute pl-[5.2%] top-[20%]'>
+      <div className='absolute pl-[5.2%] xs:mt-4 top-[20%]'>
           <Link to="/">
-          <img src={logo} alt="Logo" className="w-[365px] h-[175px]" />
+          <img src={logo} alt="Logo" className="w-[365px] xs:w-[250px] xs:-[250px]  h-[175px]" />
           </Link>
         </div>
       <div className="flex px-[5.2%] overflow-x-hidden justify-end   p-8 ">

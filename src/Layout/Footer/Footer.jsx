@@ -20,7 +20,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
         <div className=" flex flex-col text-center items-center ">
           <img src={RKL} alt="RKL Icon" className="mb-4" />
          
-          <p className="text-[18px] text-start lg:text-[20px] fgt-ff-light text-white mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
+          <p className="text-[18px] text-center lg:text-[20px] fgt-ff-light text-white mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
           <div className="flex justify-center ">
           <img src={insta} alt="Instagram"className="mr-4" />
