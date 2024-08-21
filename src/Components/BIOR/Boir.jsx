@@ -184,7 +184,7 @@ const Boir = () => {
 
       <div className="bg-white flex flex-row pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
-        <div className=' w-[70%]'>
+        <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center">
   <h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
 <span>

@@ -117,7 +117,7 @@ const Content = () => {
   return (
     <div className=" ">
       <div className="flex w-full xs:flex sm:flex-col md:flex-col xs:flex-col  px-[5.2%]     gap-4">
-        <div className="py-4 w-[64%] sm:w-[100%] md:w-[100%]">
+        <div className="py-4 w-[64%] xs:w-full sm:w-[100%] md:w-[100%]">
           <SectionHeader iconSrc={icon} title="IMMIGRATION LAW" />
           <Paragraph text={"Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. <br /> We  are dedicated to preserving your financial and personal  well being as you navigate the many  options for your <br /> new beginning."} className="pt-5" />
           <Paragraph text={"With a combined over 150 years of experience in all facets of Washington divorce and family restructuring, <br/> we are here to help you choose the best path forward. Whether you want to proceed with traditional divorce <br/> litigation, mediation, or collaborative divorce, we have many years of success representing clients through <br/> legal separations, committed intimate relationships, child custody, child support and parenting plans, as well <br/> as prenuptial and postnuptial agreements."} className="pt-4" />
