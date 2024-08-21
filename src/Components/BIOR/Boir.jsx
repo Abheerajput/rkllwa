@@ -372,8 +372,8 @@ Beneficial Ownership information refers to identifying information about the ind
         </div>
 
         {/* Sidebar */}
-        <div className="flex w-[30%] xs:w-full sm:w-full md:w-full md:mb-4 justify-end md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 md:mx-0 md:ml-3  pr-0">
-          <div className="mt-6 md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
+        <div className="flex xs:w-full md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
+        <div className="mt-6 sm:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  ">
               <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] pt-9 mb-4"> Latest Posts</h3>
