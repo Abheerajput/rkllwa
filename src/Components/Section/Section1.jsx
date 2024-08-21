@@ -6,14 +6,14 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
   return (
     <>
       <div
-        className=""
+        className=" xs:px-[5.2%]"
         style={{
           backgroundImage: `url(${backgroundImg})`,
           backgroundSize: 'cover',
           backgroundColor: '#403C5C'
         }}
       >
-        <div className="flex xs:flex-col sm:flex-col md:flex-col  flex-row justify-between py-16 px-[3%] ">
+        <div className="flex xs:flex-col sm:flex-col md:flex-col  flex-row justify-between py-16  xs:px-0 px-[3%] ">
           <div className="w-1/2  xl:pl-[2%] sm:w-full md:w-full xs:w-full">
             <h1 className="text-[40px] lg:text-[50px] xs:text-[35px] fgt-ff-medium text-white leading-tight">
               {title}

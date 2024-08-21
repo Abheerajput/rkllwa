@@ -76,8 +76,8 @@ const Business = () => {
         <div className="flex col-span-1 justify-end  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 xs:ml-0  md:mx-0 md:ml-3  pr-0">
           <div className="mt-6 w-full  md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8   ">
-              <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>
-              <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] pt-9 mb-4 xs:text-[30px]"> Latest Posts</h3>
+              <p className='flex justify-center xs:pt-2 pt-6'><img src={icon2} alt="" /></p>
+              <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] xs:pt-3 pt-9 mb-4 xs:text-[30px]"> Latest Posts</h3>
               <div className="text-[#212121]">
                 <p className=' flex gap-4 items-start flex-col py-5 text-[20px]  fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
                  <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D]  items-center gap-3'>Read More <FaArrowRightLong /> </p>

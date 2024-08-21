@@ -45,8 +45,8 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
 
 const Founders = () => {
   return (
-    <div className="p-4 bg-[#FFEDD7] justify-center xs:pb-4 pb-24 xs:mt-4 mt-12">
-      <h2 className="text-[50px] xs:text-[40px] fgt-ff-medium  flex justify-center xs:mt-4 mt-16">Meet the Founders</h2>
+    <div className="p-4 bg-[#FFEDD7] justify-center xs:pb-4 pb-24 xs:mt-0 mt-12">
+      <h2 className="text-[50px] xs:text-[40px] fgt-ff-medium  flex justify-center xs:mt-0 mt-16">Meet the Founders</h2>
       {founders.map((founder, index) => (
         <FounderCard
           key={index}

@@ -187,7 +187,7 @@ className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max
 
       )}
 
-      <div className="flex justify-end sm:mt-12 xs:hidden px-8 pr-28 mt-4">
+      <div className="flex justify-end sm:mt-20 xs:hidden px-8 pr-28 mt-4">
         <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
           <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
             {mainTitle}

@@ -53,7 +53,7 @@ const ProfileCard2 = () => {
             />
             <div className="flex-1">
               <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Taylor Morgan </h1>
-              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4 text-[27px]">Principal</h2>
+              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4 xs:text-[27px]">Principal</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
@@ -75,16 +75,16 @@ const ProfileCard2 = () => {
           </div>
 
           {/* Description */}
-          <p className="text-[#212121] text-[20px] fgt-ff-light  px-4 mt-6">
+          <p className="text-[#212121] text-[20px] fgt-ff-light   mt-6">
           Taylor Morgan  is a business lawyer who represents clients in the adversarial context of business disputes  and <br /> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions <br /> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who <br />need a highly skilled business attorney to creatively and aggressively represent them in their business <br /> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion,<br /> accounting, wage claims, and unjust enrichment.
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
-          <p className="text-[#212121] text-[20px] fgt-ff-light px-4 mt-4">
+          <p className="text-[#212121] text-[20px] fgt-ff-light  mt-4">
      
 Mario is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>
 
-          <div className="md:w-2/3 px-4 pt-6 py-4">
+          <div className="md:w-2/3  pt-6 py-4">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Practice Focus</h3>
             <ul className="list-disc ml-5 text-[20px] fgt-ff-light text-[#212121] space-y-1">
               <li>Business Dissolution Lawyer</li>
@@ -105,7 +105,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
         <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sm:flex sm:flex-col sm:items-center sm:pl-0 ">
-              <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
+              <h3 className="text-[35px] fgt-ff-normal text-[#02131D] xs:justify-center xs:flex pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
                 <li className='text-[24px] fgt-ff-normal flex gap-4 items-center py-5'><img src={icon1} alt="" /> Business Law</li>
                 <li className='text-[24px] fgt-ff-normal flex gap-4 items-center py-5'><img src={icon2} alt="" />BOIR Compliance</li>
