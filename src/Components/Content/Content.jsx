@@ -66,8 +66,8 @@ const Post = ({ text }) => (
 );
 
 const Sidebar = ({ posts }) => (
-  <div className="flex justify-center md:w-[70%]   xs:justify-center sm:mx-4 sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
-    <div className="w-full   px-4  xs:mx-4 mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
+  <div className="flex justify-center sm:w-full  xs:w-full  xs:justify-center  sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
+    <div className="w-full   px-4  mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
       <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center pt-14">
         <img src={icon2} alt="Posts Icon" />
         Latest Posts

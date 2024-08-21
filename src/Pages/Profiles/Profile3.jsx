@@ -43,7 +43,7 @@ const ProfileCard3 = () => {
 
       <div className="bg-gray-50 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:flex md:flex-col sm:p-10">  
               {/* Profile Section */}
-              <div className='w-full flex md:felx-col xs:flex xs:flex-col sm:flex sm:flex-col '>
+              <div className='w-full flex  xs:flex xs:flex-col sm:flex sm:flex-col '>
               <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
           <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
             <img 
@@ -101,8 +101,8 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         </div>
 
         {/* Sidebar */}
-        <div className="flex xs:w-full md:w-full sm:px-4 md:px-4 sm:w-full w-[30%] justify-end md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
-          <div className="mt-6 sm:w-full md:mt-0 w-4/5">
+        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
+        <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sm:flex sm:flex-col sm:items-center sm:pl-0">
               <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
