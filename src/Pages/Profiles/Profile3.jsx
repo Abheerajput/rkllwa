@@ -45,7 +45,7 @@ const ProfileCard3 = () => {
               {/* Profile Section */}
               <div className='w-full flex  xs:flex xs:flex-col sm:flex sm:flex-col '>
               <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
-          <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
+          <div className="flex xs:flex-col md:flex-col xs:items-start  md:items-center px-4 mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
