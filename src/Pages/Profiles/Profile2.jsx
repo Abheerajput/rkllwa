@@ -35,7 +35,7 @@ const ProfileCard2 = () => {
         mainTitle="Taylor Morgan"
       />
 
-      <div className="text-[26px] fgt-ff-normal px-[5.2%] bg-[#F7F6F1] py-4">
+<div className="text-[26px] xs:text-[20px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link  to="/"className="hover:underline">Home</Link> {'>'} 
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'} 
         <span className="">Taylor Morgan </span>
@@ -45,15 +45,15 @@ const ProfileCard2 = () => {
         {/* Profile Section */}
         <div className='w-full flex  xs:flex xs:flex-col sm:flex sm:flex-col '>
         <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
-          <div className="flex xs:flex-col md:flex-col xs:items-start  md:items-center  mt-[24px] gap-12 items-start ">
+          <div className="flex xs:flex-col md:flex-col xs:items-start xs:gap-0  md:items-center  mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] fgt-ff-medium mb-1">Taylor Morgan </h1>
-              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Principal</h2>
+              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Taylor Morgan </h1>
+              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4 text-[27px]">Principal</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
@@ -114,7 +114,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
             </div>
 
             {/* Testimonials Slider */}
-            <div className="bg-[#F7F6F1] p-4 rounded-md mt-6 pb-8">
+            <div className="bg-[#F7F6F1] p-4 rounded-md xs:my-12 mt-6 pb-8">
               <h3 className="text-[35px] fgt-ff-normal justify-center flex font-bold text-[#02131D] mb-4">Testimonials</h3>
               <Slider {...testimonialSettings}>
                 <div className="text-[#212121] text-[20px] fgt-ff-light">

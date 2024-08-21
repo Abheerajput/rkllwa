@@ -176,7 +176,7 @@ const Boir = () => {
       />
 
 
-      <div className="text-[26px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
+      <div className="text-[26px] xs:text-[20px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'}
         <span className="">Ava Johnson</span>
@@ -186,7 +186,7 @@ const Boir = () => {
         {/* Profile Section */}
         <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col xs:gap-3 gap-16 sm:items-start md:items-start xs:items-start items-center">
-  <h1 className='text-[50px]  fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start flex xs:flex-col xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
+  <div className='text-[50px] xs:text-[35px] fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start xs:flex-col flex xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[61px]" /> BOIR Compliance</div>
 <span >
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
@@ -270,7 +270,7 @@ Business owners and senior officers are responsible for accurate and timely repo
 <p className='text-[20px] fgt-ff-light text-[#212121]'>
 Beneficial Ownership information refers to identifying information about the individuals who directly or indirectly own or control a company.  Every Reporting Company that is not exempt must file a BOI Report that discloses five specific items of Personal Identifiable Information (PII) for each of its Beneficial Owners (BO), including a copy of a valid, government-issued ID (such a driver’s license or passport) verifying the BO’s identity.  Entities formed (or registered to do business) on or after January 1, 2024, must also identify and provide the same five items of PII for the entity’s Company Applicant. An individual is a Company Applicant if the individual directly files the document that creates (or registers) the Reporting Company and/or if the individual is primarily responsible for directing or controlling such filing if more than one individual is involved in the filing. Each Reporting Company will have to be analyzed on a case-by-case basis to determine who the Company Applicant(s) is/are for accurate reporting.</p>
 </div>
-<div className='w-full text-center  xs:py-4 sm:py-4' >
+<div className='w-full text-center  xs:py-6 sm:py-4' >
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg  xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </div>
@@ -342,7 +342,7 @@ Beneficial Ownership information refers to identifying information about the ind
 </div>
 
 <div className="bg-white">
-            <h2 id="faqs" className="text-[53px] text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
+            <h2 id="faqs" className="text-[53px] xs:text-[35px] text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
             <div className="mt-8 w-full sm:px-8 xs:px-4 mx-auto">
                 {faqs.map((faq, index) => (
                     <div key={index} className=" my-6">

@@ -34,11 +34,11 @@ const Founderscreen = () => {
   </div>
   <div className="py-4 bg-[#F7F6F1]">
 
-      <p className='fgt-ff-normal px-[5.2%] text-[26.5px] flex items-center gap-3'> 
+      <p className='fgt-ff-normal px-[5.2%] xs:text-[20px] text-[26.5px] flex items-center gap-3'> 
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>
-<div className='flex justify-evenly py-12 xs:gap-8 xs:px-[5.2%]  xs:flex-col xs:items-center md:items-center md:flex-col '>
+<div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%]  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
     <p className='xs:w-full '>
         <Link to="/profile/Ava Johnson">
         <img src={founder1} alt="" className='w-full' />

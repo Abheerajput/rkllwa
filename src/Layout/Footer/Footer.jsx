@@ -39,7 +39,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
 };
 
 const App = () => {
-  const description = "    RKL LAW2625 <br/> Townsgate Road Suite 330 <br/>Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
+  const description = "    RKL LAW <br/>2625  Townsgate Road Suite 330 <br/>Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
 const title = "RKL Law, A Professional Corporation.  All Rights Reserved."
   return (
     <Footer

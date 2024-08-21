@@ -23,9 +23,20 @@ import '../../Style/style.css';
 const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null); 
+ 
+  const [isAnimating, setIsAnimating] = useState(false);
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
   };
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -77,15 +88,19 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
             </span>
 
           </div>
-          <div className="flex items-center justify-end pt-8">
-            <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" onClick={toggleMenu} />
+          <div className="flex items-center justify-end xs:pt-0 pt-8">
+            <img src={menuIcon} alt="Menu Icon"  className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
           </div>
         </div>
       </div>
 
       {menuOpen && (
 
-<div ref={menuRef} className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg ${menuOpen ? 'animate-slide-in' : 'animate-slide-out'}`}>
+<div
+ref={menuRef}
+className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
+  ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
+>
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <img
@@ -119,7 +134,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                 <img
                     src={menuOpen ? crossIcon : menuicon}
                     alt={menuOpen ? "Close Icon" : "Menu Icon"}
-                    className="w-16 h-16 cursor-pointer"
+                    className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer"
                     onClick={toggleMenu}
 
                   />

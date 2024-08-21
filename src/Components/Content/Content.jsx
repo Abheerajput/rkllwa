@@ -6,9 +6,9 @@ import icon4 from '../../assets/icons/law3icon.svg';
 
 const SectionHeader = ({ iconSrc, title, className, text }) => (
   <>
-    <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 flex ${className}`}>
-      <img src={iconSrc} alt="" className='xs:w-48' />
-      <span>{title}</span>
+    <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 xs:gap-2 flex ${className}`}>
+      <img src={iconSrc} alt="" className='xs:w-[70px]' />
+      <span className='xs:text-[35px]'>{title}</span>
       {text && <Paragraph text={text} className="pt-5" />}
     </h2>
   </>
@@ -22,7 +22,7 @@ const Paragraph = ({ text, className }) => (
 
 const ListSection = ({ title, items }) => (
   <>
-    <h1 className="py-2 text-[30px] fgt-ff-medium">{title}</h1>
+    <h1 className="py-2 text-[30px] xs:text-[24px] fgt-ff-medium">{title}</h1>
     <ul className="list-disc pt-4 text-[20px] fgt-ff-light pl-8">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
@@ -68,7 +68,7 @@ const Post = ({ text }) => (
 const Sidebar = ({ posts }) => (
   <div className="flex justify-center sm:w-full  xs:w-full  xs:justify-center  sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
     <div className="w-full   px-4  mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
-      <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center pt-14">
+      <h3 className="text-[35px] text-[#02131D] fgt-ff-normal font-bold flex flex-col items-center xs:pt-3 pt-14">
         <img src={icon2} alt="Posts Icon" />
         Latest Posts
       </h3>
@@ -132,7 +132,7 @@ const Content = () => {
           </div>
           <Paragraph text="We can help you determine which assets can be included in the divorce process and what they are worth..." className="py-2" />
           <ListSection title="PROPERTY DIVISION IN DIVORCE" items={propertyDivisionItems} />
-          <Paragraph text="Need Help? Contact Us" className="text-[26px] fgt-ff-normal pt-4 pb-2" />
+          <Paragraph text="Need Help? Contact Us" className="text-[26px] xs:text-[20px] fgt-ff-normal pt-4 pb-2" />
           <Paragraph text="If you are looking for a trusted divorce attorney, we are here to help..." className="py-2" />
           <ContactForm />
         </div>

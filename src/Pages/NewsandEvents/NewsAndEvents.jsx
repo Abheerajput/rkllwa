@@ -17,7 +17,7 @@
 
                 <p className="text[20px] fgt-ff-light text-[#313131] mb-2" dangerouslySetInnerHTML={{ __html: item.description }} />
               </p>
-              <a href={item.link} className="text-[24px] fgt-ff-medium">Read More →</a>
+              <a href={item.link} className="text-[24px] xs:text-[20px] fgt-ff-medium">Read More →</a>
             </div>
           ))}
         </div>

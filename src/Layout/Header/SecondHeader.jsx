@@ -17,23 +17,32 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const socialIcons = [lkdnicon, fbicon, twittericon];
+
+  
+  const [isAnimating, setIsAnimating] = useState(false);
   const toggleMenu = () => {
-    setMenuOpen(prevState => !prevState);
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
   };
 
 
-  // Close the menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setMenuOpen(false); // Close the menu if clicked outside
+        setMenuOpen(false); 
       }
     };
 
-    // Add event listener
+   
     document.addEventListener('mousedown', handleClickOutside);
 
-    // Cleanup event listener
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -45,7 +54,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
       backgroundPosition:"center"
      }}>
       <div className="flex justify-end px-[5.2%] pt-4">
-        <div className="md:flex items-center  ">
+        <div className=" items-center sm:items-end md:items-end md:flex  md:flex-col sm:flex sm:flex-col ">
           <div className="flex space-x-4 xs:hidden ">
             <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
               Login
@@ -59,19 +68,23 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
               ))}
             </div>
           </div>
-          <div className="flex items-center justify-end pt-8">
+          <div className="flex items-center justify-end xs:pt-0 pt-8">
 
             <img
               src={menuicon}
               alt="Menu Icon"
-              className="w-16 h-16 cursor-pointer"
+              className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer"
               onClick={toggleMenu}
             />
           </div>
         </div>
       </div>
       {menuOpen && (
-          <div ref={menuRef} className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg ${menuOpen ? 'animate-slide-in' : 'animate-slide-out'}`}>
+        <div
+        ref={menuRef}
+        className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
+          ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
+        >
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <Link to="/">
@@ -150,7 +163,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
           </div>
         </div>
       )}
-      <h1 className="text-[50px] xs:text-[35px] pl-[5.2%] fgt-ff-medium pb-8 ">{mainTitle}</h1>
+      <h1 className="text-[50px] xs:text-[35px] pl-[5.2%] fgt-ff-medium pb-8  ">{mainTitle}</h1>
     </header>
   );
 };

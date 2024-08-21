@@ -29,10 +29,10 @@ const founders = [
 ];
 
 const FounderCard = ({ imgSrc, name, position, description }) => (
-  <div className='flex bg-[#403C5C] mr-24  xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col  ms-auto  relative mt-14'>
+  <div className='flex bg-[#403C5C] mr-24  xs:mt-4 xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col  ms-auto  relative mt-14'>
     <img  src={imgSrc} alt={name} className=' xs:relative xs:left-0 md:relative md:left-0 absolute left-[-200px]'style={{transform:"translate(0%,0%) !important"}} />
  
-    <div className='w-full xs:ps-4 xs:px-4 ps-[150px] px-12'>
+    <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-70px] ps-[150px] px-12'>
       <p className='text-white pt-10'>
         <span className='text-[26px] fgt-ff-semibold text-[#FFEDD7]'>{name}</span><br />
         {position}
@@ -45,8 +45,8 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
 
 const Founders = () => {
   return (
-    <div className="p-4 bg-[#FFEDD7] justify-center pb-24 mt-12">
-      <h2 className="text-[50px] fgt-ff-medium  flex justify-center mt-16">Meet the Founders</h2>
+    <div className="p-4 bg-[#FFEDD7] justify-center xs:pb-4 pb-24 xs:mt-4 mt-12">
+      <h2 className="text-[50px] xs:text-[40px] fgt-ff-medium  flex justify-center xs:mt-4 mt-16">Meet the Founders</h2>
       {founders.map((founder, index) => (
         <FounderCard
           key={index}

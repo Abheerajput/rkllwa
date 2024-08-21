@@ -37,7 +37,7 @@ const ProfileCard = () => {
       />
 
 
-      <div className="text-[26px] fgt-ff-normal px-[5.2%] bg-[#F7F6F1] py-4">
+      <div className="text-[26px] xs:text-[20px] fgt-ff-normal px-[5.2%] bg-[#F7F6F1] py-4">
         <Link  to="/"className="hover:underline">Home</Link> {'>'} 
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'} 
         <span className="">Ava Johnson</span>
@@ -47,14 +47,14 @@ const ProfileCard = () => {
         {/* Profile Section */}
         <div className='w-full flex xs:flex xs:flex-col sm:flex sm:flex-col '>
         <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
-          <div className="flex xs:flex-col md:flex-col xs:items-start md:items-center  mt-[24px] gap-12 items-start ">
+          <div className="flex xs:flex-col md:flex-col xs:items-start md:items-center xs:gap-0  mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] fgt-ff-medium mb-1">Ava Johnson</h1>
+              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Ava Johnson</h1>
               <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Principal</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
@@ -76,11 +76,11 @@ const ProfileCard = () => {
           </div>
 
           {/* Description */}
-          <p className="text-[#212121] text-[20px]  fgt-ff-light  px-4 mt-6">
+          <p className="text-[#212121] text-[20px]  fgt-ff-light   mt-6">
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
-          <p className="text-[#212121] text-[20px]  fgt-ff-light px-4 mt-4">
+          <p className="text-[#212121] text-[20px]  fgt-ff-light  mt-4">
      
 Mario is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>
@@ -106,17 +106,17 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
-              <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
+              <h3 className="text-[35px] fgt-ff-normal text-[#02131D] xs:justify-center xs:flex xs:pt-6 xs:text-[28px] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
-                <li className='text-[24px] fgt-ff-normal  flex gap-4 items-center py-5'><img src={icon1} alt="" /> Business Law</li>
-                <li className='text-[24px] fgt-ff-normal   flex gap-4 items-center py-5'><img src={icon2} alt="" />BOIR Compliance</li>
-                <li className='text-[24px] fgt-ff-normal   flex gap-4 items-center py-5'><img src={icon3} alt="" />Immigration Law</li>
+                <li className='text-[24px] fgt-ff-normal xs:text-[20px]  flex gap-4 items-center py-5'><img src={icon1} alt="" /> Business Law</li>
+                <li className='text-[24px] fgt-ff-normal xs:text-[20px]  flex gap-4 items-center py-5'><img src={icon2} alt="" />BOIR Compliance</li>
+                <li className='text-[24px] fgt-ff-normal xs:text-[20px]  flex gap-4 items-center py-5'><img src={icon3} alt="" />Immigration Law</li>
               </ul>
             </div>
 
             {/* Testimonials Slider */}
-            <div className="bg-[#F7F6F1] p-4 rounded-md mt-6 pb-8">
-              <h3 className="text-[35px] fgt-ff-normal justify-center flex font-bold text-[#02131D] mb-4">Testimonials</h3>
+            <div className="bg-[#F7F6F1] p-4 rounded-md xs:my-12 mt-6 pb-8">
+              <h3 className="text-[35px] fgt-ff-normal justify-center xs:text-[28px] flex font-bold text-[#02131D] mb-4">Testimonials</h3>
               <Slider {...testimonialSettings}>
                 <div className="text-[#212121] text-[20px] fgt-ff-light">
                   “Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- the very best combination! He's an invaluable asset to the team. And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.

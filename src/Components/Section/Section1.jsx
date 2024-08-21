@@ -27,7 +27,7 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
             </button>
           </div>
           <div className="w-1/2 sm:w-full md:w-full  xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">
-            <img src={sideImg} alt="Group" className="max-w-full h-auto" />
+            <img src={sideImg} alt="Group" className="max-w-full  h-auto" />
           </div>
         </div>
       </div>
