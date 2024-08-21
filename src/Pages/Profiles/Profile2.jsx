@@ -137,7 +137,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
        
 
         {/* Contact Form */}
-        <div className="mt-10 px-4">
+        <div className="mt-10 w-1/2 px-4">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
           <form className="grid grid-cols-1  gap-4">
             
