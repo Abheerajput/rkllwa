@@ -149,7 +149,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
           </div>
         </div>
       )}
-      <h1 className="text-[50px] fgt-ff-medium pb-8 pl-4">{mainTitle}</h1>
+      <h1 className="text-[50px] xs:text-[35px] fgt-ff-medium pb-8 pl-4">{mainTitle}</h1>
     </header>
   );
 };

@@ -43,7 +43,7 @@ const ProfileCard = () => {
         <span className="">Ava Johnson</span>
       </div>
 
-      <div className="bg-gray-50 grid pl-12 grid-cols-2 xs:flex xs:flex-col sm:flex sm:flex-col md:flex md:flex-col sm:p-10">
+      <div className="bg-gray-50 grid pl-12 xs:pl-0 grid-cols-2 xs:flex xs:flex-col sm:flex sm:flex-col md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
         <div> 
           <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
@@ -75,25 +75,25 @@ const ProfileCard = () => {
           </div>
 
           {/* Description */}
-          <p className="text-[#212121] text-[20px] fgt-ff-light  px-4 mt-6">
+          <p className="text-[#212121] text-[20px]  fgt-ff-light  px-4 mt-6">
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
-          <p className="text-[#212121] text-[20px] fgt-ff-light px-4 mt-4">
+          <p className="text-[#212121] text-[20px]  fgt-ff-light px-4 mt-4">
      
 Mario is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>
 
           <div className="md:w-2/3 px-4 pt-6 py-4">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Practice Focus</h3>
-            <ul className="list-disc ml-5 text-[20px] fgt-ff-light text-[#212121] space-y-1">
+            <h3 className="text-[25px] xs:text-[18px] font-bold text-gray-800 mb-4">Practice Focus</h3>
+            <ul className="list-disc ml-5 text-[20px]  fgt-ff-light text-[#212121] space-y-1">
               <li>Business Dissolution Lawyer</li>
               <li>Business Litigation Lawyer</li>
               <li>Business Torts Lawyer</li>
               <li>Contract Dispute Lawyer</li>
             </ul>
-            <h3 className="text-xl font-bold text-gray-800 mt-6 mb-4">Education</h3>
-            <ul className="list-disc text-[20px] fgt-ff-light text-[#212121] ml-5 space-y-1">
+            <h3 className="text-[25px] xs:text-[18px] font-bold text-gray-800 mt-6 mb-4">Education</h3>
+            <ul className="list-disc text-[20px]  fgt-ff-light text-[#212121] ml-5 space-y-1">
               <li>Notre Dame Law School, 2001 (Juris Doctor)</li>
               <li>Seattle University, 1997 (Bachelor of Arts in Business Administration, Economics, and Humanities)</li>
               <li>Seattle Preparatory School, 1993</li>
@@ -103,7 +103,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
 
         {/* Sidebar */}
         <div className="flex justify-end md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 sm:mr-0 mr-20 pr-0">
-          <div className="mt-6 md:mt-0 sm:w-full w-1/2">
+          <div className="mt-6 md:mt-0 xs:w-full xs:mx-4 sm:w-full w-1/2">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  sm:flex sm:flex-col sm:items-center sm:pl-0">
               <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
