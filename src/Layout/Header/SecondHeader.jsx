@@ -71,7 +71,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
         </div>
       </div>
       {menuOpen && (
-         <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
+          <div ref={menuRef} className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg ${menuOpen ? 'animate-slide-in' : 'animate-slide-out'}`}>
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <Link to="/">
@@ -100,7 +100,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                   </div>
                 </span>
               </div>
-              <div className="flex items-center justify-end pt-8">
+              <div className="flex items-center justify-end xs:pt-0 pt-8">
                 <Link to="/">
                   <img
                     src={menuOpen ? crossIcon : menuicon}
@@ -108,7 +108,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                     className="w-16 h-16 cursor-pointer"
                     onClick={toggleMenu}
 
-                  />
+                  /> 
                 </Link>
               </div>
             </div>
@@ -127,7 +127,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 </p>
               </span>
               <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap">
+                <h1 className="fgt-ff-medium text-[27px] flex xs:pt-4 gap-[10px] flex-wrap">
                   <img src={aboutus} alt="About Us" /> About Us
                 </h1>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
@@ -138,7 +138,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 <p className="text-[20px] fgt-ff-light text-[#403C5C]">Testimonials</p>
               </span>
               <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap">
+                <h1 className="fgt-ff-medium text-[27px] xs:pt-4 flex gap-[10px] flex-wrap">
                   <img src={stay} alt="Stay Informed" /> Stay Informed
                 </h1>
                 <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>

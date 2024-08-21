@@ -185,9 +185,9 @@ const Boir = () => {
       <div className="bg-white flex flex-row pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
         <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
-<div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center">
-  <h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
-<span>
+<div className="flex md:flex-col sm:flex-col xs:flex-col xs:gap-3 gap-16 sm:items-start md:items-start xs:items-start items-center">
+  <h1 className='text-[50px]  fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start flex xs:flex-col xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
+<span >
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </span>
@@ -246,7 +246,7 @@ The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt r
 </p>
 
 <p className='w-full text-center flex flex-col gap-4 items-center justify-center py-6'>
-  <img src={img1} alt=""  className='w-[70%]'/>
+  <img src={img1} alt=""  className='xs:w-[100%]'/>
   <span>
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
@@ -373,7 +373,7 @@ Beneficial Ownership information refers to identifying information about the ind
 
         {/* Sidebar */}
         <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
-        <div className="mt-6 sm:w-full md:mt-0 w-4/5">
+        <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  ">
               <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] pt-9 mb-4"> Latest Posts</h3>

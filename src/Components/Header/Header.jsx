@@ -85,7 +85,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
       {menuOpen && (
 
-        <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
+<div ref={menuRef} className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg ${menuOpen ? 'animate-slide-in' : 'animate-slide-out'}`}>
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <img
@@ -114,7 +114,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                 </span>
 
               </div>
-              <div className="flex items-center justify-end pt-8">
+              <div className="flex items-center justify-end  xs:pt-0 pt-8">
               
                 <img
                     src={menuOpen ? crossIcon : menuicon}
@@ -140,7 +140,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
               </span>
 
               <span className='flex flex-col gap-2 text-black'>
-                <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap '><img src={aboutus} alt="" /> About Us
+                <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap xs:pt-4'><img src={aboutus} alt="" /> About Us
                 </h1>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Contact Us</p>
 
@@ -152,7 +152,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
               </span>
 
               <span className='flex flex-col gap-2 text-black'>
-                <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={stay} alt="" /> Stay Informed</h1>
+                <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap xs:pt-4'><img src={stay} alt="" /> Stay Informed</h1>
                 <p className='text-[20px] fgt-ff-light text-[#403C5C] pt-2'>Blogs</p>
 
 

@@ -38,22 +38,22 @@ const Founderscreen = () => {
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>
-<div className='flex justify-evenly py-12  xs:flex-col xs:items-center md:items-center md:flex-col '>
-    <p>
+<div className='flex justify-evenly py-12 xs:gap-8 xs:px-[5.2%]  xs:flex-col xs:items-center md:items-center md:flex-col '>
+    <p className='xs:w-full '>
         <Link to="/profile/Ava Johnson">
-        <img src={founder1} alt="" />
+        <img src={founder1} alt="" className='w-full' />
         <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Ava Johnson</span> <br /> Principal</h3>
         </Link>
     </p>
-    <p>
+    <p className='xs:w-full '>
       <Link to="/profile/Taylor Morgan">
-        <img src={founder2} alt="" />
+        <img src={founder2} alt="" className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Taylor Morgan </span> <br />Principal</h3>
         </Link>
     </p>
-    <p>
+    <p className='xs:w-full '>
       <Link to="/profile/Jordan Taylor">
-        <img src={founder3} alt="" />
+        <img src={founder3} alt=""  className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Jordan Taylor </span><br /> Attorney</h3>
         </Link>
     </p>

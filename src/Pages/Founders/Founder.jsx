@@ -29,7 +29,7 @@ const founders = [
 ];
 
 const FounderCard = ({ imgSrc, name, position, description }) => (
-  <div className='flex bg-[#403C5C] mr-24  xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col sm:flex-col  ms-auto  relative mt-14'>
+  <div className='flex bg-[#403C5C] mr-24  xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col  ms-auto  relative mt-14'>
     <img  src={imgSrc} alt={name} className=' xs:relative xs:left-0 md:relative md:left-0 absolute left-[-200px]'style={{transform:"translate(0%,0%) !important"}} />
  
     <div className='w-full xs:ps-4 xs:px-4 ps-[150px] px-12'>
