@@ -35,16 +35,17 @@ const ProfileCard2 = () => {
         mainTitle="Taylor Morgan"
       />
 
-      <div className="text-sm pl-11 bg-[#F7F6F1] py-4">
+      <div className="text-[26px] fgt-ff-normal px-[5.2%] bg-[#F7F6F1] py-4">
         <Link  to="/"className="hover:underline">Home</Link> {'>'} 
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'} 
         <span className="">Taylor Morgan </span>
       </div>
 
-      <div className="bg-gray-50 grid pl-12 grid-cols-2 xs:flex xs:flex-col sm:flex sm:flex-col  md:flex md:flex-col sm:p-10">
+      <div className="bg-gray-50 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:flex md:flex-col sm:p-10">
         {/* Profile Section */}
-        <div> 
-          <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center px-4 mt-[24px] gap-12 items-start ">
+        <div className='w-full flex md:flex-col xs:flex xs:flex-col sm:flex sm:flex-col '>
+        <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
+          <div className="flex xs:flex-col md:flex-col xs:items-center md:items-center  mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
@@ -57,6 +58,7 @@ const ProfileCard2 = () => {
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
                   <Link to="/" className="">(206)-654-2429</Link>
+
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
@@ -74,7 +76,7 @@ const ProfileCard2 = () => {
 
           {/* Description */}
           <p className="text-[#212121] text-[20px] fgt-ff-light  px-4 mt-6">
-          Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
+          Taylor Morgan  is a business lawyer who represents clients in the adversarial context of business disputes  and <br /> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions <br /> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who <br />need a highly skilled business attorney to creatively and aggressively represent them in their business <br /> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion,<br /> accounting, wage claims, and unjust enrichment.
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
           <p className="text-[#212121] text-[20px] fgt-ff-light px-4 mt-4">
@@ -100,8 +102,8 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         </div>
 
         {/* Sidebar */}
-        <div className="flex justify-end md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 mr-20 pr-0">
-          <div className="mt-6 sm:w-full md:mt-0 w-1/2">
+        <div className="flex xs:w-full md:w-full sm:w-full w-[30%] justify-end md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
+          <div className="mt-6 sm:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sm:flex sm:flex-col sm:items-center sm:pl-0 ">
               <h3 className="text-[35px] fgt-ff-normal text-[#02131D] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
@@ -131,6 +133,8 @@ Mario is well-recognized in his field, having been selected for inclusion to the
             </div>
           </div>
         </div>
+        </div>
+       
 
         {/* Contact Form */}
         <div className="mt-10 px-4">

@@ -30,39 +30,11 @@ const Founderscreen = () => {
         socialIcons2={socialIcons}
         mainTitle="Our Founders"
       />
-    {/* <header className="bg-gray-800  px-8  p-4 text-white" style={{
-      backgroundImage: `url(${img1})`,
-    }}>
-        <div className='flex justify-end pt-4'>
-          <div className=" md:flex ">
-            <span>
-              <div className="flex space-x-4 xs:hidden">
-                <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
-                  Login
-                </button>
-                <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
-                  Online Payment
-                </button>
-                <div className="flex space-x-3 pt-2">
-              {socialIcons2.map((icon, index) => (
-                <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
-              ))}
-            </div>
-              </div>
-            </span>
-            <div className="flex items-center justify-end pt-8">
-            <img src={menuicon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" />
-          </div>
-          </div>
-        </div>
-
-        <h1 className="text-[50px] fgt-ff-medium pb-8">Our Founders</h1>
-    </header> */}
-
+   
   </div>
-  <div className="p-4 bg-[#F7F6F1]">
+  <div className="py-4 bg-[#F7F6F1]">
 
-      <p className='fgt-ff-normal text-[26.5px] flex items-center gap-3'> 
+      <p className='fgt-ff-normal px-[5.2%] text-[26.5px] flex items-center gap-3'> 
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>

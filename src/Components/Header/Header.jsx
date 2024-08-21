@@ -51,12 +51,13 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
         backgroundImage: `url(${backgroundImg})`,
       }}
     >
-      <div className="flex  overflow-x-hidden justify-between   p-8 ">
-        <div>
+      <div className='absolute pl-[5.2%] top-[20%]'>
           <Link to="/">
-          <img src={logo} alt="Logo" className="" />
+          <img src={logo} alt="Logo" className="w-[365px] h-[175px]" />
           </Link>
         </div>
+      <div className="flex px-[5.2%] overflow-x-hidden justify-end   p-8 ">
+        
         <div>
           <div className=" md:flex ">
             <span>
@@ -85,7 +86,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
       {menuOpen && (
 
         <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
-          <div className="flex justify-between xs:p-2 p-8 px-4 lg:py-12">
+          <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <img
                 src={icon}
@@ -128,8 +129,8 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
            
 
           </div>
-          <div className='w-9/12'>
-            <div className='flex justify-between xs:w-screen xs:px-6  xs:flex-col  w-full  px-8'>
+          <div className='w-9/12 '>
+            <div className='flex justify-between xs:w-screen xs:px-6  xs:flex-col  w-full  pl-[6.9%]'>
 
               <span className='flex flex-col gap-2 text-black'>
                 <h1 className='fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap'><img src={icon1} alt="" />  Practice Areas</h1>
@@ -171,7 +172,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
 
       )}
 
-      <div className="flex justify-end xs:hidden px-8 pr-28 mt-4">
+      <div className="flex justify-end sm:mt-12 xs:hidden px-8 pr-28 mt-4">
         <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
           <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
             {mainTitle}

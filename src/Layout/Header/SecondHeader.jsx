@@ -44,8 +44,8 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
       backgroundSize:"cover",
       backgroundPosition:"center"
      }}>
-      <div className="flex justify-end pt-4">
-        <div className="md:flex items-center pr-4 ">
+      <div className="flex justify-end px-[5.2%] pt-4">
+        <div className="md:flex items-center  ">
           <div className="flex space-x-4 xs:hidden ">
             <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
               Login
@@ -71,8 +71,8 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
         </div>
       </div>
       {menuOpen && (
-        <div ref={menuRef} className="absolute overflow-hidden px-8  top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg">
-          <div className="flex justify-between pt-4 xs:p-2 px-2 lg:px-24 lg:py-12">
+         <div ref={menuRef} className=" absolute  top-0 w-full mt-[56px]  bg-white h-full  max-h-[570px]  xs:max-h-[720px]  shadow-lg ">
+          <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
             <div>
               <Link to="/">
                 <img
@@ -113,9 +113,10 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
               </div>
             </div>
           </div>
-          <div className="w-9/12">
-            <div className="flex justify-between xs:w-screen xs:px-6 xs:flex-col w-full ">
-              <span className="flex flex-col gap-2 pl-4 xs:pl-0 text-black">
+          <div className='w-9/12 '>
+            <div className='flex justify-between xs:w-screen   xs:flex-col  w-full  pl-[6.9%]'>
+
+              <span className="flex flex-col gap-2  xs:pl-0 text-black">
                 <h1 className="fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap">
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
                 </h1>
@@ -149,7 +150,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
           </div>
         </div>
       )}
-      <h1 className="text-[50px] xs:text-[35px] fgt-ff-medium pb-8 pl-4">{mainTitle}</h1>
+      <h1 className="text-[50px] xs:text-[35px] pl-[5.2%] fgt-ff-medium pb-8 ">{mainTitle}</h1>
     </header>
   );
 };

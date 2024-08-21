@@ -21,12 +21,12 @@ const Business = () => {
         socialIcons2={socialIcons2}
         mainTitle="Business Law"
       />
-       <div className="text-[26px] fgt-ff-normal pl-11 bg-[#F7F6F1] py-4">
+       <div className="text-[26px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/founders" className="hover:underline">Business Law</Link> {'>'}
       </div>
       <div>
-      <div className="bg-white pb-12 xs:pb-2 pt-8 grid sm:px-8 md:px-8 xs:px-8 pl-12 grid-cols-3 xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
+      <div className="bg-white pb-12 xs:pb-2 pt-8 grid  px-[5.2%] grid-cols-3 xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
         <div className=' col-span-2'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center"><h1 className='text-[50px] xs:text-[30px] sm:text-[40px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> We got the law, you get to business.</h1>
@@ -72,8 +72,8 @@ const Business = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="flex col-span-1  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 xs:ml-0 mx-12 md:mx-0 md:ml-3  pr-0">
-          <div className="mt-6 md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
+        <div className="flex col-span-1 justify-end  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 xs:ml-0  md:mx-0 md:ml-3  pr-0">
+          <div className="mt-6 w-full  md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8   ">
               <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] pt-9 mb-4 xs:text-[30px]"> Latest Posts</h3>

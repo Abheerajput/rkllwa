@@ -176,23 +176,24 @@ const Boir = () => {
       />
 
 
-      <div className="text-[26px] fgt-ff-normal pl-11 bg-[#F7F6F1] py-4">
+      <div className="text-[26px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'}
         <span className="">Ava Johnson</span>
       </div>
 
-      <div className="bg-white pt-8 grid sm:px-8 md:px-8 xs:px-8 pl-12 grid-cols-3 xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
+      <div className="bg-white flex flex-row pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
-        <div className=' col-span-2'>
-<div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center"><h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
+        <div className=' w-[70%]'>
+<div className="flex md:flex-col sm:flex-col xs:flex-col gap-16 items-center">
+  <h1 className='text-[50px]  fgt-ff-medium xs:text-center  flex xs:flex-col gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="" /> BOIR Compliance</h1>
 <span>
 <button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </span>
 </div>
 
-<table className='border w-[40%] md:w-[50%] sm:w-[60%] xs:w-[100%] mt-12'>
+<table className='border w-[60%] max-w-[585px] md:w-[50%] sm:w-[60%] xs:w-[100%] mt-12'>
   <tr className=''>
     <th className='border text-start ps-3 py-2 bg-[#E5E5E5] text-[17px] fgt-ff-bold text'>Table of Contents </th>
   </tr>
@@ -371,7 +372,7 @@ Beneficial Ownership information refers to identifying information about the ind
         </div>
 
         {/* Sidebar */}
-        <div className="flex col-span-1  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 mx-12 md:mx-0 md:ml-3  pr-0">
+        <div className="flex w-[30%] justify-end md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 mt-6 md:mx-0 md:ml-3  pr-0">
           <div className="mt-6 md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
             <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  ">
               <p className='flex justify-center pt-6'><img src={icon2} alt="" /></p>

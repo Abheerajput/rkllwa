@@ -13,8 +13,8 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
           backgroundColor: '#403C5C'
         }}
       >
-        <div className="flex xs:flex-col sm:flex-col md:flex-col  flex-row justify-between py-16 px-8 lg:px-8">
-          <div className="w-1/2   sm:w-full md:w-full xs:w-full">
+        <div className="flex xs:flex-col sm:flex-col md:flex-col  flex-row justify-between py-16 px-[3%] ">
+          <div className="w-1/2  xl:pl-[2%] sm:w-full md:w-full xs:w-full">
             <h1 className="text-[40px] lg:text-[50px] fgt-ff-medium text-white leading-tight">
               {title}
             </h1>
