@@ -37,8 +37,8 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
         <span className='text-[26px] fgt-ff-semibold text-[#FFEDD7]'>{name}</span><br />
         {position}
       </p>
-      <p className='text-white text-[20px] fgt-ff-light py-4 '>{description}</p>
-      <p className='text-[26px]  fgt-ff-semibold flex gap-4 text-[#FFEDD7] py-6 cursor-pointer'>More Info <img src={arrow} alt="" /> </p>
+      <p className='text-white text-[20px] sx:text-[16px] fgt-ff-light py-4 '>{description}</p>
+      <p className='text-[26px]  fgt-ff-semibold flex gap-4 text-[#FFEDD7] sx:text-[18px] py-6 cursor-pointer'>More Info <img src={arrow} alt="" /> </p>
     </div>
   </div>
 );
@@ -46,7 +46,7 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
 const Founders = () => {
   return (
     <div className="p-4 bg-[#FFEDD7] justify-center xs:pb-4 pb-24 xs:mt-0 mt-12">
-      <h2 className="text-[50px] xs:text-[40px] fgt-ff-medium  flex justify-center xs:mt-0 mt-16">Meet the Founders</h2>
+      <h2 className="text-[50px] xs:text-[40px] fgt-ff-medium sx:text-[32px] flex justify-center xs:mt-0 mt-16">Meet the Founders</h2>
       {founders.map((founder, index) => (
         <FounderCard
           key={index}

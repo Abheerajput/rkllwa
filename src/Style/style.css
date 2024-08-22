@@ -98,3 +98,10 @@
     display: none;
   }
 }
+/* Target xs breakpoint */
+@media (max-width: 768px) {
+  /* Hide <br> tags on xs screens */
+  br {
+    display: none;
+  }
+}

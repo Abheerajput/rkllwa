@@ -21,7 +21,7 @@ const Business = () => {
         socialIcons2={socialIcons2}
         mainTitle="Business Law"
       />
-       <div className="text-[26px] xs:text-[20px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
+       <div className="text-[26px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
         <Link to="/founders" className="hover:underline">Business Law</Link> 
@@ -35,36 +35,36 @@ const Business = () => {
 
 </div>
 <div>
-  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 '>One of the most important decisions a new business owner must make is determining  the appropriate type <br /> of  business entity structure for the new venture.  The type of entity selected will have significant tax and <br /> legal liability implications. </p>
-  <p className='text-[20px] fgt-ff-light pt-4 '>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity, <br /> preparing  and  filing the documents required to register the entity with the appropriate  governmental <br /> authority, and preparing any other necessary documents to get a business operation up and running.<br />  These services include:</p>
-  <ul className=' pt-4 xS:pt-8 flex flex-col gap-2'>
-    <li className='text-[20px]  fgt-ff-light'>●	LLC formation, sub-chapter S and sub-chapter C corporate formations</li>
-    <li className='text-[20px] fgt-ff-light '>●	Drafting joint-venture, partnership, shareholder, and other operating agreements</li>
-    <li className='text-[20px] fgt-ff-light '>●	Corporate governance and business operations</li>
-    <li className='text-[20px] fgt-ff-light '>●	Fictitious business filings</li>
+  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>One of the most important decisions a new business owner must make is determining  the appropriate type <br /> of  business entity structure for the new venture.  The type of entity selected will have significant tax and <br /> legal liability implications. </p>
+  <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity, <br /> preparing  and  filing the documents required to register the entity with the appropriate  governmental <br /> authority, and preparing any other necessary documents to get a business operation up and running.<br />  These services include:</p>
+  <ul className=' pt-4 xS:pt-8 flex flex-col gap-2 sx:text-[16px]'>
+    <li className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	LLC formation, sub-chapter S and sub-chapter C corporate formations</li>
+    <li className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Drafting joint-venture, partnership, shareholder, and other operating agreements</li>
+    <li className='text-[20px] fgt-ff-light sx:text-[16px] '>●	Corporate governance and business operations</li>
+    <li className='text-[20px] fgt-ff-light  sx:text-[16px]'>●	Fictitious business filings</li>
   </ul>
 
-  <p className='text-[20px] fgt-ff-light  pt-4'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability <br /> of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the  <br />experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for <br /> clients in a myriad of circumstances at various stages of a venture’s evolution.   We know how to draft  contracts <br /> to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients  <br /> in a range of  business matters, including all of the following: </p>
-  <ul className=' pt-4 flex flex-col gap-2'>
-    <li  className='text-[20px]  fgt-ff-light flex gap-4'>●	Corporate structuring</li>
-    <li  className='text-[20px]  fgt-ff-light'>●	Consulting agreements
+  <p className='text-[20px] fgt-ff-light  pt-4 sx:text-[16px]'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability <br /> of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the  <br />experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for <br /> clients in a myriad of circumstances at various stages of a venture’s evolution.   We know how to draft  contracts <br /> to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients  <br /> in a range of  business matters, including all of the following: </p>
+  <ul className=' pt-4 flex flex-col gap-2 sx:text-[16px]'>
+    <li  className='text-[20px]  fgt-ff-light flex gap-4 sx:text-[16px]'>●	Corporate structuring</li>
+    <li  className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	Consulting agreements
 </li>
-<li  className='text-[20px]  fgt-ff-light'>●	Assisting Start-Ups </li>
-<li className='text-[20px] fgt-ff-light '>●	Dissolution agreements</li>
-<li className='text-[20px] fgt-ff-light '>●	Leases</li>
-<li  className='text-[20px] fgt-ff-light '>●	Purchase agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Security agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Shareholder agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Commercial contracts and corporate transactions</li>
-<li  className='text-[20px] fgt-ff-light '>●	Licensing agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Asset sales</li>
-<li  className='text-[20px] fgt-ff-light '>●	Confidentiality, non-disclosure and non-compete agreements</li>
-<li className='text-[20px] fgt-ff-light  '>●	Contract negotiations, preparations, drafting, analysis and review</li>
-<li  className='text-[20px] fgt-ff-light '>●	UCC 1 Filings</li>
-<li  className='text-[20px] fgt-ff-light '>●	Strategic alliance counseling, negotiations and agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Disclaimer of liability agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Distribution Agreements</li>
-<li  className='text-[20px] fgt-ff-light '>●	Lender/investor agreements  </li>
+<li  className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	Assisting Start-Ups </li>
+<li className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Dissolution agreements</li>
+<li className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Leases</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Purchase agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Security agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Shareholder agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Commercial contracts and corporate transactions</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Licensing agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Asset sales</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Confidentiality, non-disclosure and non-compete agreements</li>
+<li className='text-[20px] fgt-ff-light  sx:text-[16px]'>●	Contract negotiations, preparations, drafting, analysis and review</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	UCC 1 Filings</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Strategic alliance counseling, negotiations and agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Disclaimer of liability agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Distribution Agreements</li>
+<li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Lender/investor agreements  </li>
   </ul>
 </div>
 
@@ -74,37 +74,33 @@ const Business = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="flex col-span-1 justify-end  md:justify-center xs:justify-center xs:mr-0 xs:mb-5 md:mr-0 xs:mt-4 mt-6 xs:ml-0  md:mx-0 md:ml-3  pr-0">
-          <div className="mt-6 xs:mt-0 w-full  md:mt-0 md:w-[100%] xs:w-[100%] sm:w-[100%] text-start">
-            <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8   ">
-              <p className='flex justify-center xs:pt-2 pt-6'><img src={icon2} alt="" /></p>
-              <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] xs:pt-3 pt-9 mb-4 xs:text-[30px]"> Latest Posts</h3>
+        <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  xs:mt-4 ">
+              <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
+              <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
-                <p className=' flex gap-4 items-start flex-col py-5 text-[20px]  fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
-                 <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D]  items-center gap-3'>Read More <FaArrowRightLong /> </p>
+                <p className=' flex gap-4 items-start flex-col py-5 sx:text-[16px] text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden'/> Celebrating 50 Years
+                 <p className=' flex pb-4 text-[18px] fgt-ff-medium sx:text-[16px] text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
                 </p>
                
                 <hr />
-                <p className=' flex gap-4 items-start flex-col py-5 text-[20px]  fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
-                <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
+                <p className=' flex gap-4 items-start flex-col py-5 sx:text-[16px] text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden'/> Celebrating 50 Years
+                <p className=' flex pb-4 text-[18px] fgt-ff-medium sx:text-[16px] text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
                 </p>
             
                 <hr />
-                <p className=' flex gap-4 items-start flex-col py-5 text-[20px]  fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br /> Celebrating 50 Years
-                <p className=' flex pb-4 text-[18px] fgt-ff-medium text-[#02131D]  items-center gap-3'>Read More <FaArrowRightLong /> </p>
+                <p className=' flex gap-4 items-start flex-col py-5 sx:text-[16px] text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden'/> Celebrating 50 Years
+                <p className=' flex pb-4 text-[18px] fgt-ff-medium sx:text-[16px] text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
                 </p>
            
+                <hr />
+                <p className=' flex gap-4 items-start flex-col py-5 text-[20px] sx:text-[16px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden'/> Celebrating 50 Years
+                <p className=' flex  text-[18px] fgt-ff-medium text-[#02131D] sx:text-[16px] items-center gap-3 pb-5'>Read More <FaArrowRightLong /> </p>
+                </p>
           
               
              
               </div>
             </div>
-
-            {/* Testimonials Slider */}
-          
-          </div>
-        </div>
-
     
       </div>
       </div>

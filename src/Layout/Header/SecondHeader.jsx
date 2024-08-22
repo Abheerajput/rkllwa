@@ -91,7 +91,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 <img
                   src={RKL2}
                   alt="Logo"
-                  className="w-48 sm:w-48 md:w-72 lg:w-72 xl:w-72"
+                  className="w-48 sm:w-40 md:w-72  lg:w-72 xl:w-72"
                 />
               </Link>
             </div>
@@ -113,12 +113,12 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                   </div>
                 </span>
               </div>
-              <div className="flex items-center justify-end xs:pt-0 pt-8">
+              <div className="flex items-center justify-end xs:pt-4 pt-8">
                 <Link to="/">
                   <img
                     src={menuOpen ? crossIcon : menuicon}
                     alt={menuOpen ? "Close Icon" : "Menu Icon"}
-                    className="w-16 h-16 cursor-pointer"
+                    className="w-16 h-16  xs:w-12 xs:h-12 cursor-pointer"
                     onClick={toggleMenu}
 
                   /> 
@@ -126,38 +126,38 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
               </div>
             </div>
           </div>
-          <div className='w-9/12 '>
+          <div className='w-9/12  xs:w-full overflow-y-scroll'>
             <div className='flex justify-between xs:w-screen   xs:flex-col  w-full  pl-[6.9%]'>
 
               <span className="flex flex-col gap-2  xs:pl-0 text-black">
-                <h1 className="fgt-ff-medium text-[27px] flex gap-[10px] flex-wrap">
+                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] flex gap-[10px] flex-wrap">
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
                 </h1>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                   <Link to="/Immigration-Law">Immigration Law</Link>
                 </p>
               </span>
               <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] flex xs:pt-4 gap-[10px] flex-wrap">
+                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px]  flex xs:pt-4 gap-[10px] flex-wrap">
                   <img src={aboutus} alt="About Us" /> About Us
                 </h1>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                   <Link to="/founders">Founders</Link>
                 </p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">Careers</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">Testimonials</p>
+                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
+                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p>
               </span>
               <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] xs:pt-4 flex gap-[10px] flex-wrap">
+                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
                   <img src={stay} alt="Stay Informed" /> Stay Informed
                 </h1>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">News & Events</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
-                <p className="text-[20px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
+                <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]">News & Events</p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
               </span>
             </div>
           </div>

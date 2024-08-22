@@ -16,19 +16,19 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
         backgroundSize: 'cover',
       }}
     >
-      <div className="flex flex-col  justify-center items-center py-24 px-8 lg:px-24">
+      <div className="flex flex-col  justify-center items-center py-24 xs:py-8 px-8 lg:px-24">
         <div className=" flex flex-col text-center items-center ">
-          <img src={RKL} alt="RKL Icon" className="mb-4" />
+          <img src={RKL} alt="RKL Icon" className="mb-4 xs:w-[60%]" />
          
-          <p className="text-[18px] text-center lg:text-[20px] fgt-ff-light text-white mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
+          <p className="text-[18px] text-center lg:text-[20px] sx:text-[16px] fgt-ff-light text-white xs:mt-0 mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
-          <div className="flex justify-center ">
-          <img src={insta} alt="Instagram"className="mr-4" />
-          <img src={li} alt="LinkedIn" className="mr-4" />
-          <img src={fb} alt="Facebook" className="mr-4" />
-          <img src={twit} alt="Twitter" className="mr-4" />
+          <div className="flex justify-center gap-6 ">
+          <img src={insta} alt="Instagram"className="" />
+          <img src={li} alt="LinkedIn" className="" />
+          <img src={fb} alt="Facebook" className="" />
+          <img src={twit} alt="Twitter" className="" />
         </div>
-      <p className='text-white text-[20px] pt-20 fgt-ff-light'>
+      <p className='text-white sx:text-[16px] text-[20px] pt-20 xs:pt-6 fgt-ff-light'>
         {title}
       </p>
         </div>

@@ -5,7 +5,7 @@ const Breadcrumb =()=> {
   return (
     <div className="py-4 bg-[#F7F6F1] ">
 
-      <p className='fgt-ff-normal text-[26.5px] xs:text-[20px] pl-[5.2%] text-[#403C5C] flex flex-wrap items-center gap-1'><Link to="/">Home</Link>  <FaGreaterThan className='w-3 h-3' />  Practice Areas   <FaGreaterThan className='w-3 h-3'/>Immigration Law</p>
+      <p className='fgt-ff-normal text-[26.5px] sx:text-[14px]  pl-[5.2%] text-[#403C5C] flex flex-wrap items-center gap-1'><Link to="/">Home</Link>  <FaGreaterThan className='w-3 h-3' />  Practice Areas   <FaGreaterThan className='w-3 h-3'/>Immigration Law</p>
     </div>
   );
 }
