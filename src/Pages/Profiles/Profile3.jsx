@@ -45,7 +45,7 @@ const ProfileCard3 = () => {
               {/* Profile Section */}
               <div className='w-full flex  xs:flex xs:flex-col sm:flex sm:flex-col '>
               <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
-          <div className="flex xs:flex-col md:flex-col xs:items-start  xs:gap-0 md:items-center  mt-[24px] gap-12 items-start ">
+          <div className="flex xs:flex-col md:flex-col xs:items-start  xs:gap-0  md:gap-0   mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
               alt="Ava Johnson" 
@@ -78,7 +78,7 @@ const ProfileCard3 = () => {
           Jordan Taylor  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
           Jordan Taylor  is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
-          <p className="text-[#212121] text-[20px] sx:text-[16px]  fgt-ff-ligh mt-4">
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light mt-4">
      
 Mario is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>

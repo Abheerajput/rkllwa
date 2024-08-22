@@ -27,16 +27,16 @@ const Business = () => {
         <Link to="/founders" className="hover:underline">Business Law</Link> 
       </div>
       <div>
-      <div className="bg-white pb-12 xs:pb-2 xs:pt-4 pt-8 grid  px-[5.2%] grid-cols-3 xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
+      <div className="bg-white w-full pb-12 xs:pb-2 xs:pt-4 pt-8  px-[5.2%]  flex xs:flex-col sm:flex sm:flex-col   sm:p-10">
         {/* Profile Section */}
-        <div className=' col-span-2'>
+        <div className=' w-[65%] sm:w-full xs:w-full'>
 <div className="flex md:text-start sm:text-start  xs:flex-col gap-16 xs:items-start items-center">
   <div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]"/> We got the law, you get to business.</div>
 
 </div>
 <div>
-  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>One of the most important decisions a new business owner must make is determining  the appropriate type <br  className='xs:hidden'/> of  business entity structure for the new venture.  The type of entity selected will have significant tax and  <br  className='xs:hidden'/> legal liability implications. </p>
-  <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity,  <br  className='xs:hidden'/> preparing  and  filing the documents required to register the entity with the appropriate  governmental  <br  className='xs:hidden'/> authority, and preparing any other necessary documents to get a business operation up and running.<br />  These services include:</p>
+  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>One of the most important decisions a new business owner must make is determining  the appropriate type <br  className='xs:hidden sm:hidden'/> of  business entity structure for the new venture.  The type of entity selected will have significant tax and  <br  className='xs:hidden'/> legal liability implications. </p>
+  <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity,  <br  className='xs:hidden sm:hidden'/> preparing  and  filing the documents required to register the entity with the appropriate  governmental  <br  className='xs:hidden'/> authority, and preparing any other necessary documents to get a business operation up and running.<br />  These services include:</p>
   <ul className=' pt-4 xS:pt-8 flex flex-col gap-2 sx:text-[16px]'>
     <li className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	LLC formation, sub-chapter S and sub-chapter C corporate formations</li>
     <li className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Drafting joint-venture, partnership, shareholder, and other operating agreements</li>
@@ -44,7 +44,7 @@ const Business = () => {
     <li className='text-[20px] fgt-ff-light  sx:text-[16px]'>●	Fictitious business filings</li>
   </ul>
 
-  <p className='text-[20px] fgt-ff-light  pt-4 sx:text-[16px]'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability  <br  className='xs:hidden'/> of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the   <br  className='xs:hidden'/>experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for  <br  className='xs:hidden'/> clients in a myriad of circumstances at various stages of a venture’s evolution.   We know how to draft  contracts  <br  className='xs:hidden'/> to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients   <br  className='xs:hidden'/>in a range of  business matters, including all of the following: </p>
+  <p className='text-[20px] fgt-ff-light  pt-4 sx:text-[16px]'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability  <br  className='xs:hidden sm:hidden'/> of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the   <br  className='xs:hidden'/>experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for  <br  className='xs:hidden'/> clients in a myriad of circumstances at various stages of a venture’s evolution.   We know how to draft  contracts  <br  className='xs:hidden'/> to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients   <br  className='xs:hidden'/>in a range of  business matters, including all of the following: </p>
   <ul className=' pt-4 flex flex-col gap-2 sx:text-[16px]'>
     <li  className='text-[20px]  fgt-ff-light flex gap-4 sx:text-[16px]'>●	Corporate structuring</li>
     <li  className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	Consulting agreements
@@ -74,11 +74,12 @@ const Business = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  xs:mt-4 ">
+        <div className='w-[35%] xs:w-full sm:w-full xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
+        <div className="bg-[#FFEDD7] h-[50%] sm:w-full xs:w-full md:w-[80%] lg:w-[80%] xl:w-[80%] p-4 rounded-md pl-8 xs:pl-4  xs:my-4 ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
-                <p className=' flex gap-4 items-start flex-col py-5 sx:text-[16px] text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden'/> Celebrating 50 Years
+                <p className=' flex gap-4 items-start flex-col py-5 sx:text-[16px] text-[20px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br  className='xs:hidden '/> Celebrating 50 Years
                  <p className=' flex pb-4 text-[18px] fgt-ff-medium sx:text-[16px] text-[#02131D] items-center gap-3'>Read More <FaArrowRightLong /> </p>
                 </p>
                
@@ -101,6 +102,8 @@ const Business = () => {
              
               </div>
             </div>
+        </div>
+        
     
       </div>
       </div>

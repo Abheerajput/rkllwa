@@ -19,7 +19,7 @@ const Solution = ({ title, description, buttonText, sections }) => {
           <span className="fgt-ff-medium xs:text-[35px] xs:text-start text-[50px]  lg:text-left">
             {title}
           </span>
-          <p className="fgt-ff-light text-[20px] pt-8  xs:text-start lg:text-left"   dangerouslySetInnerHTML={{ __html:description }}>
+          <p className="fgt-ff-light text-[20px] xs:pt-2 pt-8  xs:text-start lg:text-left"   dangerouslySetInnerHTML={{ __html:description }}>
         
            
           </p>

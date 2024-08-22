@@ -7,7 +7,7 @@
         <div className="text-[#EEB26D] mb-4 text-4xl">
         <img src={icon} alt={title} />
           </div>
-        <h2 className="text-[35px] fgt-ff-normal mb-4 text-center"  dangerouslySetInnerHTML={{ __html:title }}>
+        <h2 className="text-[35px] fgt-ff-normal mb-4 xs:text-start text-center"  dangerouslySetInnerHTML={{ __html:title }}>
 
         </h2>
         <div className="space-y-4">
