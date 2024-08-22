@@ -265,10 +265,7 @@ Business owners and senior officers are responsible for accurate and timely repo
 <p className='text-[20px] fgt-ff-light text-[#212121]'>
 Beneficial Ownership information refers to identifying information about the individuals who directly or indirectly own or control a company.  Every Reporting Company that is not exempt must file a BOI Report that discloses five specific items of Personal Identifiable Information (PII) for each of its Beneficial Owners (BO), including a copy of a valid, government-issued ID (such a driver’s license or passport) verifying the BO’s identity.  Entities formed (or registered to do business) on or after January 1, 2024, must also identify and provide the same five items of PII for the entity’s Company Applicant. An individual is a Company Applicant if the individual directly files the document that creates (or registers) the Reporting Company and/or if the individual is primarily responsible for directing or controlling such filing if more than one individual is involved in the filing. Each Reporting Company will have to be analyzed on a case-by-case basis to determine who the Company Applicant(s) is/are for accurate reporting.</p>
 </div>
-<div className='w-full text-center  xs:py-6 sm:py-4' >
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg  xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
-</div>
 <div>
   <h3 id="deadline" className='text-[#844C0D] text-[26px] fgt-ff-bold'>Deadlines</h3>
   <p className="underline-offset-8 underline">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
@@ -329,10 +326,8 @@ Beneficial Ownership information refers to identifying information about the ind
   </table>
 </div>
 
-<div className='py-4 text-center'>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13]'>START YOUR COMPLIANCE NOW</button>
 
-</div>
+
 
 </div>
 
@@ -360,10 +355,7 @@ Beneficial Ownership information refers to identifying information about the ind
                 ))}
             </div>
         </div>
-        <div className='py-4 text-center pb-8'>
-<button className='text-[20px] fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-lg xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
-
-</div>
+       
         </div>
 
         {/* Sidebar */}
