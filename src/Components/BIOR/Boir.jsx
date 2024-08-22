@@ -267,7 +267,7 @@ Beneficial Ownership information refers to identifying information about the ind
 </div>
 
 <div>
-  <h3 id="deadline" className='text-[#844C0D] text-[26px] fgt-ff-bold'>Deadlines</h3>
+  <h3 id="deadline" className='text-[#844C0D] text-[26px] pt-4 fgt-ff-bold'>Deadlines</h3>
   <p className="underline-offset-8 underline">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
   <p>• If your company was created or registered prior to January 1, 2024, you will have until January 1, 2025 to report BOI. <br />
 • If your company is created or registered in 2024, you must report BOI within 90 calendar days after receiving actual or public notice that your company’s creation or registration is effective, whichever is earlier.<br />
