@@ -34,7 +34,7 @@ const Founderscreen = () => {
   </div>
   <div className="py-4 bg-[#F7F6F1]">
 
-      <p className='fgt-ff-normal px-[5.2%] xs:text-[20px] text-[26.5px] flex items-center gap-3'> 
+      <p className='fgt-ff-normal px-[5.2%] sx:text-[16px] text-[26.5px] flex items-center gap-3'> 
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>

@@ -33,7 +33,7 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
     <img  src={imgSrc} alt={name} className=' xs:relative xs:left-0 md:relative md:left-0 absolute left-[-200px]'style={{transform:"translate(0%,0%) !important"}} />
  
     <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-70px] ps-[150px] px-12'>
-      <p className='text-white pt-10'>
+      <p className='text-white pt-10 xs:flex xs:flex-col'>
         <span className='text-[26px] fgt-ff-semibold text-[#FFEDD7]'>{name}</span><br />
         {position}
       </p>
