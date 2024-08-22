@@ -224,7 +224,7 @@ const App = () => {
       socialIcons2={socialIcons2}
       socialIcons={socialIcons}
       menuIcon={menuicon}
-      mainTitle="We Make Law Make Sense"
+      mainTitle="Get ready. Move forward. Go far. "
       mainDescription={[
         "RKL Holzapfel Sperry & Ebberson is a full-service ",<br />,
         
