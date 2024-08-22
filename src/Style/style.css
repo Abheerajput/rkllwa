@@ -91,4 +91,10 @@
       transform: translateX(-100%);
     }
   }
-  
+  /* Target xs breakpoint */
+@media (min-width: 318px) and (max-width: 768px) {
+  /* Hide <br> tags with class 'xs-hide' on xs screens */
+  .xs-hide {
+    display: none;
+  }
+}

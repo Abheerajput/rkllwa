@@ -76,8 +76,8 @@ const ProfileCard = () => {
           </div>
 
           {/* Description */}
-          <p className="text-[#212121] text-[20px]  fgt-ff-light   mt-6">
-          Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
+          <p className="text-[#212121] text-[20px] fgt-ff-light   mt-6">
+          Ava Jhonson  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
           Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
           <p className="text-[#212121] text-[20px]  fgt-ff-light  mt-4">
@@ -105,7 +105,7 @@ Mario is well-recognized in his field, having been selected for inclusion to the
         {/* Sidebar */}
         <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
-            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
+            <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
               <h3 className="text-[35px] fgt-ff-normal text-[#02131D] xs:justify-center xs:flex xs:pt-6 xs:text-[28px] pt-[53px] mb-4">Practice Areas</h3>
               <ul className="text-[#212121]">
                 <li className='text-[24px] fgt-ff-normal xs:text-[20px]  flex gap-4 items-center py-5'><img src={icon1} alt="" /> Business Law</li>

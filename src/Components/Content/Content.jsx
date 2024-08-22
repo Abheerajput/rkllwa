@@ -9,13 +9,13 @@ const SectionHeader = ({ iconSrc, title, className, text }) => (
     <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 xs:gap-2 flex ${className}`}>
       <img src={iconSrc} alt="" className='xs:w-[70px]' />
       <span className='xs:text-[35px]'>{title}</span>
-      {text && <Paragraph text={text} className="pt-5" />}
+      {text && <Paragraph text={text} className="pt-5 " />}
     </h2>
   </>
 );
 const Paragraph = ({ text, className }) => (
   <p
-    className={`text-[20px] fgt-ff-light ${className}`}
+    className={`text-[20px] fgt-ff-light xs:pt-1 ${className}`}
     dangerouslySetInnerHTML={{ __html: text }}
   />
 );
@@ -23,7 +23,7 @@ const Paragraph = ({ text, className }) => (
 const ListSection = ({ title, items }) => (
   <>
     <h1 className="py-2 text-[30px] xs:text-[24px] fgt-ff-medium">{title}</h1>
-    <ul className="list-disc pt-4 text-[20px] fgt-ff-light pl-8">
+    <ul className="list-disc pt-4 text-[20px] xs:flex xs:flex-col xs:gap-1 fgt-ff-light pl-8">
       {items.map((item, index) => (
         <li key={index}>{item}</li>
       ))}
@@ -119,7 +119,7 @@ const Content = () => {
       <div className="flex w-full xs:flex sm:flex-col md:flex-col xs:flex-col  px-[5.2%]     gap-4">
         <div className="py-4 w-[64%] xs:w-full sm:w-[100%] md:w-[100%]">
           <SectionHeader iconSrc={icon} title="IMMIGRATION LAW" />
-          <Paragraph text={"Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. <br /> We  are dedicated to preserving your financial and personal  well being as you navigate the many  options for your <br /> new beginning."} className="pt-5" />
+          <Paragraph text={"Divorce is one of life’s greatest challenges. Let our family law team be the bridge to your secure future. <br  /> We  are dedicated to preserving your financial and personal  well being as you navigate the many  options for your <br /> new beginning."} className="pt-5" />
           <Paragraph text={"With a combined over 150 years of experience in all facets of Washington divorce and family restructuring, <br/> we are here to help you choose the best path forward. Whether you want to proceed with traditional divorce <br/> litigation, mediation, or collaborative divorce, we have many years of success representing clients through <br/> legal separations, committed intimate relationships, child custody, child support and parenting plans, as well <br/> as prenuptial and postnuptial agreements."} className="pt-4" />
           <Paragraph text={"Recognizing that disputes about child custody are one of the most delicate and emotional aspects of the  <br/> separation process, we approach each case with individualized attention and care, in an effort to minimize <br /> the impact of parenting issues on our clients’ children."} className="pt-4" />
           <div className="w-full flex justify-center py-8">
@@ -132,7 +132,7 @@ const Content = () => {
           </div>
           <Paragraph text="We can help you determine which assets can be included in the divorce process and what they are worth..." className="py-2" />
           <ListSection title="PROPERTY DIVISION IN DIVORCE" items={propertyDivisionItems} />
-          <Paragraph text="Need Help? Contact Us" className="text-[26px] xs:text-[20px] fgt-ff-normal pt-4 pb-2" />
+          <Paragraph text="Need Help? Contact Us" className="text-[26px] xs:text-[20px] fgt-ff-normal xs:mt-4 pt-4 pb-2" />
           <Paragraph text="If you are looking for a trusted divorce attorney, we are here to help..." className="py-2" />
           <ContactForm />
         </div>

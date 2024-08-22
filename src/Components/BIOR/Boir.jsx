@@ -183,15 +183,15 @@ const Boir = () => {
         
       </div>
 
-      <div className="bg-white flex flex-row pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
+      <div className="bg-white flex flex-row  xs:pt-4 pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
         <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col xs:gap-3 gap-16 sm:items-start md:items-start xs:items-start items-center">
-  <div className='text-[50px] xs:text-[35px] fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start xs:flex-col flex xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[61px]" /> BOIR Compliance</div>
+  <div className='text-[50px] xs:text-[35px] fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start xs:flex-col flex xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]" /> BOIR Compliance</div>
 
 </div>
 
-<table className='border w-[60%] max-w-[585px] md:w-[50%] sm:w-[60%] xs:w-[100%] mt-12'>
+<table className='border w-[60%] max-w-[585px] md:w-[50%] sm:w-[60%] xs:mt-1 xs:w-[100%] mt-12'>
   <tr className=''>
     <th className='border text-start ps-3 py-2 bg-[#E5E5E5] text-[17px] fgt-ff-bold text'>Table of Contents </th>
   </tr>
@@ -359,13 +359,13 @@ Beneficial Ownership information refers to identifying information about the ind
         </div>
 
         {/* Sidebar */}
-        <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 mt-6 pr-0">
+        <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
         <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
         <div  className='mb-4  flex w-full'>
 <button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
 
 </div>
-            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8  ">
+            <div className="bg-[#FFEDD7] p-4 rounded-md pl-8 xs:pl-4  ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
