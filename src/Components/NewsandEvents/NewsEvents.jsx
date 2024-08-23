@@ -26,7 +26,7 @@ const NewsEvents = () => {
    
         <div className=' w-[65%] sm:w-full xs:w-full'>
           <div className="flex md:text-start sm:text-start  xs:flex-col gap-16 xs:items-start items-center">
-            {/* <div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]"/> We got the law, you get to business.</div> */}
+            {/* <div className='text-[50px] xs:text-[35px] sm:text-" className="xs:w-[70px]"/> We got the law, you get to business.</div> */}
           </div>
           <div>
             <h3 className='py-4 text-[25px] fgt-ff-medium'>FinCEN Issues Notice to Financial Institution Customers on Beneficial Ownership Information Requirements</h3>
