@@ -23,7 +23,7 @@ const NewsEvents = () => {
         <Link to="/founders" className="hover:underline">News And Events</Link>
       </div>
       <div className="bg-white w-full pb-12 xs:pb-2 xs:pt-4 pt-8  px-[5.2%]  flex xs:flex-col sm:flex sm:flex-col   sm:p-10">
-        {/* Profile Section */}
+   
         <div className=' w-[65%] sm:w-full xs:w-full'>
           <div className="flex md:text-start sm:text-start  xs:flex-col gap-16 xs:items-start items-center">
             {/* <div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]"/> We got the law, you get to business.</div> */}

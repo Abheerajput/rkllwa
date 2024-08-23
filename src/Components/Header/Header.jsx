@@ -144,9 +144,7 @@ const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, bu
                     </button> */}
                       <div className="flex space-x-3 items-center pt-2">
 
-                      {/* <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer" className='flex'>
-    <img src={lkdnicon2} alt="LinkedIn" className="w-16 xs:w-12" />
-  </a> */}
+                  
                         <Link to="/">
                           <img
                             src={menuOpen ? crossIcon : menuicon}
