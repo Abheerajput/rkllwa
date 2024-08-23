@@ -113,9 +113,6 @@ const NewsEvents = () => {
            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The comment period for the NPRM is open until April 15, 2024.</p>
           </div>
 
-
-
-
         </div>
 
         {/* Sidebar */}
@@ -142,7 +139,6 @@ const NewsEvents = () => {
               <p className=' flex gap-4 items-start flex-col py-5 text-[20px] sx:text-[16px] fgt-ff-light'>RKL Holzapfel Sperry & Ebberson PLLC  <br className='xs:hidden' /> Celebrating 50 Years
                 <p className=' flex  text-[18px] fgt-ff-medium text-[#02131D] sx:text-[16px] items-center gap-3 pb-5'>Read More <FaArrowRightLong /> </p>
               </p>
-
 
 
             </div>
