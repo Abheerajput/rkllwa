@@ -21,7 +21,7 @@ import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import menuicon from '../../assets/icons/logo2.svg';
 import '../../Style/style.css';
 
-const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
+const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -63,7 +63,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
           backgroundImage: `url(${backgroundImg})`,
         }}
       >
-        <div className='absolute pl-[5.2%] xs:mt-4 sx:top-[13%] top-[20%]'>
+        <div className='absolute pl-[3.4%] xs:mt-4 sx:top-[6%] top-[7%]'>
           <Link to="/">
             <img src={logo} alt="Logo" className="w-[365px] xs:w-[250px] xs:-[250px]  h-[175px]" />
           </Link>
@@ -81,13 +81,30 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                   Online Payment
                 </button> */}
                   <div className="flex space-x-3 pt-2">
-                  <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer">
-    <img src={lkdnicon} alt="LinkedIn" className="w-12 h-12" />
+                  <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden px-8  mt-4">
+          <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
+            <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
+              {mainTitle}
+            </h1>
+            <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
+              {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
+                <React.Fragment key={index}>{line}</React.Fragment>
+              )) : mainDescription}
+            </p>
+            <button className="bg-[#E0AF04] px-8 lg:px-12 py-3  rounded-md">
+            <a href="#content">{buttonText}</a>
+            </button>
+          </div>
+        </div>
+                 
+
+                    <div className="flex items-center justify-center flex-col gap-4 xs:pt-0 ">
+                    <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer" className='flex'>
+    <img src={lkdnicon} alt="LinkedIn"  className='w-16 xs:w-12' />
   </a>
 
-
-                    <div className="flex items-center justify-end xs:pt-0 ">
                       <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
+                    
                     </div>
                   </div>
 
@@ -127,14 +144,14 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                     </button> */}
                       <div className="flex space-x-3 items-center pt-2">
 
-                      <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer">
-    <img src={lkdnicon2} alt="LinkedIn" className="w-12 h-12" />
-  </a>
+                      {/* <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer" className='flex'>
+    <img src={lkdnicon2} alt="LinkedIn" className="w-16 xs:w-12" />
+  </a> */}
                         <Link to="/">
                           <img
                             src={menuOpen ? crossIcon : menuicon}
                             alt={menuOpen ? "Close Icon" : "Menu Icon"}
-                            className="w-16 h-16  xs:w-12 xs:h-12 cursor-pointer"
+                            className="w-16 h-16  xs:w-10 xs:h-10 cursor-pointer"
                             onClick={toggleMenu}
 
                           />
@@ -178,7 +195,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
                     <img src={stay} alt="Stay Informed" /> Stay Informed
                   </h1>
                   <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
-                  <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]">News & Events</p>
+                  <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link> </p>
                   <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
                   <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
                 </span>
@@ -186,21 +203,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
             </div>
           </div>
         )}
-        <div className="flex justify-end sm:mt-20 xs:hidden px-8 pr-28 mt-4">
-          <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
-            <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
-              {mainTitle}
-            </h1>
-            <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
-              {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
-                <React.Fragment key={index}>{line}</React.Fragment>
-              )) : mainDescription}
-            </p>
-            <button className="bg-[#FFDD00] px-8 lg:px-12 py-3  rounded-md">
-              {buttonText}
-            </button>
-          </div>
-        </div>
+        
       </div>
       <Section1 />
       <Solution />
@@ -225,9 +228,7 @@ const App = () => {
       menuIcon={menuicon}
       mainTitle="Get ready. Move forward. Go far. "
       mainDescription={[
-        "RKL Holzapfel Sperry & Ebberson is a full-service ", <br />,
-
-        " law firm that understands legal issues can be "
+       " A trusted name for over 20 years, RKL LAW is here for you.", <br/>," Onward and upward together. "
       ]}
       buttonText="Learn More"
     />

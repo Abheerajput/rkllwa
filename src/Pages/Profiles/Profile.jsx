@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import profile from "../../assets/icons/profile.svg";
+import profile from "../../assets/icons/founder.svg";
 import icon1 from "../../assets/icons/profileicon1.svg";
 import icon2 from "../../assets/icons/profileicon2.svg";
 import icon3 from "../../assets/icons/profileicon3.svg";
@@ -33,14 +33,14 @@ const ProfileCard = () => {
     <>
       <SecondHeader
         socialIcons2={socialIcons2}
-        mainTitle="Ava Jhonson"
+        mainTitle="Nazanin Lahijani"
       />
 
 
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal px-[5.2%] bg-[#F7F6F1] py-4">
         <Link  to="/"className="hover:underline">Home</Link> {'>'} 
         <Link to="/founders" className="hover:underline">Founders</Link> {'>'} 
-        <span className="">Ava Johnson</span>
+        <span className="">Nazanin Lahijani</span>
       </div>
 
       <div className="bg-gray-50 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:flex md:flex-col sm:p-10">
@@ -50,12 +50,12 @@ const ProfileCard = () => {
           <div className="flex xs:flex-col md:flex-col xs:items-start  xs:gap-0  mt-[24px] md:gap-0 gap-12 items-start ">
             <img 
               src={profile} 
-              alt="Ava Johnson" 
+              alt="Nazanin Lahijani" 
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Ava Johnson</h1>
-              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Principal</h2>
+              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Nazanin Lahijani</h1>
+              <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Partner</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
@@ -77,8 +77,8 @@ const ProfileCard = () => {
 
           {/* Description */}
           <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
-          Ava Jhonson  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
-          Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
+          Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
+          Nazanin Lahijania business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p>
           <p className="text-[#212121] text-[20px] sx:text-[16px]  fgt-ff-light  mt-4">
      

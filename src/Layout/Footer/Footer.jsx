@@ -1,9 +1,9 @@
 import React from 'react';
 import img1 from '../../assets/images/img1.png';
 import '../../Style/style.css';
-import RKL from '../../assets/icons/headicon.svg';
+import RKL from '../../assets/icons/Footerimg.svg';
 import fbicon from '../../assets/icons/fbicon.svg';
-import lkdnicon from '../../assets/icons/lkdnicon.svg';
+import lkdnicon from '../../assets/icons/footerlkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import insta from "../../assets/icons/inst.svg"
 

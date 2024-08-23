@@ -40,21 +40,21 @@ const Founderscreen = () => {
     </div>
 <div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%]  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
     <p className='xs:w-full '>
-        <Link to="/profile/Ava Johnson">
+        <Link to="/profile/Nazanin Lahijani">
         <img src={founder1} alt="" className='w-full' />
-        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Ava Johnson</span> <br /> Principal</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Nazanin Lahijani</span> <br /> Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
-      <Link to="/profile/Taylor Morgan">
+      <Link to="/profile/Sohila Rezai">
         <img src={founder2} alt="" className='w-full'/>
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Taylor Morgan </span> <br />Principal</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Sohila Rezai </span> <br />Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
-      <Link to="/profile/Jordan Taylor">
+      <Link to="/profile/Ninaz Khorsandi">
         <img src={founder3} alt=""  className='w-full'/>
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Jordan Taylor </span><br /> Attorney</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Ninaz Khorsandi </span><br />Partner</h3>
         </Link>
     </p>
 </div>

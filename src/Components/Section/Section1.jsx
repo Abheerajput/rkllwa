@@ -3,6 +3,7 @@ import img1 from '../../assets/images/img1.png';
 import groupimg from '../../assets/images/groupimg.png';
 import '../../Style/style.css';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) => {
   // Use media queries to detect screen size
@@ -16,7 +17,9 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
   return (
     <>
       <div
-        className="xs:px-[5.2%]"
+      id="content"
+        className="xs:px-[5.2%] "
+
         style={{
           backgroundImage: `url(${backgroundImg})`,
           backgroundSize: 'cover',
@@ -29,11 +32,15 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
               {title}
             </h1>
             <p
-              className="text-[18px] lg:text-[20px] fgt-ff-light text-white mt-4 pb-4 leading-relaxed"
+              className="text-[18px] lg:text-[20px] fgt-ff-semibold text-white mt-4 pb-4 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: processedDescription }}
             />
-            <button className="bg-[#EEB26D] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4">
+            <button
+             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4">
+             
               {buttonText}
+              
+             
             </button>
           </div>
           <div className="w-1/2 sm:w-full md:w-full xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">
@@ -46,11 +53,13 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
 };
 
 const App = () => {
-  const description = `Our attorneys are uniquely qualified to help you, with our wealth of real-world <br> experience and dedication to excellent client service. When you work with <br> Lasher Holzapfel Sperry & Ebberson, you are working with more than a law <br> firm. You are working with a law firm on a mission. A mission to make the legal <br> process more clear, more effective, and more efficient for our clients. Our <br> attorneys are creative, efficient, and approachable. We strive to understand <br> your goals, be a part of your team, and respond with clear and effective <br> counsel. We have attorneys and staff who can provide these services in <br> multiple languages.`;
+  const description = `Strategic. Efficient. And committed to your success. RKL Law is poised to serve you for your <br /> transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge, <br />  experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the <br />  law so you can handle the rest. 
+Learn More
+`;
 
   return (
     <Section1
-      title="We make your team your ally"
+      // title="We make your team your ally"
       description={description}
       buttonText="Learn More"
       backgroundImg={img1}

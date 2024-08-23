@@ -7,33 +7,33 @@ import arrow from "../../assets/icons/arrow.svg"
 const founders = [
   {
     imgSrc: img1,
-    name: "Ava Johnson",
-    position: "Principal",
-    description: `Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. Her primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Ava’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.`,
+    name: "Nazanin Lahijani",
+    position: "Partner",
+    description: `Nazanin Lahijaniis a business lawyer who represents clients in the adversarial context of business disputes and business litigation. Her primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Ava’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.`,
   },
   {
     imgSrc: img2,
-    name: "Mario Lopez",
-    position: "Principal",
-    description: `Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
+    name: "Sohila Razai",
+    position: "Partner",
+    description: `Sohila Razai is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
 
 `,
   },
   {
     imgSrc: img3,
-    name: "Sophia Davis",
-    position: " Attorney",
-    description: `Ava Johnson is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
+    name: "Ninaz Khorsandi",
+    position: "Partner",
+    description: `Ninaz Khorsandi is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
 `,
   },
 ];
 
 const FounderCard = ({ imgSrc, name, position, description }) => (
-  <div className='flex bg-[#403C5C] mr-24  xs:mt-4 xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col  ms-auto  relative mt-14'>
-    <img  src={imgSrc} alt={name} className=' xs:relative xs:left-0 md:relative md:left-0 absolute left-[-200px]'style={{transform:"translate(0%,0%) !important"}} />
+  <div className='flex bg-[#403C5C] mr-24  xs:mt-4 xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col sm:flex-col xs:items-start sm:items-start   ms-auto  relative mt-14'>
+    <img  src={imgSrc} alt={name} className=' sm:w-1/2 xs:w-1/2 xs:my-8 sm:pl-4  xs:pl-4 sm:my-8  xs:relative sm:relative xs:left-0 sm:left-0 md:relative md:left-0 absolute left-[-116px] sm:top-[0%] xs:top-[0%] top-[13%]'style={{transform:"translate(0%,0%) !important"}} />
  
-    <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-70px] ps-[150px] px-12'>
-      <p className='text-white pt-10 xs:flex xs:flex-col'>
+    <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-70px] sm:ps-4 ps-[150px] px-12'>
+      <p className='text-white pt-10 xs:pt-4 sm:pt-4 xs:flex xs:flex-col'>
         <span className='text-[26px] fgt-ff-semibold text-[#FFEDD7]'>{name}</span><br />
         {position}
       </p>

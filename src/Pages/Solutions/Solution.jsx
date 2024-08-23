@@ -7,7 +7,7 @@ const Solution = ({ title, description, buttonText, sections }) => {
   return (
     <div className="  bg-[#F7F6F1] px-[5.2%]  xs:py-8 py-16">
       <div className="grid grid-cols-2 xs:flex  xs:flex-col gap-9 xs:py-0 py-[120px]">
-        <div className="flex  flex-wrap justify-start items-center gap-8">
+        <div className="flex  flex-wrap justify-start items-center xl:gap-20 gap-8">
           {sections.map((section, index) => (
             <div key={index} className="flex flex-col items-center">
               <img src={section.img} alt={section.title} className="mb-4 xs:w-[61px]" />
