@@ -118,7 +118,7 @@ const Header = ({ backgroundImg, logo, socialIcons, socialIcons2, menuIcon, main
               <div>
                 <div className="md:flex">
                   <span>
-                    <div className="flex space-x-4 xs:hidden">
+                    <div className="flex space-x-4">
                       {/* <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
                       Login
                     </button>
