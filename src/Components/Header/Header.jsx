@@ -74,12 +74,7 @@ const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, bu
             <div className=" md:flex ">
               <span>
                 <div className="flex space-x-4">
-                  {/* <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
-                  Login
-                </button>
-                <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDD00]">
-                  Online Payment
-                </button> */}
+                 
                   <div className="flex space-x-3 pt-2">
                   <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden px-8  mt-4">
           <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
