@@ -136,12 +136,7 @@ const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, bu
                 <div className="md:flex">
                   <span>
                     <div className="flex space-x-4">
-                      {/* <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
-                      Login
-                    </button>
-                    <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#FFDD00]">
-                      Online Payment
-                    </button> */}
+                      
                       <div className="flex space-x-3 items-center pt-2">
 
                   
