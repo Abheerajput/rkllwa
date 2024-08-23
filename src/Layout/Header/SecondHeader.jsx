@@ -6,7 +6,8 @@ import fbicon from '../../assets/icons/fbicon.svg';
 import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import img1 from '../../assets/images/img1.png';
-import menuicon from '../../assets/icons/logo2.svg';
+import lkdnicon2 from "../../assets/icons/drpdwicon2.svg"
+import menuIcon from '../../assets/icons/logo2.svg';
 import icon1 from "../../assets/icons/drpdwicon1.svg";
 import aboutus from "../../assets/icons/aboutusicon.svg";
 import stay from "../../assets/icons/stayicon.svg";
@@ -56,113 +57,116 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
       <div className="flex justify-end px-[5.2%] pt-4">
         <div className=" items-center sm:items-end md:items-end md:flex  md:flex-col sm:flex sm:flex-col ">
           <div className="flex space-x-4 xs:hidden ">
-            <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
+            {/* <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
               Login
             </button>
             <button className="fgt-ff-medium text-[17.61px] text-black rounded-full py-1 px-6 bg-[#FFDD00]">
               Online Payment
-            </button>
-            <div className="flex space-x-3 pt-2">
-              {socialIcons.map((icon, index) => (
-                <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
-              ))}
-            </div>
+            </button> */}
+           <div className="flex space-x-3 pt-2">
+                  <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer">
+    <img src={lkdnicon} alt="LinkedIn" className="w-12 h-12" />
+  </a>
+
+
+                    <div className="flex items-center justify-end xs:pt-0 ">
+                      <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
+                    </div>
+                  </div>
           </div>
           <div className="flex items-center justify-end xs:pt-0 pt-8">
 
-            <img
-              src={menuicon}
-              alt="Menu Icon"
-              className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer"
-              onClick={toggleMenu}
-            />
+           
           </div>
         </div>
       </div>
       {menuOpen && (
-        <div
-        ref={menuRef}
-        className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
+          <div
+            ref={menuRef}
+            className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
           ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
-        >
-          <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
-            <div>
-              <Link to="/">
-                <img
-                  src={RKL2}
-                  alt="Logo"
-                  className="w-48 sm:w-40 md:w-72  lg:w-72 xl:w-72"
-                />
-              </Link>
-            </div>
-            <div>
-              <div className="md:flex">
-                <span>
-                  <div className="flex space-x-4 xs:hidden">
-                    <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
+          >
+            <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
+              <div>
+                <Link to="/">
+                  <img
+                    src={RKL2}
+                    alt="Logo"
+                    className="w-48 sm:w-40 md:w-72  lg:w-72 xl:w-72"
+                  />
+                </Link>
+              </div>
+              <div>
+                <div className="md:flex">
+                  <span>
+                    <div className="flex space-x-4 xs:hidden">
+                      {/* <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
                       Login
                     </button>
                     <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#FFDD00]">
                       Online Payment
-                    </button>
-                    <div className="flex space-x-3 pt-2">
-                      {socialIcons2.map((icon, index) => (
-                        <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
-                      ))}
+                    </button> */}
+                      <div className="flex space-x-3 items-center pt-2">
+
+                      <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer">
+    <img src={lkdnicon2} alt="LinkedIn" className="w-12 h-12" />
+  </a>
+                        <Link to="/">
+                          <img
+                            src={menuOpen ? crossIcon : menuIcon}
+                            alt={menuOpen ? "Close Icon" : "Menu Icon"}
+                            className="w-16 h-16  xs:w-12 xs:h-12 cursor-pointer"
+                            onClick={toggleMenu}
+
+                          />
+                        </Link>
+                        <div className="flex items-center justify-end xs:pt-4 ">
+
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div className='w-9/12  xs:w-full'>
+              <div className='flex justify-between xs:w-screen   xs:flex-col  w-full  pl-[6.9%]'>
+
+                <span className="flex flex-col gap-2  xs:pl-0 text-black">
+                  <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] flex gap-[10px] flex-wrap">
+                    <img src={icon1} alt="Practice Areas" /> Practice Areas
+                  </h1>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
+                    <Link to="/Immigration-Law">Immigration Law</Link>
+                  </p>
+                </span>
+                <span className="flex flex-col gap-2 text-black">
+                  <h1 className="fgt-ff-medium text-[27px] sx:text-[18px]  flex xs:pt-4 gap-[10px] flex-wrap">
+                    <img src={aboutus} alt="About Us" /> About Us
+                  </h1>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
+                    <Link to="/founders">Founders</Link>
+                  </p>
+                  <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
+                  <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p>
+                </span>
+                <span className="flex flex-col gap-2 text-black">
+                  <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
+                    <img src={stay} alt="Stay Informed" /> Stay Informed
+                  </h1>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
+                  <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]">News & Events</p>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
+                  <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
                 </span>
               </div>
-              <div className="flex items-center justify-end xs:pt-4 pt-8">
-                <Link to="/">
-                  <img
-                    src={menuOpen ? crossIcon : menuicon}
-                    alt={menuOpen ? "Close Icon" : "Menu Icon"}
-                    className="w-16 h-16  xs:w-12 xs:h-12 cursor-pointer"
-                    onClick={toggleMenu}
-
-                  /> 
-                </Link>
-              </div>
             </div>
           </div>
-          <div className='w-9/12  xs:w-full overflow-y-scroll'>
-            <div className='flex justify-between xs:w-screen   xs:flex-col  w-full  pl-[6.9%]'>
-
-              <span className="flex flex-col gap-2  xs:pl-0 text-black">
-                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] flex gap-[10px] flex-wrap">
-                  <img src={icon1} alt="Practice Areas" /> Practice Areas
-                </h1>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
-                  <Link to="/Immigration-Law">Immigration Law</Link>
-                </p>
-              </span>
-              <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px]  flex xs:pt-4 gap-[10px] flex-wrap">
-                  <img src={aboutus} alt="About Us" /> About Us
-                </h1>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
-                  <Link to="/founders">Founders</Link>
-                </p>
-                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
-                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p>
-              </span>
-              <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
-                  <img src={stay} alt="Stay Informed" /> Stay Informed
-                </h1>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
-                <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]">News & Events</p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
-              </span>
-            </div>
-          </div>
-        </div>
-      )}
+        )}
       <h1 className="text-[50px] xs:text-[35px] pl-[5.2%] fgt-ff-medium pb-8  ">{mainTitle}</h1>
     </header>
   );
