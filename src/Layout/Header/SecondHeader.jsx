@@ -56,7 +56,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
      }}>
       <div className="flex justify-end px-[5.2%] pt-4">
         <div className=" items-center sm:items-end md:items-end md:flex  md:flex-col sm:flex sm:flex-col ">
-          <div className="flex space-x-4 xs:hidden ">
+          <div className="flex space-x-4  ">
             {/* <button className="fgt-ff-medium text-[17.61px] text-white rounded-full border-2 px-6 py-1 border-white">
               Login
             </button>
@@ -99,7 +99,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
               <div>
                 <div className="md:flex">
                   <span>
-                    <div className="flex space-x-4 xs:hidden">
+                    <div className="flex space-x-4 ">
                       {/* <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
                       Login
                     </button>
@@ -115,7 +115,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                           <img
                             src={menuOpen ? crossIcon : menuIcon}
                             alt={menuOpen ? "Close Icon" : "Menu Icon"}
-                            className="w-16 h-16  xs:w-12 xs:h-12 cursor-pointer"
+                            className="w-16 h-16  cursor-pointer"
                             onClick={toggleMenu}
 
                           />
