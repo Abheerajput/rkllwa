@@ -48,7 +48,7 @@ const ProfileCard2 = () => {
           <div className="flex xs:flex-col md:flex-col xs:items-start xs:gap-0  md:gap-0  mt-[24px] gap-12 items-start ">
             <img 
               src={profile} 
-              alt="ASohila Rezai" 
+              alt="Sohila Rezai" 
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
@@ -81,7 +81,7 @@ const ProfileCard2 = () => {
           </p>
           <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light  mt-4">
      
-Mario is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
+          Sohila Rezai is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>
 
           <div className="md:w-2/3  pt-6 py-4">

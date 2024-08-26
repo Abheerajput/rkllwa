@@ -45,7 +45,7 @@ const App = () => {
     <Solution
       title="We make our practice your solution."
       description="Whether you have personal or business legal needs,  our <br/> team responds quickly and acts decisively."
-      buttonText="About Practice Areas"
+      buttonText=" Practice Areas"
       sections={sections}
     />
   );

@@ -7,9 +7,9 @@ import arrow from "../../assets/icons/arrow.svg"
 const founders = [
   {
     imgSrc: img1,
-    name: "Nazanin Lahijani",
+    name: " Ninaz Khorsandi",
     position: "Partner",
-    description: `Nazanin Lahijaniis a business lawyer who represents clients in the adversarial context of business disputes and business litigation. Her primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Ava’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.`,
+    description: `Ninaz Khorsandiis a business lawyer who represents clients in the adversarial context of business disputes and business litigation. Her primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Ava’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.`,
   },
   {
     imgSrc: img2,
@@ -21,9 +21,9 @@ const founders = [
   },
   {
     imgSrc: img3,
-    name: "Ninaz Khorsandi",
+    name: "Nazanin Lahijani",
     position: "Partner",
-    description: `Ninaz Khorsandi is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
+    description: `Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
 `,
   },
 ];
