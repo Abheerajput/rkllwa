@@ -69,12 +69,8 @@ const Business = () => {
  <p className='text-[20px] py-4 fgt-ff-light sx:text-[16px]'>Please <span className='border-[#4861eb] border-b-2'>contact us</span>  for a free consultation to discuss your business transactional law issues.</p> 
 </div>
 
-
-
-        
         </div>
 
-        {/* Sidebar */}
         <div className='w-[35%] xs:w-full sm:w-full xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
         <div className="bg-[#FFEDD7] h-[50%] sm:w-full xs:w-full md:w-[80%] lg:w-[80%] xl:w-[80%] p-4 rounded-md pl-8 xs:pl-4  xs:my-4 ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>

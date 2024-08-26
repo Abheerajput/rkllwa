@@ -21,8 +21,7 @@ const  ImmigrationLaw = ()=> {
       <Content/>
       <Founders/>
       <Footer/>
-    
-      
+
     </div>
   );
 }
