@@ -86,9 +86,11 @@ const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, bu
                 <React.Fragment key={index}>{line}</React.Fragment>
               )) : mainDescription}
             </p>
+            <a href="#content">
             <button className="bg-[#E0AF04] px-8 lg:px-12 py-3  rounded-md">
-            <a href="#content">{buttonText}</a>
+            {buttonText}
             </button>
+            </a>
           </div>
         </div>
                  

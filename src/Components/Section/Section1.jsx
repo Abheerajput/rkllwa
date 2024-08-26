@@ -36,11 +36,8 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
               dangerouslySetInnerHTML={{ __html: processedDescription }}
             />
             <button
-             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4">
-             
+             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4"> 
               {buttonText}
-              
-             
             </button>
           </div>
           <div className="w-1/2 sm:w-full md:w-full xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">

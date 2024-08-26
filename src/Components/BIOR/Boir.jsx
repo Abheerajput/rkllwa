@@ -321,7 +321,7 @@ Beneficial Ownership information refers to identifying information about the ind
         Multiple entity-owned Reporting Company <br />
         (with unlimited individual owners)
       </td>
-      <td className='border-2 border-black ps-3 sx:text-[16px] py-2'>$849</td>
+      <td className='border-2 border-black ps-3 sx:text-[16px] py-2'>$1349</td>
     </tr>
   </table>
 </div>
