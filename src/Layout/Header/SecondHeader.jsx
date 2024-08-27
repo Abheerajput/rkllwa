@@ -11,7 +11,10 @@ import menuIcon from '../../assets/icons/logo2.svg';
 import icon1 from "../../assets/icons/drpdwicon1.svg";
 import aboutus from "../../assets/icons/aboutusicon.svg";
 import stay from "../../assets/icons/stayicon.svg";
-
+import fbicon2 from "../../assets/icons/drpdwicon3.svg"
+import twittericon2 from "../../assets/icons/drpdwicon4.svg"
+import insta from '../../assets/icons/ins.svg';
+import menuicon from '../../assets/icons/newmenu.svg';
 import { Link } from 'react-router-dom'; // Ensure you have react-router-dom installed
 
 const SecondHeader = ({ socialIcons2, mainTitle }) => {
@@ -66,23 +69,21 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
             </button> */}
             <div className="flex space-x-3 pt-2">
             
-              <div className=" flex  justify-end mb-12 ">
+            <div className=" flex  justify-end mb-12 ">
               <span>
-       <div className="flex items-center justify-center flex-col gap-4 xs:pt-0 ">
-                      <div className='flex gap-4 mb-6 mr-12'>
-                      <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer" className='flex'>
-    <img src={lkdnicon} alt="LinkedIn"  className='' />
-  </a>
-                      <a href="https://www.facebook.com/profile.php?id=61564380045589">
-                      <img src={fbicon} alt="LinkedIn"  className=' ' />
-                      </a>               
-            
-                      </div>
-                      <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
-                    </div>
+                <div className="flex items-center justify-center  gap-6 xs:pt-0 ">
+                  <a href="https://www.facebook.com/profile.php?id=61564380045589">
+                    <img src={fbicon2} alt="LinkedIn" className=' xs:hidden' />
+                  </a>
+                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==">
+                    <img src={insta } alt="LinkedIn" className='xs:hidden ' />
+                  </a>
+                  <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" className='flex'>
+                    <img src={lkdnicon} alt="LinkedIn" className='xs:hidden' />
+                  </a>
+                  <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
+                </div>
               </span>
-
-
             </div>
           
             </div>
