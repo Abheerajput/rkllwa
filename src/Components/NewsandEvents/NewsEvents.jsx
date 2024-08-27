@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom"
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
@@ -9,18 +9,63 @@ import icon2 from '../../assets/icons/Posts.svg';
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../../Layout/Footer/Footer"
-
+import MenuOpen from '../MenuOpen';
 const NewsEvents = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  // Set focus on the menu when it opens
+  useEffect(() => {
+    if (menuOpen && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [menuOpen]);
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   return (
     <>
+    {menuOpen && (
+        <MenuOpen 
+          ref={menuRef}  // Attach ref to the MenuOpen component
+          open={menuOpen} 
+          close={toggleMenu} 
+          isAnimating={isAnimating} 
+          tabIndex="-1"  // Make it focusable
+        />
+      )}
       <SecondHeader
         socialIcons2={socialIcons2}
         mainTitle="News And Events"
       />
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">News And Events</Link>
       </div>
       <div className="bg-white w-full pb-12 xs:pb-2 xs:pt-4 pt-8  px-[5.2%]  flex xs:flex-col sm:flex sm:flex-col   sm:p-10">

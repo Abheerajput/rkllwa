@@ -114,24 +114,7 @@ const ProfileCard = () => {
               </ul>
             </div>
 
-            {/* Testimonials Slider */}
-            <div className="bg-[#F7F6F1] p-4 rounded-md xs:my-12 mt-6 pb-8">
-            <h3 className="text-[35px] fgt-ff-normal justify-center flex sx:text-[28px] font-bold text-[#02131D] sx:mb-0 mb-4">Testimonials</h3>
-              <Slider {...testimonialSettings}>
-                <div className="text-[#212121] text-[20px] fgt-ff-light">
-                  “Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- the very best combination! He's an invaluable asset to the team. And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “
-                </div>
-                <div className="text-[#212121] text-[20px] fgt-ff-light">
-                  “Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- the very best combination! He's an invaluable asset to the team. And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “
-                </div>
-                <div className="text-[#212121] text-[20px] fgt-ff-light">
-                  "I highly recommend his services. Mario is an invaluable asset to the team.“Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- . And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “"
-                </div>
-              </Slider>
-            </div>
+           
           </div>
         </div>
         </div>

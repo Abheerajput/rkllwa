@@ -1,4 +1,4 @@
-import React ,{useState}from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { FaPlus, FaMinus } from 'react-icons/fa'; 
 import "slick-carousel/slick/slick.css";
@@ -13,8 +13,45 @@ import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import img1 from "../../assets/icons/boirimg1.svg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
+import MenuOpen from '../MenuOpen';
 import { Link } from 'react-router-dom';
 const Boir = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  // Set focus on the menu when it opens
+  useEffect(() => {
+    if (menuOpen && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [menuOpen]);
   const [open, setOpen] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -170,6 +207,15 @@ const Boir = () => {
 
   return (
     <>
+     {menuOpen && (
+        <MenuOpen 
+          ref={menuRef}  // Attach ref to the MenuOpen component
+          open={menuOpen} 
+          close={toggleMenu} 
+          isAnimating={isAnimating} 
+          tabIndex="-1"  // Make it focusable
+        />
+      )}
       <SecondHeader
         socialIcons2={socialIcons2}
         mainTitle="BOIR Compliance"
@@ -178,7 +224,7 @@ const Boir = () => {
 
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">Boir Compliance</Link> 
         
       </div>

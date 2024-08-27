@@ -102,15 +102,15 @@ function MenuOpen({ open, close  ,isAnimating}) {
                                 <Link to="/founders">Founders</Link>
                             </p>
                             <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
-                            <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p>
+                            {/* <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p> */}
                         </span>
                         <span className="flex flex-col gap-2 text-black">
                             <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
                                 <img src={stay} alt="Stay Informed" /> Stay Informed
                             </h1>
-                            <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
+                            {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p> */}
                             <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link> </p>
-                            <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
+                            {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p> */}
                             <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
                         </span>
                     </div>
