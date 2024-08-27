@@ -333,9 +333,9 @@ Beneficial Ownership information refers to identifying information about the ind
 </h2>
 
 
-<div className='overflow-hidden  rounded-xl border-2 border-black'>
+<div className='  rounded-xl '>
   <table className='w-full '>
-    <tr className="border-1 border-black">
+    <tr className=" border-black">
       <th className='text-[24px] py-2 w-[50%] sx:text-[18px] fgt-ff-bold bg-[#E5E5E5] text-start ps-3 border-2 border-black'>
         Type of Owners
       </th>
