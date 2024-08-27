@@ -3,11 +3,11 @@
   import calender from "../../assets/icons/calender.svg"
   const SectionCard = ({ icon, title, items, bgColor }) => {
     return (
-      <div className={`flex flex-col items-center py-[125px] ${bgColor} `}>
+      <div className={`flex flex-col  items-center xs:items-start xs:py-8 xs:px-8 py-[125px] ${bgColor} `}>
         <div className="text-[#EEB26D] mb-4 text-4xl">
         <img src={icon} alt={title} />
           </div>
-        <h2 className="text-[35px] fgt-ff-normal mb-4 text-center"  dangerouslySetInnerHTML={{ __html:title }}>
+        <h2 className="text-[35px] fgt-ff-normal mb-4 xs:text-start text-center"  dangerouslySetInnerHTML={{ __html:title }}>
 
         </h2>
         <div className="space-y-4">
@@ -17,7 +17,7 @@
 
                 <p className="text[20px] fgt-ff-light text-[#313131] mb-2" dangerouslySetInnerHTML={{ __html: item.description }} />
               </p>
-              <a href={item.link} className="text-[24px] fgt-ff-medium">Read More →</a>
+              <a href={item.link} className="text-[24px] xs:text-[20px] fgt-ff-medium">Read More →</a>
             </div>
           ))}
         </div>

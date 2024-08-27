@@ -4,6 +4,7 @@ import RKL2 from '../../assets/icons/Rkl2.svg';
 import img1 from '../../assets/images/img1.png';
 import lkdnicon2 from "../../assets/icons/drpdwicon2.svg"
 import fbicon2 from "../../assets/icons/drpdwicon3.svg"
+import SecondHeader from '../../Layout/Header/SecondHeader';
 import twittericon2 from "../../assets/icons/drpdwicon4.svg"
 import { FaGreaterThan } from "react-icons/fa6";
 import fbicon from '../../assets/icons/fbicon.svg';
@@ -11,67 +12,49 @@ import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import menuicon from '../../assets/icons/menicon.png';
 import Footer from "../../Layout/Footer/Footer"
-import founder1 from "../../assets/icons/founder4.svg"
-import founder2 from "../../assets/icons/founder5.svg"
-import founder3 from "../../assets/icons/founder6.svg"
+import founder1 from "../../assets/images/Frame 1171275768.png"
+import founder2 from "../../assets/images/Frame 1171275769.png"
+import founder3 from "../../assets/images/Group.png"
+// import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
+// import fbicon2 from '../../assets/icons/drpdwicon3.svg';
+// import twittericon2 from '../../assets/icons/drpdwicon4.svg';
+
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
-const Founderscreen = ({socialIcons2}) => {
+const Founderscreen = () => {
+  const socialIcons = [lkdnicon2, fbicon2, twittericon2];
   return (
     <>
     <div>
-    <header className="bg-gray-800  px-8  p-4 text-white" style={{
-      backgroundImage: `url(${img1})`,
-    }}>
-        <div className='flex justify-end pt-4'>
-          <div className=" md:flex ">
-            <span>
-              <div className="flex space-x-4 xs:hidden">
-                <button className="fgt-ff-medium text-[17.61px] text-[#E6A358] rounded-full border-2 px-6 py-1 border-[#E6A358]">
-                  Login
-                </button>
-                <button className="fgt-ff-medium text-[17.61px] text-white rounded-full py-1 px-6 bg-[#E6A358]">
-                  Online Payment
-                </button>
-                <div className="flex space-x-3 pt-2">
-              {socialIcons2.map((icon, index) => (
-                <img key={index} src={icon} alt={`Social Icon ${index}`} className="w-6 h-6" />
-              ))}
-            </div>
-              </div>
-            </span>
-            <div className="flex items-center justify-end pt-8">
-            <img src={menuicon} alt="Menu Icon" className="w-16 h-16 cursor-pointer" />
-          </div>
-          </div>
-        </div>
-
-        <h1 className="text-[50px] fgt-ff-medium pb-8">Our Founders</h1>
-    </header>
+    <SecondHeader
+        socialIcons2={socialIcons}
+        mainTitle="Our Founders"
+      />
+   
   </div>
-  <div className="p-4 bg-[#F7F6F1]">
+  <div className="py-4 bg-[#F7F6F1]">
 
-      <p className='fgt-ff-normal text-[26.5px] flex items-center gap-3'> 
+      <p className='fgt-ff-normal px-[5.2%] sx:text-[16px] text-[26.5px] flex items-center gap-3'> 
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>
-<div className='flex justify-evenly py-12  xs:flex-col xs:items-center md:items-center md:flex-col '>
-    <p>
-        <Link to="/profile/Ava Johnson">
-        <img src={founder1} alt="" />
-        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'>Ava Johnson</span> <br /> Principal</h3>
+<div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%]  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
+    <p className='xs:w-full '>
+        <Link to="/profile/Sohila Rezai">
+        <img src={founder2} alt="" className='w-full' />
+        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'> Sohila Rezai</span> <br /> Partner</h3>
         </Link>
     </p>
-    <p>
-      <Link to="/profile/Taylor Morgan">
-        <img src={founder2} alt="" />
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Taylor Morgan </span> <br />Principal</h3>
+    <p className='xs:w-full '>
+      <Link to="/profile/Ninaz Khorsandi">
+        <img src={founder1} alt="" className='w-full'/>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'> Ninaz Khorsandi  </span> <br />Partner</h3>
         </Link>
     </p>
-    <p>
-      <Link to="/profile/Jordan Taylor">
-        <img src={founder3} alt="" />
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Jordan Taylor </span><br /> Attorney</h3>
+    <p className='xs:w-full '>
+      <Link to="/profile/Nazanin Lahijani">
+        <img src={founder3} alt=""  className='w-full'/>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Nazanin Lahijani</span><br />Partner</h3>
         </Link>
     </p>
 </div>

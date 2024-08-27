@@ -1,0 +1,28 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo "Started"     
+  pre_build:
+    commands:
+      - echo "pre build started"
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - export NODE_OPTIONS=--max_old_space_size=4096
+      - npm run build
+  post_build:
+    commands:
+      - echo pushing static files
+      - aws s3 sync build/ s3://dev.rklawcorp.com/
+      - echo static files upload finished         
+      - echo clearing cloudfront cache
+      - aws cloudfront create-invalidation --distribution-id E3GMYB5GNFEX98 --paths '/*'
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes

@@ -3,8 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     screens: {
-      'xs': {'min': '300px', 'max': '780px'},
-      'md': {'min': '780px', 'max': '1024px'},
+      'sx':{'min': '318px', 'max': '575.99px'},
+      'xs': {'min': '318px', 'max': '768.99px'},
+      'sm': {'min': '769px', 'max': '1024px'}, // Small screens, usually tablets
+      'md': {'min': '1025px', 'max': '1280px'}, // Medium screens, usually desktops
+      'lg': {'min': '1281px', 'max': '1536px'}, // Large screens, larger desktops
+      'xl': {'min': '1537px'}, // Extra large screens, wide screens
     },
     extend: {},
   },

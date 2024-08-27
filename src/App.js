@@ -5,8 +5,11 @@ import Navbar from './Components/Navbar/Navbar';
 import Profile1 from './Pages/Profiles/Profile';
 import Profile2 from './Pages/Profiles/Profile2';
 import Profile3 from './Pages/Profiles/Profile3';
-import Secondscreen from './Routes/Secondscreen/Secondscreen';
+import ImmigrationLaw from './Routes/ImmigrationLaw/ImmigrationLaw';
 import Founderscreen from "./Pages/Founders/Founderscreen"
+import Bior from "./Components/BIOR/Boir"
+import Business from './Components/BussinessLaw/Business';
+import NewsAndEvents from './Components/NewsandEvents/NewsEvents';
 // Import the ImmigrationLaw component
 
 function App() {
@@ -15,11 +18,14 @@ function App() {
       <Navbar />
        <Routes>
         <Route path="/" element={<Header />} />
-        <Route path="/secondscreen" element={<Secondscreen />} />
+        <Route path="/Immigration-Law" element={<ImmigrationLaw />} />
         <Route path="/founders" element={<Founderscreen />} />
-        <Route path="/profile/Ava Johnson" element={<Profile1/>} />
-        <Route path="/profile/Taylor Morgan" element={<Profile2/>} />
-        <Route path="/profile/Jordan Taylor" element={<Profile3/>} />
+        <Route path="/profile/Nazanin Lahijani" element={<Profile3/>} />
+        <Route path="/profile/Sohila Rezai" element={<Profile2/>} />
+        <Route path="/profile/Ninaz Khorsandi" element={<Profile1/>} />
+        <Route path="/boir" element={<Bior/>} />
+        <Route path="/business" element={<Business/>} />
+        <Route path="/news&events" element={<NewsAndEvents/>} />
       </Routes>
       
      

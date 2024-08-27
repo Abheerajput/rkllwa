@@ -62,3 +62,39 @@
     opacity: .75;
     color: #E6A358 !important;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-in-out forwards;
+  }
+  
+  .animate-slide-out {
+    animation: slide-out 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* Target xs breakpoint */
+@media (min-width: 318px) and (max-width: 768px) {
+  /* Hide <br> tags with class 'xs-hide' on xs screens */
+  .xs-hide {
+    display: none;
+  }
+}
