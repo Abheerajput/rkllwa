@@ -5,7 +5,7 @@ import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 import Section1 from '../Section/Section1';
 import Solution from '../../Pages/Solutions/Solution';
 import Footer from '../../Layout/Footer/Footer';
-import bgimg from '../../assets/images/bgimg3.jpg';
+import bgimg from '../../assets/images/bgimg4.jpg';
 // import bgimg from '/../../assets/images/bgimg.jpg';
 import RKL from '../../assets/icons/headicon.svg';
 import RKL2 from '../../assets/icons/Rkl2.svg';
@@ -17,12 +17,12 @@ import twittericon2 from "../../assets/icons/drpdwicon4.svg"
 import icon1 from "../../assets/icons/drpdwicon1.svg"
 import fbicon from '../../assets/icons/fbicon.svg';
 import lkdnicon from '../../assets/icons/lkdnicon.svg';
-import twittericon from '../../assets/icons/twitter.svg';
-import menuicon from '../../assets/icons/logo2.svg';
+import insta from '../../assets/icons/ins.svg';
+import menuicon from '../../assets/icons/newmenu.svg';
 import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
 
-const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
+const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -74,46 +74,44 @@ const Header = ({ backgroundImg, logo,  menuIcon, mainTitle, mainDescription, bu
           <div>
             <div className=" flex  justify-end mb-12 ">
               <span>
-       <div className="flex items-center justify-center flex-col gap-4 xs:pt-0 ">
-                      <div className='flex gap-4 mb-6 mr-12'>
-                      <a href="https://www.linkedin.com/in/rkl-law-9aa681324/" target="_blank" rel="noopener noreferrer" className='flex'>
-    <img src={lkdnicon} alt="LinkedIn"  className='' />
-  </a>
-                      <a href="https://www.facebook.com/profile.php?id=61564380045589">
-                      <img src={fbicon} alt="LinkedIn"  className=' ' />
-                      </a>               
-            
-                      </div>
-                      <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
-                    </div>
+                <div className="flex items-center justify-center  gap-6 xs:pt-0 ">
+                  <a href="https://www.facebook.com/profile.php?id=61564380045589">
+                    <img src={fbicon2} alt="LinkedIn" className=' xs:hidden' />
+                  </a>
+                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==">
+                    <img src={insta } alt="LinkedIn" className='xs:hidden ' />
+                  </a>
+                  <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" className='flex'>
+                    <img src={lkdnicon} alt="LinkedIn" className='xs:hidden' />
+                  </a>
+                  <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
+                </div>
               </span>
-
-
             </div>
             <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden mr-12 px-8  mt-4">
-          <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
-            <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
-              {mainTitle}
-            </h1>
-            <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
-              {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
-                <React.Fragment key={index}>{line}</React.Fragment>
-              )) : mainDescription}
-            </p>
-            <a href="#content">
-            <button className="bg-[#E0AF04] px-8 lg:px-12 py-3  rounded-md">
-            {buttonText}
-            </button>
-            </a>
-          </div>
-        </div>
+              <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
+                <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
+                  {mainTitle}
+                </h1>
+                <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
+                  {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
+                    <React.Fragment key={index}>{line}</React.Fragment>
+                  )) : mainDescription}
+                </p>
+                <a href="#content">
+                  <button className="bg-[#E0AF04] px-8 lg:px-12 py-3  rounded-md">
+                    {buttonText}
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         {menuOpen && (
-              <MenuOpen open={menuOpen} close={toggleMenu} isAnimating={isAnimating}/>
+          <MenuOpen open={menuOpen} close={toggleMenu} isAnimating={isAnimating} />
         )}
-        
+
       </div>
       <Section1 />
       <Solution />
@@ -138,7 +136,7 @@ const App = () => {
       menuIcon={menuicon}
       mainTitle="Get ready. Move forward. Go far. "
       mainDescription={[
-       " A trusted name for over 20 years, RKL LAW is here for you.", <br/>," Onward and upward together. "
+        " A trusted name for over 20 years, RKL LAW is here for you.", <br />, " Onward and upward together. "
       ]}
       buttonText="Learn More"
     />

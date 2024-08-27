@@ -12,9 +12,9 @@ import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import menuicon from '../../assets/icons/menicon.png';
 import Footer from "../../Layout/Footer/Footer"
-import founder1 from "../../assets/icons/founder4.svg"
-import founder2 from "../../assets/icons/founder5.svg"
-import founder3 from "../../assets/icons/founder6.svg"
+import founder1 from "../../assets/images/Frame 1171275768.png"
+import founder2 from "../../assets/images/Frame 1171275769.png"
+import founder3 from "../../assets/images/Group.png"
 // import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 // import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 // import twittericon2 from '../../assets/icons/drpdwicon4.svg';
@@ -46,13 +46,13 @@ const Founderscreen = () => {
         </Link>
     </p>
     <p className='xs:w-full '>
-      <Link to="/profile/Nazanin Lahijani">
+      <Link to="/profile/Ninaz Khorsandi">
         <img src={founder1} alt="" className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'> Ninaz Khorsandi  </span> <br />Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
-      <Link to="/profile/Ninaz Khorsandi">
+      <Link to="/profile/Nazanin Lahijani">
         <img src={founder3} alt=""  className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Nazanin Lahijani</span><br />Partner</h3>
         </Link>
