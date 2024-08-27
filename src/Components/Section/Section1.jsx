@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import img1 from '../../assets/images/img1.png';
 import groupimg from '../../assets/images/groupimg.png';
 import '../../Style/style.css';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
+import MenuOpen from '../MenuOpen';
 
 const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) => {
   // Use media queries to detect screen size
@@ -14,8 +15,53 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
     ? description.replace(/<br\s*\/?>/gi, ' ') 
     : description;
 
+    const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+    const [isAnimating, setIsAnimating] = useState(false);
+  
+    const toggleMenu = () => {
+      if (menuOpen) {
+        setIsAnimating(true);
+        setTimeout(() => {
+          setMenuOpen(false);
+          setIsAnimating(false);
+        }, 300); // Match the duration of your slide-out animation
+      } else {
+        setMenuOpen(true);
+      }
+    };
+  
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+          setMenuOpen(false);
+        }
+      };
+  
+      document.addEventListener('mousedown', handleClickOutside);
+  
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, [menuRef]);
+  
+    // Set focus on the menu when it opens
+    useEffect(() => {
+      if (menuOpen && menuRef.current) {
+        menuRef.current.focus();
+      }
+    }, [menuOpen]);
   return (
     <>
+    {menuOpen && (
+        <MenuOpen 
+          ref={menuRef}  // Attach ref to the MenuOpen component
+          open={menuOpen} 
+          close={toggleMenu} 
+          isAnimating={isAnimating} 
+          tabIndex="-1"  // Make it focusable
+        />
+      )}
       <div
       id="content"
         className="xs:px-[5.2%] "
@@ -35,10 +81,13 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
               className="text-[18px] lg:text-[20px] fgt-ff-semibold text-white mt-4 pb-4 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: processedDescription }}
             />
-            <button
-             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4"> 
+            <a href="#topscroll"><button
+             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4"
+             onClick={toggleMenu} 
+             > 
+           
               {buttonText}
-            </button>
+            </button></a>
           </div>
           <div className="w-1/2 sm:w-full md:w-full xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">
             <img src={sideImg} alt="Group" className="max-w-full h-auto" />
@@ -53,15 +102,17 @@ const App = () => {
   const description = `Strategic. Efficient. And committed to your success. RKL Law is poised to serve you for your <br /> transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge, <br />  experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the <br />  law so you can handle the rest. 
 Learn More
 `;
+window.scrollTo(0, 0);
 
   return (
+    <div >
     <Section1
       // title="We make your team your ally"
       description={description}
       buttonText="Learn More"
       backgroundImg={img1}
       sideImg={groupimg}
-    />
+    /></div>
   );
 };
 

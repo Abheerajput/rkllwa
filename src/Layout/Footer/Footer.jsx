@@ -23,10 +23,14 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
           <p className="text-[18px] text-center lg:text-[20px] sx:text-[16px] fgt-ff-light text-white xs:mt-0 mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
           <div className="flex justify-center gap-6 ">
-          <img src={insta} alt="Instagram"className="" />
-          <img src={li} alt="LinkedIn" className="" />
-          <img src={fb} alt="Facebook" className="" />
-          <img src={twit} alt="Twitter" className="" />
+            <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA=="> <img src={insta} alt="Instagram"className="" /></a>
+            <a href="http://www.linkedin.com/in/rkl-law-9aa681324"> <img src={li} alt="LinkedIn" className="" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61564380045589">  <img src={fb} alt="Facebook" className="" /></a>
+            <a href="#"> <img src={twit} alt="Twitter" className="" /></a>
+         
+         
+        
+         
         </div>
       <p className='text-white sx:text-[16px] text-[20px] pt-20 xs:pt-6 fgt-ff-light'>
         {title}

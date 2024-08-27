@@ -10,6 +10,7 @@ const founders = [
     name: " Ninaz Khorsandi",
     position: "Partner",
     description: `Ninaz Khorsandiis a business lawyer who represents clients in the adversarial context of business disputes and business litigation. Her primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Ava’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.`,
+    link: "/profile/Ninaz Khorsandi",
   },
   {
     imgSrc: img2,
@@ -18,6 +19,7 @@ const founders = [
     description: `Sohila Razai is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
 
 `,
+link: "/profile/Sohila Rezai",
   },
   {
     imgSrc: img3,
@@ -25,10 +27,11 @@ const founders = [
     position: "Partner",
     description: `Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes and business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies who need a highly skilled business attorney to creatively and aggressively represent them in their business disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, accounting, wage claims, and unjust enrichment.
 `,
+link: "/profile/Nazanin Lahijani",
   },
 ];
 
-const FounderCard = ({ imgSrc, name, position, description }) => (
+const FounderCard = ({ imgSrc, name, position, description ,link}) => (
   <div className='flex bg-[#403C5C] mr-24  xs:mt-4 xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col sm:flex-col xs:items-start sm:items-start   ms-auto  relative mt-14'>
     <img  src={imgSrc} alt={name} className=' sm:w-1/2 xs:w-1/2 xs:my-8 sm:pl-4  xs:pl-4 sm:my-8  xs:relative sm:relative xs:left-0 sm:left-0 md:relative md:left-0 absolute left-[-116px] sm:top-[0%] xs:top-[0%] top-[13%]'style={{transform:"translate(0%,0%) !important"}} />
  
@@ -38,7 +41,12 @@ const FounderCard = ({ imgSrc, name, position, description }) => (
         {position}
       </p>
       <p className='text-white text-[20px] sx:text-[16px] fgt-ff-light py-4 '>{description}</p>
-      <p className='text-[26px]  fgt-ff-semibold flex gap-4 text-[#FFEDD7] sx:text-[18px] py-6 cursor-pointer'>More Info <img src={arrow} alt="" /> </p>
+      <p className='text-[26px]  fgt-ff-semibold flex gap-4 text-[#FFEDD7] sx:text-[18px] py-6 cursor-pointer'>
+      <a href={link} className='text-[26px]  fgt-ff-semibold flex gap-4 flex-wrap  text-[#FFEDD7] sx:text-[18px] py-6 cursor-pointer'>
+        More Info <img src={arrow} alt="" />
+      </a>
+
+       </p>
     </div>
   </div>
 );
@@ -54,6 +62,7 @@ const Founders = () => {
           name={founder.name}
           position={founder.position}
           description={founder.description}
+          link={founder.link}
         />
       ))}
     </div>

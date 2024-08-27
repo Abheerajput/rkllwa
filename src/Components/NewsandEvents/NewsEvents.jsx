@@ -21,7 +21,7 @@ const NewsEvents = () => {
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
-        <Link to="/founders" className="hover:underline">News And Events</Link>
+        <Link to="/" className="hover:underline">News And Events</Link>
       </div>
       <div className="bg-white w-full pb-12 xs:pb-2 xs:pt-4 pt-8  px-[5.2%]  flex xs:flex-col sm:flex sm:flex-col   sm:p-10">
    

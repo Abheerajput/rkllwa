@@ -5,7 +5,7 @@ import '../../Style/style.css';
 
 const Navbar = () => {
   return (
-  <div className=''>
+  <div className='' id='topscroll'>
  <div className="bg-[#E0AF04]  px-[5.2%] py-4  md:py-6">
       <div className="flex justify-between items-center">
         <p className="fgt-ff-medium  text-[16px] text-white md:text-[20px]">BOIR reporting made easy </p>

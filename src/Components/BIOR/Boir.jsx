@@ -179,7 +179,7 @@ const Boir = () => {
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
-        <Link to="/founders" className="hover:underline">Boir Compliance</Link> 
+        <Link to="/" className="hover:underline">Boir Compliance</Link> 
         
       </div>
 
@@ -299,26 +299,26 @@ Beneficial Ownership information refers to identifying information about the ind
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 py-2 sx:text-[16px] text-[19px] font-normal inter'>
-        Single individual-owned Reporting Company
+        Single individual-owned  Company
       </td>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2'>$349</td>
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
-        Multiple individual-owned Reporting <br /> Company
+        Multiple individual-owned <br /> Company
       </td>
       <td className='border-2 border-black ps-3 sx:text-[16px]  py-2'>$449</td>
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
-        Single entity-owned Reporting Company <br />
+        Single entity-owned  Company <br />
         (with unlimited individual owners)
       </td>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2'>$849</td>
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
-        Multiple entity-owned Reporting Company <br />
+        Multiple entity-owned  Company <br />
         (with unlimited individual owners)
       </td>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2'>$1349</td>
