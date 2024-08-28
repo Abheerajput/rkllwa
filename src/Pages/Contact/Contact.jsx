@@ -38,7 +38,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
 
-    // Check for empty fields and alert the user
+    
     if (!firstName) {
       toast.warn("Please enter your First Name.");
       return;
@@ -64,7 +64,6 @@ const Contact = () => {
       return;
     }
 
-    // If all fields are filled, send the request
     try {
       const response = await axios.post(
         "http://98.70.57.18:82/user/formSubmit",
@@ -84,7 +83,7 @@ const Contact = () => {
     } catch (error) {
       toast.error("Something went wrong!");
       console.error("Error submitting form:", error);
-      // Handle error (e.g., show an error message)
+     
     }
   };
 
