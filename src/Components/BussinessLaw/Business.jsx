@@ -112,7 +112,7 @@ const Business = () => {
 <li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Distribution Agreements</li>
 <li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Lender/investor agreements  </li>
   </ul>
- <p className='text-[20px] py-4 fgt-ff-light sx:text-[16px]'>Please <span className='border-[#4861eb] border-b-2'>contact us</span>  for a free consultation to discuss your business transactional law issues.</p> 
+ <p className='text-[20px] py-4 fgt-ff-light sx:text-[16px]'>Please  <span className='border-[#4861eb] border-b-2'><Link to="/contactus">contact us</Link> </span>  for a free consultation to discuss your business transactional law issues.</p> 
 </div>
 
         </div>

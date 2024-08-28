@@ -353,7 +353,7 @@ Beneficial Ownership information refers to identifying information about the ind
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
         Multiple individual-owned <br /> Company
       </td>
-      <td className='border-2 border-black ps-3 sx:text-[16px]  py-2'>$449</td>
+      <td className='border-2 border-black ps-3 sx:text-[16px]  py-2'>$499</td>
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>

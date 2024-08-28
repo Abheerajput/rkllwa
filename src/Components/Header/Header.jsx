@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-// import crossIcon from "../../assets/images/pngwing.png"
+import crossIcon from "../../assets/images/pngwing.png"
 import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 import Section1 from '../Section/Section1';
 import Solution from '../../Pages/Solutions/Solution';
@@ -73,13 +73,13 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
 
           <div>
             <div className=" flex  justify-end mb-12 ">
-              <span>
-                <div className="flex items-center justify-center  gap-6 xs:pt-0 ">
-                  <a href="https://www.facebook.com/profile.php?id=61564380045589">
-                    <img src={fbicon2} alt="LinkedIn" className=' xs:hidden' />
+            <span>
+                <div className="flex items-center justify-center gap-6 xs:pt-0 ">
+                  <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">
+                    <img src={fbicon2} alt="Facebook" className='xs:hidden' />
                   </a>
-                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==">
-                    <img src={insta } alt="LinkedIn" className='xs:hidden ' />
+                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                    <img src={insta} alt="Instagram" className='xs:hidden ' />
                   </a>
                   <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" className='flex'>
                     <img src={lkdnicon} alt="LinkedIn" className='xs:hidden' />

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import crossIcon from "../assets/images/pngwing.png"
+import crossIcon from "../assets/icons/crossicon.svg"
 // import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 // import Section1 from '../Section/Section1';
 // import Solution from '../../Pages/Solutions/Solution';
@@ -97,7 +97,9 @@ function MenuOpen({ open, close  ,isAnimating}) {
                             <h1 className="fgt-ff-medium text-[27px] sx:text-[18px]  flex xs:pt-4 gap-[10px] flex-wrap">
                                 <img src={aboutus} alt="About Us" /> About Us
                             </h1>
-                            <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
+                            <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">
+                            <Link to="/contactus"> Contact Us</Link>
+                                </p>
                             <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                                 <Link to="/founders">Founders</Link>
                             </p>
