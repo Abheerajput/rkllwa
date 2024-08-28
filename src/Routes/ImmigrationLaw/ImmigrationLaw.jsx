@@ -3,7 +3,7 @@ import Breadcrumb from '../../Components/Breadcrumb/Breadcrumb';
 import Content from '../../Components/Content/Content';
 import Footer from "../../Layout/Footer/Footer"
 import SecondHeader from '../../Layout/Header/SecondHeader';
-import Founders from '../../Pages/Founders/Founder';
+// import Founders from '../../Pages/Founders/Founder';
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
@@ -19,7 +19,7 @@ const  ImmigrationLaw = ()=> {
       />
       <Breadcrumb/>
       <Content/>
-      <Founders/>
+      {/* <Founders/> */}
       <Footer/>
 
     </div>

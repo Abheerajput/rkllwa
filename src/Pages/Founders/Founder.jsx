@@ -35,7 +35,7 @@ const FounderCard = ({ imgSrc, name, position, description ,link}) => (
   <div className='flex bg-[#403C5C] mr-24  xs:mt-4 xs:mx-0 xs:max-w-[100%] md:max-w-[100%] md:flex-col md:mx-0 max-w-[80%] xs:flex-col sm:flex-col xs:items-start sm:items-start   ms-auto  relative mt-14'>
     <img  src={imgSrc} alt={name} className=' sm:w-1/2 xs:w-1/2 xs:my-8 sm:pl-4  xs:pl-4 sm:my-8  xs:relative sm:relative xs:left-0 sm:left-0 md:relative md:left-0 absolute left-[-116px] sm:top-[0%] xs:top-[0%] top-[13%]'style={{transform:"translate(0%,0%) !important"}} />
  
-    <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-70px] sm:ps-4 ps-[150px] px-12'>
+    <div className='w-full xs:ps-4 xs:px-4 xs:mt-[-30px] sm:ps-4 ps-[150px] px-12'>
       <p className='text-white pt-10 xs:pt-4 sm:pt-4 xs:flex xs:flex-col'>
         <span className='text-[26px] fgt-ff-semibold text-[#FFEDD7]'>{name}</span><br />
         {position}

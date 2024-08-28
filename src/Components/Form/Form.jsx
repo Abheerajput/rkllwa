@@ -1,9 +1,9 @@
 import React from 'react';
-
+import {Link} from "react-router-dom"
 const Form = () => {
   return (
     <div className="p-4">
-      <h3 className="text-2xl font-bold">Need Help? Contact Us</h3>
+      <h3 className="text-2xl font-bold">Need Help? <Link to="/contactus">Contact Us</Link> </h3>
       <form>
         <div className="flex w-full gap-4">
           <div className="flex flex-col w-1/2 text-[14px] font-medium my-2">

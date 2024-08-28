@@ -1,4 +1,4 @@
-import React ,{useState}from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { FaPlus, FaMinus } from 'react-icons/fa'; 
 import "slick-carousel/slick/slick.css";
@@ -13,8 +13,45 @@ import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import img1 from "../../assets/icons/boirimg1.svg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
+import MenuOpen from '../MenuOpen';
 import { Link } from 'react-router-dom';
 const Boir = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  // Set focus on the menu when it opens
+  useEffect(() => {
+    if (menuOpen && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [menuOpen]);
   const [open, setOpen] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -170,6 +207,15 @@ const Boir = () => {
 
   return (
     <>
+     {menuOpen && (
+        <MenuOpen 
+          ref={menuRef}  // Attach ref to the MenuOpen component
+          open={menuOpen} 
+          close={toggleMenu} 
+          isAnimating={isAnimating} 
+          tabIndex="-1"  // Make it focusable
+        />
+      )}
       <SecondHeader
         socialIcons2={socialIcons2}
         mainTitle="BOIR Compliance"
@@ -178,7 +224,7 @@ const Boir = () => {
 
       <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">Boir Compliance</Link> 
         
       </div>
@@ -287,9 +333,9 @@ Beneficial Ownership information refers to identifying information about the ind
 </h2>
 
 
-<div className='overflow-hidden  rounded-xl border-2 border-black'>
+<div className='  rounded-xl '>
   <table className='w-full '>
-    <tr className="border-1 border-black">
+    <tr className=" border-black">
       <th className='text-[24px] py-2 w-[50%] sx:text-[18px] fgt-ff-bold bg-[#E5E5E5] text-start ps-3 border-2 border-black'>
         Type of Owners
       </th>
@@ -307,7 +353,7 @@ Beneficial Ownership information refers to identifying information about the ind
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
         Multiple individual-owned <br /> Company
       </td>
-      <td className='border-2 border-black ps-3 sx:text-[16px]  py-2'>$449</td>
+      <td className='border-2 border-black ps-3 sx:text-[16px]  py-2'>$499</td>
     </tr>
     <tr>
       <td className='border-2 border-black ps-3 sx:text-[16px] py-2 text-[19px] font-normal inter'>
@@ -330,7 +376,12 @@ Beneficial Ownership information refers to identifying information about the ind
 
 
 </div>
+<div className='flex justify-center'>
 
+<Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
+<button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
+          </Link>
+</div>
 <div className="bg-white">
             <h2 id="faqs" className="text-[53px] xs:text-[35px] xs:pt-6  text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
             <div className="mt-8 w-full sm:px-8 mx-auto">
@@ -354,6 +405,12 @@ Beneficial Ownership information refers to identifying information about the ind
                     </div>
                 ))}
             </div>
+            <div className='flex justify-center'>
+
+<Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
+<button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
+          </Link>
+</div>
         </div>
        
         </div>
@@ -362,10 +419,10 @@ Beneficial Ownership information refers to identifying information about the ind
         <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
         <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
         <div  className='mb-4  flex w-full'>
-<button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
+         
 
 </div>
-            <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">
+            {/* <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
@@ -391,7 +448,7 @@ Beneficial Ownership information refers to identifying information about the ind
               
              
               </div>
-            </div>
+            </div> */}
 
             {/* Testimonials Slider */}
           

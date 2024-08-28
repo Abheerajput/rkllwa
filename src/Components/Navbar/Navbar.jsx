@@ -5,19 +5,29 @@ import '../../Style/style.css';
 
 const Navbar = () => {
   return (
+    <>
+    <Link to="/boir">
   <div className='' id='topscroll'>
- <div className="bg-[#E0AF04]  px-[5.2%] py-4  md:py-6">
+ <div className="bg-[#E0AF04]  px-[5.2%] py-4 ">
       <div className="flex justify-between items-center">
-        <p className="fgt-ff-medium  text-[16px] text-white md:text-[20px]">BOIR reporting made easy </p>
-        <Link to="/boir">
-        <p className="flex items-center text-white gap-2 md:gap-4 fgt-ff-bold text-[14px] md:text-[17.61px]">
+        <p className="fgt-ff-medium  sx:text-[13px] text-[24px] text-white md:text-[20px]">FinCEN's beneficial owner compliance made easy </p>
+       
+        <p className="flex  text-white gap-2 flex-col md:gap-4 fgt-ff-bold text-[16px]">
+        <span className='flex items-center sx:text-[13px] gap-2 text-start '>
           Learn more
           <img src={icon1} alt="Icon" className="w-4 h-4 md:w-6 md:h-6" />
+        </span>
+          <span className='text-start sx:text-[13px] text-[17px]'>
+
+          Call us :  818-990-9999
+          </span>
         </p>
-        </Link>
+       
       </div>
     </div>
   </div>
+    </Link>
+    </>
    
   );
 };

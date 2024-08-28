@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import crossIcon from "../../assets/images/pngwing.png"
+import crossIcon from "../../assets/icons/crossicon.svg"
 import RKL2 from '../../assets/icons/Rkl2.svg';
 import fbicon from '../../assets/icons/fbicon.svg';
 import lkdnicon from '../../assets/icons/lkdnicon.svg';
@@ -70,13 +70,13 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
             <div className="flex space-x-3 pt-2">
             
             <div className=" flex  justify-end mb-12 ">
-              <span>
-                <div className="flex items-center justify-center  gap-6 xs:pt-0 ">
-                  <a href="https://www.facebook.com/profile.php?id=61564380045589">
-                    <img src={fbicon2} alt="LinkedIn" className=' xs:hidden' />
+            <span>
+                <div className="flex items-center justify-center gap-6 xs:pt-0 ">
+                  <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">
+                    <img src={fbicon2} alt="Facebook" className='xs:hidden' />
                   </a>
-                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==">
-                    <img src={insta } alt="LinkedIn" className='xs:hidden ' />
+                  <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                    <img src={insta} alt="Instagram" className='xs:hidden ' />
                   </a>
                   <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" className='flex'>
                     <img src={lkdnicon} alt="LinkedIn" className='xs:hidden' />
@@ -94,7 +94,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
       {menuOpen && (
         <div
           ref={menuRef}
-          className={`absolute top-0 w-full mt-[56px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
+          className={`absolute top-0 w-full mt-[82px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
           ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
         >
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
@@ -158,21 +158,25 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 <h1 className="fgt-ff-medium text-[27px] sx:text-[18px]  flex xs:pt-4 gap-[10px] flex-wrap">
                   <img src={aboutus} alt="About Us" /> About Us
                 </h1>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Contact Us</p>
+                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">
+                  <Link to="/contactus"> Contact Us</Link>
+                 
+                  </p>
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                   <Link to="/founders">Founders</Link>
                 </p>
-                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
-                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p>
+                <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]"><Link to="/careers">Careers</Link></p>
+                {/* <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p> */}
               </span>
               <span className="flex flex-col gap-2 text-black">
                 <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
                   <img src={stay} alt="Stay Informed" /> Stay Informed
                 </h1>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p>
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p> */}
                 <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link></p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p> */}
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p> */}
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Unsubscribe</p> */}
               </span>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import {Link} from "react-router-dom"
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
@@ -13,17 +13,63 @@ import boir from "../../assets/icons/Boir.svg"
 import img1 from "../../assets/icons/boirimg1.svg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
+import MenuOpen from '../MenuOpen';
 const Business = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setMenuOpen(false);
+        setIsAnimating(false);
+      }, 300); // Match the duration of your slide-out animation
+    } else {
+      setMenuOpen(true);
+    }
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  // Set focus on the menu when it opens
+  useEffect(() => {
+    if (menuOpen && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [menuOpen]);
     const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   return (
     <>
+      {menuOpen && (
+        <MenuOpen 
+          ref={menuRef}  // Attach ref to the MenuOpen component
+          open={menuOpen} 
+          close={toggleMenu} 
+          isAnimating={isAnimating} 
+          tabIndex="-1"  // Make it focusable
+        />
+      )}
        <SecondHeader
         socialIcons2={socialIcons2}
         mainTitle="Business Law"
       />
        <div className="text-[26px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <Link to="/" className="hover:underline">Practice Areas</Link> {'>'}
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">Business Law</Link> 
       </div>
       <div>
@@ -66,12 +112,12 @@ const Business = () => {
 <li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Distribution Agreements</li>
 <li  className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Lender/investor agreements  </li>
   </ul>
- <p className='text-[20px] py-4 fgt-ff-light sx:text-[16px]'>Please <span className='border-[#4861eb] border-b-2'>contact us</span>  for a free consultation to discuss your business transactional law issues.</p> 
+ <p className='text-[20px] py-4 fgt-ff-light sx:text-[16px]'>Please  <span className='border-[#4861eb] border-b-2'><Link to="/contactus"><a href="#topscroll">contact us</a></Link> </span>  for a free consultation to discuss your business transactional law issues.</p> 
 </div>
 
         </div>
 
-        <div className='w-[35%] xs:w-full sm:w-full xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
+        {/* <div className='w-[35%] xs:w-full sm:w-full xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
         <div className="bg-[#FFEDD7] h-[50%] sm:w-full xs:w-full md:w-[80%] lg:w-[80%] xl:w-[80%] p-4 rounded-md pl-8 xs:pl-4  xs:my-4 ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
@@ -100,7 +146,7 @@ const Business = () => {
               </div>
             </div>
         </div>
-        
+         */}
     
       </div>
       </div>

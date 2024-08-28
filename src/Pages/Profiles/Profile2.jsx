@@ -52,23 +52,23 @@ const ProfileCard2 = () => {
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Sohila Rezai </h1>
+              <h1 className="  text-[#212138] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Sohila Rezai </h1>
               <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4 xs:text-[27px]">Partner</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(206)-654-2429</Link>
+                  <Link to="/" className="">(818) 990-9999</Link>
 
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
-                  <a href="mailto:bianchi@lasher.com" className="">bianchi@lasher.com</a>
+                  <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">srezai@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4">
                     <img src={icon6} alt="" />
                   </span>
-                  <Link to="" className="">Print Attorney Profile</Link>
+                  {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
               </div>
             </div>
@@ -76,15 +76,15 @@ const ProfileCard2 = () => {
 
           {/* Description */}
           <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light   mt-6">
-          Sohila Rezai is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
-          Sohila Rezai is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
+          Sohila Rezai, Esq. has been practicing transactional and litigation law in Los Angeles for more than 20 years.  She has extensive knowledge and experience in business law including strategic corporate formations, corporate and regulatory compliance, and business contract and lease negotiations.  She has advocated cases in the Los Angeles Superior Court and Alternative Dispute Resolution (ADR) Services on behalf of her clients.
+
           </p>
-          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light  mt-4">
-     
-          Sohila Rezai is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
+          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light   mt-6">Sohila is also a licensed real estate broker and a member of both the California Association of Realtors (CAR) and the National Association of Realtors (NAR).</p>
+          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light  my-4">
+          Sohila has extensive experience in immigration law, ranging from work permits and VISA applications to all aspects of the naturalization process. She handles a range of immigration-related issues for individuals, families and businesses.
           </p>
 
-          <div className="md:w-2/3  pt-6 py-4">
+          {/* <div className="md:w-2/3  pt-6 py-4">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Practice Focus</h3>
             <ul className="list-disc ml-5 sx:text-[16px]  text-[20px] fgt-ff-light text-[#212121] space-y-1">
               <li>Business Dissolution Lawyer</li>
@@ -98,45 +98,28 @@ const ProfileCard2 = () => {
               <li>Seattle University, 1997 (Bachelor of Arts in Business Administration, Economics, and Humanities)</li>
               <li>Seattle Preparatory School, 1993</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         {/* Sidebar */}
         <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>
-              <ul className="text-[#212121]">
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon1} alt="" /> Business Law</li>
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon2} alt="" />BOIR Compliance</li>
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon3} alt="" />Immigration Law</li>
+            <ul className="text-[#212121]">
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/business" className='flex gap-4'><img src={icon1} alt="" /> Business Law</Link></li>
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/boir" className='flex gap-4'><img src={icon2} alt="" />BOIR Compliance</Link></li>
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'> <Link to="/Immigration-Law" className='flex gap-4'><img src={icon3} alt="" />Immigration Law</Link></li>
               </ul>
             </div>
 
-            {/* Testimonials Slider */}
-            <div className="bg-[#F7F6F1] p-4 rounded-md xs:my-12 mt-6 pb-8">
-            <h3 className="text-[35px] fgt-ff-normal justify-center flex sx:text-[28px] font-bold text-[#02131D] sx:mb-0 mb-4">Testimonials</h3>
-              <Slider {...testimonialSettings}>
-                <div className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light">
-                  “Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- the very best combination! He's an invaluable asset to the team. And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “
-                </div>
-                <div className="text-[#212121] text-[20px] fgt-ff-light">
-                  “Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- the very best combination! He's an invaluable asset to the team. And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “
-                </div>
-                <div className="text-[#212121] text-[20px] fgt-ff-light">
-                  "I highly recommend his services. Mario is an invaluable asset to the team.“Mario is the very definition of what an attorney ought to be. He is so supportive and thinks of all the details so that none are missed. I could relax knowing what an organized, consummate professional he is on every level. His communication is clear, thorough, and timely. He's super sharp and proficient at his job and does it all while being kind -- . And THIS (mug) is what you want to see on your lawyer's desk. He IS Superman! I actually call him "Super Mario." I highly recommend his services.
-                  “"
-                </div>
-              </Slider>
-            </div>
+         
           </div>
         </div>
         </div>
        
 
         {/* Contact Form */}
-        <div className="mt-10 px-4 xs:px-0 xs:w-full w-1/2">
+        {/* <div className="mt-10 px-4 xs:px-0 xs:w-full w-1/2">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
           <form className="grid grid-cols-1  gap-4">
             
@@ -161,7 +144,7 @@ const ProfileCard2 = () => {
               <button type="submit" className="bg-[#EEB26D] text-white p-2 rounded-md w-full  transition-colors">Submit</button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
       <Footer/>
     </>

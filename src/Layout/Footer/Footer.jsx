@@ -23,10 +23,10 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
           <p className="text-[18px] text-center lg:text-[20px] sx:text-[16px] fgt-ff-light text-white xs:mt-0 mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
           <div className="flex justify-center gap-6 ">
-            <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA=="> <img src={insta} alt="Instagram"className="" /></a>
-            <a href="http://www.linkedin.com/in/rkl-law-9aa681324"> <img src={li} alt="LinkedIn" className="" /></a>
-            <a href="https://www.facebook.com/profile.php?id=61564380045589">  <img src={fb} alt="Facebook" className="" /></a>
-            <a href="#"> <img src={twit} alt="Twitter" className="" /></a>
+            <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"> <img src={insta} alt="Instagram"className="" /></a>
+            <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer"> <img src={li} alt="LinkedIn" className="" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">  <img src={fb} alt="Facebook" className="" /></a>
+            {/* <a href="#"> <img src={twit} alt="Twitter" className="" /></a> */}
          
          
         
