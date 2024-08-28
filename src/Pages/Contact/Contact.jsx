@@ -13,6 +13,8 @@ import Footer from "../../Layout/Footer/Footer"
 import { Link } from 'react-router-dom';
 import '../../Style/style.css';
 const Contact = () => {
+  window.scrollTo(0, 0);
+ 
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   return (
     <>
