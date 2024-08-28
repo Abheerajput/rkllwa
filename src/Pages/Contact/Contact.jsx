@@ -36,9 +36,7 @@ const Contact = () => {
               </p>
               <h3 className='text-[50px] sm:text-[38px] xs:text-[25px] fgt-ff-medium text-[#403C5C]'>Contact our team</h3>
             </div>
-            <h3 className="text-[20px] xs:text-[15px] fgt-ff-normal text-gray-800 my-6">If you are looking for a trusted divorce attorney, we are here to help.
-              Please get in touch with us by completing the form below.
-            </h3>
+            
             <form className="grid grid-cols-1  gap-4">
 
               <div className='flex w-full gap-7'>
@@ -81,13 +79,13 @@ const Contact = () => {
           <div className='w-[55%] sm:mb-8 xs:mb-8 md:mb-8 md:justify-start sm:w-full xs:w-full sm:justify-start xs:justify-start xs:mt-12 sm:mt-12 md:mt-12 flex justify-center'>
             <div>
               <h1 className='text-[50px] text-[#403C5C] sm:text-[38px]  xs:text-[25px]   fgt-ff-medium'>Call us</h1>
-              <p className='text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]'>Call our team Mon-Fri from 8am to 5pm.</p>
+              <p className='text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]'>Call our team Mon-Fri from 9am to 5pm.</p>
               <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={phone} alt="" className='xs:w-[1.2rem] sm:w-[1.6rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>818-990-9999</h3> </span>
               <div className='mt-12'>
                 <h3 className='text-[50px] sm:text-[38px] text-[#403C5C]  xs:text-[25px]  fgt-ff-medium'>Chat with us</h3>
                 <p className='text-[20px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4'>Speak to our friendly team via live chat.</p>
 
-                <span className='flex items-center gap-4 my-4  text-[27px] fgt-ff-medium text-[#212121] '> <img src={message} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>      <a href="mailto:info@rkllaw.com?subject={subject}">Shoot us an email</a>  </h3> </span>
+                <span className='flex items-center gap-4 my-4  text-[27px] fgt-ff-medium text-[#212121] '> <img src={message} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>      <a href="mailto:info@rkllaw.com?subject={subject}">Email Us</a>  </h3> </span>
                 <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">
                   <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={facebook} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on facebook</h3> </span>
                 </a>
