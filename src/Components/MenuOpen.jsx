@@ -103,7 +103,7 @@ function MenuOpen({ open, close  ,isAnimating}) {
                             <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                                 <Link to="/founders">Founders</Link>
                             </p>
-                            <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Careers</p>
+                            <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]"><Link to="/careers">Careers</Link> </p>
                             {/* <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p> */}
                         </span>
                         <span className="flex flex-col gap-2 text-black">

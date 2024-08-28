@@ -11,6 +11,7 @@ import Bior from "./Components/BIOR/Boir"
 import Business from './Components/BussinessLaw/Business';
 import NewsAndEvents from './Components/NewsandEvents/NewsEvents';
 import Contact from './Pages/Contact/Contact';
+import Careers from './Pages/Careers/Careers';
 // Import the ImmigrationLaw component
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/business" element={<Business/>} />
         <Route path="/contactus" element={<Contact/>} />
         <Route path="/news&events" element={<NewsAndEvents/>} />
+        <Route path="/careers" element={<Careers/>} />
       </Routes>
       
      

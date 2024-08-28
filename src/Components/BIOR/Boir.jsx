@@ -408,7 +408,9 @@ Beneficial Ownership information refers to identifying information about the ind
         <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
         <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
         <div  className='mb-4  flex w-full'>
+          <Link to="/contactus" className='w-full'>
 <button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
+          </Link>
 
 </div>
             <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">

@@ -62,7 +62,7 @@ const ProfileCard2 = () => {
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
-                  <a href="mailto:bianchi@lasher.com" className="">bianchi@lasher.com</a>
+                  <a href="mailto:bianchi@lasher.com" className="">srezai@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4">
@@ -84,7 +84,7 @@ const ProfileCard2 = () => {
           Sohila Rezai is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
           </p>
 
-          <div className="md:w-2/3  pt-6 py-4">
+          {/* <div className="md:w-2/3  pt-6 py-4">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Practice Focus</h3>
             <ul className="list-disc ml-5 sx:text-[16px]  text-[20px] fgt-ff-light text-[#212121] space-y-1">
               <li>Business Dissolution Lawyer</li>
@@ -98,7 +98,7 @@ const ProfileCard2 = () => {
               <li>Seattle University, 1997 (Bachelor of Arts in Business Administration, Economics, and Humanities)</li>
               <li>Seattle Preparatory School, 1993</li>
             </ul>
-          </div>
+          </div> */}
         </div>
         {/* Sidebar */}
         <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
