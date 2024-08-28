@@ -35,13 +35,13 @@ const Careers = () => {
   
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Here, add your form submission logic if needed.
+        
 
         toast.success('Thank you for your submission!', {
             autoClose: 3000,
         });
     
-        // Clear the input fields
+       
         setFirstName('');
         setLastName('');
         setPhone('');
