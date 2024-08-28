@@ -126,8 +126,7 @@ const Contact = () => {
               </h3>
             </div>
             <h3 className="text-[20px] xs:text-[15px] fgt-ff-normal text-gray-800 my-6">
-              If you are looking for a trusted divorce attorney, we are here to
-              help. Please get in touch with us by completing the form below.
+              Please get in touch with us by completing the form below.
             </h3>
             <form className="grid grid-cols-1  gap-4" onSubmit={handleSubmit}>
               <div className="flex w-full gap-7">
@@ -180,7 +179,7 @@ const Contact = () => {
               </div>
               <div className="sm:col-span-2">
                 <label className="block  text-[14px] lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">Subject</label>
-                <input type="email" placeholder="Subject" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
+                <input type="text" placeholder="subject" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
               </div>
               <div className="sm:col-span-2 h-full">
                 <label className="block  text-[14px]  lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">
@@ -206,7 +205,7 @@ const Contact = () => {
                 Call us
               </h1>
               <p className="text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]">
-                Call our team Mon-Fri from 8am to 5pm.
+                Call our team Mon-Fri from 9am to 5pm.
               </p>
               <span className="flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] ">
                 {" "}
@@ -224,7 +223,7 @@ const Contact = () => {
                   Chat with us
                 </h3>
                 <p className="text-[20px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4">
-                  Speak to our friendly team via live chat.
+                  Connect with our friendly team!
                 </p>
 
                 <span className="flex items-center gap-4 my-4  text-[27px] fgt-ff-medium text-[#212121] ">
@@ -237,7 +236,7 @@ const Contact = () => {
                   <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
                     {" "}
                     <a href="mailto:info@rkllaw.com?subject={subject}">
-                      Shoot us an email
+                     Email Us
                     </a>{" "}
                   </h3>{" "}
                 </span>

@@ -98,7 +98,7 @@ const App = () => {
   window.scrollTo(0, 0);
   return (
     <Solution
-      title="We make our practice your solution."
+      title=" We’ll handle the   law so you can handle the rest."
       description="Whether you have personal or business legal needs,  our <br/> team responds quickly and acts decisively."
       buttonText="Practice Areas"
       sections={sections}

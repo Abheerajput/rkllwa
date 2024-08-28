@@ -77,10 +77,11 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
             <h1 className="text-[40px] lg:text-[50px] xs:text-[35px] fgt-ff-medium text-white leading-tight">
               {title}
             </h1>
-            <p
-              className="text-[18px] lg:text-[20px] fgt-ff-semibold text-white mt-4 pb-4 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: processedDescription }}
-            />
+           
+            <div >
+              <h3 className='text-[25px] text-white fgt-ff-semibold mt-4 pb-4'> Strategic. Efficient. And committed to your success.</h3>
+           <p className='text-[18px] text-white  pb-4 lg:text-[20px] fgt-ff-semibold'>RKL Law is poised to serve you for your  transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge,   experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  </p>
+            </div>
             <a href="#topscroll"><button
              className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4"
              onClick={toggleMenu} 
@@ -99,7 +100,7 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
 };
 
 const App = () => {
-  const description = `Strategic. Efficient. And committed to your success. RKL Law is poised to serve you for your <br /> transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge, <br />  experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the   law so you can handle the rest. 
+  const description = `Strategic. Efficient. And committed to your success. <br/> RKL Law is poised to serve you for your  transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge,   experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the   law so you can handle the rest. 
 
 `;
 window.scrollTo(0, 0);

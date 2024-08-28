@@ -81,8 +81,8 @@ const Business = () => {
 
 </div>
 <div>
-  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>One of the most important decisions a new business owner must make is determining  the appropriate type <br  className='xs:hidden sm:hidden'/> of  business entity structure for the new venture.  The type of entity selected will have significant tax and  <br  className='xs:hidden'/> legal liability implications. </p>
-  <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity,  <br  className='xs:hidden sm:hidden'/> preparing  and  filing the documents required to register the entity with the appropriate  governmental  <br  className='xs:hidden'/> authority, and preparing any other necessary documents to get a business operation up and running.<br />  These services include:</p>
+  <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>One of the most important decisions a new business owner must make is determining  the appropriate type  of  business entity structure for the new venture.  The type of entity selected will have significant tax and  legal liability implications. </p>
+  <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Since 2004, our attorneys have been assisting clients in determining the appropriate type of entity,preparing  and  filing the documents required to register the entity with the appropriate  governmental   authority, and preparing any other necessary documents to get a business operation up and running.  These services include:</p>
   <ul className=' pt-4 xS:pt-8 flex flex-col gap-2 sx:text-[16px]'>
     <li className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	LLC formation, sub-chapter S and sub-chapter C corporate formations</li>
     <li className='text-[20px] fgt-ff-light sx:text-[16px]'>●	Drafting joint-venture, partnership, shareholder, and other operating agreements</li>
@@ -90,7 +90,7 @@ const Business = () => {
     <li className='text-[20px] fgt-ff-light  sx:text-[16px]'>●	Fictitious business filings</li>
   </ul>
 
-  <p className='text-[20px] fgt-ff-light  pt-4 sx:text-[16px]'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability  <br  className='xs:hidden sm:hidden'/> of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the   <br  className='xs:hidden'/>experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for  <br  className='xs:hidden'/> clients in a myriad of circumstances at various stages of a venture’s evolution.   We know how to draft  contracts  <br  className='xs:hidden'/> to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients   <br  className='xs:hidden'/>in a range of  business matters, including all of the following: </p>
+  <p className='text-[20px] fgt-ff-light  pt-4 sx:text-[16px]'>Once a business is formed, it must be able to conduct transactions which ensure the stability and profitability    of  the venture, and make acquisitions or mergers to expand profitability or market share. Our attorneys have the experience to protect our client’s interests in every transaction. RKL Law provides strategic legal solutions for  clients in a myriad of circumstances at various stages of a venture’s evolution. We know how to draft contracts  to ensure that a business is protected if any disputes arise. The firm’s experienced transactional attorneys assist clients in a range of business matters, including all of the following: </p>
   <ul className=' pt-4 flex flex-col gap-2 sx:text-[16px]'>
     <li  className='text-[20px]  fgt-ff-light flex gap-4 sx:text-[16px]'>●	Corporate structuring</li>
     <li  className='text-[20px]  fgt-ff-light sx:text-[16px]'>●	Consulting agreements
