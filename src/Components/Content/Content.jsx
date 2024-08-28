@@ -1,8 +1,8 @@
 import React from 'react';
 import icon from '../../assets/icons/lawicon.svg';
 import icon2 from '../../assets/icons/Posts.svg';
-import icon3 from '../../assets/icons/lawicon2.svg';
-import icon4 from '../../assets/icons/law3icon.svg';
+// import icon3 from '../../assets/icons/lawicon2.svg';
+// import icon4 from '../../assets/icons/law3icon.svg';
 import {Link} from 'react-router-dom'
 
 const SectionHeader = ({ iconSrc, title, className, text }) => (
@@ -33,7 +33,9 @@ const SectionHeader = ({ iconSrc, title, className, text }) => (
     ●	Family-based visa</li>
   </ul>
 
+  
   <p className='sx:text-[16px]  py-8 text-[20px]'>Navigating your immigration journey is best when you have a trusted ally like RKL Law on your side. If you need an experienced immigration attorney to deal with visa applications and other issues related to your immigration status, we can help you with the most effective and assertive representation for your case. Let us provide you and your family with greater peace of mind and pave the road to success as you move forward in the United States.</p>
+  <p className='py-6 sx:text-[16px]  text-[20px]'>Please <span><Link to="/contactus" className='border-b-2 border-blue-800'>contact us</Link> </span> for a free consultation to discuss your immigration issues.  </p>
 </div>
   </>
 );
@@ -53,35 +55,35 @@ const ListSection = ({ title, items }) => (
         <li key={index}>{item}</li>
       ))}
     </ul>
-    <p className='py-6 sx:text-[16px]  text-[20px]'>Please <span><Link to="/contactus">contact us</Link> </span> for a free consultation to discuss your immigration issues.  </p>
+ 
   </>
 );
 
-const ContactForm = () => (
-  <form className="max-w-full">
+// const ContactForm = () => (
+//   <form className="max-w-full">
   
-      <div className='flex w-full gap-4'>
-         <div className="flex flex-col w-1/2  text-[14px] font-medium my-2">
-        <label>First Name</label>
-        <input type="text" placeholder="First Name" className="border  ps-3 py-2 my-2 rounded-sm" />
-      </div>
-      <div className="flex flex-col w-1/2 text-[14px] font-medium my-2">
-        <label>Last Name</label>
-        <input type="text" placeholder="Last Name" className="border ps-3 py-2 my-2  rounded-sm" />
-      </div>
+//       <div className='flex w-full gap-4'>
+//          <div className="flex flex-col w-1/2  text-[14px] font-medium my-2">
+//         <label>First Name</label>
+//         <input type="text" placeholder="First Name" className="border  ps-3 py-2 my-2 rounded-sm" />
+//       </div>
+//       <div className="flex flex-col w-1/2 text-[14px] font-medium my-2">
+//         <label>Last Name</label>
+//         <input type="text" placeholder="Last Name" className="border ps-3 py-2 my-2  rounded-sm" />
+//       </div>
    
      
 
-    </div>
-    <div className="flex flex-col w-full text-[14px] font-medium my-2">
-      <label>Email</label>
-      <input type="email" placeholder="Email" className="border ps-3 py-2 my-2 w-full rounded-sm" />
-    </div>
-    <button className="bg-[#E6A358] text-white mt-4 py-2 px-12 text-[20px] fgt-ff-normal rounded">
-      Submit
-    </button>
-  </form>
-);
+//     </div>
+//     <div className="flex flex-col w-full text-[14px] font-medium my-2">
+//       <label>Email</label>
+//       <input type="email" placeholder="Email" className="border ps-3 py-2 my-2 w-full rounded-sm" />
+//     </div>
+//     <button className="bg-[#E6A358] text-white mt-4 py-2 px-12 text-[20px] fgt-ff-normal rounded">
+//       Submit
+//     </button>
+//   </form>
+// );
 
 // const Post = ({ text }) => (
 //   <div className="py-6">
@@ -106,34 +108,34 @@ const ContactForm = () => (
 // );
 
 const Content = () => {
-  const divorceItems = [
-    'Your Right to a Divorce',
-    'The High Asset Divorce',
-    'The Collaborative Divorce',
-    'The LGBTQ+ Divorce',
-    'The Contested Divorce',
-    'Divorce Mediation',
-    'The Executive Divorce',
-    'The Gray Divorce',
-    'The International Divorce',
-    'The Narcissistic Divorce',
-    'A Few Words About the Cheating Spouse',
-  ];
+  // const divorceItems = [
+  //   'Your Right to a Divorce',
+  //   'The High Asset Divorce',
+  //   'The Collaborative Divorce',
+  //   'The LGBTQ+ Divorce',
+  //   'The Contested Divorce',
+  //   'Divorce Mediation',
+  //   'The Executive Divorce',
+  //   'The Gray Divorce',
+  //   'The International Divorce',
+  //   'The Narcissistic Divorce',
+  //   'A Few Words About the Cheating Spouse',
+  // ];
 
-  const propertyDivisionItems = [
-    'Spousal Maintenance',
-    'Separate and Community Property',
-    'The Family Home',
-    'The Collaborative Divorce',
-    'Business Valuation in Divorce',
-    'Property Division in Tech Divorces',
-    'Complex Asset Divorces',
-    'The Executive Divorce',
-    'Property Division, Generally',
-    'Pets & Divorce',
+  // const propertyDivisionItems = [
+  //   'Spousal Maintenance',
+  //   'Separate and Community Property',
+  //   'The Family Home',
+  //   'The Collaborative Divorce',
+  //   'Business Valuation in Divorce',
+  //   'Property Division in Tech Divorces',
+  //   'Complex Asset Divorces',
+  //   'The Executive Divorce',
+  //   'Property Division, Generally',
+  //   'Pets & Divorce',
 
     
-  ];
+  // ];
 
   const latestPosts = [
     'RKL Holzapfel Sperry & Ebberson PLLC Celebrating 50 Years',
@@ -153,18 +155,18 @@ const Content = () => {
           {/* <Paragraph text={"With a combined over 150 years of experience in all facets of Washington divorce and family restructuring, " + (window.innerWidth > 768 ? "<br/>" : "") + " we are here to help you choose the best path forward. Whether you want to proceed with traditional divorce " + (window.innerWidth > 768 ? "<br/>" : "") + " litigation, mediation, or collaborative divorce, we have many years of success representing clients through " + (window.innerWidth > 768 ? "<br/>" : "") + " legal separations, committed intimate relationships, child custody, child support and parenting plans, as well " + (window.innerWidth > 768 ? "<br/>" : "") + " as prenuptial and postnuptial agreements."} className="pt-4" /> */}
           {/* <Paragraph text={"Recognizing that disputes about child custody are one of the most delicate and emotional aspects of the  " + (window.innerWidth > 768 ? "<br/>" : "") + " separation process, we approach each case with individualized attention and care, in an effort to minimize " + (window.innerWidth > 768 ? "<br />" : "") + " the impact of parenting issues on our clients’ children."} className="pt-4" /> */}
           <div className="w-full flex justify-center py-8">
-            <img src={icon3} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" />
+            {/* <img src={icon3} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" /> */}
           </div>
           <Paragraph text="Working as a team, our goal is to guide you and your family to find the best way forward..." className="py-2" />
-          <ListSection title="DIVORCE" items={divorceItems} />
+          {/* <ListSection title="DIVORCE" items={divorceItems} /> */}
           <div className="w-full flex justify-center py-8">
-            <img src={icon4} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" />
+            {/* <img src={icon4} alt="Decorative Icon" className="max-w-2xl xs:max-w-[100%] xs:mx-4" /> */}
           </div>
           <Paragraph text="We can help you determine which assets can be included in the divorce process and what they are worth..." className="py-2" />
-          <ListSection title="PROPERTY DIVISION IN DIVORCE" items={propertyDivisionItems} />
+          {/* <ListSection title="PROPERTY DIVISION IN DIVORCE" items={propertyDivisionItems} /> */}
           <Paragraph text="Need Help? Contact Us" className="text-[26px] xs:text-[20px] fgt-ff-normal xs:mt-4 pt-4 pb-2" />
           <Paragraph text="If you are looking for a trusted divorce attorney, we are here to help..." className="py-2" />
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
         <div className="w-[36%] sm:w-[100%] flex justify-end  xs:w-full md:w-[100%] " >
   

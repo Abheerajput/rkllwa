@@ -89,11 +89,11 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
               </span>
             </div>
             <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden mr-12 px-8  mt-4">
-              <div className="max-w-2xl bg-[#E3E6EC] py-8 px-8 lg:px-12 rounded-md">
+              <div className="max-w-2xl bg-[#E3E6EC] py-2 px-8 lg:px-12 rounded-md">
                 <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
                   {mainTitle}
                 </h1>
-                <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-6">
+                <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-3">
                   {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
                     <React.Fragment key={index}>{line}</React.Fragment>
                   )) : mainDescription}

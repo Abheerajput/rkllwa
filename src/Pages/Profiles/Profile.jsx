@@ -54,22 +54,22 @@ const ProfileCard = () => {
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Ninaz Khorsandi</h1>
+              <h1 className="  text-[#212138] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Ninaz Khorsandi</h1>
               <h2 className="text-[32px] fgt-ff-medium text-[#403C5C] mb-4">Partner</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">+1 (310) 308-4860</Link>
+                  <Link to="/" className="">(818) 990-9999</Link>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
-                  <a href="mailto:bianchi@lasher.com" className="">nkhorsandi@rkllaw.com</a>
+                  <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nkhorsandi@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4">
                     <img src={icon6} alt="" />
                   </span>
-                  <Link to="" className="">Print Attorney Profile</Link>
+                  {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
               </div>
             </div>
@@ -77,13 +77,10 @@ const ProfileCard = () => {
 
           {/* Description */}
           <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
-          Ninaz Khorsandi is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
-          Ninaz Khorsandi business lawyer who represents clients in the adversarial context of business disputes and business litigation...
+          Ninaz Khorsandi, Esq. is a partner at RKL Law and has been practicing law since 2004. She started her career as a civil litigator, doing law and motion and conflict resolution. Thereafter, she pursued transactional law, representing corporate clients as general counsel, in industries ranging from medicine to manufacturing.
           </p>
-          <p className="text-[#212121] text-[20px] sx:text-[16px]  fgt-ff-light  mt-4">
-     
-          Ninaz Khorsandi is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
-          </p>
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">Her resolution-orientation frame of mind has also served transaction clients judiciously - allowing for multiple “win-win” solutions to all parties involved. Through her transactional experience, Ninaz has honed her intuition with respect to clients, especially around improving business efficiency and forming ideal business structures. Clients working with Ninaz are excited to lean in on her operational and project management experience to pursue their business goals in legal frameworks that optimize their growth.</p>
+          
 
           {/* <div className="md:w-2/3  pt-6 py-4">
             <h3 className="text-xl font-bold text-gray-800 mb-4">Practice Focus</h3>
@@ -121,7 +118,7 @@ const ProfileCard = () => {
 
 
         {/* Contact Form */}
-        <div className="mt-10 px-4 xs:w-full w-1/2">
+        {/* <div className="mt-10 px-4 xs:w-full w-1/2">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
           <form className="grid grid-cols-1  gap-4">
             
@@ -146,7 +143,7 @@ const ProfileCard = () => {
               <button type="submit" className="bg-[#EEB26D] text-white p-2 rounded-md w-full  transition-colors">Submit</button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
       <Footer/>
     </>

@@ -52,35 +52,35 @@ const ProfileCard3 = () => {
               className=" rounded-md object-cover mb-4"
             />
             <div className="flex-1">
-              <h1 className="  text-[#E6A358] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Nazanin Lahijani </h1>
+              <h1 className="  text-[#212138] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Nazanin Lahijani </h1>
               <h2 className="text-[32px] fgt-ff-medium xs:text-[27px] text-[#403C5C] mb-4">Partner</h2>
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">+1 (310) 999-1689</Link>
+                  <Link to="/" className="">(818) 990-9999</Link>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
-                  <a href="mailto:bianchi@lasher.com" className="">nlahijani@rkllaw.com</a>
+                  <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nlahijani@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4">
                     <img src={icon6} alt="" />
                   </span>
-                  <Link to="" className="">Print Attorney Profile</Link>
+                  {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
               </div>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">Nazanin Lahijani, Esq. started her career in 2001 by representing individuals and businesses in litigation arising out of a spectrum of issues such as breach of contract, construction defect, insurance claims, business disputes, and fraud, check-kiting and ponzi schemes. Prior to becoming a partner in RKL Law, Nazanin worked at the preeminent law firms Musick, Peeler & Garrett, LLP and Barton, Klugman & Oetting LLP.</p>
+          {/* <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
           Nazanin Lahijani  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
           Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
-          </p>
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light mt-4">
-     
-          Nazanin Lahijani is well-recognized in his field, having been selected for inclusion to the 2020 Washington Super Lawyers® List in Business Litigation and Real Estate, and named a “Rising Star” by Washington Law and Politics in Business Litigation seven times. He served as the Chair of Lasher’s Litigation Department from 2009-2013. He currently serves as the firm’s Managing Principal.
+          </p> */}
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light my-4">
+          Nazanin decided to take her knowledge-base and apply it proactively to serve transactional clients. With her ready familiarity with all-too-common contractual and business failures, she is well-poised to negotiate, create and draft agreements on behalf of her transactional clients. With an eye for detail, she has exacting standards with respect to regulatory compliance, BOIR reporting, and preparing SOPs and manuals, and has the ability to anticipate, and avoid, problems for her clients before they arise. 
           </p>
 
           {/* <div className="md:w-2/3  pt-6 py-4">
@@ -119,7 +119,7 @@ const ProfileCard3 = () => {
        
 
         {/* Contact Form */}
-        <div className="mt-10 px-4 xs:px-0 xs:w-full w-1/2">
+        {/* <div className="mt-10 px-4 xs:px-0 xs:w-full w-1/2">
           <h3 className="text-xl font-bold text-gray-800 mb-4">Need Help? Contact Us</h3>
           <form className="grid grid-cols-1  gap-4">
             
@@ -144,7 +144,7 @@ const ProfileCard3 = () => {
               <button type="submit" className="bg-[#EEB26D] text-white p-2 rounded-md w-full  transition-colors">Submit</button>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
       <Footer/>
     </>

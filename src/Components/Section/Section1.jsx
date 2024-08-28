@@ -99,8 +99,8 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
 };
 
 const App = () => {
-  const description = `Strategic. Efficient. And committed to your success. RKL Law is poised to serve you for your <br /> transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge, <br />  experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the <br />  law so you can handle the rest. 
-Learn More
+  const description = `Strategic. Efficient. And committed to your success. RKL Law is poised to serve you for your <br /> transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge, <br />  experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  We’ll handle the   law so you can handle the rest. 
+
 `;
 window.scrollTo(0, 0);
 

@@ -42,19 +42,19 @@ const Founderscreen = () => {
     <p className='xs:w-full '>
         <Link to="/profile/Sohila Rezai">
         <img src={founder2} alt="" className='w-full' />
-        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#844C0D]'> Sohila Rezai</span> <br /> Partner</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#212138]'> Sohila Rezai</span> <br /> Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
       <Link to="/profile/Ninaz Khorsandi">
         <img src={founder1} alt="" className='w-full'/>
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'> Ninaz Khorsandi  </span> <br />Partner</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#212138]'> Ninaz Khorsandi  </span> <br />Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
       <Link to="/profile/Nazanin Lahijani">
         <img src={founder3} alt=""  className='w-full'/>
-        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#844C0D]'>Nazanin Lahijani</span><br />Partner</h3>
+        <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#212138]'>Nazanin Lahijani</span><br />Partner</h3>
         </Link>
     </p>
 </div>

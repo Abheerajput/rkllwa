@@ -61,8 +61,8 @@ const Contact = () => {
                 <input type="email" placeholder="Company" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
               </div>
               <div className="sm:col-span-2">
-                <label className="block  text-[14px] lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">Area Of Interest</label>
-                <input type="email" placeholder="Interest" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
+                <label className="block  text-[14px] lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">Subject</label>
+                <input type="email" placeholder="Subject" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
               </div>
               <div className="sm:col-span-2 h-full">
                 <label className="block  text-[14px]  lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">Message</label>
@@ -72,7 +72,7 @@ const Contact = () => {
 
 
               <div className="w-1/4 ">
-                <button type="submit" className="bg-[#EEB26D] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors">Submit</button>
+                <button type="submit" className="bg-[#E0AF04] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors">Submit</button>
               </div>
             </form>
           </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                   <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={instagram} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Instagram</h3> </span>
                 </a>
                 <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" >
-                <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkdln</h3> </span>
+                <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h3> </span>
                 </a>
               </div>
             </div>

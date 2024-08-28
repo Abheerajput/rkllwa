@@ -175,7 +175,8 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p> */}
                 <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link></p>
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p> */}
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p>
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p> */}
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Unsubscribe</p> */}
               </span>
             </div>
           </div>
