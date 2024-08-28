@@ -57,7 +57,7 @@ const Careers = () => {
         <div>
             <SecondHeader
                 socialIcons2={socialIcons2}
-                mainTitle="Contact"
+                mainTitle="Careers"
             />
             <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C]  bg-[#F7F6F1] py-4">
                 <Link to="/" className="hover:underline">Home</Link> {'>'}
