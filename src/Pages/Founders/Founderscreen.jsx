@@ -12,9 +12,9 @@ import lkdnicon from '../../assets/icons/lkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import menuicon from '../../assets/icons/menicon.png';
 import Footer from "../../Layout/Footer/Footer"
-import founder1 from "../../assets/images/Frame 1171275768.png"
-import founder2 from "../../assets/images/Frame 1171275769.png"
-import founder3 from "../../assets/images/Group.png"
+import founder1 from "../../assets/images/khorsandi.png"
+import founder2 from "../../assets/images/shazil.png"
+import founder3 from "../../assets/images/nazanin.png"
 // import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 // import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 // import twittericon2 from '../../assets/icons/drpdwicon4.svg';
@@ -38,7 +38,7 @@ const Founderscreen = () => {
        <Link to="/">Home</Link>  
         <FaGreaterThan className='w-3 h-3' />  Founders  </p>
     </div>
-<div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%]  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
+<div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%] gap-8  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
     <p className='xs:w-full '>
         <Link to="/profile/Sohila Rezai">
         <img src={founder2} alt="" className='w-full' />

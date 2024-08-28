@@ -40,7 +40,7 @@ function MenuOpen({ open, close  ,isAnimating}) {
         <div>
             {open && <div
                 ref={menuRef}
-                className={`absolute top-0 w-full mt-[82px] bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
+                className={`absolute top-0 w-full mt-[82px]   sx:mt-[79px]  bg-white h-full max-h-[570px] xs:max-h-[720px] shadow-lg 
           ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
             >
                 <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
