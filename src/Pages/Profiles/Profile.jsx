@@ -59,7 +59,7 @@ const ProfileCard = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(206)-654-2429</Link>
+                  <Link to="/" className="">+1 (310) 308-4860</Link>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
@@ -107,10 +107,10 @@ const ProfileCard = () => {
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>
-              <ul className="text-[#212121]">
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon1} alt="" /> Business Law</li>
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon2} alt="" />BOIR Compliance</li>
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><img src={icon3} alt="" />Immigration Law</li>
+            <ul className="text-[#212121]">
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/business" className='flex gap-4'><img src={icon1} alt="" /> Business Law</Link></li>
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/boir" className='flex gap-4'><img src={icon2} alt="" />BOIR Compliance</Link></li>
+                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'> <Link to="/Immigration-Law" className='flex gap-4'><img src={icon3} alt="" />Immigration Law</Link></li>
               </ul>
             </div>
 

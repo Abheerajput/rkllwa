@@ -58,27 +58,27 @@ const ContactForm = () => (
   </form>
 );
 
-const Post = ({ text }) => (
-  <div className="py-6">
-    <p className="text-[20px] sx:text-[16px] fgt-ff-light">{text}</p>
-    <p className="text-[18px] sx:text-[16px] fgt-ff-medium">Read More →</p>
-    <hr className="mt-6" />
-  </div>
-);
+// const Post = ({ text }) => (
+//   <div className="py-6">
+//     <p className="text-[20px] sx:text-[16px] fgt-ff-light">{text}</p>
+//     <p className="text-[18px] sx:text-[16px] fgt-ff-medium">Read More →</p>
+//     <hr className="mt-6" />
+//   </div>
+// );
 
-const Sidebar = ({ posts }) => (
-  <div className="flex justify-center sm:w-full  xl:w-[80%] lg:w-[80%] xs:w-full  xs:justify-center  sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
-    <div className="w-full   px-4  mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
-      <div className="text-[35px] text-[#02131D] sx:text-[28px] fgt-ff-normal font-bold flex flex-col items-center xs:pt-3 pt-14">
-        <img src={icon2} alt="Posts Icon" />
-        Latest Posts
-      </div>
-      {posts.map((post, index) => (
-        <Post key={index} text={post} />
-      ))}
-    </div>
-  </div>
-);
+// const Sidebar = ({ posts }) => (
+//   <div className="flex justify-center sm:w-full  xl:w-[80%] lg:w-[80%] xs:w-full  xs:justify-center  sm:justify-center xs:mr-0 xs:pb-8 md:justify-center md:mr-0 md:pb-8">
+//     <div className="w-full   px-4  mt-8 max-h-[800px] min-h-[500px]  bg-[#FFEDD7]">
+//       <div className="text-[35px] text-[#02131D] sx:text-[28px] fgt-ff-normal font-bold flex flex-col items-center xs:pt-3 pt-14">
+//         <img src={icon2} alt="Posts Icon" />
+//         Latest Posts
+//       </div>
+//       {posts.map((post, index) => (
+//         <Post key={index} text={post} />
+//       ))}
+//     </div>
+//   </div>
+// );
 
 const Content = () => {
   const divorceItems = [
@@ -141,7 +141,7 @@ const Content = () => {
         </div>
         <div className="w-[36%] sm:w-[100%] flex justify-end  xs:w-full md:w-[100%] " >
   
-        <Sidebar  posts={latestPosts} />
+        {/* <Sidebar  posts={latestPosts} /> */}
         </div>
       </div>
     </div>

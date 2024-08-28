@@ -376,7 +376,12 @@ Beneficial Ownership information refers to identifying information about the ind
 
 
 </div>
+<div className='flex justify-center'>
 
+<Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
+<button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
+          </Link>
+</div>
 <div className="bg-white">
             <h2 id="faqs" className="text-[53px] xs:text-[35px] xs:pt-6  text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
             <div className="mt-8 w-full sm:px-8 mx-auto">
@@ -408,12 +413,10 @@ Beneficial Ownership information refers to identifying information about the ind
         <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
         <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
         <div  className='mb-4  flex w-full'>
-          <Link to="/contactus" className='w-full'>
-<button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
-          </Link>
+         
 
 </div>
-            <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">
+            {/* <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
               <div className="text-[#212121]">
@@ -439,7 +442,7 @@ Beneficial Ownership information refers to identifying information about the ind
               
              
               </div>
-            </div>
+            </div> */}
 
             {/* Testimonials Slider */}
           

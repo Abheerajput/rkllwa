@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import crossIcon from "../../assets/images/pngwing.png"
-import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
+// import NewsAndEvents from '../../Pages/NewsandEvents/NewsAndEvents';
 import Section1 from '../Section/Section1';
 import Solution from '../../Pages/Solutions/Solution';
 import Footer from '../../Layout/Footer/Footer';
@@ -115,7 +115,7 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
       </div>
       <Section1 />
       <Solution />
-      <NewsAndEvents />
+      {/* <NewsAndEvents /> */}
       <Footer />
 
     </>

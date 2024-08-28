@@ -162,7 +162,7 @@ const NewsEvents = () => {
         </div>
 
         {/* Sidebar */}
-        <div className='w-[35%] xs:w-full sm:w-full xs:mb-6 sm:pb-6 xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
+        {/* <div className='w-[35%] xs:w-full sm:w-full xs:mb-6 sm:pb-6 xs:mt-4 sm:mt-4 h-full lg:flex lg:justify-end flex justify-end'>
           <div className="bg-[#FFEDD7] h-[50%] sm:w-full xs:w-full md:w-[80%] lg:w-[80%] xl:w-[80%] p-4 rounded-md pl-8 xs:pl-4  xs:my-4 ">
             <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
             <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
@@ -189,7 +189,7 @@ const NewsEvents = () => {
 
             </div>
           </div>
-        </div>
+        </div> */}
 
 
       </div>
