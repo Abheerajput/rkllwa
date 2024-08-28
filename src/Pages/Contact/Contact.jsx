@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
         <div className='px-[5.2%] mt-20 mb-12 flex md:flex-col  sm:flex-col xs:flex-col
         '>
-          <div className="  p-12  xs:w-full rounded-lg w-[45%] sm:w-full md:w-full  bg-[#F7F6F1]">
+          <div className="  p-12 xs:p-4 xs:py-8 xs:w-full rounded-lg w-[45%] sm:w-full md:w-full  bg-[#F7F6F1]">
             <div className='flex gap-4 items-center'>
               <p>
                 <img src={icon} alt="" className='w-16' />
