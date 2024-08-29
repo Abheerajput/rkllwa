@@ -3,6 +3,7 @@ import img1 from '../../assets/icons/doc.svg';
 import img2 from '../../assets/icons/doc2.svg';
 import img3 from '../../assets/icons/people.svg';
 import MenuOpen from '../../Components/MenuOpen';
+import { Link } from 'react-router-dom';
 
 const Solution = ({ title, description, buttonText, sections }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,11 +57,11 @@ const Solution = ({ title, description, buttonText, sections }) => {
       <div className="bg-[#F7F6F1] px-[5.2%] xs:py-8 py-16">
         <div className="grid grid-cols-2 xs:flex xs:flex-col gap-9 xs:py-0 py-[120px]">
           <div className="flex flex-wrap justify-start items-center xl:gap-20 gap-8">
-            {sections.map((section, index) => (
-              <div key={index} className="flex flex-col items-center">
+          {sections.map((section, index) => (
+              <Link key={index} to={section.link} className="flex flex-col items-center">
                 <img src={section.img} alt={section.title} className="mb-4 xs:w-[61px]" />
                 <h1 className="text-[20px] fgt-ff-normal">{section.title}</h1>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="flex flex-col justify-center xs:text-start md:start">
@@ -91,9 +92,9 @@ const Solution = ({ title, description, buttonText, sections }) => {
 
 const App = () => {
   const sections = [
-    { img: img1, title: 'Business Law' },
-    { img: img2, title: 'BOIR Compliance' },
-    { img: img3, title: 'Immigration Law' },
+    { img: img1, title: 'Business Law',link:"/business" },
+    { img: img2, title: 'BOIR Compliance' ,link:"/boir"},
+    { img: img3, title: 'Immigration Law' ,link:"/immigration-law"},
   ];
   window.scrollTo(0, 0);
   return (
