@@ -6,6 +6,7 @@ import icon2 from '../../assets/icons/Posts.svg';
 import {Link} from 'react-router-dom'
 
 const SectionHeader = ({ iconSrc, title, className, text }) => (
+  
   <>
     <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 xs:gap-2 flex ${className}`}>
       <img src={iconSrc} alt="" className='xs:w-[70px]' />
@@ -143,7 +144,7 @@ const Content = () => {
     'Navigating Complex Divorces',
     'Understanding Property Division',
   ];
-
+  window.scrollTo(0, 0);
 
 
   return (

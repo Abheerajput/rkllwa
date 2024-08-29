@@ -15,6 +15,7 @@ import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
 const Business = () => {
+  window.scrollTo(0, 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);

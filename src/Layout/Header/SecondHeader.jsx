@@ -18,6 +18,7 @@ import menuicon from '../../assets/icons/newmenu.svg';
 import { Link } from 'react-router-dom'; // Ensure you have react-router-dom installed
 
 const SecondHeader = ({ socialIcons2, mainTitle }) => {
+  
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const socialIcons = [lkdnicon, fbicon, twittericon];

@@ -14,7 +14,7 @@ import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import Footer from "../../Layout/Footer/Footer"
-import qr from "../../assets/images/qr.png"
+import qr from "../../assets/images/nazanin.jpeg"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard3 = () => {

@@ -13,7 +13,7 @@ import SecondHeader from '../../Layout/Header/SecondHeader';
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
-import qr from "../../assets/images/qr.png"
+import qr from "../../assets/images/ninazqr.jpeg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';

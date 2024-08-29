@@ -16,6 +16,7 @@ import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
 import { Link } from 'react-router-dom';
 const Boir = () => {
+  window.scrollTo(0, 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);

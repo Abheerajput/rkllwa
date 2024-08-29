@@ -95,6 +95,7 @@ const App = () => {
     { img: img1, title: 'Business Law',link:"/business" },
     { img: img2, title: 'BOIR Compliance' ,link:"/boir"},
     { img: img3, title: 'Immigration Law' ,link:"/immigration-law"},
+    
   ];
   window.scrollTo(0, 0);
   return (
