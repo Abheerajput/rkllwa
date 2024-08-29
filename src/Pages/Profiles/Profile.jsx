@@ -13,6 +13,7 @@ import SecondHeader from '../../Layout/Header/SecondHeader';
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
+import qr from "../../assets/images/qr.png"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
@@ -66,8 +67,9 @@ const ProfileCard = () => {
                   <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nkhorsandi@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">
+                  <span className="mr-4 flex gap-4">
                     <img src={icon6} alt="" />
+                    <img src={qr} alt="" className='w-[20%]' />
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
