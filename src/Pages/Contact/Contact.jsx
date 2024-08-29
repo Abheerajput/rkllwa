@@ -133,6 +133,7 @@ const Contact = () => {
                     className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent  text-[16px] fgt-ff-light  focus:ring-2 focus:ring-orange-500"
                     name="firstName"
                     onChange={handleChange}
+                    value={firstName}
                   />
                 </label>
 
@@ -144,6 +145,7 @@ const Contact = () => {
                     className="mt-1 p-2 w-full border border-[#919191] rounded-md focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                     name="lastName"
                     onChange={handleChange}
+                    value={lastName}
                   />
                 </label>
               </div>
@@ -158,6 +160,7 @@ const Contact = () => {
                   className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   name="email"
                   onChange={handleChange}
+                  value={email}
                 />
               </div>
               <div className="sm:col-span-2">
@@ -170,6 +173,7 @@ const Contact = () => {
                   className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   name="company"
                   onChange={handleChange}
+                  value={company}
                 />
               </div>
               <div className="sm:col-span-2">
@@ -186,6 +190,7 @@ const Contact = () => {
                   placeholder="type here...."
                   className="bg-transparent max-h-[286px] border-[#919191] h-screen border  w-full mt-1 p-2  rounded-md focus:outline-none text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   onChange={handleChange}
+                  value={messageToSend}
                 ></textarea>
               </div>
 
