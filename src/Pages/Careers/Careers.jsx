@@ -66,7 +66,7 @@ const Careers = () => {
             <div className='px-[5.2%] mt-20 mb-12 flex md:flex-col sm:flex-col xs:flex-col'>
                 <div className="p-12 xs:p-4 xs:py-8 xs:w-full rounded-lg w-[45%] sm:w-full md:w-full bg-[#F7F6F1]">
                     <div className='flex gap-4 items-center'>
-                        <h3 className='text-[50px] flex justify-center w-full sm:text-[38px] xs:text-[25px] fgt-ff-medium text-[#403C5C]'>Your Information</h3>
+                        <h3 className='text-[40px] flex justify-center w-full sm:text-[38px] xs:text-[25px] fgt-ff-medium text-[#403C5C]'>Your Information</h3>
                     </div>
                   
                     <form className="grid grid-cols-1 gap-4" onSubmit={handleSubmit}>
@@ -150,22 +150,22 @@ const Careers = () => {
                 </div>
                     <div className='w-[55%] sm:mb-8 xs:mb-8 md:mb-8 md:justify-start sm:w-full xs:w-full sm:justify-start xs:justify-start xs:mt-12 sm:mt-12 md:mt-12 flex justify-center'>
                         <div>
-                            <h1 className='text-[50px] text-[#403C5C] sm:text-[38px]  xs:text-[25px]   fgt-ff-medium'>Call us</h1>
-                            <p className='text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]'>Call our team Mon-Fri from 9am to 5pm.</p>
-                            <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={phone1} alt="" className='xs:w-[1.2rem] sm:w-[1.6rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>818-990-9999</h3> </span>
+                            <h1 className='text-[40px] text-[#403C5C] sm:text-[38px]  xs:text-[25px]   fgt-ff-medium'>Call us</h1>
+                            <p className='text-[18px] xs:text-[15px] fgt-ff-normal text-[#212121]'>Call our team Mon-Fri from 9am to 5pm.</p>
+                            <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={phone1} alt="" className='xs:w-[1.2rem] sm:w-[1.6rem] w-6' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>818-990-9999</h3> </span>
                             <div className='mt-12'>
-                                <h3 className='text-[50px] sm:text-[38px] text-[#403C5C]  xs:text-[25px]  fgt-ff-medium'>Chat with us</h3>
-                                <p className='text-[20px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4'>Connect with our friendly team!</p>
+                                <h3 className='text-[40px] sm:text-[38px] text-[#403C5C]  xs:text-[25px]  fgt-ff-medium'>Chat with us</h3>
+                                <p className='text-[18px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4'>Connect with our friendly team!</p>
 
-                                <span className='flex items-center gap-4 my-4  text-[27px] fgt-ff-medium text-[#212121] '> <img src={message2} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>      <a href="mailto:info@rkllaw.com?subject={subject}">Email Us</a>  </h3> </span>
+                                <span className='flex items-center gap-4 my-4   fgt-ff-medium text-[#212121] '> <img src={message2} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] text-[22px] xs:text-[15px]'>      <a href="mailto:info@rkllaw.com?subject={subject}">Email Us</a>  </h3> </span>
                                 <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">
-                                    <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={facebook} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on facebook</h3> </span>
+                                    <span className='flex items-center gap-4 my-4 text-[22px] fgt-ff-medium text-[#212121] '> <img src={facebook} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on facebook</h3> </span>
                                 </a>
                                 <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
-                                    <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={instagram} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Instagram</h3> </span>
+                                    <span className='flex items-center gap-4 my-4 text-[22px] fgt-ff-medium text-[#212121] '> <img src={instagram} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Instagram</h3> </span>
                                 </a>
                                 <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" >
-                                    <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h3> </span>
+                                    <span className='flex items-center gap-4 my-4 text-[22px] fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h3> </span>
                                 </a>
                             </div>
                         </div>

@@ -79,7 +79,7 @@ const ProfileCard3 = () => {
           Nazanin Lahijani  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
           Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p> */}
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light mb-6 my-4">
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light mb-10 my-4">
           Nazanin decided to take her knowledge-base and apply it proactively to serve transactional clients. With her ready familiarity with all-too-common contractual and business failures, she is well-poised to negotiate, create and draft agreements on behalf of her transactional clients. With an eye for detail, she has exacting standards with respect to regulatory compliance, BOIR reporting, and preparing SOPs and manuals, and has the ability to anticipate, and avoid, problems for her clients before they arise. 
           </p>
 

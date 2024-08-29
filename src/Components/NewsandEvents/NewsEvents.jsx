@@ -11,11 +11,33 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Footer from "../../Layout/Footer/Footer"
 import MenuOpen from '../MenuOpen';
 const NewsEvents = () => {
+  const [showFullText, setShowFullText] = useState(false);
+  const [showFullText1, setShowFullText1] = useState(false);
+  const [showFullText2, setShowFullText2] = useState(false);
+  const [showFullText3, setShowFullText3] = useState(false);
+  const [showFullText4, setShowFullText4] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
 
+  const toggleText = () => {
+    setShowFullText(!showFullText);
+  };
+  const toggleText2 = () => {
+    setShowFullText1(!showFullText1);
+  };
+  const toggleText3 = () => {
+    setShowFullText2(!showFullText2);
+  };
+  const toggleText4 = () => {
+    setShowFullText3(!showFullText3);
+  };
+  const toggleText5 = () => {
+    setShowFullText4(!showFullText4);
+  };
+
   const toggleMenu = () => {
+
     if (menuOpen) {
       setIsAnimating(true);
       setTimeout(() => {
@@ -77,15 +99,45 @@ const NewsEvents = () => {
           <div>
             <span className='pt-3 mb-4 text-[25px] fgt-ff-medium border-b-2 border-black'>News from FinCEN.gov  </span>
             <h3 className='py-4 text-[25px] fgt-ff-medium'>FinCEN Issues Notice to Financial Institution Customers on Beneficial Ownership Information Requirements</h3>
-            <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>Today, the Financial Crimes Enforcement Network (FinCEN) issued a notice to customers of financial institutions about reporting beneficial ownership information. More </p>
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The Corporate Transparency Act requires certain entities, including many small businesses, to report to FinCEN information about the individuals who ultimately own or control them. A separate regulatory requirement currently requires many financial institutions to also collect beneficial ownership information from certain customers that seek to open accounts as part of Federal customer due diligence requirements. Today’s notice provides answers to key questions about: (1) reporting beneficial ownership information to FinCEN under the Corporate Transparency Act (https://www.fincen.gov/boi); and (2) providing beneficial ownership information to financial institutions in connection with Federal customer due diligence requirements. FinCEN encourages financial institutions to share this reference guide with customers that may be required to report beneficial ownership information.</p>
+            <p className='text-[20px] fgt-ff-light pt-4 xs:pt-2 sx:text-[16px] '>Today, the Financial Crimes Enforcement Network (FinCEN) issued a notice to customers of financial institutions about reporting beneficial ownership information.   
+            <button 
+        className="text-blue-500 mt-2  pl-2"
+        onClick={toggleText}
+      >
+        {showFullText ? ' Less' : 'More'}
+      </button>
+         </p>
 
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Notice to Customers - Beneficial Ownership Information Reference Guide: <span className='border-b-blue-400 '>https://www.fincen.gov/sites/default/files/shared/BOI-Notice-to-Customers-508FINAL.pdf</span> </p>
+
+{showFullText && (
+  <div>
+
+        <p className='text-[20px] fgt-ff-light pt-4 sx:text-[16px]'>
+          The Corporate Transparency Act requires certain entities, including many small businesses, to report to FinCEN information about the individuals who ultimately own or control them. A separate regulatory requirement currently requires many financial institutions to also collect beneficial ownership information from certain customers that seek to open accounts as part of Federal customer due diligence requirements. Today’s notice provides answers to key questions about: (1) reporting beneficial ownership information to FinCEN under the Corporate Transparency Act (https://www.fincen.gov/boi); and (2) providing beneficial ownership information to financial institutions in connection with Federal customer due diligence requirements. FinCEN encourages financial institutions to share this reference guide with customers that may be required to report beneficial ownership information.
+        </p>
+          <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Notice to Customers - Beneficial Ownership Information Reference Guide: <span className='border-b-blue-400 '>https://www.fincen.gov/sites/default/files/shared/BOI-Notice-to-Customers-508FINAL.pdf</span> </p>
+  </div>
+      )}
+     
+       
+
+          
 
 
             <h3 className='py-4 text-[25px] fgt-ff-medium'>SEC, FinCEN Propose Customer Identification Program Requirements for Registered Investment Advisers and Exempt Reporting Advisers</h3>
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>WASHINGTON—Today, the Securities and Exchange Commission (SEC) and the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) jointly proposed a new rule that would require SEC-registered More  investment advisers (RIAs) and exempt reporting advisers (ERAs) to establish, document, and maintain written customer identification programs (CIPs). The proposal is designed to prevent illicit finance activity involving the customers of investment advisers by strengthening the anti-money laundering and countering the financing of terrorism (AML/CFT) framework for the investment adviser sector.</p>
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Under this proposal, RIAs and ERAs would be required to implement reasonable procedures to identify and verify the identity of their customers, among other requirements, in order to form a reasonable belief that RIAs and ERAs know the true identity of their customers. The proposed rule would make it more difficult for criminal, corrupt, or illicit actors to establish customer relationships—including by using false identities—with investment advisers for the purposes of laundering money, financing terrorism, or engaging in other illicit finance activity.</p>
+            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>WASHINGTON—Today, the Securities and Exchange Commission (SEC) and the U.S. Department of the Treasury’s Financial Crimes Enforcement Network (FinCEN) jointly proposed a new rule that would require SEC-registered More  investment advisers (RIAs) and exempt reporting advisers (ERAs) to establish, document, and maintain written customer identification programs (CIPs). The proposal is designed to prevent illicit finance activity involving the customers of investment advisers by strengthening the anti-money laundering and countering the financing of terrorism (AML/CFT) framework for the investment adviser sector.
+            <button 
+        className="text-blue-500 mt-2  pl-2"
+        onClick={toggleText2}
+      >
+        {showFullText1 ? ' Less' : 'More'}
+      </button>
+            </p>
+
+            {showFullText1 && (
+  <div>
+
+<p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Under this proposal, RIAs and ERAs would be required to implement reasonable procedures to identify and verify the identity of their customers, among other requirements, in order to form a reasonable belief that RIAs and ERAs know the true identity of their customers. The proposed rule would make it more difficult for criminal, corrupt, or illicit actors to establish customer relationships—including by using false identities—with investment advisers for the purposes of laundering money, financing terrorism, or engaging in other illicit finance activity.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>This proposed rulemaking complements a separate FinCEN proposal in February 2024 to designate RIAs and ERAs as “financial institutions” under the Bank Secrecy Act (BSA) and subject them to AML/CFT program requirements and suspicious activity report (SAR) filing obligations, among other requirements. That proposal cites a Treasury risk assessment that identified that the investment adviser industry has served as an entry point into the U.S. market for illicit proceeds associated with foreign corruption, fraud, tax evasion, and other criminal activities. Together, these proposals aim to prevent illicit finance activity in the investment adviser sector and further safeguard the U.S. financial system.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>“The proposed rule is designed to make it more difficult to use false identities to establish customer relationships with investment advisers,” said SEC Chair Gary Gensler. “I support this proposal because it could reduce the risk of terrorists and other criminals accessing U.S. financial markets to launder money, finance terrorism, or move funds for other illicit purposes.”</p>
 
@@ -101,9 +153,18 @@ const NewsEvents = () => {
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>
               A Fact Sheet on the Notice of Proposed Rulemaking is available on the SEC’s website.</p>
 
-
+  </div>
+      )}
             <h3 className='py-4 text-[25px] fgt-ff-medium'>FinCEN Renews Real Estate Geographic Targeting Orders</h3>
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>WASHINGTON—The Financial Crimes Enforcement Network (FinCEN) today announced the renewal of its Geographic Targeting Orders (GTOs) that require U.S. title insurance companies to identify the natural persons behind shell companies used in non-financed purchases of residential real estate. More </p>
+            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>WASHINGTON—The Financial Crimes Enforcement Network (FinCEN) today announced the renewal of its Geographic Targeting Orders (GTOs) that require U.S. title insurance companies to identify the natural persons behind shell companies used in non-financed purchases of residential real estate. <button 
+        className="text-blue-500 mt-2  pl-2"
+        onClick={toggleText3}
+      >
+        {showFullText2 ? ' Less' : 'More'}
+      </button> </p>
+      {showFullText2 && (
+        <div>
+
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The terms of the GTOs are effective beginning April 19, 2024, and ending on October 15, 2024. The GTOs continue to provide valuable data on the purchase of residential real estate by persons possibly involved in various illicit enterprises. Renewing the GTOs will further assist in tracking illicit funds and other criminal or illicit activity, as well as continuing to inform FinCEN’s regulatory efforts in this sector. FinCEN renewed the GTOs that cover certain counties and major U.S. metropolitan areas in California, Colorado, Connecticut, Florida, Hawaii, Illinois, Maryland, Massachusetts, Nevada, New York, Texas, Washington, Virgina, and the District of Columbia.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The purchase amount threshold remains $300,000 for each covered metropolitan area, with the exception of the City and County of Baltimore, where the purchase threshold is $50,000.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>FinCEN appreciates the continued assistance and cooperation of title insurance companies and the American Land Title Association in protecting real estate markets from abuse by illicit actors.</p>
@@ -111,8 +172,9 @@ const NewsEvents = () => {
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Any questions about the Orders should be directed to FinCEN’s Regulatory Support Section at FRC@FinCEN.gov.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>A copy of the GTO is available here.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Frequently asked questions regarding these GTOs are available here.</p>
+        </div>
 
-
+)}
 
             <h3 className='py-4 text-[25px] fgt-ff-medium'>Alert:  Notice Regarding National Small Business United v. Yellen, No. 5:22-cv-01448 (N.D. Ala.)</h3>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>On March 1, 2024, in the case of National Small Business United v. Yellen, No. 5:22-cv-01448 (N.D. Ala.), a federal district court in the Northern District of Alabama, Northeastern Division, entered a final declaratory judgment, concluding that the Corporate Transparency Act exceeds the Constitution’s limits on Congress’s power and enjoining the Department of the Treasury and FinCEN from enforcing the Corporate Transparency Act against the plaintiffs. The Justice Department, on behalf of the Department of the Treasury, filed a Notice of Appeal on March 11, 2024. While this litigation is ongoing, FinCEN will continue to implement the Corporate Transparency Act as required by Congress, while complying with the court’s order. Other than the particular individuals and entities subject to the court’s injunction, as specified below, reporting companies are still required to comply with the law and file beneficial ownership reports as provided in FinCEN’s regulations.</p>
@@ -120,7 +182,19 @@ const NewsEvents = () => {
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Update [March 11, 2024]: This notice was updated on March 11, 2024, to reflect that a Notice of Appeal has been filed regarding this case.</p>
             <h3 className='py-4 text-[25px] fgt-ff-medium' >Fact Sheet: Anti-Money Laundering Program and Suspicious Activity Report Filing Requirements for Registered Investment Advisers and Exempt Reporting Advisers Notice of Proposed Rulemaking (NPRM)</h3>
 
-            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The U.S. investment adviser industry provides an important service to investors in the United States and across the world in driving investment opportunities and supporting innovation, growth, and prosperity in the United States. But investment advisers, in their role as More  gatekeepers to the U.S. financial system, are at risk of abuse by money launderers, corrupt officials, and other bad actors. Thousands of investment advisers overseeing the investment of tens of trillions of dollars into the U.S. economy are generally not subject to comprehensive anti-money laundering and countering the financing of terrorism (AML/CFT) measures.</p>
+            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The U.S. investment adviser industry provides an important service to investors in the United States and across the world in driving investment opportunities and supporting innovation, growth, and prosperity in the United States. But investment advisers, in their role as   
+              
+            <button 
+        className="text-blue-500 mt-2 pl-2"
+        onClick={toggleText4}
+      >
+        {showFullText3 ? ' Less' : 'More'}
+      </button>
+      </p>
+      {showFullText3 && (
+        <div>
+      <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'> gatekeepers to the U.S. financial system, are at risk of abuse by money launderers, corrupt officials, and other bad actors. Thousands of investment advisers overseeing the investment of tens of trillions of dollars into the U.S. economy are generally not subject to comprehensive anti-money laundering and countering the financing of terrorism (AML/CFT) measures.</p>
+            
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The proposed rule would require certain investment advisers to apply AML/CFT requirements pursuant to the Bank Secrecy Act (BSA), including implementing risk-based AML/CFT programs, reporting suspicious activity to FinCEN, and fulfilling recordkeeping requirements.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Building on the 2021 U.S. Strategy on Countering Corruption, Treasury conducted a risk assessment of the investment advisers sector that identified several illicit finance and national security risks. The risk assessment found several cases in which sanctioned individuals, corrupt officials, tax evaders, and other criminal actors have used investment advisers as an entry point to invest in U.S. securities, real estate, and other assets. Treasury’s risk assessment also identified cases of foreign adversaries, including China and Russia, investing in early-stage companies through investment advisers to access sensitive information and emerging technology.</p>
             <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>While certain investment advisers may be subject to AML/CFT requirements, or perform some AML/CFT requirements voluntarily or via contract, Treasury’s risk assessment found that the lack of comprehensive AML/CFT requirements across the sector contributed to its vulnerability to illicit finance activity. Further, Treasury has found that the investment adviser sector has nearly doubled in assets under management (AUM) since Treasury’s issuance of a prior NPRM in 2015 proposing to apply AML/CFT measures to certain investment advisers. The size and rapid growth of this sector underscore the importance of recalibrating the regulatory environment.</p>
@@ -158,6 +232,8 @@ const NewsEvents = () => {
            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Under the proposed rule, covered investment advisers would be required to comply with the rule on or before 12 months from the final rule’s effective date.</p>
            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>Next Steps</p>
            <p className='text-[20px] fgt-ff-light pt-4  sx:text-[16px]'>The comment period for the NPRM is open until April 15, 2024.</p>
+           </div>
+      )}
           </div>
 
         </div>

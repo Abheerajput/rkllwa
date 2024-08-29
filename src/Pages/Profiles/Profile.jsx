@@ -79,7 +79,7 @@ const ProfileCard = () => {
           <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
           Ninaz Khorsandi, Esq. is a partner at RKL Law and has been practicing law since 2004. She started her career as a civil litigator, doing law and motion and conflict resolution. Thereafter, she pursued transactional law, representing corporate clients as general counsel, in industries ranging from medicine to manufacturing.
           </p>
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light  mb-6 mt-6">Her resolution-orientation frame of mind has also served transaction clients judiciously - allowing for multiple “win-win” solutions to all parties involved. Through her transactional experience, Ninaz has honed her intuition with respect to clients, especially around improving business efficiency and forming ideal business structures. Clients working with Ninaz are excited to lean in on her operational and project management experience to pursue their business goals in legal frameworks that optimize their growth.</p>
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light  mb-10 mt-6">Her resolution-orientation frame of mind has also served transaction clients judiciously - allowing for multiple “win-win” solutions to all parties involved. Through her transactional experience, Ninaz has honed her intuition with respect to clients, especially around improving business efficiency and forming ideal business structures. Clients working with Ninaz are excited to lean in on her operational and project management experience to pursue their business goals in legal frameworks that optimize their growth.</p>
           
 
           {/* <div className="md:w-2/3  pt-6 py-4">

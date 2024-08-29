@@ -80,7 +80,7 @@ const ProfileCard2 = () => {
 
           </p>
           <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light   mt-6">Sohila is also a licensed real estate broker and a member of both the California Association of Realtors (CAR) and the National Association of Realtors (NAR).</p>
-          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light mb-6 my-4">
+          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light mb-10 my-4">
           Sohila has extensive experience in immigration law, ranging from work permits and VISA applications to all aspects of the naturalization process. She handles a range of immigration-related issues for individuals, families and businesses.
           </p>
 

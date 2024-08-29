@@ -7,7 +7,7 @@ import lkdnicon from '../../assets/icons/footerlkdnicon.svg';
 import twittericon from '../../assets/icons/twitter.svg';
 import insta from "../../assets/icons/inst.svg"
 
-const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
+const Footer = ({ title, description, backgroundImg, fb, li, insta }) => {
   return (
     <div
       className=" bg-[#042537]"
@@ -18,9 +18,11 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
     >
       <div className="flex flex-col  justify-center items-center py-24 xs:py-8 px-8 lg:px-24">
         <div className=" flex flex-col text-center items-center ">
-          <img src={RKL} alt="RKL Icon" className="mb-4 xs:w-[17rem]" />
-         
-          <p className="text-[18px] text-center lg:text-[20px] sx:text-[16px] fgt-ff-light text-white xs:mt-0 mt-4 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
+        <p onClick={()=>window.scrollTo(0,0)} >
+          
+          <img src={RKL} alt="RKL Icon" className="mb-2 xs:w-[17rem] cursur-pointer" />
+         </p>
+          <p className="text-[18px] text-center lg:text-[20px] sx:text-[16px] fgt-ff-light text-white xs:mt-0 mt-2 pb-4" dangerouslySetInnerHTML={{ __html: description }}>
           </p>
           <div className="flex justify-center gap-6 ">
             <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer"> <img src={insta} alt="Instagram"className="" /></a>
@@ -32,7 +34,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
         
          
         </div>
-      <p className='text-white sx:text-[16px] text-[20px] pt-20 xs:pt-6 fgt-ff-light' dangerouslySetInnerHTML={{ __html:title }}>
+      <p className='text-white sx:text-[16px] text-[20px] pt-6 xs:pt-6 fgt-ff-light' dangerouslySetInnerHTML={{ __html:title }}>
         
       </p>
         </div>
@@ -43,8 +45,8 @@ const Footer = ({ title, description, backgroundImg, fb, li, twit, insta }) => {
 };
 
 const App = () => {
-  const description = "    <br/> 2625  Townsgate Road, Suite 330 <br/> Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
-const title = "RKL Law  <br/> All Rights Reserved."
+  const description = " 2625  Townsgate Road, Suite 330 <br/> Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
+const title = "RKL Law <br/> All Rights Reserved."
   return (
     <Footer
     title={title}

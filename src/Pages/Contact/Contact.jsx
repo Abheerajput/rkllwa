@@ -121,11 +121,11 @@ const Contact = () => {
               <p>
                 <img src={icon} alt="" className="w-16" />
               </p>
-              <h3 className="text-[50px] sm:text-[38px] xs:text-[25px] fgt-ff-medium text-[#403C5C]">
+              <h3 className="text-[40px] sm:text-[38px] xs:text-[25px] fgt-ff-medium text-[#403C5C]">
                 Contact our team
               </h3>
             </div>
-            <h3 className="text-[20px] xs:text-[15px] fgt-ff-normal text-gray-800 my-6">
+            <h3 className="text-[18px] xs:text-[15px] fgt-ff-normal text-gray-800 my-6">
               Please get in touch with us by completing the form below.
             </h3>
             <form className="grid grid-cols-1  gap-4" onSubmit={handleSubmit}>
@@ -201,7 +201,7 @@ const Contact = () => {
           </div>
           <div className="w-[55%] sm:mb-8 xs:mb-8 md:mb-8 md:justify-start sm:w-full xs:w-full sm:justify-start xs:justify-start xs:mt-12 sm:mt-12 md:mt-12 flex justify-center">
             <div>
-              <h1 className="text-[50px] text-[#403C5C] sm:text-[38px]  xs:text-[25px]   fgt-ff-medium">
+              <h1 className="text-[40px] text-[#403C5C] sm:text-[38px]  xs:text-[25px]   fgt-ff-medium">
                 Call us
               </h1>
               <p className="text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]">
@@ -219,23 +219,23 @@ const Contact = () => {
                 </h3>{" "}
               </span>
               <div className="mt-12">
-                <h3 className="text-[50px] sm:text-[38px] text-[#403C5C]  xs:text-[25px]  fgt-ff-medium">
+                <h3 className="text-[40px] sm:text-[38px] text-[#403C5C]  xs:text-[25px]  fgt-ff-medium">
                   Chat with us
                 </h3>
-                <p className="text-[20px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4">
+                <p className="text-[18px] sm:text-[17px] xs:text-[15px] fgt-ff-normal text-[#212121] py-4">
                   Connect with our friendly team!
                 </p>
 
-                <span className="flex items-center gap-4 my-4  text-[27px] fgt-ff-medium text-[#212121] ">
+                <span className="flex items-center gap-4 my-4   fgt-ff-medium text-[#212121] ">
                   {" "}
                   <img
                     src={message}
                     alt=""
-                    className="xs:w-[1.2rem] sm:w-[1.4rem]"
+                    className="xs:w-[1.2rem] sm:w-[1.4rem] w-6"
                   />{" "}
-                  <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
+                  <h3 className="border-0 border-b-2 border-[#212121]  text-[22px]  sm:text-[20px] xs:text-[15px]">
                     {" "}
-                    <a href="mailto:info@rkllaw.com?subject={subject}">
+                    <a className="text-[22px]  sm:text-[20px] xs:text-[15px]" href="mailto:info@rkllaw.com?subject={subject}">
                      Email Us
                     </a>{" "}
                   </h3>{" "}
@@ -245,16 +245,16 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] ">
+                  <span className="flex items-center gap-4 my-4  fgt-ff-medium text-[#212121] ">
                     {" "}
                     <img
                       src={facebook}
                       alt=""
-                      className="xs:w-[1.2rem] sm:w-[1.4rem]"
+                      className="xs:w-[1.2rem] sm:w-[1.4rem]  w-6"
                     />{" "}
-                    <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
+                    <h5 className="border-0 border-b-2 border-[#212121] text-[22px] sm:text-[20px] xs:text-[15px]">
                       Connect on facebook
-                    </h3>{" "}
+                    </h5>{" "}
                   </span>
                 </a>
                 <a
@@ -262,20 +262,20 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] ">
+                  <span className="flex items-center gap-4 my-4  fgt-ff-medium text-[#212121] ">
                     {" "}
                     <img
                       src={instagram}
                       alt=""
-                      className="xs:w-[1.2rem] sm:w-[1.4rem]"
+                      className="xs:w-[1.2rem] sm:w-[1.4rem] w-6"
                     />{" "}
-                    <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
+                    <h3 className="border-0 border-b-2 border-[#212121] text-[22px] sm:text-[20px] xs:text-[15px]">
                       Connect on Instagram
                     </h3>{" "}
                   </span>
                 </a>
                 <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" >
-                <span className='flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem]' /> <h3 className='border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h3> </span>
+                <span className='flex items-center gap-4 my-4  fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h5 className='border-0 border-b-2 text-[22px] border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h5> </span>
                 </a>
               </div>
             </div>
