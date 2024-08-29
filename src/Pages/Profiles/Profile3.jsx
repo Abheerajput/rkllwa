@@ -14,6 +14,7 @@ import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import Footer from "../../Layout/Footer/Footer"
+import qr from "../../assets/images/nazanin.jpeg"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard3 = () => {
@@ -64,8 +65,9 @@ const ProfileCard3 = () => {
                   <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nlahijani@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">
+                <span className="mr-4 flex gap-4">
                     <img src={icon6} alt="" />
+                    <img src={qr} alt="" className='w-[20%]' />
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
@@ -79,7 +81,7 @@ const ProfileCard3 = () => {
           Nazanin Lahijani  is a business lawyer who represents clients in the adversarial context of business disputes  and <br className='xs:hidden'/> business litigation. His primary area of emphasis is corporate ownership disputes and business dissolutions  <br className='xs:hidden'/> (“business divorce”). Mario’s clients are the owners, officers, and/or directors of privately held companies  who  <br className='xs:hidden'/>need a highly skilled business attorney to creatively and aggressively represent them in their business  <br className='xs:hidden'/> disputes arising out of breach of fiduciary duty, breach of loyalty, minority oppression, conversion, <br className='xs:hidden'/> accounting, wage claims, and unjust enrichment.
           Nazanin Lahijani is a business lawyer who represents clients in the adversarial context of business disputes and business litigation...
           </p> */}
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light my-4">
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light mb-10 my-4">
           Nazanin decided to take her knowledge-base and apply it proactively to serve transactional clients. With her ready familiarity with all-too-common contractual and business failures, she is well-poised to negotiate, create and draft agreements on behalf of her transactional clients. With an eye for detail, she has exacting standards with respect to regulatory compliance, BOIR reporting, and preparing SOPs and manuals, and has the ability to anticipate, and avoid, problems for her clients before they arise. 
           </p>
 
@@ -101,7 +103,7 @@ const ProfileCard3 = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
+        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>

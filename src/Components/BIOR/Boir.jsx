@@ -16,6 +16,7 @@ import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
 import { Link } from 'react-router-dom';
 const Boir = () => {
+  window.scrollTo(0, 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -209,11 +210,11 @@ const Boir = () => {
     <>
      {menuOpen && (
         <MenuOpen 
-          ref={menuRef}  // Attach ref to the MenuOpen component
+          ref={menuRef}  
           open={menuOpen} 
           close={toggleMenu} 
           isAnimating={isAnimating} 
-          tabIndex="-1"  // Make it focusable
+          tabIndex="-1"  
         />
       )}
       <SecondHeader
@@ -313,9 +314,9 @@ Beneficial Ownership information refers to identifying information about the ind
 </div>
 
 <div>
-  <h3 id="deadline" className='text-[#844C0D] text-[26px] pt-4 sx:text-[18px] fgt-ff-bold'>Deadlines</h3>
-  <p className="underline-offset-8 underline sx:text-[16px]">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
-  <p>• If your company was created or registered prior to January 1, 2024, you will have until January 1, 2025 to report BOI. <br />
+  <h3 id="deadline" className=' text-[26px] text-[#212121] pt-4 sx:text-[18px] fgt-ff-bold'>Deadlines</h3>
+  <p className="underline-offset-8 underline  text-[20px] fgt-ff-light sx:text-[16px]">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
+  <p className='text-[20px] fgt-ff-light sx:text-[16px]'>• If your company was created or registered prior to January 1, 2024, you will have until January 1, 2025 to report BOI. <br />
 • If your company is created or registered in 2024, you must report BOI within 90 calendar days after receiving actual or public notice that your company’s creation or registration is effective, whichever is earlier.<br />
 • If your company is created or registered on or after January 1, 2025, you must file BOI within 30 calendar days after receiving actual or public notice that its creation or registration is effective. <br />
 • Any updates or corrections to beneficial ownership information that you previously filed with FinCEN must be submitted within 30 days.</p>
@@ -324,7 +325,7 @@ Beneficial Ownership information refers to identifying information about the ind
 <p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>Civil and criminal penalties, including fines and imprisonment. Civil penalties up to $500 per day (adjusted for inflation) may be assessed against the Reporting Company and its Beneficial Owners.  Beneficial owners may also be subject to criminal penalties of up to two-year imprisonment and a fine of up to $10,000 for willful non-compliance or deception.</p>
 
 <h2 id="get-compliant" className='text-[24px] fgt-ff-bold sx:text-[18px] text-[#212121] py-8'>Get Compliant with RKL Law</h2>
-<p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>We know.  It’s a lot to consider, process, and understand.  The good news is that RKL Law is here to help.  We have spent the last several months diligently streamlining the intake process so that we may accurately and efficiently file the BOIR on your behalf.  Although the reporting requirements are straightforward, there are legal definitions, facts, and factors that must be understood and carefully analyzed to make the appropriate identifications and report correctly.  As this is a legal inquiry requiring understanding and application of the law, in most cases one would be best served to hire a lawyer, not a law-adjacent on-line service provider to perform BOI reporting.</p>
+<p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>We know.  It’s a lot to consider, process, and understand.  The good news is that RKL Law is here to help.  We have streamlined the intake process so that we may accurately and efficiently file the BOIR on your behalf.  Although the reporting requirements are straightforward, there are legal definitions, facts, and factors that must be understood and carefully analyzed to make the appropriate identifications and report correctly.  As this is a legal inquiry requiring understanding and application of the law, in most cases one would be best served to hire a lawyer, not a law-adjacent on-line service provider to perform BOI reporting.</p>
 <br />
 
 <p className='text-[20px] fgt-ff-light sx:text-[16px] text-[#212121]'>Our BOI Report service will include a comprehensive intake, review and analysis of corporate documents (as necessary) to determine exemption status, identification of Beneficial Owner(s) and Company Applicant(s), providing links for the secure/encrypted uploading of federally-mandated identifying documents, and as many one-on-one Zoom calls and communications with a single attorney dedicated to the file as we deem necessary to prepare the report for filing.  We will hold your hand through the entire process and submit the report for you. And, unlike other law firms, we have implemented a fixed fee structure, so there won’t be an open-ended, hourly-based surprise bill at the end of our services. </p>

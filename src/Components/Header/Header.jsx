@@ -64,9 +64,9 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
           backgroundImage: `url(${backgroundImg})`,
         }}
       >
-        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[9%]'>
+        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[12%]'>
           <Link to="/">
-            <img src={logo} alt="Logo" className="w-[365px] xs:w-[250px] xs:-[250px]  h-[175px]" />
+            <img src={logo} alt="Logo" className="w-[365px]  lg:w-[300px] xs:w-[250px] xs:-[250px]  h-[175px]" />
           </Link>
         </div>
         <div className="flex px-[5.2%] overflow-x-hidden justify-end   p-8 ">
@@ -76,24 +76,24 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
             <span>
                 <div className="flex items-center justify-center gap-6 xs:pt-0 ">
                   <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">
-                    <img src={fbicon2} alt="Facebook" className='xs:hidden' />
+                    <img src={fbicon2} alt="Facebook" className='xs:hidden lg:w-7' />
                   </a>
                   <a href="https://www.instagram.com/rkl_law?igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
-                    <img src={insta} alt="Instagram" className='xs:hidden ' />
+                    <img src={insta} alt="Instagram" className='xs:hidden  lg:w-7' />
                   </a>
                   <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" className='flex'>
-                    <img src={lkdnicon} alt="LinkedIn" className='xs:hidden' />
+                    <img src={lkdnicon} alt="LinkedIn" className='xs:hidden lg:w-7' />
                   </a>
-                  <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 cursor-pointer" onClick={toggleMenu} />
+                  <img src={menuIcon} alt="Menu Icon" className="w-16 h-16 xs:w-12 xs:h-12 lg:w-12 cursor-pointer" onClick={toggleMenu} />
                 </div>
               </span>
             </div>
             <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden mr-12 px-8  mt-4">
               <div className="max-w-2xl bg-[#E3E6EC] py-2 px-8 lg:px-12 rounded-md">
-                <h1 className="fgt-ff-medium text-[30px] lg:text-[34.91px]">
+                <h1 className="fgt-ff-medium text-[30px] lg:text-[30px]">
                   {mainTitle}
                 </h1>
-                <p className="text-[16px] lg:text-[18.34px] fgt-ff-light py-3">
+                <p className="text-[16px] lg:text-[16px] fgt-ff-light py-3">
                   {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
                     <React.Fragment key={index}>{line}</React.Fragment>
                   )) : mainDescription}

@@ -13,6 +13,7 @@ import SecondHeader from '../../Layout/Header/SecondHeader';
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
+import qr from "../../assets/images/ninazqr.jpeg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
@@ -66,8 +67,9 @@ const ProfileCard = () => {
                   <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nkhorsandi@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">
+                  <span className="mr-4 flex gap-4">
                     <img src={icon6} alt="" />
+                    <img src={qr} alt="" className='w-[20%]' />
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
@@ -79,7 +81,7 @@ const ProfileCard = () => {
           <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">
           Ninaz Khorsandi, Esq. is a partner at RKL Law and has been practicing law since 2004. She started her career as a civil litigator, doing law and motion and conflict resolution. Thereafter, she pursued transactional law, representing corporate clients as general counsel, in industries ranging from medicine to manufacturing.
           </p>
-          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light   mt-6">Her resolution-orientation frame of mind has also served transaction clients judiciously - allowing for multiple “win-win” solutions to all parties involved. Through her transactional experience, Ninaz has honed her intuition with respect to clients, especially around improving business efficiency and forming ideal business structures. Clients working with Ninaz are excited to lean in on her operational and project management experience to pursue their business goals in legal frameworks that optimize their growth.</p>
+          <p className="text-[#212121] text-[20px] sx:text-[16px] fgt-ff-light  mb-10 mt-6">Her resolution-orientation frame of mind has also served transaction clients judiciously - allowing for multiple “win-win” solutions to all parties involved. Through her transactional experience, Ninaz has honed her intuition with respect to clients, especially around improving business efficiency and forming ideal business structures. Clients working with Ninaz are excited to lean in on her operational and project management experience to pursue their business goals in legal frameworks that optimize their growth.</p>
           
 
           {/* <div className="md:w-2/3  pt-6 py-4">
@@ -100,7 +102,7 @@ const ProfileCard = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
+        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>

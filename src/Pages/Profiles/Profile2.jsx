@@ -14,6 +14,7 @@ import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import Footer from "../../Layout/Footer/Footer"
+import qr from "../../assets/images/qr.png"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard2 = () => {
@@ -65,8 +66,9 @@ const ProfileCard2 = () => {
                   <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">srezai@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">
+                <span className="mr-4 flex gap-4">
                     <img src={icon6} alt="" />
+                    <img src={qr} alt="" className='w-[20%]' />
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
@@ -80,7 +82,7 @@ const ProfileCard2 = () => {
 
           </p>
           <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light   mt-6">Sohila is also a licensed real estate broker and a member of both the California Association of Realtors (CAR) and the National Association of Realtors (NAR).</p>
-          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light  my-4">
+          <p className="text-[#212121] sx:text-[16px] text-[20px] fgt-ff-light mb-10 my-4">
           Sohila has extensive experience in immigration law, ranging from work permits and VISA applications to all aspects of the naturalization process. She handles a range of immigration-related issues for individuals, families and businesses.
           </p>
 
@@ -101,7 +103,7 @@ const ProfileCard2 = () => {
           </div> */}
         </div>
         {/* Sidebar */}
-        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
+        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>
