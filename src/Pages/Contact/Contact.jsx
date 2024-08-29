@@ -13,7 +13,7 @@ import Footer from "../../Layout/Footer/Footer";
 import { Link } from "react-router-dom";
 import "../../Style/style.css";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 const Contact = () => {
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const [details, setDetails] = useState({
@@ -93,14 +93,6 @@ const Contact = () => {
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        closeOnClick
-        pauseOnHover
-        draggable
-      />
       <div>
         <SecondHeader socialIcons2={socialIcons2} mainTitle="Contact" />
         <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
