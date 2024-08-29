@@ -78,7 +78,7 @@ const Contact = () => {
           areaOfInterest: "",
           messageToSend: "",
         })
-        toast.info("Form submitted");
+        toast.success("Thank you for your submission!");
       }
     } catch (error) {
       toast.error("Something went wrong!");

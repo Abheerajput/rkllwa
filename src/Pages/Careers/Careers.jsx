@@ -111,7 +111,7 @@ const Careers = () => {
           brief: "",
         });
         setFile("");
-        toast.info("Form submitted");
+        toast.success("Thank you for your submission!");
         setSubmitted(false);
       }
     } catch (error) {
