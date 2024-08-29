@@ -16,6 +16,7 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 const Contact = () => {
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
+  const [submitted, setSubmitted] = useState(false);
   const [details, setDetails] = useState({
     firstName: "",
     lastName: "",
@@ -63,13 +64,14 @@ const Contact = () => {
       toast.warn("Please enter your Message.");
       return;
     }
-
+    setSubmitted(true)
     try {
       const response = await axios.post(
-        "http://98.70.57.18:82/user/formSubmit",
+        "https://rklapi.testenvapp.com/user/formSubmit",
         { ...details, message: messageToSend }
       );
       if (response.data.status) {
+        setSubmitted(false)
         setDetails({
           firstName: "",
           lastName: "",
@@ -78,9 +80,10 @@ const Contact = () => {
           areaOfInterest: "",
           messageToSend: "",
         })
-        toast.info("Form submitted");
+        toast.success("Thank you for your submission!");
       }
     } catch (error) {
+      setSubmitted(false)
       toast.error("Something went wrong!");
       console.error("Error submitting form:", error);
      
@@ -93,14 +96,6 @@ const Contact = () => {
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        closeOnClick
-        pauseOnHover
-        draggable
-      />
       <div>
         <SecondHeader socialIcons2={socialIcons2} mainTitle="Contact" />
         <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
@@ -179,7 +174,7 @@ const Contact = () => {
               </div>
               <div className="sm:col-span-2">
                 <label className="block  text-[14px] lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">Subject</label>
-                <input type="text" placeholder="subject" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" />
+                <input type="text" placeholder="subject" className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500" name="areaOfInterest" value={areaOfInterest} onChange={handleChange} />
               </div>
               <div className="sm:col-span-2 h-full">
                 <label className="block  text-[14px]  lexend-medium w-1/2 xs:text-[12px] text-[#21272A]">
@@ -195,7 +190,7 @@ const Contact = () => {
               </div>
 
               <div className="w-1/4 ">
-                <button type="submit" className="bg-[#E0AF04] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors">Submit</button>
+                <button type="submit" className={`bg-[#E0AF04] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors ${submitted && "cursor-not-allowed bg-[#e0b004cd]" } `}>Submit</button>
               </div>
             </form>
           </div>
@@ -283,6 +278,7 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
+      <ToastContainer position="top-right" />
     </>
   );
 };
