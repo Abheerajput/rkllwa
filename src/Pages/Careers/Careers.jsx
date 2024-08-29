@@ -96,7 +96,7 @@ const Careers = () => {
 
     try {
       const response = await axios.post(
-        "http://98.70.57.18:82/user/formSubmit2",
+        "https://rklapi.testenvapp.com/user/formSubmit2",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

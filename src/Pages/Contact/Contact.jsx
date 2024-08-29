@@ -67,7 +67,7 @@ const Contact = () => {
     setSubmitted(true)
     try {
       const response = await axios.post(
-        "http://98.70.57.18:82/user/formSubmit",
+        "https://rklapi.testenvapp.com/user/formSubmit",
         { ...details, message: messageToSend }
       );
       if (response.data.status) {
