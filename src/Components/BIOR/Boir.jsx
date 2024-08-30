@@ -98,7 +98,7 @@ const Boir = () => {
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
-        question: "Is an unaffiliated company that provides a service to the Reporting Company by managing its day-to-day operations, but does not make decisions on important matters,a Beneficial Owner of the Reporting Company?",
+        question: "Is an unaffiliated company that provides a service to the Reporting Company by managing its day-to-day operations, a Beneficial Owner of the Reporting Company?",
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
@@ -126,7 +126,7 @@ const Boir = () => {
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
-        question: "Should an initial Beneficial Ownership Interest Report (BOIR) include historical beneficial owners of a reporting company, or only beneficial owners as of the time of filing?",
+        question: "Should an initial (BOIR) include historical beneficial owners of a reporting company, or only beneficial owners as of the time of filing?",
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
@@ -134,7 +134,7 @@ const Boir = () => {
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
-        question: "Is an updated Beneficial Ownership Information Report required when the type of ownership interest a Beneficial Owner has in a Reporting Company changes?",
+        question: " How does a company determine its date of creation or registration?",
         answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
     },
     {
@@ -145,7 +145,7 @@ const Boir = () => {
    
     
     {
-        question: "If a reporting company last filed a “newly exempt entity” Beneficial Ownership Interest Report (BOIR) but subsequently loses its exempt status, what should it do?",
+        question: "If a reporting company last filed a “newly exempt entity”  (BOIR) but subsequently loses its exempt status, what should it do?",
         answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
     }
     ,
@@ -402,14 +402,14 @@ Beneficial Ownership information refers to identifying information about the ind
       {faqs.map((faq, index) => (
         <div key={index} className="my-6">
           <button
-            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] text-[16px] px-4 py-4 focus:outline-none  flex justify-between items-center"
+            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] text-[16px] px-4 py-4 focus:outline-none  xs:flex-col  flex justify-between items-center"
             onClick={(event) => toggleFAQ(index, event)}
           >
             {faq.question}
             {openIndexes.includes(index) ? (
-              <FaMinus className="text-[#000000]" style={{ width: '24px', height: '24px' }} />
+              <FaMinus className="text-[#000000] xs:w-3 w-6 h-6"  />
             ) : (
-              <FaPlus className="text-[#050505]" style={{ width: '24px', height: '24px' }}/>
+              <FaPlus className="text-[#050505]  xs:w-3 w-6 h-6" />
             )}
           </button>
           {openIndexes.includes(index) && (
