@@ -17,6 +17,7 @@ import { toast, ToastContainer } from "react-toastify";
 const Contact = () => {
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const [submitted, setSubmitted] = useState(false);
+  const [successPopup, setSuccessPopup] = useState(false);
   const [details, setDetails] = useState({
     firstName: "",
     lastName: "",
@@ -81,6 +82,8 @@ const Contact = () => {
           messageToSend: "",
         })
         toast.success("Thank you for your submission!");
+        
+        setSuccessPopup(true);
       }
     } catch (error) {
       setSubmitted(false)
@@ -283,7 +286,36 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
-      <ToastContainer position="center" />
+      {successPopup && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    style={{ zIndex: 1000 }}
+  >
+    <div
+      className="bg-white p-8 rounded-md"
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        maxWidth: '400px', // adjust the max width as needed
+        width: '100%',
+        maxHeight: '200px', // adjust the max height as needed
+        height: '100%',
+        overflowY: 'auto', // add this to enable vertical scrolling if needed
+      }}
+    >
+      <h2 className="text-2xl text-center">Submission Successful!</h2>
+      <p className="text-lg text-center">Your application has been submitted successfully.</p>
+      <button
+        onClick={() => setSuccessPopup(false)}
+        className="mt-4 px-4 py-2 bg-[#F15A22] text-white rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </>
   );
 };
