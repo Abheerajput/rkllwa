@@ -82,13 +82,7 @@ const Section1 = ({ title, description, buttonText, backgroundImg, sideImg }) =>
               <h3 className='text-[25px] text-white fgt-ff-semibold mt-4 pb-4'> Strategic. Efficient. And committed to your success.</h3>
            <p className='text-[18px] text-white  pb-4 lg:text-[20px] fgt-ff-semibold'>RKL Law is poised to serve you for your  transactional business, BOIR compliance, and immigration needs. You can rely on our knowledge,   experience, and diligence to plan, grow, gain, resolve, and get you where you need to be.  </p>
             </div>
-            <a href="#topscroll"><button
-             className="bg-[#E0AF04] px-[32px] lg:px-[42px] py-[12px] lg:py-[14px] rounded-md mt-4"
-             onClick={toggleMenu} 
-             > 
            
-              {buttonText}
-            </button></a>
           </div>
           <div className="w-1/2 sm:w-full md:w-full xs:w-full flex justify-center lg:justify-end pt-8 lg:pt-0">
             <img src={sideImg} alt="Group" className="max-w-full h-auto" />

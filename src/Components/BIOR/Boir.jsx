@@ -16,11 +16,15 @@ import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
 import { Link } from 'react-router-dom';
 const Boir = () => {
-  window.scrollTo(0, 0);
+
+  const [openIndexes, setOpenIndexes] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
-
+  useEffect(() => {
+    // This will scroll to the top only once when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const toggleMenu = () => {
     if (menuOpen) {
       setIsAnimating(true);
@@ -55,9 +59,17 @@ const Boir = () => {
   }, [menuOpen]);
   const [open, setOpen] = useState(null);
 
-  const toggleFAQ = (index) => {
-      setOpen(open === index ? null : index);
+ const toggleFAQ = (index, event) => {
+    event.preventDefault();
+    if (openIndexes.includes(index)) {
+      // Remove the index if it's already open
+      setOpenIndexes(openIndexes.filter((i) => i !== index));
+    } else {
+      // Add the index to the openIndexes array
+      setOpenIndexes([...openIndexes, index]);
+    }
   };
+  
 
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const faqs = [
@@ -205,7 +217,7 @@ const Boir = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
+ 
   return (
     <>
      {menuOpen && (
@@ -223,7 +235,7 @@ const Boir = () => {
       />
 
 
-      <div className="text-[26px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
+      <div className="text-[26px] lg:text-[24px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">Boir Compliance</Link> 
@@ -234,7 +246,7 @@ const Boir = () => {
         {/* Profile Section */}
         <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col xs:gap-3 gap-16 sm:items-start md:items-start xs:items-start items-center">
-  <div className='text-[50px] xs:text-[35px] fgt-ff-medium xs:text-start sm:text-start md:text-start  xs:items-start xs:flex-col flex xs:gap-2 gap-6 items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]" /> BOIR Compliance</div>
+<div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  lg:text-[40px] flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]   sm:w-16  w-20"/>  BOIR Compliance</div>
 
 </div>
 
@@ -282,8 +294,8 @@ const Boir = () => {
   </tr>
 </table>
           
-<div>
-  <h2 id="what-is-cta" className='text-[24px] sx:text-[18px] fgt-ff-bold text-[#212121] py-8'>What is the Corporate Transparency Act (CTA)?</h2>
+<section id="what-is-cta">
+  <h2  className='text-[24px] sx:text-[18px] fgt-ff-bold text-[#212121] py-8'>What is the Corporate Transparency Act (CTA)?</h2>
   <p className='text-[20px] fgt-ff-light sx:text-[16px] text-[#212121]'>
 Beginning on January 1, 2024, many companies in the United States will have to report information about their beneficial owners, i.e., the individuals who ultimately own or control the company. They will have to report the information to the Financial Crimes Enforcement Network (FinCEN). FinCEN is a bureau of the U.S. Department of the Treasury.  It is crucial to note that this reporting requirement will not be satisfied merely by filing your tax returns to the IRS.  It is an entirely separate reporting requirement submitted to a different bureau of the Treasury Department than the IRS, namely FinCEN.
 The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt reporting companies to file a Beneficial Ownership Information (BOI) Report with FinCEN as part of the U.S. government’s efforts to make it harder for bad actors to hide or benefit from their ill-gotten gains through shell companies or other opaque ownership structures.
@@ -294,11 +306,11 @@ The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt r
   <img src={img1} alt=""  className='xs:w-[100%]'/>
  
 </p>
-</div>
+</section>
 
 
-<div>
-  <h2 id="who-needs-to-file" className='text-[24px] sx:text-[18px] fgt-ff-bold text-[#212121] py-8'>Reporting Company - Who needs to file?</h2>
+<section id="who-needs-to-file">
+  <h2  className='text-[24px] sx:text-[18px] fgt-ff-bold text-[#212121] py-8'>Reporting Company - Who needs to file?</h2>
   <p className='text-[20px] sx:text-[16px] fgt-ff-light text-[#212121]'>
 
 Companies required to report are called Reporting Companies. More specifically, Reporting Companies are non-exempt corporations, limited liability companies, or other entities that are (i) created by the filing of a document with a secretary of state or any similar office under the law of the State or Indian Tribe or (ii) formed under the law of a foreign country and registered to do business in any State or tribal jurisdiction by the filing of a document with a secretary of state or any similar office under the laws of a State or Indian Tribe. Oftentimes, Reporting Companies do not have the required information for filing and may have to obtain information from their BOs to report that information to FinCEN.
@@ -311,25 +323,29 @@ Business owners and senior officers are responsible for accurate and timely repo
 <h2 id="who-needs-to-filed" className='text-[24px] sx:text-[18px] fgt-ff-bold text-[#212121] py-8'>BOIR Compliance - What needs to be filed?</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>
 Beneficial Ownership information refers to identifying information about the individuals who directly or indirectly own or control a company.  Every Reporting Company that is not exempt must file a BOI Report that discloses five specific items of Personal Identifiable Information (PII) for each of its Beneficial Owners (BO), including a copy of a valid, government-issued ID (such a driver’s license or passport) verifying the BO’s identity.  Entities formed (or registered to do business) on or after January 1, 2024, must also identify and provide the same five items of PII for the entity’s Company Applicant. An individual is a Company Applicant if the individual directly files the document that creates (or registers) the Reporting Company and/or if the individual is primarily responsible for directing or controlling such filing if more than one individual is involved in the filing. Each Reporting Company will have to be analyzed on a case-by-case basis to determine who the Company Applicant(s) is/are for accurate reporting.</p>
-</div>
+</section>
 
-<div>
-  <h3 id="deadline" className=' text-[26px] text-[#212121] pt-4 sx:text-[18px] fgt-ff-bold'>Deadlines</h3>
+<section id="deadline">
+  <h3  className=' text-[26px] text-[#212121] pt-4 sx:text-[18px] fgt-ff-bold'>Deadlines</h3>
   <p className="underline-offset-8 underline  text-[20px] fgt-ff-light sx:text-[16px]">FinCEN began accepting reports on January 1, 2024. The following deadlines apply:</p>
   <p className='text-[20px] fgt-ff-light sx:text-[16px]'>• If your company was created or registered prior to January 1, 2024, you will have until January 1, 2025 to report BOI. <br />
 • If your company is created or registered in 2024, you must report BOI within 90 calendar days after receiving actual or public notice that your company’s creation or registration is effective, whichever is earlier.<br />
 • If your company is created or registered on or after January 1, 2025, you must file BOI within 30 calendar days after receiving actual or public notice that its creation or registration is effective. <br />
 • Any updates or corrections to beneficial ownership information that you previously filed with FinCEN must be submitted within 30 days.</p>
+<section id="penalties">
 
-<h2 id="penalties" className='text-[24px] fgt-ff-bold sx:text-[18px] text-[#212121] py-8'>What are the penalties for non-compliance with the CTA?</h2>
+<h2  className='text-[24px] fgt-ff-bold sx:text-[18px] text-[#212121] py-8'>What are the penalties for non-compliance with the CTA?</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>Civil and criminal penalties, including fines and imprisonment. Civil penalties up to $500 per day (adjusted for inflation) may be assessed against the Reporting Company and its Beneficial Owners.  Beneficial owners may also be subject to criminal penalties of up to two-year imprisonment and a fine of up to $10,000 for willful non-compliance or deception.</p>
+</section>
+<section id="get-compliant">
 
-<h2 id="get-compliant" className='text-[24px] fgt-ff-bold sx:text-[18px] text-[#212121] py-8'>Get Compliant with RKL Law</h2>
+<h2  className='text-[24px] fgt-ff-bold sx:text-[18px] text-[#212121] py-8'>Get Compliant with RKL Law</h2>
 <p className='text-[20px] fgt-ff-light text-[#212121] sx:text-[16px]'>We know.  It’s a lot to consider, process, and understand.  The good news is that RKL Law is here to help.  We have streamlined the intake process so that we may accurately and efficiently file the BOIR on your behalf.  Although the reporting requirements are straightforward, there are legal definitions, facts, and factors that must be understood and carefully analyzed to make the appropriate identifications and report correctly.  As this is a legal inquiry requiring understanding and application of the law, in most cases one would be best served to hire a lawyer, not a law-adjacent on-line service provider to perform BOI reporting.</p>
 <br />
 
 <p className='text-[20px] fgt-ff-light sx:text-[16px] text-[#212121]'>Our BOI Report service will include a comprehensive intake, review and analysis of corporate documents (as necessary) to determine exemption status, identification of Beneficial Owner(s) and Company Applicant(s), providing links for the secure/encrypted uploading of federally-mandated identifying documents, and as many one-on-one Zoom calls and communications with a single attorney dedicated to the file as we deem necessary to prepare the report for filing.  We will hold your hand through the entire process and submit the report for you. And, unlike other law firms, we have implemented a fixed fee structure, so there won’t be an open-ended, hourly-based surprise bill at the end of our services. </p>
 
+</section>
 <h2 className='text-[24px] fgt-ff-bold text-[#212121] sx:text-[18px] py-8'>Our fee structure is as follows:
 </h2>
 
@@ -376,43 +392,42 @@ Beneficial Ownership information refers to identifying information about the ind
 
 
 
-</div>
+</section>
 <div className='flex justify-center'>
 
 <Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
 <button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
           </Link>
 </div>
-<div className="bg-white">
-            <h2 id="faqs" className="text-[53px] xs:text-[35px] xs:pt-6  text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
+<section className="bg-white" id="faqs">
+            <h2  className="text-[53px] lg:text-[44px] xs:text-[35px] xs:pt-6  text-[#162325] lexend-normal text-center">Frequently Asked Questions</h2>
             <div className="mt-8 w-full sm:px-8 mx-auto">
-                {faqs.map((faq, index) => (
-                    <div key={index} className=" my-6">
-                        <button
-                            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] px-4 py-4  focus:outline-none text-lg flex justify-between items-center"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            {faq.question}
-                            {/* Display plus or minus icon based on whether the item is open */}
-                            {open === index ? (
-                                <FaMinus className="text-[#000000]" />
-                            ) : (
-                                <FaPlus className="text-[#050505]" />
-                            )}
-                        </button>
-                        {open === index && (
-                            <p className="p-4 text-gray-600">{faq.answer}</p>
-                        )}
-                    </div>
-                ))}
-            </div>
+      {faqs.map((faq, index) => (
+        <div key={index} className="my-6">
+          <button
+            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] px-4 py-4 focus:outline-none text-lg flex justify-between items-center"
+            onClick={(event) => toggleFAQ(index, event)}
+          >
+            {faq.question}
+            {openIndexes.includes(index) ? (
+              <FaMinus className="text-[#000000]" style={{ width: '20px !important' }} />
+            ) : (
+              <FaPlus className="text-[#050505]" />
+            )}
+          </button>
+          {openIndexes.includes(index) && (
+            <p className="p-4 text-gray-600">{faq.answer}</p>
+          )}
+        </div>
+      ))}
+    </div>
             <div className='flex justify-center'>
 
 <Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
 <button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
           </Link>
 </div>
-        </div>
+        </section>
        
         </div>
 

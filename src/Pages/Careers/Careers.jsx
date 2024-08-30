@@ -354,7 +354,7 @@ const Careers = () => {
         </div>
       </div>
       <Footer />
-      <ToastContainer position="top-right" />
+      <ToastContainer position="center" />
     </>
   );
 };

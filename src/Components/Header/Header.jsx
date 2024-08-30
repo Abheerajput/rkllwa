@@ -25,7 +25,6 @@ import MenuOpen from '../MenuOpen';
 const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, buttonText, icon }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
-
   const [isAnimating, setIsAnimating] = useState(false);
   const toggleMenu = () => {
     if (menuOpen) {
@@ -46,10 +45,7 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
         setMenuOpen(false);
       }
     };
-
-
     document.addEventListener('mousedown', handleClickOutside);
-
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -89,20 +85,20 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
               </span>
             </div>
             <div className="flex justify-end sm:mt-20 sm:hidden xs:hidden mr-12 px-8  mt-4">
-              <div className="max-w-2xl bg-[#E3E6EC] py-2 px-8 lg:px-12 rounded-md">
-                <h1 className="fgt-ff-medium text-[30px] lg:text-[30px]">
+              <div className="max-w-2xl bg-[#E3E6EC] py-2 px-8 lg:px-8 rounded-md">
+                <h1 className="fgt-ff-medium text-[30px] lg:text-[28px]">
                   {mainTitle}
                 </h1>
-                <p className="text-[16px] lg:text-[16px] fgt-ff-light py-3">
+                <p className="text-[16px] lg:text-[16px] fgt-ff-light py-2 xl:py-2 lg:py-2">
                   {Array.isArray(mainDescription) ? mainDescription.map((line, index) => (
                     <React.Fragment key={index}>{line}</React.Fragment>
                   )) : mainDescription}
                 </p>
-                <a href="#content">
-                  <button className="bg-[#E0AF04] px-8 lg:px-12 py-3  rounded-md">
+                
+                  <button className="bg-[#E0AF04] px-8 lg:px-8 lg:py-2 xl:py-3  xl:px-12  rounded-md"  onClick={toggleMenu}>
                     {buttonText}
                   </button>
-                </a>
+                
               </div>
             </div>
           </div>

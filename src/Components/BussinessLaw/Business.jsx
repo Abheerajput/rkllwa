@@ -68,7 +68,7 @@ const Business = () => {
         socialIcons2={socialIcons2}
         mainTitle="Business Law"
       />
-       <div className="text-[26px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
+       <div className="text-[26px] lg:text-[24px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
         <Link to="/" className="hover:underline">Business Law</Link> 
@@ -78,7 +78,7 @@ const Business = () => {
         {/* Profile Section */}
         <div className=' w-[65%] sm:w-full xs:w-full'>
 <div className="flex md:text-start sm:text-start  xs:flex-col gap-16 xs:items-start items-center">
-  <div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]"/> We got the law, you get to business.</div>
+  <div className='text-[50px] xs:text-[35px] sm:text-[40px]  fgt-ff-medium xs:text-start  lg:text-[40px] flex xs:flex-col xs:gap-2 gap-6 xs:items-start items-center text-[#403C5C]'><img src={boir} alt="" className="xs:w-[70px]   sm:w-16  w-20"/> We got the law, you get to business.</div>
 
 </div>
 <div>

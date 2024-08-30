@@ -16,7 +16,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, insta }) => {
         backgroundSize: 'cover',
       }}
     >
-      <div className="flex flex-col  justify-center items-center py-24 xs:py-8 px-8 lg:px-24">
+      <div className="flex flex-col  justify-center items-center xl:py-12 py-10 lg:py-8 xs:py-8 px-8 lg:px-24 relative">
         <div className=" flex flex-col text-center items-center ">
          
           <img src={RKL} alt="RKL Icon" className="mb-2 xs:w-[17rem] cursur-pointer" />
@@ -33,16 +33,17 @@ const Footer = ({ title, description, backgroundImg, fb, li, insta }) => {
         
          
         </div>
-      <p className='text-white sx:text-[16px] text-[20px] pt-6 xs:pt-6 fgt-ff-light' dangerouslySetInnerHTML={{ __html:title }}>
-        
-      </p>
-        </div>
-       <div className='w-full flex justify-end xs:justify-center xs:mt-5 pr-8'>
+      <p className='text-white sx:text-[16px] text-[20px] pt-6 xs:pt-6 fgt-ff-light' dangerouslySetInnerHTML={{ __html:title }}>    
+       </p>
+       <div className='absolute flex w-full justify-end mr-[5%]
+  lg:top-[72%] top-[69%]'>
 
-      <button onClick={()=>window.scrollTo(0,0)} className='flex flex-col gap-4 items-center  fgt-ff-medium text-white text-[20px]'>
-        <img src={top} alt="" className='w-20 xs:w-12 lg:w-16' />
+      <button onClick={()=>window.scrollTo(0,0)} className='flex flex-col gap-2 items-center  fgt-ff-medium text-white text-[20px]  '>
+        <img src={top} alt="" className='w-20 xs:w-12 lg:w-14' />
         Back to Top</button>
-      </div>
+    </div>
+     
+        </div>
        </div>
     </div>
   );
