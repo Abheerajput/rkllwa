@@ -302,7 +302,7 @@ const Contact = () => {
         width: '100%',
         maxHeight: '200px', // adjust the max height as needed
         height: '100%',
-        overflowY: 'auto', // add this to enable vertical scrolling if needed
+        overflowY: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
       <h2 className="text-2xl text-center">Submission Successful!</h2>
