@@ -235,7 +235,7 @@ const Careers = () => {
  {...getRootProps()}
  className={`mt-1 p-6 w-full border ${
    file.length > 0
-     ? "border-green-500 text-green-500"
+     ? "border-blue-800 text-blue-500"
      : "border-[#919191]"
  } rounded-md focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:blue-900 flex flex-col items-center`}
 >

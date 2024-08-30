@@ -73,9 +73,7 @@ const Boir = () => {
 
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const faqs = [
-    {
-question:" Why do companies have to report beneficial ownership to the U.S. Department of the Treasury?"
-    },
+ 
     
     {
         question: "Why do companies have to report beneficial ownership to the U.S. Department of the Treasury?",
@@ -366,7 +364,7 @@ here to retain RKL Law’s services for an evaluation.
         question: "What should I do if I learn of an inaccuracy in a Beneficial Ownership Interest Report (BOIR)?",
      
         answer: <>
-        f a BOIR is inaccurate, your company must correct it no later than 30 days after the date your company became aware of the
+        If a BOIR is inaccurate, your company must correct it no later than 30 days after the date your company became aware of the
 inaccuracy or had reason to know it. This includes any inaccuracy in the required field information provided about your company, its
 Beneficial Owners, or its Company Applicants.
         </>
