@@ -31,13 +31,12 @@ const Careers = () => {
   const { firstName, lastName, email, position, brief, phone } = details;
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
-    accept: { 'application/*': [] },
+    accept: { "application/*": [] },
     multiple: true,
     onDrop: (acceptedFiles) => {
       setFile((prevFiles) => [...prevFiles, ...acceptedFiles]);
     },
   });
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -77,14 +76,10 @@ const Careers = () => {
       return;
     }
 
-    if (!file) {
-        toast.warn("Please choose a File.");
-        return;
-      }
-      if (file.length === 0) {
-        toast.warn("Please choose at least one file.");
-        return;
-      }
+    if (!file || file.length === 0) {
+      toast.warn("Please choose at least one file.");
+      return;
+    }
     setSubmitted(true);
 
     // Create a new FormData object
@@ -97,10 +92,9 @@ const Careers = () => {
     formData.append("brief", brief);
 
     // Append all files to the FormData object
-  file.forEach((file) => {
-    formData.append("attachments", file);
-  });
-
+    file.forEach((file) => {
+      formData.append("attachments", file);
+    });
 
     try {
       const response = await axios.post(
@@ -123,7 +117,7 @@ const Careers = () => {
         setSubmitted(false);
       }
     } catch (error) {
-      setSubmitted(false)
+      setSubmitted(false);
       toast.error("Something went wrong!");
       console.error("Error submitting form:", error);
     }
@@ -229,27 +223,34 @@ const Careers = () => {
                   Resume and/or Cover Letter
                 </label>
                 <div
-  {...getRootProps()}
-  className={`mt-1 p-6 border-2 border-[#919191] rounded-md text-center transition-colors ${
-    isDragActive ? "border-orange-500 bg-[#FFF6E5]" : "border-[#919191] bg-transparent"
-  }`}
->
-  <input {...getInputProps()} />
-  {file.length > 0 ? (
-    file.map((file, index) => (
-      <p key={index} className="text-[16px] fgt-ff-light">{file.name}</p>
-    ))
-  ) : (
-    <p className="text-[16px] fgt-ff-light">Drag & drop or Upload your files here</p>
-  )}
-</div>
-
+                  {...getRootProps()}
+                  className={`mt-1 p-6 border-2 border-[#919191] rounded-md text-center transition-colors ${
+                    isDragActive
+                      ? "border-orange-500 bg-[#FFF6E5]"
+                      : "border-[#919191] bg-transparent"
+                  }`}
+                >
+                  <input {...getInputProps()} />
+                  {file.length > 0 ? (
+                    file.map((file, index) => (
+                      <p key={index} className="text-[16px] fgt-ff-light">
+                        {file.name}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="text-[16px] fgt-ff-light">
+                      Drag & drop or Upload your files here
+                    </p>
+                  )}
+                </div>
               </div>
               <div className="w-1/4 mt-4">
                 <button
                   type="submit"
                   disabled={submitted}
-                  className={`bg-[#E0AF04] text-white p-2 rounded-md w-full xs:text-[12px] transition-colors ${submitted && "cursor-not-allowed bg-[#e0b004cd]"}`}
+                  className={`bg-[#E0AF04] text-white p-2 rounded-md w-full xs:text-[12px] transition-colors ${
+                    submitted && "cursor-not-allowed bg-[#e0b004cd]"
+                  }`}
                 >
                   Submit
                 </button>
