@@ -134,7 +134,7 @@ const Boir = () => {
         answer: "You will get paid through the payment method of your choice, typically within 3-5 business days."
     },
     {
-        question: "Is an updated Beneficial Ownership Information Report (BOIR) required when the type of ownership interest a Beneficial Owner has in a Reporting Company changes?",
+        question: "Is an updated Beneficial Ownership Information Report required when the type of ownership interest a Beneficial Owner has in a Reporting Company changes?",
         answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
     },
     {
@@ -142,11 +142,8 @@ const Boir = () => {
         answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
     }
     ,
-    {
-        question: " If a Reporting Company needs to update one piece of information on a Beneficial Ownership Interest Report (BOIR), such as its address, does the reporting company have to fill out an entirely new BOIR?",
-        answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
-    }
-    ,
+   
+    
     {
         question: "If a reporting company last filed a “newly exempt entity” Beneficial Ownership Interest Report (BOIR) but subsequently loses its exempt status, what should it do?",
         answer: "Yes, we use top-notch security measures to ensure all personal data is encrypted and protected."
@@ -405,14 +402,14 @@ Beneficial Ownership information refers to identifying information about the ind
       {faqs.map((faq, index) => (
         <div key={index} className="my-6">
           <button
-            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] px-4 py-4 focus:outline-none text-lg flex justify-between items-center"
+            className="w-full text-left rounded-md bg-[#F8F8F8] sx:text-[15px] text-[16px] px-4 py-4 focus:outline-none  flex justify-between items-center"
             onClick={(event) => toggleFAQ(index, event)}
           >
             {faq.question}
             {openIndexes.includes(index) ? (
-              <FaMinus className="text-[#000000]" style={{ width: '20px !important' }} />
+              <FaMinus className="text-[#000000]" style={{ width: '24px', height: '24px' }} />
             ) : (
-              <FaPlus className="text-[#050505]" />
+              <FaPlus className="text-[#050505]" style={{ width: '24px', height: '24px' }}/>
             )}
           </button>
           {openIndexes.includes(index) && (
