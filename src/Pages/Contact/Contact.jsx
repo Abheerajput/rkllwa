@@ -8,6 +8,7 @@ import phone from "../../assets/icons/phoneicon.svg";
 import message from "../../assets/icons/messageicon.svg";
 import facebook from "../../assets/icons/facebookicon.svg";
 import instagram from "../../assets/icons/instagramicon.svg";
+import { RxCross2 } from "react-icons/rx";
 import lkdn from "../../assets/icons/linkdinicon.svg";
 import Footer from "../../Layout/Footer/Footer";
 import { Link } from "react-router-dom";
@@ -197,8 +198,16 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="w-1/4 ">
-                <button type="submit" className={`bg-[#E0AF04] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors ${submitted && "cursor-not-allowed bg-[#e0b004cd]" } `}>Submit</button>
+              <div className="w-1/4 xs:w-1/2 ">
+              <button
+                  type="submit"
+                  className={`fgt-ff-light mt-6 py-3 px-6 text-lg sm:text-lg text-white rounded-md w-full bg-[#E0AF04]  transition-colors duration-300 ease-in-out ${
+                    submitted ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                  disabled={submitted}
+                >
+                  {submitted ? "Submitting..." : "Submit"}
+                </button>
               </div>
             </form>
           </div>
@@ -292,7 +301,7 @@ const Contact = () => {
     style={{ zIndex: 1000 }}
   >
     <div
-      className="bg-white p-8 rounded-md"
+      className="bg-white p-8 rounded-md xs:w-[90%]"
       style={{
         position: 'absolute',
         top: '50%',
@@ -300,19 +309,21 @@ const Contact = () => {
         transform: 'translate(-50%, -50%)',
         maxWidth: '400px', // adjust the max width as needed
         width: '100%',
-        maxHeight: '200px', // adjust the max height as needed
+        maxHeight: '180px', // adjust the max height as needed
         height: '100%',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
-      <h2 className="text-2xl text-center">Submission Successful!</h2>
+      <div className="absolute top-[-9%] left-[90%]"><button
+     
+     onClick={() => setSuccessPopup(false)}
+     className="mt-4 px-4 py-2  rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
+   >
+      <RxCross2  />
+   </button></div>
+      <h2 className="text-2xl text-center text-green-700 xs:font-semibold">Submission Successful!</h2>
       <p className="text-lg text-center">Your application has been submitted successfully.</p>
-      <button
-        onClick={() => setSuccessPopup(false)}
-        className="mt-4 px-4 py-2 bg-[#F15A22] text-white rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
-      >
-        Close
-      </button>
+     
     </div>
   </div>
 )}

@@ -9,6 +9,7 @@ import twittericon2 from "../../assets/icons/drpdwicon4.svg";
 import phone1 from "../../assets/icons/phoneicon.svg";
 import message2 from "../../assets/icons/messageicon.svg";
 import { AiOutlineClose } from "react-icons/ai"; 
+import { RxCross2 } from "react-icons/rx";
 import facebook from "../../assets/icons/facebookicon.svg";
 import instagram from "../../assets/icons/instagramicon.svg";
 import lkdn from "../../assets/icons/linkdinicon.svg";
@@ -270,7 +271,7 @@ const Careers = () => {
 </div>
 
 </div>
-              <div className="w-1/4 mt-4">
+              <div className="w-1/4 xs:w-1/2 mt-4">
              
                 <button
                   type="submit"
@@ -388,7 +389,7 @@ const Careers = () => {
     style={{ zIndex: 1000 }}
   >
     <div
-      className="bg-white p-8 rounded-md"
+      className="bg-white p-8 rounded-md xs:w-[90%]"
       style={{
         position: 'absolute',
         top: '50%',
@@ -396,19 +397,21 @@ const Careers = () => {
         transform: 'translate(-50%, -50%)',
         maxWidth: '400px', // adjust the max width as needed
         width: '100%',
-        maxHeight: '200px', // adjust the max height as needed
+        maxHeight: '180px', // adjust the max height as needed
         height: '100%',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
-      <h2 className="text-2xl text-center">Submission Successful!</h2>
-      <p className="text-lg text-center">Your application has been submitted successfully.</p>
-      <button
+      <div className="absolute top-[-9%] left-[90%]"><button
+     
         onClick={() => setSuccessPopup(false)}
-        className="mt-4 px-4 py-2 bg-[#F15A22] text-white rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
+        className="mt-4 px-4 py-2  rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
       >
-        Close
-      </button>
+         <RxCross2  />
+      </button></div>
+      <h2 className="text-2xl text-center text-green-700 xs:font-semibold">Submission Successful!</h2>
+      <p className="text-lg text-center">Your application has been submitted successfully.</p>
+      
     </div>
   </div>
 )}

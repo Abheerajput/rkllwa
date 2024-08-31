@@ -8,8 +8,8 @@ import {Link} from 'react-router-dom'
 const SectionHeader = ({ iconSrc, title, className, text }) => (
   
   <>
-    <h2 className={`text-[#403C5C] text-[50px] fgt-ff-medium items-center flex-wrap gap-6 xs:gap-2 flex ${className}`}>
-      <img src={iconSrc} alt="" className='xs:w-[70px]' />
+    <h2 className={`text-[#403C5C] text-[50px] lg:text-[40px] xs:text-[35px] sm:text-[35px] fgt-ff-medium items-center flex-wrap gap-6 xs:gap-2 flex ${className}`}>
+      <img src={iconSrc} alt="" className='xs:w-[70px] sm:w-16  w-20' />
       <span className='xs:text-[32px] '>{title}</span>
       {text && <Paragraph text={text} className="pt-5 " />}
      
