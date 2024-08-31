@@ -17,6 +17,7 @@ import { toast, ToastContainer } from "react-toastify";
 const Contact = () => {
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const [submitted, setSubmitted] = useState(false);
+  const [successPopup, setSuccessPopup] = useState(false);
   const [details, setDetails] = useState({
     firstName: "",
     lastName: "",
@@ -81,6 +82,8 @@ const Contact = () => {
           messageToSend: "",
         })
         toast.success("Thank you for your submission!");
+        
+        setSuccessPopup(true);
       }
     } catch (error) {
       setSubmitted(false)
@@ -133,6 +136,7 @@ const Contact = () => {
                     className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent  text-[16px] fgt-ff-light  focus:ring-2 focus:ring-orange-500"
                     name="firstName"
                     onChange={handleChange}
+                    value={firstName}
                   />
                 </label>
 
@@ -144,6 +148,7 @@ const Contact = () => {
                     className="mt-1 p-2 w-full border border-[#919191] rounded-md focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                     name="lastName"
                     onChange={handleChange}
+                    value={lastName}
                   />
                 </label>
               </div>
@@ -158,6 +163,7 @@ const Contact = () => {
                   className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   name="email"
                   onChange={handleChange}
+                  value={email}
                 />
               </div>
               <div className="sm:col-span-2">
@@ -170,6 +176,7 @@ const Contact = () => {
                   className="mt-1 p-2 w-full border rounded-md border-[#919191] focus:outline-none bg-transparent text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   name="company"
                   onChange={handleChange}
+                  value={company}
                 />
               </div>
               <div className="sm:col-span-2">
@@ -186,6 +193,7 @@ const Contact = () => {
                   placeholder="type here...."
                   className="bg-transparent max-h-[286px] border-[#919191] h-screen border  w-full mt-1 p-2  rounded-md focus:outline-none text-[16px] fgt-ff-light focus:ring-2 focus:ring-orange-500"
                   onChange={handleChange}
+                  value={messageToSend}
                 ></textarea>
               </div>
 
@@ -278,7 +286,36 @@ const Contact = () => {
         </div>
       </div>
       <Footer />
-      <ToastContainer position="top-right" />
+      {successPopup && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    style={{ zIndex: 1000 }}
+  >
+    <div
+      className="bg-white p-8 rounded-md"
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        maxWidth: '400px', // adjust the max width as needed
+        width: '100%',
+        maxHeight: '200px', // adjust the max height as needed
+        height: '100%',
+        overflowY: 'hidden', // add this to enable vertical scrolling if needed
+      }}
+    >
+      <h2 className="text-2xl text-center">Submission Successful!</h2>
+      <p className="text-lg text-center">Your application has been submitted successfully.</p>
+      <button
+        onClick={() => setSuccessPopup(false)}
+        className="mt-4 px-4 py-2 bg-[#F15A22] text-white rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </>
   );
 };
