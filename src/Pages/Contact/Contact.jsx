@@ -297,11 +297,11 @@ const Contact = () => {
       <Footer />
       {successPopup && (
   <div
-    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    className="fixed inset-0 bg-black  bg-opacity-50 flex justify-center items-center"
     style={{ zIndex: 1000 }}
   >
     <div
-      className="bg-white p-8 rounded-md xs:w-[90%]"
+      className="bg-white p-8 rounded-md   xs:w-[80%]"
       style={{
         position: 'absolute',
         top: '50%',
