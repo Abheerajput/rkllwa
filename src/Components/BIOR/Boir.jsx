@@ -112,10 +112,16 @@ const Boir = () => {
         </>,
         
         answer: <>
-        The unaffiliated company itself cannot be a Beneficial Owner of the Reporting Company because a Beneficial Owner must be an
-individual. Any individuals that exercise substantial control over the reporting company through the unaffiliated company must be
-reported as Beneficial Owners of the Reporting Company. However, individuals who do not otherwise exercise Substantial Control may
-not be Beneficial Owners of the Reporting Company.
+      The unaffiliated company itself cannot be a Beneficial Owner of the Reporting Company because a Beneficial Owner must be an individual.  Any individuals that exercise substantial control over the reporting company through the unaffiliated company must be reported as Beneficial Owners of the Reporting Company.  However, individuals who do not otherwise exercise Substantial Control may not be Beneficial Owners of the Reporting Company. Whether activity qualifies as the exercise of “substantial control” is a legal question.  If you are uncertain whether the activity/ decision-making of a member or employee of an unaffiliated company in or over your company qualifies as “substantial control,” please consult with your attorney. <br className='xs:hidden'/>
+      <br className='xs:hidden'/>
+
+There’s a space before the first word of the following question <br className='xs:hidden'/> 
+<br className='xs:hidden'/>
+
+ How does a company determine its date of creation or registration? <br className='xs:hidden'/>
+<br className='xs:hidden'/>
+
+The date of creation or registration for a reporting company is the earlier of the date on which: (1) the Reporting Company receives actual notice that its creation or registration has become effective; or (2) a secretary of state or similar office first provides public notice, such as through a publicly accessible registry, that the domestic Reporting Company has been created or the foreign Reporting Company has been registered.
         </>
     },
     {
@@ -341,8 +347,7 @@ Beneficial Owners and, if required, its Company Applicants.
     ,
     {
         question: "Can a filer submit a late updated Beneficial Ownership Interest Report (BOIR)?",
-        answer: <>
-        An updated BOIR can be submitted to FinCEN at any time. However, the Reporting Company is responsible for ensuring that updates
+        answer:<>An updated BOIR can be submitted to FinCEN at any time. However, the Reporting Company is responsible for ensuring that updates
 are filed within 30 days of a change occurring. Such changes should be reported to FinCEN Filing with enough time to meet the 30-day
 deadline
         </>
