@@ -8,6 +8,7 @@ import phone from "../../assets/icons/phoneicon.svg";
 import message from "../../assets/icons/messageicon.svg";
 import facebook from "../../assets/icons/facebookicon.svg";
 import instagram from "../../assets/icons/instagramicon.svg";
+import { RxCross2 } from "react-icons/rx";
 import lkdn from "../../assets/icons/linkdinicon.svg";
 import Footer from "../../Layout/Footer/Footer";
 import { Link } from "react-router-dom";
@@ -300,19 +301,21 @@ const Contact = () => {
         transform: 'translate(-50%, -50%)',
         maxWidth: '400px', // adjust the max width as needed
         width: '100%',
-        maxHeight: '200px', // adjust the max height as needed
+        maxHeight: '180px', // adjust the max height as needed
         height: '100%',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
-      <h2 className="text-2xl text-center">Submission Successful!</h2>
+      <div className="absolute top-[-9%] left-[90%]"><button
+     
+     onClick={() => setSuccessPopup(false)}
+     className="mt-4 px-4 py-2  rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
+   >
+      <RxCross2  />
+   </button></div>
+      <h2 className="text-2xl text-center text-green-700 xs:font-semibold">Submission Successful!</h2>
       <p className="text-lg text-center">Your application has been submitted successfully.</p>
-      <button
-        onClick={() => setSuccessPopup(false)}
-        className="mt-4 px-4 py-2 bg-[#F15A22] text-white rounded-md hover:bg-orange-600 transition-colors duration-300 ease-in-out"
-      >
-        Close
-      </button>
+     
     </div>
   </div>
 )}
