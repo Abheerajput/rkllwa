@@ -702,7 +702,7 @@ Beneficial Ownership information refers to identifying information about the ind
     </div>
             <div className='flex justify-center'>
 
-<Link to="/contactus" className='w-1/3 my-4 flex justify-center'>
+<Link to="/contactus" className='w-1/3 xs:w-full my-4 flex justify-center'>
 <button className='text-[20px] w-full fgt-ff-normal bg-[#403C5C] text-white px-5 py-3 rounded-full lg:text-[15px] xl:text-[15px] md:text-[15px] xs:text-[13px]'>START YOUR COMPLIANCE NOW</button>
           </Link>
 </div>
