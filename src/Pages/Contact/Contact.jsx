@@ -198,8 +198,16 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="w-1/4 ">
-                <button type="submit" className={`bg-[#E0AF04] text-white p-2 rounded-md w-full  xs:text-[12px] transition-colors ${submitted && "cursor-not-allowed bg-[#e0b004cd]" } `}>Submit</button>
+              <div className="w-1/4 xs:w-1/2 ">
+              <button
+                  type="submit"
+                  className={`fgt-ff-light mt-6 py-3 px-6 text-lg sm:text-lg text-white rounded-md w-full bg-[#E0AF04]  transition-colors duration-300 ease-in-out ${
+                    submitted ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                  disabled={submitted}
+                >
+                  {submitted ? "Submitting..." : "Submit"}
+                </button>
               </div>
             </form>
           </div>
@@ -293,7 +301,7 @@ const Contact = () => {
     style={{ zIndex: 1000 }}
   >
     <div
-      className="bg-white p-8 rounded-md"
+      className="bg-white p-8 rounded-md xs:w-[90%]"
       style={{
         position: 'absolute',
         top: '50%',

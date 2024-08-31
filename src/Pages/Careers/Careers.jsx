@@ -271,7 +271,7 @@ const Careers = () => {
 </div>
 
 </div>
-              <div className="w-1/2 mt-4">
+              <div className="w-1/4 xs:w-1/2 mt-4">
              
                 <button
                   type="submit"
