@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -28,7 +28,10 @@ const ProfileCard3 = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
+  useEffect(() => {
+    // This will scroll to the top only once when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <SecondHeader
