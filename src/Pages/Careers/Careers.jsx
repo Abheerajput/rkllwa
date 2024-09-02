@@ -339,7 +339,7 @@ const Careers = () => {
                       className="xs:w-[1.2rem] sm:w-[1.4rem] w-6"
                     />{" "}
                     <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
-                      Connect on facebook
+                      Connect on Facebook
                     </h3>{" "}
                   </span>
                 </a>
@@ -373,7 +373,7 @@ const Careers = () => {
                       className="xs:w-[1.2rem] sm:w-[1.4rem] w-6"
                     />{" "}
                     <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
-                      Connect on Linkedin
+                      Connect on LinkedIn
                     </h3>{" "}
                   </span>
                 </a>

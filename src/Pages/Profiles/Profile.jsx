@@ -14,6 +14,7 @@ import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import qr from "../../assets/images/ninazqr.jpeg"
+import downloadIcon from "../../assets/icons/download.svg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
@@ -70,9 +71,14 @@ const ProfileCard = () => {
                   <a href="mailto:bianchi@lasher.com" className="text-blue-800 border-blue-900 border-b-2">nkhorsandi@rkllaw.com</a>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4 flex gap-4">
+                  <span className="mr-4 flex gap-4 relative">
                     <img src={icon6} alt="" />
-                    <img src={qr} alt="" className='w-[20%]' />
+                    <a href={qr} download="qr-code.png" className='contents'>
+          <img src={qr} alt="QR Code" className='w-[17%]' />
+        </a>
+        <a href={qr} download="qr-code.png">
+          <img src={downloadIcon} alt="Download Icon" className='absolute    w-[17%] ' />
+        </a>
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
                 </div>
@@ -105,7 +111,7 @@ const ProfileCard = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="flex xs:w-full  sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
+        <div className="flex xs:w-full md:w-1/2  sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>
