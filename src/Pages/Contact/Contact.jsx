@@ -265,7 +265,7 @@ const Contact = () => {
                       className="xs:w-[1.2rem] sm:w-[1.4rem]  w-6"
                     />{" "}
                     <h5 className="border-0 border-b-2 border-[#212121] text-[22px] sm:text-[20px] xs:text-[15px]">
-                      Connect on facebook
+                      Connect on Facebook
                     </h5>{" "}
                   </span>
                 </a>
@@ -287,7 +287,7 @@ const Contact = () => {
                   </span>
                 </a>
                 <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer" >
-                <span className='flex items-center gap-4 my-4  fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h5 className='border-0 border-b-2 text-[22px] border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on Linkedin</h5> </span>
+                <span className='flex items-center gap-4 my-4  fgt-ff-medium text-[#212121] '> <img src={lkdn} alt="" className='xs:w-[1.2rem] sm:w-[1.4rem] w-6' /> <h5 className='border-0 border-b-2 text-[22px] border-[#212121] sm:text-[20px] xs:text-[15px]'>Connect on LinkedIn</h5> </span>
                 </a>
               </div>
             </div>
@@ -297,11 +297,11 @@ const Contact = () => {
       <Footer />
       {successPopup && (
   <div
-    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+    className="fixed inset-0 bg-black  bg-opacity-50 flex justify-center items-center"
     style={{ zIndex: 1000 }}
   >
     <div
-      className="bg-white p-8 rounded-md xs:w-[90%]"
+      className="bg-white p-8 rounded-md   xs:w-[80%]"
       style={{
         position: 'absolute',
         top: '50%',

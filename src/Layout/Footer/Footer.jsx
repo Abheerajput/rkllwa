@@ -28,15 +28,11 @@ const Footer = ({ title, description, backgroundImg, fb, li, insta }) => {
             <a href="http://www.linkedin.com/in/rkl-law-9aa681324" target="_blank" rel="noopener noreferrer"> <img src={li} alt="LinkedIn" className="" /></a>
             <a href="https://www.facebook.com/profile.php?id=61564380045589" target="_blank" rel="noopener noreferrer">  <img src={fb} alt="Facebook" className="" /></a>
             {/* <a href="#"> <img src={twit} alt="Twitter" className="" /></a> */}
-         
-         
-        
-         
         </div>
       <p className='text-white sx:text-[16px] text-[20px] pt-6 xs:pt-6 fgt-ff-light' dangerouslySetInnerHTML={{ __html:title }}>    
        </p>
        <div className='absolute flex w-full justify-end mr-[5%]
-  lg:top-[72%] top-[69%]'>
+  lg:top-[75%] top-[72%] xs:top-[79%]' >
 
       <button onClick={()=>window.scrollTo(0,0)} className='flex flex-col gap-2 items-center  fgt-ff-medium text-white text-[20px]  '>
         <img src={top} alt="" className='w-20 xs:w-12 lg:w-14' />
@@ -50,7 +46,7 @@ const Footer = ({ title, description, backgroundImg, fb, li, insta }) => {
 };
 
 const App = () => {
-  const description = " 2625  Townsgate Road, Suite 330 <br/> Westlake Village  CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
+  const description = " 2625  Townsgate Road, Suite 330 <br/> Westlake Village,CA 91361 <br/>Telephone: (818) 990-9999 <br/>Fax: (818) 990-9968 <br/>Email: info@rkllaw.com"
 const title = "RKL Law <br/> All Rights Reserved."
   return (
     <Footer
