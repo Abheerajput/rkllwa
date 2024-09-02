@@ -301,7 +301,9 @@ const Careers = () => {
                   className="xs:w-[1.2rem] sm:w-[1.6rem] w-6"
                 />{" "}
                 <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
+                <a href="tel:8189909999" className="text-[#212121] hover:underline">
                   818-990-9999
+                  </a>
                 </h3>{" "}
               </span>
               <div className="mt-12">

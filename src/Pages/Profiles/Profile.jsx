@@ -64,7 +64,9 @@ const ProfileCard = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(818) 990-9999</Link>
+                  <a href="tel:8189909999" className=" hover:underline">
+                  (818) 990-9999
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
@@ -77,7 +79,7 @@ const ProfileCard = () => {
           <img src={qr} alt="QR Code" className='w-[17%]' />
         </a>
         <a href={qr} download="qr-code.png">
-          <img src={downloadIcon} alt="Download Icon" className='absolute    w-[17%] ' />
+          <img src={downloadIcon} alt="Download Icon" className='absolute   w-[34px] h-[49px] ' />
         </a>
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}

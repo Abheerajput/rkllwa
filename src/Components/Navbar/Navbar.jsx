@@ -10,7 +10,7 @@ const Navbar = () => {
  <div className="bg-[#E0AF04]  px-[5.2%] py-4 ">
       <div className="flex justify-between items-center">
     <Link to="/boir">
-        <p className="fgt-ff-medium  sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">FinCEN' beneficial owner <br className='hidden xs:block'/> compliance   <br className='hidden sm:block'/>made easy for companies <i>Nationwide</i>  </p>
+        <p className="fgt-ff-medium  sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">beneficial owner  compliance   <br className='hidden xs:block sm:block'/>made easy for companies <i>Nationwide</i>  </p>
      
         </Link>
         <p className="flex  text-white gap-2 flex-col md:gap-4 fgt-ff-bold text-[16px]">

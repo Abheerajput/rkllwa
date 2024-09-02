@@ -62,7 +62,9 @@ const ProfileCard2 = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(818) 990-9999</Link>
+                  <a href="tel:8189909999" className=" hover:underline">
+                  (818) 990-9999
+                  </a>
 
                 </div>
                 <div className="flex items-center">
