@@ -314,6 +314,7 @@ const Contact = () => {
         maxHeight: '180px', // adjust the max height as needed
         height: '100%',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
+        overflowX: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
       <div className="absolute top-[-9%] left-[90%]"><button

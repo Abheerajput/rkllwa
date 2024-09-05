@@ -56,37 +56,49 @@ const Careers = () => {
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
 
-    // Validation checks
-    const { firstName, lastName, email, position, phone, brief } = details;
-    if (!firstName) {
-      toast.warn("Please enter your First Name.");
-      return;
-    }
-    if (!lastName) {
-      toast.warn("Please enter your Last Name.");
-      return;
-    }
-    if (!email) {
-      toast.warn("Please enter your Email Address.");
-      return;
-    }
-    if (!position) {
-      toast.warn("Please enter your Position.");
-      return;
-    }
-    if (!phone) {
-      toast.warn("Please enter your Phone Number.");
-      return;
-    }
-    if (!brief) {
-      toast.warn("Please enter your Message.");
-      return;
-    }
+    const isFormFilled = 
+    firstName || 
+    lastName || 
+    phone || 
+    email || 
+    position || 
+    brief
 
-    if (!file || file.length === 0) {
-      toast.warn("Please choose at least one file.");
-      return;
-    }
+  if (!isFormFilled) {
+    toast.error("Please fill at least one field before submitting.");
+    return;
+  }
+    // // Validation checks
+    // const { firstName, lastName, email, position, phone, brief } = details;
+    // if (!firstName) {
+    //   toast.warn("Please enter your First Name.");
+    //   return;
+    // }
+    // if (!lastName) {
+    //   toast.warn("Please enter your Last Name.");
+    //   return;
+    // }
+    // if (!email) {
+    //   toast.warn("Please enter your Email Address.");
+    //   return;
+    // }
+    // if (!position) {
+    //   toast.warn("Please enter your Position.");
+    //   return;
+    // }
+    // if (!phone) {
+    //   toast.warn("Please enter your Phone Number.");
+    //   return;
+    // }
+    // if (!brief) {
+    //   toast.warn("Please enter your Message.");
+    //   return;
+    // }
+
+    // if (!file || file.length === 0) {
+    //   toast.warn("Please choose at least one file.");
+    //   return;
+    // }
     setSubmitted(true);
 
     // Create a new FormData object
@@ -99,9 +111,9 @@ const Careers = () => {
     formData.append("brief", brief);
 
     // Append all files to the FormData object
-    file.forEach((file) => {
-      formData.append("attachments", file);
-    });
+    // file.forEach((file) => {
+    //   formData.append("attachments", file);
+    // });
 
     try {
       const response = await axios.post(
@@ -401,6 +413,7 @@ const Careers = () => {
         width: '100%',
         maxHeight: '180px', // adjust the max height as needed
         height: '100%',
+          overflowX: 'hidden',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
