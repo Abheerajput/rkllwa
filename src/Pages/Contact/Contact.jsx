@@ -42,31 +42,23 @@ const Contact = () => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     
-    if (!firstName) {
-      toast.warn("Please enter your First Name.");
-      return;
+    const requiredFields = {
+      firstName: "First Name",
+      lastName: "Last Name",
+      email: "Email Address",
+      company: "Company Name",
+      areaOfInterest: "Area of Interest",
+      messageToSend: "Message",
+    };
+  
+    for (let field in requiredFields) {
+      if (!details[field]) {
+        toast.warn(`Please enter your ${requiredFields[field]}.`);
+        return;
+      }
     }
-    if (!lastName) {
-      toast.warn("Please enter your Last Name.");
-      return;
-    }
-    if (!email) {
-      toast.warn("Please enter your Email Address.");
-      return;
-    }
-    if (!company) {
-      toast.warn("Please enter your Company Name.");
-      return;
-    }
-    if (!areaOfInterest) {
-      toast.warn("Please enter your Area of Interest.");
-      return;
-    }
-    if (!messageToSend) {
-      toast.warn("Please enter your Message.");
-      return;
-    }
-    setSubmitted(true)
+  
+    setSubmitted(true);
     try {
       const response = await axios.post(
         "https://rklapi.testenvapp.com/user/formSubmit",
@@ -330,6 +322,20 @@ const Contact = () => {
     </div>
   </div>
 )}
+{/* <ToastContainer position=""/> */}
+<ToastContainer
+        className="toast-position"
+        position="top-center"
+        autoClose={7000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 };
