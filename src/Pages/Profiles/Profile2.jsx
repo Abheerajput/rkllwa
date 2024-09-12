@@ -52,9 +52,9 @@ const ProfileCard2 = () => {
         <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
           <div className="flex xs:flex-col md:flex-col xs:items-start xs:gap-0  md:gap-0  mt-[24px] gap-12 items-start ">
             <img 
-              src={profile} 
+              src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/shazil.6d0df356ae9441d9a387.png" 
               alt="Sohila Rezai" 
-              className=" rounded-md object-cover mb-4"
+              className=" rounded-md object-cover max-w-64 mb-4"
             />
             <div className="flex-1">
               <h1 className="  text-[#212138] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Sohila Rezai </h1>
@@ -75,10 +75,10 @@ const ProfileCard2 = () => {
                 <span className="mr-4 flex gap-4 relative">
                     <img src={icon6} alt="" />
                     <a href={qr} download="qr-code.png" className='contents'>
-          <img src={qr} alt="QR Code" className='w-[17%]' />
+          <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/qr-code-sohila.png" alt="QR Code" className='w-[13%]' />
         </a>
         <a href={qr} download="qr-code.png">
-          <img src={downloadIcon} alt="Download Icon" className='absolute    w-[17%] ' />
+          <img src={downloadIcon} alt="Download Icon" className='absolute   w-[34px] h-[39px] ' />
         </a>
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}
@@ -114,7 +114,7 @@ const ProfileCard2 = () => {
           </div> */}
         </div>
         {/* Sidebar */}
-        <div className="flex xs:w-full md:1/2 sm:w-full w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
+        <div className="flex xs:w-full md:1/2 sm:w-full md:w-[35%] w-[30%] justify-end  xs:mb-4  sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
           <div className="mt-6 sm:w-full md:w-full xs:w-full md:mt-0 w-4/5">
             <div className="bg-[#FFEDD7] p-4 rounded-md xs:pl-4 pl-8 sx:items-center sm:flex sm:flex-col sm:items-center sm:pl-0">
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>

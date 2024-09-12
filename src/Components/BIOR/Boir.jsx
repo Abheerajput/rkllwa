@@ -582,7 +582,7 @@ The CTA will eliminate corporate anonymity in the U.S. by requiring non-exempt r
 </p>
 
 <p className='w-full text-center flex flex-col gap-4 items-center justify-center py-6'>
-  <img src={img1} alt=""  className='xs:w-[100%]'/>
+  <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/boirimg1.f80a75bf6ad5b079761d419a5632ed69.svg" alt=""  className='xs:w-[100%]'/>
  
 </p>
 </section>
