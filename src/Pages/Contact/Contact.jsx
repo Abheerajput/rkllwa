@@ -209,7 +209,7 @@ const Contact = () => {
                 Call us
               </h1>
               <p className="text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]">
-                Call our team Mon-Fri from 9am to 5pm.
+                Call our team Mon-Fri from 9am to 6pm.
               </p>
               <span className="flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] ">
                 {" "}
