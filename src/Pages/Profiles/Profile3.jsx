@@ -52,9 +52,9 @@ const ProfileCard3 = () => {
               <div className='w-[70%] xs:w-full md:w-full sm:w-full'> 
           <div className="flex xs:flex-col md:flex-col xs:items-start  xs:gap-0  md:gap-0   mt-[24px] gap-12 items-start ">
             <img 
-              src={profile} 
+              src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/nazanin.1802561896c3e322554d.png"
               alt="inaz Khorsandi" 
-              className=" rounded-md object-cover mb-4"
+              className=" rounded-md object-cover max-w-64 mb-4"
             />
             <div className="flex-1">
               <h1 className="  text-[#212138] text-[48px] xs:text-[33px] fgt-ff-medium mb-1">Nazanin Lahijani </h1>
@@ -62,7 +62,9 @@ const ProfileCard3 = () => {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="mr-4"> <img src={icon4} alt="" /> </span>
-                  <Link to="/" className="">(818) 990-9999</Link>
+                  <a href="tel:8189909999" className=" hover:underline">
+                  (818) 990-9999
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <span className="mr-4"><img src={icon5} alt="" /> </span>
@@ -72,10 +74,10 @@ const ProfileCard3 = () => {
                 <span className="mr-4 flex gap-4 relative">
                     <img src={icon6} alt="" />
                     <a href={qr} download="qr-code.png" className='contents'>
-          <img src={qr} alt="QR Code" className='w-[17%]' />
+          <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/qr-code-nazanin.png" alt="QR Code" className='w-[13%]' />
         </a>
         <a href={qr} download="qr-code.png">
-          <img src={downloadIcon} alt="Download Icon" className='absolute    w-[17%] ' />
+          <img src={downloadIcon} alt="Download Icon" className='absolute   w-[34px] h-[39px] ' />
         </a>
                   </span>
                   {/* <Link to="" className="">Print Attorney Profile</Link> */}

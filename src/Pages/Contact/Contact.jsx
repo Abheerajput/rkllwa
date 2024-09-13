@@ -42,31 +42,23 @@ const Contact = () => {
     e.preventDefault(); // Prevent the default form submission behavior
 
     
-    if (!firstName) {
-      toast.warn("Please enter your First Name.");
-      return;
+    const requiredFields = {
+      firstName: "First Name",
+      lastName: "Last Name",
+      email: "Email Address",
+      company: "Company Name",
+      areaOfInterest: "Area of Interest",
+      messageToSend: "Message",
+    };
+  
+    for (let field in requiredFields) {
+      if (!details[field]) {
+        toast.warn(`Please enter your ${requiredFields[field]}.`);
+        return;
+      }
     }
-    if (!lastName) {
-      toast.warn("Please enter your Last Name.");
-      return;
-    }
-    if (!email) {
-      toast.warn("Please enter your Email Address.");
-      return;
-    }
-    if (!company) {
-      toast.warn("Please enter your Company Name.");
-      return;
-    }
-    if (!areaOfInterest) {
-      toast.warn("Please enter your Area of Interest.");
-      return;
-    }
-    if (!messageToSend) {
-      toast.warn("Please enter your Message.");
-      return;
-    }
-    setSubmitted(true)
+  
+    setSubmitted(true);
     try {
       const response = await axios.post(
         "https://rklapi.testenvapp.com/user/formSubmit",
@@ -217,7 +209,7 @@ const Contact = () => {
                 Call us
               </h1>
               <p className="text-[20px] xs:text-[15px] fgt-ff-normal text-[#212121]">
-                Call our team Mon-Fri from 9am to 5pm.
+                Call our team Mon-Fri from 9am to 6pm.
               </p>
               <span className="flex items-center gap-4 my-4 text-[27px] fgt-ff-medium text-[#212121] ">
                 {" "}
@@ -227,7 +219,9 @@ const Contact = () => {
                   className="xs:w-[1.2rem] sm:w-[1.6rem]"
                 />{" "}
                 <h3 className="border-0 border-b-2 border-[#212121] sm:text-[20px] xs:text-[15px]">
+                <a href="tel:8189909999" className="text-[#212121] hover:underline">
                   818-990-9999
+                  </a>
                 </h3>{" "}
               </span>
               <div className="mt-12">
@@ -312,6 +306,7 @@ const Contact = () => {
         maxHeight: '180px', // adjust the max height as needed
         height: '100%',
         overflowY: 'hidden', // add this to enable vertical scrolling if needed
+        overflowX: 'hidden', // add this to enable vertical scrolling if needed
       }}
     >
       <div className="absolute top-[-9%] left-[90%]"><button
@@ -327,6 +322,20 @@ const Contact = () => {
     </div>
   </div>
 )}
+{/* <ToastContainer position=""/> */}
+<ToastContainer
+        className="toast-position"
+        position="top-center"
+        autoClose={7000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 };

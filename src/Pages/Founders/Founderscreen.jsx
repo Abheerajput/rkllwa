@@ -41,19 +41,19 @@ const Founderscreen = () => {
 <div className='flex justify-between px-[5.2%] py-12 xs:gap-8 xs:px-[5.2%] gap-8  sm:gap-6 xs:flex-col xs:items-center md:items-center  '>
     <p className='xs:w-full '>
         <Link to="/profile/Sohila Rezai">
-        <img src={founder2} alt="" className='w-full' />
+        <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/shazil.6d0df356ae9441d9a387.png" alt="" className='w-full' />
         <h3 className='text-[23px] fgt-ff-semibold text-center'><span className='text-[#212138]'> Sohila Rezai</span> <br /> Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
       <Link to="/profile/Ninaz Khorsandi">
-        <img src={founder1} alt="" className='w-full'/>
+        <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/khorsandi.a1e6e537b210aed1ba40.png" alt="" className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#212138]'> Ninaz Khorsandi  </span> <br />Partner</h3>
         </Link>
     </p>
     <p className='xs:w-full '>
       <Link to="/profile/Nazanin Lahijani">
-        <img src={founder3} alt=""  className='w-full'/>
+        <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/nazanin.1802561896c3e322554d.png" alt=""  className='w-full'/>
         <h3 className='text-[23px] fgt-ff-semibold text-center'> <span className='text-[#212138]'>Nazanin Lahijani</span><br />Partner</h3>
         </Link>
     </p>
