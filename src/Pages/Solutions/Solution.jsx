@@ -60,7 +60,7 @@ const Solution = ({ title, description, buttonText, sections }) => {
           {sections.map((section, index) => (
               <Link key={index} to={section.link} className="flex flex-col items-center">
                 <img src={section.img} alt={section.title} className="mb-4 xs:w-10  sm:w-16  w-20" />
-                <h1 className="text-[20px] xs:text-[15px] sm:text-[18px] fgt-ff-normal">{section.title}</h1>
+                <h2 className="text-[20px] xs:text-[15px] sm:text-[18px] fgt-ff-normal">{section.title}</h2>
               </Link>
             ))}
           </div>
