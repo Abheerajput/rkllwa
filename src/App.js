@@ -17,6 +17,7 @@ import Login from './Components/Login/Login';
 import RequestPasswordReset from './Pages/Otp/Otp';
 import Verifyemail from './Pages/EmailVerifypage/Emailverify';
 import ResetPassword from './Pages/ResetPassword/ResetPassword';
+import CalendlyWidget from './Components/CalendlyWidget';
 
 function App() {
   const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Header />} />
+        {/* <Route path="/Calendly" element={<CalendlyWidget />} /> */}
         <Route path="/Immigration-Law" element={<ImmigrationLaw />} />
         <Route path="/founders" element={<Founderscreen />} />
         <Route path="/profile/Nazanin Lahijani" element={<Profile3 />} />
@@ -36,7 +38,7 @@ function App() {
         <Route path="/boir" element={<Bior />} />
         <Route path="/business" element={<Business />} />
         <Route path="/contactus" element={<Contact />} />
-        <Route path="/news-and-events" element={<NewsAndEvents />} />
+        <Route path="/news&events" element={<NewsAndEvents />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

@@ -23,13 +23,12 @@ const Navbar = () => {
           Learn more
           <img src={icon1} alt="Icon" className="w-4 h-4 md:w-6 md:h-6" />
         </span>
-        <div className='text-start flex justify-end  fgt-ff-bold  sx:text-[13px] text-[17px]'>
-     
-        
-
-     <a href="tel:8189909999" className="text-white hover:underline contents" onClick={handlePhoneClick}>
+        <div className='text-start flex flex-col justify-end  fgt-ff-bold  sx:text-[13px] text-[17px]'>
+          <div> <a href="tel:8189909999" className="text-white hover:underline contents" onClick={handlePhoneClick}>
        Call us: 818-990-9999
-     </a>
+     </a></div>
+    
+     {/* <Link to="/Calendly" className="text-blue-600 hover:underline contents">SCHEDULE A FREE CONSULTATION</Link> */}
 
 
 </div>

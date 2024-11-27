@@ -70,7 +70,7 @@ const Business = () => {
       />
        <div className="text-[26px] lg:text-[24px] sx:text-[14px] fgt-ff-normal text-[#403C5C] px-[5.2%] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Areas</span> {'>'}
         <Link to="/" className="hover:underline">Business Law</Link> 
       </div>
       <div>

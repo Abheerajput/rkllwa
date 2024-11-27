@@ -516,8 +516,8 @@ ensure that your data remains secure, giving you the confidence that your privac
 
       <div className="text-[26px] lg:text-[24px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
-        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Area </span> {'>'}
-        <Link to="/" className="hover:underline">Boir Compliance</Link> 
+        <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Areas </span> {'>'}
+        <Link to="/" className="hover:underline">BOIR Compliance</Link> 
         
       </div>
 
