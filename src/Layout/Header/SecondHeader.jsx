@@ -146,9 +146,9 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
             <div className='flex justify-between xs:w-screen   xs:flex-col  w-full  pl-[6.9%]'>
 
               <span className="flex flex-col gap-2  xs:pl-0 text-black">
-                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] flex gap-[10px] flex-wrap">
+                <h2 className="fgt-ff-medium text-[27px] sx:text-[18px] flex gap-[10px] flex-wrap">
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
-                </h1>
+                </h2>
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">

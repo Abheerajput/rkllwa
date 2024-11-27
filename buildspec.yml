@@ -17,10 +17,10 @@ phases:
   post_build:
     commands:
       - echo pushing static files
-      - aws s3 sync build/ s3://dev.rklawcorp.com/
+      - aws s3 sync build/ s3://rklawcorp.com/
       - echo static files upload finished         
       - echo clearing cloudfront cache
-      - aws cloudfront create-invalidation --distribution-id E3GMYB5GNFEX98 --paths '/*'
+      - aws cloudfront create-invalidation --distribution-id E2WVXX0V1E7198 --paths '/*'
       - echo Build completed on `date`
 artifacts:
   files:
