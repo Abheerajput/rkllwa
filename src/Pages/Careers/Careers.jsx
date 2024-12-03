@@ -19,6 +19,8 @@ import "../../Style/style.css";
 import axios from "axios";
 
 const Careers = () => {
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
+
   const [successPopup, setSuccessPopup] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [file, setFile] = useState([]);
@@ -117,7 +119,7 @@ const Careers = () => {
 
     try {
       const response = await axios.post(
-        "https://rklapi.testenvapp.com/user/formSubmit2",
+       `${BASE_URL}/user/formSubmit2`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

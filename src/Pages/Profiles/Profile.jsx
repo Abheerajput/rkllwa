@@ -9,15 +9,13 @@ import icon3 from "../../assets/icons/profileicon3.svg";
 import icon4 from "../../assets/icons/phone.svg"
 import icon5 from "../../assets/icons/msg.svg"
 import icon6 from "../../assets/icons/print.svg"
-import ninajqr from "../../assets/images/ninazqr.jpeg"
 import SecondHeader from '../../Layout/Header/SecondHeader';
 import lkdnicon2 from '../../assets/icons/drpdwicon2.svg';
 import fbicon2 from '../../assets/icons/drpdwicon3.svg';
 import twittericon2 from '../../assets/icons/drpdwicon4.svg';
 import qr from "../../assets/images/ninazqr.jpeg"
 import downloadIcon from "../../assets/icons/download.svg"
-import Footer from "../../Layout/Footer/Footer";
-
+import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import { Link } from 'react-router-dom';
 const ProfileCard = () => { 
@@ -78,7 +76,7 @@ const ProfileCard = () => {
                   <span className="mr-4 flex gap-4 relative">
                     <img src={icon6} alt="" />
                     <a href={qr} download="qr-code.png" className='contents'>
-          <img src={ninajqr} alt="QR Code" className=' w-[13%]' />
+          <img src="https://rkl-public-assets.s3.us-west-1.amazonaws.com/qr-code-ninaz.png" alt="QR Code" className=' w-[13%]' />
         </a>
         <a href={qr} download="qr-code.png">
           <img src={downloadIcon} alt="Download Icon" className='absolute   w-[34px] h-[39px] ' />

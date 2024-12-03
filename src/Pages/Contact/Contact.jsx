@@ -16,6 +16,8 @@ import "../../Style/style.css";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 const Contact = () => {
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
+
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const [submitted, setSubmitted] = useState(false);
   const [successPopup, setSuccessPopup] = useState(false);
@@ -61,7 +63,7 @@ const Contact = () => {
     setSubmitted(true);
     try {
       const response = await axios.post(
-        "https://rklapi.testenvapp.com/user/formSubmit",
+        `${BASE_URL}/user/formSubmit`,
         { ...details, message: messageToSend }
       );
       if (response.data.status) {
