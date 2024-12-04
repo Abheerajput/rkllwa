@@ -4,7 +4,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,7 +14,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,7 +24,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -38,4 +35,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+.breaking-news-wrapper {
+  width: 100%;
+  overflow: hidden; /* Hides the overflow content */
+  position: relative;
+}
+
+.breaking-news {
+  display: inline-block;
+  white-space: nowrap; 
+  animation: marquee 30s linear infinite;
+}
+
+.breaking-news p {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+.marquee div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+.marquee div:hover {
+  animation-play-state: paused;
+}
+.marquee span {
+  float: left;
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }

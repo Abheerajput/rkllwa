@@ -60,7 +60,7 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
           backgroundImage: `url(https://rkl-public-assets.s3.us-west-1.amazonaws.com/hero.jpg)`,
         }}
       >
-        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[12%]'>
+        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[20%]'>
           <Link to="/">
             <img src={logo} alt="Logo" className="w-[365px]  lg:w-[300px] xs:w-[250px] xs:-[250px]  h-[175px]" />
           </Link>
