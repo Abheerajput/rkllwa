@@ -12,23 +12,21 @@ const Navbar = () => {
     <>
       <Link to="/boir">
         <div id='topscroll'>
-          {/* Breaking News Marquee */}
           <div className="bg-red-700 text-white overflow-hidden">
   <div className="breaking-news-wrapper">
     <div className="breaking-news marquee">
-      <p>
+      <span className="flex  items-center">
       
         Breaking BOIR News - BOIR Compliance reporting and enforcement paused nationwide due to preliminary injunction ruling!
-        In a nutshell, on December 3, 2024, a Texas Court issued a preliminary injunction in favor of the plaintiffs in the case of <span className="italic">Texas Top Cop Shop, Inc. et al. vs. Garland </span>  (U.S. Attorney General). 
+        In a nutshell, on December 3, 2024, a Texas Court issued a preliminary injunction in favor of the plaintiffs in the case of <p className="italic">Texas Top Cop Shop, Inc. et al. vs. Garland </p>  (U.S. Attorney General). 
         As part of the ruling, “the Court has determined that the CTA and Reporting Rule are likely unconstitutional for purposes of a preliminary injunction. It has not made an affirmative finding that the CTA and Reporting Rule are contrary to law or that they amount to a violation of the Constitution.” 
         Click on the link to view a copy of the order. (https://polsinelli.gjassets.com/content/uploads/2024/12/cta-v-garland-district-court-opinion-preliminary-injunction.pdf) 
         We have yet to see how far this gets and when, since it’s a preliminary injunction. Stay tuned business owners for more updates!!! Click on the link to view a copy of the order. (https://polsinelli.gjassets.com/content/uploads/2024/12/cta-v-garland-district-court-opinion-preliminary-injunction.pdf)
-      </p>
+      </span>
     </div>
   </div>
 </div>
 
-          {/* Main Navbar Content */}
           <div className="bg-[#E0AF04] px-[5.2%] py-4">
             <div className="flex justify-between items-center">
               <p className="fgt-ff-medium sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">
