@@ -12,19 +12,18 @@ const Navbar = () => {
     <>
       <Link to="/boir">
         <div id='topscroll'>
-          <div className="bg-red-700 text-white overflow-hidden">
-  <div className="breaking-news-wrapper">
-    <div className="breaking-news marquee">
-      <span className="flex  items-center">
       
-        Breaking BOIR News - BOIR Compliance reporting and enforcement paused nationwide due to preliminary injunction ruling!
-        In a nutshell, on December 3, 2024, a Texas Court issued a preliminary injunction in favor of the plaintiffs in the case of <p className="italic">Texas Top Cop Shop, Inc. et al. vs. Garland </p>  (U.S. Attorney General). 
-        As part of the ruling, “the Court has determined that the CTA and Reporting Rule are likely unconstitutional for purposes of a preliminary injunction. It has not made an affirmative finding that the CTA and Reporting Rule are contrary to law or that they amount to a violation of the Constitution.” 
-        Click on the link to view a copy of the order. (https://polsinelli.gjassets.com/content/uploads/2024/12/cta-v-garland-district-court-opinion-preliminary-injunction.pdf) 
-        We have yet to see how far this gets and when, since it’s a preliminary injunction. Stay tuned business owners for more updates!!! Click on the link to view a copy of the order. (https://polsinelli.gjassets.com/content/uploads/2024/12/cta-v-garland-district-court-opinion-preliminary-injunction.pdf)
-      </span>
-    </div>
-  </div>
+        <div className="bg-red-700 text-white overflow-hidden">
+            <div className="relative overflow-hidden whitespace-nowrap">
+            <marquee className="py-2">
+            Reporting companies that were created or registered prior to January 1, 2024 have until January 13, 2025 to file their initial beneficial ownership information reports with FinCEN. (These companies would otherwise have been required to report by January 1, 2025.) 
+                Reporting companies created or registered in the United States on or after September 4, 2024 that had a filing deadline between December 3, 2024 and December 23, 2024 have until January 13, 2025 to file their initial beneficial ownership information reports with FinCEN. 
+                Reporting companies created or registered in the United States on or after December 3, 2024 and on or before December 23, 2024 have an additional 21 days from their original filing deadline to file their initial beneficial ownership information reports with FinCEN. 
+                Reporting companies that qualify for disaster relief may have extended deadlines that fall beyond January 13, 2025. These companies should abide by whichever deadline falls later. 
+                Reporting companies that are created or registered in the United States on or after January 1, 2025 have 30 days to file their initial beneficial ownership information reports with FinCEN after receiving actual or public notice that their creation or registration is effective.
+            </marquee>
+             
+            </div>
 </div>
 
           <div className="bg-[#E0AF04] px-[5.2%] py-4">
