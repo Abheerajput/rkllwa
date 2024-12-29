@@ -525,7 +525,11 @@ ensure that your data remains secure, giving you the confidence that your privac
     autoplaySpeed: 3000,
   };
  
-  
+    
+  const handlePhoneClick = (event) => {
+    event.stopPropagation();
+  };
+
   return (
     <div>
   {isModalOpen && (
@@ -548,16 +552,15 @@ ensure that your data remains secure, giving you the confidence that your privac
               ✔️ If you’ve already reported, no further action is required. <br />
               ✔️ If you haven’t, you can voluntarily report or wait for the final court decision.
               <br />
-              Need help figuring out your next steps? Call us!
+              <p>
+
+              Need help figuring out your next steps?<a href="tel:8189909999"  className='cursor-pointer contents' onClick={handlePhoneClick}> Call </a>or  
+              <a className="cursor-pointer ml-1" href="mailto:info@rkllaw.com?subject={subject}">
+                     email
+                    </a>               us period
+              </p>
             </h1>
-            <div className="overflow-y-auto max-h-[70vh]">
-              <marquee className="text-black">
-                Reporting companies that were created or registered prior to January 1, 2024 have
-                until January 13, 2025 to file their initial beneficial ownership information
-                reports with FinCEN. (These companies would otherwise have been required to report
-                by January 1, 2025.)
-              </marquee>
-            </div>
+           
           </div>
         </div>
       )}
