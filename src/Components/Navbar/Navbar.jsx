@@ -1,9 +1,13 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import icon1 from "../../assets/icons/navbaricon.svg";
 import '../../Style/style.css';
 
 const Navbar = () => {
+
+
+  
   const handlePhoneClick = (event) => {
     event.stopPropagation();
   };
@@ -12,20 +16,6 @@ const Navbar = () => {
     <>
       <Link to="/boir">
         <div id='topscroll'>
-      
-        <div className="bg-red-700 text-white overflow-hidden">
-            <div className="relative overflow-hidden whitespace-nowrap">
-            <marquee className="py-2">
-            Reporting companies that were created or registered prior to January 1, 2024 have until January 13, 2025 to file their initial beneficial ownership information reports with FinCEN. (These companies would otherwise have been required to report by January 1, 2025.) 
-                Reporting companies created or registered in the United States on or after September 4, 2024 that had a filing deadline between December 3, 2024 and December 23, 2024 have until January 13, 2025 to file their initial beneficial ownership information reports with FinCEN. 
-                Reporting companies created or registered in the United States on or after December 3, 2024 and on or before December 23, 2024 have an additional 21 days from their original filing deadline to file their initial beneficial ownership information reports with FinCEN. 
-                Reporting companies that qualify for disaster relief may have extended deadlines that fall beyond January 13, 2025. These companies should abide by whichever deadline falls later. 
-                Reporting companies that are created or registered in the United States on or after January 1, 2025 have 30 days to file their initial beneficial ownership information reports with FinCEN after receiving actual or public notice that their creation or registration is effective.
-            </marquee>
-             
-            </div>
-</div>
-
           <div className="bg-[#E0AF04] px-[5.2%] py-4">
             <div className="flex justify-between items-center">
               <p className="fgt-ff-medium sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">
@@ -53,3 +43,58 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+// import React, { useState } from 'react';
+// import { Link } from "react-router-dom";
+// import icon1 from "../../assets/icons/navbaricon.svg";
+// import '../../Style/style.css';
+
+// const Navbar = () => {
+
+//   const handlePhoneClick = (event) => {
+//     event.stopPropagation();
+//   };
+
+//   return (
+//     <>
+//       <Link to="/boir">
+//         <div id="topscroll">
+//           <div className="bg-[#E0AF04] px-[5.2%] py-4">
+//             <div className="flex justify-between items-center">
+//               <p className="fgt-ff-medium sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">
+//                 FinCen beneficial owner compliance <br className="hidden xs:block sm:block" /> made easy for companies <i>Nationwide</i>
+//               </p>
+//               <p className="flex text-white gap-2 flex-col md:gap-4 fgt-ff-bold text-[16px]">
+//                 <span
+//                   className="cursor-pointer underline sx:text-[13px] gap-2 text-start"
+//                   onClick={handleModalOpen}
+//                 >
+//                   Click Here For New Developments in BOIR Reporting
+//                 </span>
+//                 <div className="text-start flex flex-col justify-end fgt-ff-bold sx:text-[13px] text-[17px]">
+//                   <div>
+//                     <a
+//                       href="tel:8189909999"
+//                       className="text-white hover:underline contents"
+//                       onClick={handlePhoneClick}
+//                     >
+//                       Call us: 818-990-9999
+//                     </a>
+//                   </div>
+//                 </div>
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </Link>
+
+     
+//     </>
+//   );
+// };
+
+// export default Navbar;
+

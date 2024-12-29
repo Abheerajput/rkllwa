@@ -14,13 +14,35 @@ import img1 from "../../assets/icons/boirimg1.svg"
 import Footer from "../../Layout/Footer/Footer"
 import '../../Style/style.css';
 import MenuOpen from '../MenuOpen';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const Boir = () => {
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleModalClose = () => setIsModalOpen(false);
+  const location = useLocation();
   const [openIndexes, setOpenIndexes] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  const [isMinimized, setIsMinimized] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/bior') {
+      setIsModalOpen(true);
+    }
+  }, [location.pathname]);
+
+
+  const handleModalMinimize = () => {
+    setIsModalOpen(false);
+    setIsMinimized(true);
+  };
+
+  const handleRestoreModal = () => {
+    setIsModalOpen(true);
+    setIsMinimized(false);
+  };
+
   useEffect(() => {
     // This will scroll to the top only once when the component mounts
     window.scrollTo(0, 0);
@@ -36,6 +58,12 @@ const Boir = () => {
       setMenuOpen(true);
     }
   };
+  useEffect(() => {
+    if (location.pathname === '/boir') {
+      setIsModalOpen(true);
+    }
+  }, [location.pathname]);
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -497,8 +525,53 @@ ensure that your data remains secure, giving you the confidence that your privac
     autoplaySpeed: 3000,
   };
  
+  
   return (
-    <>
+    <div>
+  {isModalOpen && (
+        <div className="fixed xs:px-4 inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white rounded-lg p-6 w-[50%] xs:w-[100%] sm:w-[50%] relative">
+          <button
+              className="absolute xs:min-w-[20px]  xs:top-10 top-2 right-16 text-black text-[25px] font-bold"
+              onClick={handleModalMinimize}
+            >
+              _
+            </button>
+            <h2 className="text-[20px] fgt-ff-bold mb-4">
+              New Developments in BOIR Reporting
+            </h2>
+            <h1 className="fgt-ff-medium">
+              🚨 BOIR Reporting Paused Again! 🚨 <br />
+              The Court of Appeals has reinstated a nationwide injunction on BOI reporting.
+              <br />
+              What does this mean for you? <br />
+              ✔️ If you’ve already reported, no further action is required. <br />
+              ✔️ If you haven’t, you can voluntarily report or wait for the final court decision.
+              <br />
+              Need help figuring out your next steps? Call us!
+            </h1>
+            <div className="overflow-y-auto max-h-[70vh]">
+              <marquee className="text-black">
+                Reporting companies that were created or registered prior to January 1, 2024 have
+                until January 13, 2025 to file their initial beneficial ownership information
+                reports with FinCEN. (These companies would otherwise have been required to report
+                by January 1, 2025.)
+              </marquee>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Minimized Modal */}
+      {isMinimized && (
+        <div
+          className="fixed bottom-4 right-4 bg-gray-200 text-black rounded-lg shadow-lg p-4 cursor-pointer z-50"
+          onClick={handleRestoreModal}
+        >
+          <span className="text-lg">📝 BOIR Update</span>
+        </div>
+      )}
+
      {menuOpen && (
         <MenuOpen 
           ref={menuRef}  
@@ -511,12 +584,14 @@ ensure that your data remains secure, giving you the confidence that your privac
       <SecondHeader
         socialIcons2={socialIcons2}
         mainTitle="BOIR Compliance"
+        
       />
 
 
       <div className="text-[26px] lg:text-[24px] sx:text-[14px] fgt-ff-normal pl-[5.2%] text-[#403C5C] bg-[#F7F6F1] py-4">
         <Link to="/" className="hover:underline">Home</Link> {'>'}
         <span onClick={toggleMenu} style={{ cursor: 'pointer' }}> Practice Areas </span> {'>'}
+        
         <Link to="/" className="hover:underline">BOIR Compliance</Link> 
         
       </div>
@@ -753,7 +828,7 @@ Beneficial Ownership information refers to identifying information about the ind
     
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
