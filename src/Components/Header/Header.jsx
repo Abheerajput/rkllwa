@@ -26,6 +26,21 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [showCard, setShowCard] = useState(false); // Track visibility of the card
+
+  // Toggle the card visibility
+  const handleCardToggle = () => {
+    setShowCard(!showCard);
+  };
+
+  useEffect(() => {
+    setShowCard(true); // Automatically show the card when component is mounted
+  }, []);
+  // Close the card
+  const handleCardClose = () => {
+    setShowCard(false);
+  };
+
   const toggleMenu = () => {
     if (menuOpen) {
       setIsAnimating(true);
@@ -53,6 +68,77 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
 
   return (
     <>
+{showCard && (
+  <div
+    className="fixed inset-0  flex justify-center items-center bg-black bg-opacity-50 z-50"
+    onClick={handleCardClose} // Close card when clicking outside
+  >
+    <div
+      className="bg-white max-h-[90%] overflow-scroll scrollbar-hide  p-8 rounded-lg shadow-xl w-[50%] max-w-full"
+      onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the card
+    >
+      <div className="flex justify-end">
+        <button onClick={handleCardClose}>
+          <img src={crossIcon} alt="Close" className="w-6" />
+        </button>
+      </div>
+      <h2 className="text-2xl font-bold mb-4">IF YOU ARE A CALIFORNIA WILDFIRE VICTIM CLICK HERE FOR INFORMATION ON WAYS TO RECOVER</h2>
+      <p className="mb-4">At present, our firm is providing complimentary advice regarding the following:</p>
+
+      <ul className="list-disc pl-6 mb-4">
+        <li><strong>FIRST-PARTY CLAIMS / LAWSUITS</strong>
+          <ul className="list-inside">
+            <li>For those who have property insurance. The loss is reported to your insurance company. We will give you advice so you do it correctly, from the start.</li>
+            <li>It applies whether your home or business experienced total loss, partial loss, or just smoke and soot damage to its structure and/or contents.</li>
+            <li>If the insurance company wrongly underpays or denies your claim, we can help you bring a lawsuit against them.</li>
+            <li>We’ll help maximize your recovery at every step.</li>
+          </ul>
+        </li>
+        <li><strong>THIRD-PARTY LAWSUITS</strong>
+          <ul className="list-inside">
+            <li>For those who do and do not have insurance. We will pursue those responsible for your loss, such as government leaders, utility companies, etc.</li>
+            <li>No out-of-pocket costs for those joining mass tort lawsuits against responsible parties.</li>
+            <li>We’ve been successful in past cases, recovering over $100,000,000 for plaintiffs in the Woolsey Fires lawsuit.</li>
+          </ul>
+        </li>
+        <li><strong>GRANTS</strong>
+          <ul className="list-inside">
+            <li>Available for temporary housing, repairs, and other needs. These generally do not need to be repaid.</li>
+            <li>Low-cost loans are also available for uninsured property losses, usually requiring repayment.</li>
+          </ul>
+        </li>
+        <li><strong>FEMA (Federal Emergency Management Agency)</strong>
+          <ul className="list-inside">
+            <li>Financial assistance may be available if your insurance doesn’t cover your loss after a presidential disaster declaration.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p className="mb-4">It is best to consult with an attorney from the onset if you’ve experienced any kind of loss due to the fires. Insurance companies are not your advocate and may underpay or deny claims. A public adjuster cannot act as powerfully as an attorney when dealing with these matters.</p>
+<div className='flex flex-wrap gap-3'>
+<p className="font-semibold">Contact us for a free consultation or for more information:</p>
+      <p className="font-semibold">Email: <a href="mailto:INFO@RKLLAW.COM" className="text-blue-500">INFO@RKLLAW.COM</a></p>
+      <p className="font-semibold">Phone: <a href="tel:8189909999" className="text-blue-500">(818) 990-9999</a></p>
+      <p className="font-semibold">Ninaz Khorsandi, Esq.</p>
+      <p className="font-semibold">RKL LAW</p>
+      <p className="font-semibold">2625 Townsgate Rd., Suite 330</p>
+      <p className="font-semibold">Westlake Village, CA 91361</p>
+      <p className="font-semibold">Tel: <a href="tel:8189909999" className="text-blue-500">(818) 990-9999</a></p>
+      <p className="font-semibold">Fax: (818) 990-9968</p>
+      <p className="font-semibold">Website: <a href="https://www.rkllaw.com" className="text-blue-500">www.rkllaw.com</a></p>
+
+</div>
+     
+      <div className=" overflow-y-auto scrollbar-hide">
+        {/* Content inside the scrollable area */}
+        <p className="mb-4">Detailed Content goes here...</p>
+      </div>
+
+      <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={handleCardClose}>Close</button>
+    </div>
+  </div>
+)}
+
 
       <div
         className="bg-cover  overflow-x-hidden bg-center h-screen"
