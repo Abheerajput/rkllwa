@@ -28,7 +28,6 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
   const [isAnimating, setIsAnimating] = useState(false);
   const [showCard, setShowCard] = useState(false); // Track visibility of the card
 
-  // Toggle the card visibility
   const handleCardToggle = () => {
     setShowCard(!showCard);
   };
@@ -36,10 +35,9 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
   useEffect(() => {
     setShowCard(true); // Automatically show the card when component is mounted
   }, []);
-  // Close the card
-  const handleCardClose = () => {
-    setShowCard(false);
-  };
+  // const handleCardClose = () => {
+  //   setShowCard(false);
+  // };
 
   const toggleMenu = () => {
     if (menuOpen) {
@@ -52,8 +50,6 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
       setMenuOpen(true);
     }
   };
-
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -68,7 +64,7 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
 
   return (
     <>
-{showCard && (
+{/* {showCard && (
   <div
     className="fixed inset-0  flex justify-center items-center bg-black bg-opacity-50 z-50"
     onClick={handleCardClose} // Close card when clicking outside
@@ -130,14 +126,13 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
 </div>
      
       <div className=" overflow-y-auto scrollbar-hide">
-        {/* Content inside the scrollable area */}
         <p className="mb-4">Detailed Content goes here...</p>
       </div>
 
       <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={handleCardClose}>Close</button>
     </div>
   </div>
-)}
+)} */}
 
 
       <div
@@ -146,7 +141,7 @@ const Header = ({ backgroundImg, logo, menuIcon, mainTitle, mainDescription, but
           backgroundImage: `url(https://rkl-public-assets.s3.us-west-1.amazonaws.com/hero.jpg)`,
         }}
       >
-        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[20%]'>
+        <div className='absolute pl-[3.4%] xs:mt-4 xs:top-[11%] sx:top-[9%] sm:top-[12%] md:top-[12%] top-[16%]'>
           <Link to="/">
             <img src={logo} alt="Logo" className="w-[365px]  lg:w-[300px] xs:w-[250px] xs:-[250px]  h-[175px]" />
           </Link>

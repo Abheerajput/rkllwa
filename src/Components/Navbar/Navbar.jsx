@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="bg-[#E0AF04] px-[5.2%] py-4">
             <div className="flex justify-between items-center">
               <p className="fgt-ff-medium sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">
-                FinCen beneficial owner compliance <br className='hidden xs:block sm:block' />made easy for companies <i>Nationwide</i>
+                FinCEN beneficial owner compliance <br className='hidden xs:block sm:block' />made easy for companies <i>Nationwide</i>
               </p>
               <p className="flex text-white gap-2 flex-col md:gap-4 fgt-ff-bold text-[16px]">
                 <span className='flex items-center sx:text-[13px] gap-2 text-start '>
@@ -36,6 +36,12 @@ const Navbar = () => {
               </p>
             </div>
           </div>
+      <marquee className="bg-red-700 text-white py-1 fgt-ff-bold text-[16px]">
+       BOIR UPDATE:In light! of the pending lawsuits BOIR reporting is currently voluntary pending on March 25,2025. Stay tuned...    
+       <span>
+         <Link to="/boir" className="text-white hover:underline pl-1">    Learn more</Link>
+       </span>
+      </marquee>
         </div>
       </Link>
     </>

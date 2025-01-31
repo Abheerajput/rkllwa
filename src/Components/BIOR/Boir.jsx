@@ -23,6 +23,7 @@ const Boir = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [openAlert, setOpenAlert] = useState(null);
 
   const [isMinimized, setIsMinimized] = useState(false);
 
@@ -98,6 +99,44 @@ const Boir = () => {
     }
   };
   
+
+
+  // Array of alert data
+  const alertData = [
+    {
+      id: 1,
+      title:
+        "Alert: Ongoing Litigation – Texas Top Cop Shop, Inc., et al. v. McHenry, et al., No. 4:24-cv-00478 (E.D. Tex.) & Voluntary Submissions [Updated January 24, 2025]",
+      details: `In light of a recent federal court order, reporting companies are not currently required to file beneficial ownership information with FinCEN and are not subject to liability if they fail to do so while the order remains in force. However, reporting companies may continue to voluntarily submit beneficial ownership information reports.
+
+On January 23, 2025, the Supreme Court granted the government’s motion to stay a nationwide injunction issued by a federal judge in Texas (Texas Top Cop Shop, Inc. v. McHenry—formerly, Texas Top Cop Shop v. Garland). As a separate nationwide order issued by a different federal judge in Texas (Smith v. U.S. Department of the Treasury) still remains in place, reporting companies are not currently required to file beneficial ownership information with FinCEN despite the Supreme Court’s action in Texas Top Cop Shop. Reporting companies also are not subject to liability if they fail to file this information while the Smith order remains in force. However, reporting companies may continue to voluntarily submit beneficial ownership information reports.`
+    },
+    {
+      id: 2,
+      title:
+        "Alert: FinCEN has issued five Notices extending the filing deadlines to submit BOI reports for certain reporting companies in response to Hurricane Milton, Hurricane Helene, Hurricane Debby, Hurricane Beryl, and Hurricane Francine.",
+      details: `These extensions were granted due to significant disruptions caused by the hurricanes, ensuring that affected entities have additional time to comply with the Corporate Transparency Act. For more details on the extended deadlines, please visit FinCEN’s official website.`
+    },
+    {
+      id: 3,
+      title:
+        "Alert: FinCEN has learned of fraudulent attempts to solicit information from individuals and entities who may be subject to reporting requirements under the Corporate Transparency Act.",
+      details: `Fraudulent actors have been contacting businesses claiming to assist with compliance requirements. FinCEN advises all individuals and entities to verify any communications and report any suspicious activity directly to FinCEN or the relevant authorities.`
+    },
+    {
+      id: 4,
+      title:
+        "Alert: Notice Regarding National Small Business United v. Yellen, No. 5:22-cv-01448 (N.D. Ala.) [Updated January 2, 2025]",
+      details: `In this ongoing litigation, small businesses argue that certain reporting requirements under the Corporate Transparency Act are overly burdensome. The court has not yet issued a final decision. Updates will be provided as the case progresses.`
+    }
+  ];
+
+  const toggleAlert = (id) => {
+    setOpenAlert(openAlert === id ? null : id);
+  };
+
+
+
 
   const socialIcons2 = [lkdnicon2, fbicon2, twittericon2];
   const faqs = [
@@ -571,7 +610,7 @@ ensure that your data remains secure, giving you the confidence that your privac
           className="fixed bottom-4 right-4 bg-gray-200 text-black rounded-lg shadow-lg p-4 cursor-pointer z-50"
           onClick={handleRestoreModal}
         >
-          <span className="text-lg">📝 BOIR Update</span>
+          <span className="text-lg">📝 BOIR Alert</span>
         </div>
       )}
 
@@ -599,7 +638,7 @@ ensure that your data remains secure, giving you the confidence that your privac
         
       </div>
 
-      <div className="bg-white flex flex-row  xs:pt-4 pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
+      <div className="bg-white flex lg:flex-row xl:flex-row flex-row  xs:pt-4 pt-8 w-full  px-[5.2%]  xs:flex xs:flex-col sm:flex sm:flex-col  md:felx md:flex-col sm:p-10">
         {/* Profile Section */}
         <div className=' w-[70%] sm:w-full md:w-full xs:w-full'>
 <div className="flex md:flex-col sm:flex-col xs:flex-col xs:gap-3 gap-16 sm:items-start md:items-start xs:items-start items-center">
@@ -790,11 +829,37 @@ Beneficial Ownership information refers to identifying information about the ind
 
         {/* Sidebar */}
         <div className="flex xs:w-full xs:pb-6 sm:pb-6 md:pb-6 md:w-full sm:w-full w-[30%] justify-end xs:px-4 sm:px-4 md:px-4 md:justify-center xs:justify-center xs:mr-0 md:mr-0 xs:mt-0 mt-6 pr-0">
-        <div className="mt-6 sm:w-full xs:w-full md:mt-0 w-4/5">
-        <div  className='mb-4  flex w-full'>
+          <div className='w-full '>
+          <h1 className='flex  text-[50px] xs:text-[35px] sm:text-[40px] justify-start items-center fgt-ff-medium xs:text-start  lg:text-[40px]  xs:gap-2 gap-6  text-[#403C5C]'>
+          <img src={boir} alt="" className="xs:w-[70px]   sm:w-16  w-20"/>  BOIR Update</h1>
+          <div className="p-6 space-y-4">
+      {alertData.map((alert) => (
+        <div
+          key={alert.id}
+          className="bg-white border border-gray-300 shadow-sm rounded-lg p-4"
+        >
+          <p className="font-bold text-red-600 flex items-center gap-2">
+            {/* <img src="alert-ic  on.svg" alt="Alert Icon" className="w-5 h-5" /> */}
+            {alert.title}
+          </p>
+          <button
+            className="text-blue-500 mt-2"
+            onClick={() => toggleAlert(alert.id)}
+          >
+            {openAlert === alert.id ? "Show Less" : "Read More"}
+          </button>
+          {openAlert === alert.id && (
+            <div className="mt-4 text-gray-700">{alert.details}</div>
+          )}
+        </div>
+      ))}
+    </div>
+
+          </div>
+       
+        {/* <div  className='mb-4  flex w-full'> */}
          
 
-</div>
             {/* <div className="bg-[#FFEDD7]  p-4 rounded-md pl-8 xs:pl-4  ">
               <p className='flex justify-center xs:pt-0 pt-6'><img src={icon2} alt="" /></p>
               <h3 className="text-[35px] fgt-ff-normal text-center sx:text-[28px]  text-[#02131D] xs:pt-2 pt-9 mb-4"> Latest Posts</h3>
@@ -825,7 +890,7 @@ Beneficial Ownership information refers to identifying information about the ind
 
             {/* Testimonials Slider */}
           
-          </div>
+          {/* </div> */}
         </div>
 
     

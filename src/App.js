@@ -18,10 +18,11 @@ import RequestPasswordReset from './Pages/Otp/Otp';
 import Verifyemail from './Pages/EmailVerifypage/Emailverify';
 import ResetPassword from './Pages/ResetPassword/ResetPassword';
 import CalendlyWidget from './Components/CalendlyWidget';
+import BoirForm from './Components/BOIRFORM/BoirForm';
 
 function App() {
   const location = useLocation();
-  const showNavbar = !['/signup','/login','/linkverify','/verify','/forgotPassword'].includes(location.pathname) && !location.pathname.startsWith('/dashboard');
+  const showNavbar = !['/signup','/login','/linkverify','/verify','/forgotPassword','/boirfilling'].includes(location.pathname) && !location.pathname.startsWith('/dashboard');
 
   return (
     <>
@@ -45,6 +46,8 @@ function App() {
         <Route path="/linkverify" element={<RequestPasswordReset />} />
         <Route path="/verify" element={<Verifyemail />} />
         <Route path="/forgotPassword" element={<ResetPassword />} />
+        <Route path="/boirfilling" element={<BoirForm />} />
+
       </Routes>
     </>
   );
