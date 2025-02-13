@@ -46,14 +46,13 @@ const  ImmigrationLaw = ()=> {
     };
   }, [menuRef]);
 
-  // Set focus on the menu when it opens
+
   useEffect(() => {
     if (menuOpen && menuRef.current) {
       menuRef.current.focus();
     }
   }, [menuOpen]);
     window.scrollTo(0, 0);
- // Empty dependency array ensures this runs only on mount
 
   const socialIcons = [lkdnicon2, fbicon2, twittericon2];
 
@@ -66,11 +65,11 @@ const  ImmigrationLaw = ()=> {
       />
         {menuOpen && (
         <MenuOpen 
-          ref={menuRef}  // Attach ref to the MenuOpen component
+          ref={menuRef}  
           open={menuOpen} 
           close={toggleMenu} 
           isAnimating={isAnimating} 
-          tabIndex="-1"  // Make it focusable
+          tabIndex="-1" 
         />
       )}
     <div className="py-4 bg-[#F7F6F1] ">
