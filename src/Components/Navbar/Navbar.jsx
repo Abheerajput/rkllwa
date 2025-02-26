@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 import icon1 from "../../assets/icons/navbaricon.svg";
 import '../../Style/style.css';
 
-const Navbar = () => {
-
-
-  
+const Navbar = () => { 
   const handlePhoneClick = (event) => {
     event.stopPropagation();
   };
@@ -37,9 +34,9 @@ const Navbar = () => {
             </div>
           </div>
       <marquee className="bg-red-700 text-white py-1 fgt-ff-bold text-[16px]">
-       BOIR UPDATE:In light! of the pending lawsuits BOIR reporting is currently voluntary pending on March 25,2025. Stay tuned...    
+       BOIR UPDATE:In light of the pending lawsuits BOIR reporting is currently voluntary pending on March 25,2025. Stay tuned...    
        <span>
-         <Link to="/boir" className="text-white hover:underline pl-1">    Learn more</Link>
+        {/* <Link to="/boir" className="text-white hover:underline pl-1">    Learn more</Link> */}
        </span>
       </marquee>
         </div>
