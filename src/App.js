@@ -36,10 +36,10 @@ function App() {
         <Route path="/profile/Nazanin Lahijani" element={<Profile3 />} />
         <Route path="/profile/Sohila Rezai" element={<Profile2 />} />
         <Route path="/profile/Ninaz Khorsandi" element={<Profile1 />} />
-        <Route path="/boir" element={<Bior />} />
+        {/* <Route path="/boir" element={<Bior />} /> */}
         <Route path="/business" element={<Business />} />
         <Route path="/contactus" element={<Contact />} />
-        <Route path="/news&events" element={<NewsAndEvents />} />
+        {/* <Route path="/news&events" element={<NewsAndEvents />} /> */}
         <Route path="/careers" element={<Careers />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />

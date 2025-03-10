@@ -119,7 +119,7 @@ const ProfileCard = () => {
             <h3 className="text-[35px] fgt-ff-normal text-[#02131D] sx:text-[28px] xs:justify-center xs:flex xs:pt-0 pt-[53px] xs:mb-0 mb-4">Practice Areas</h3>
             <ul className="text-[#212121]">
                 <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/business" className='flex gap-4'><img src={icon1} alt="" /> Business Law</Link></li>
-                <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/boir" className='flex gap-4'><img src={icon2} alt="" />BOIR Compliance</Link></li>
+                {/* <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'><Link to="/boir" className='flex gap-4'><img src={icon2} alt="" />BOIR Compliance</Link></li> */}
                 <li className='text-[24px] fgt-ff-normal sx:text-[16px] flex gap-4 items-center sx:py-2 py-5'> <Link to="/Immigration-Law" className='flex gap-4'><img src={icon3} alt="" />Immigration Law</Link></li>
               </ul>
             </div>

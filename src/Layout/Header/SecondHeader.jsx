@@ -99,7 +99,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
           ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
         >
           <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-12">
-            <div>
+            {/* <div>
               <Link to="/">
                 <img
                   src={RKL2}
@@ -107,7 +107,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                   className="w-48 sm:w-40 md:w-72  lg:w-72 xl:w-72"
                 />
               </Link>
-            </div>
+            </div> */}
             <div>
               <div className="md:flex">
                 <span>
@@ -150,7 +150,7 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                   <img src={icon1} alt="Practice Areas" /> Practice Areas
                 </h2>
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
-                <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
+                {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p> */}
                 <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                   <Link to="/Immigration-Law">Immigration Law</Link>
                 </p>
@@ -170,11 +170,11 @@ const SecondHeader = ({ socialIcons2, mainTitle }) => {
                 {/* <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p> */}
               </span>
               <span className="flex flex-col gap-2 text-black">
-                <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
+                {/* <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
                   <img src={stay} alt="Stay Informed" /> Stay Informed
-                </h1>
+                </h1> */}
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p> */}
-                <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link></p>
+                {/* <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link></p> */}
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p> */}
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p> */}
                 {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Unsubscribe</p> */}

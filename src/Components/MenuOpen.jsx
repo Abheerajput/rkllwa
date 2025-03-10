@@ -40,11 +40,11 @@ function MenuOpen({ open, close  ,isAnimating}) {
         <div>
             {open && <div
                 ref={menuRef}
-                className={`absolute top-0 w-full mt-[5.5rem]  bg-white h-full max-h-[450px] xl:max-h-[500px] xs:max-h-[720px] shadow-lg 
+                className={`absolute top-0 w-full mt-[8rem]  bg-white pb-6 max-h-[400px] xl:max-h-[500px] xs:max-h-[720px] shadow-lg 
           ${isAnimating ? 'animate-slide-out' : 'animate-slide-in'}`}
             >
-                <div className="flex justify-between xs:p-2 p-8 px-[5.2%] lg:py-6">
-                    <div>
+                <div className="flex justify-end xs:p-2 px-[5.2%] ">
+                    {/* <div>
                         <Link to="/">
                             <img
                                 src={RKL2}
@@ -52,27 +52,23 @@ function MenuOpen({ open, close  ,isAnimating}) {
                                 className="w-48 sm:w-40 md:w-72  lg:w-72 xl:w-72"
                             />
                         </Link>
-                    </div>
+                    </div> */}
                     <div>
-                        <div className="md:flex">
+                        <div className="md:flex flex jusitfy-end">
                             <span>
-                                <div className="flex space-x-4">
+                                <div className="  flex jusitfy-end space-x-4">
 
-                                    <div className="flex space-x-3 items-center pt-2">
-
-
+                                    <div className="flex jusitfy-end space-x-3 ml-6 items-end pt-2">
                                         <Link to="/">
                                             <img
                                                 src={open ? crossIcon : menuicon}
                                                 alt={open ? "Close Icon" : "Menu Icon"}
-                                                className="w-16 h-16  xs:w-10 xs:h-10 cursor-pointer"
+                                                className="w-12 h-12  xs:w-10 xs:h-10 cursor-pointer"
                                                 onClick={close}
 
                                             />
                                         </Link>
-                                        <div className="flex items-center justify-end xs:pt-4 ">
-
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </span>
@@ -88,7 +84,7 @@ function MenuOpen({ open, close  ,isAnimating}) {
                                 <img src={icon1} alt="Practice Areas" /> Practice Areas
                             </h1>
                             <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2"> <Link to="/business">Business Law</Link> </p>
-                            <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p>
+                            {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/boir">BOIR Compliance</Link></p> */}
                             <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">
                                 <Link to="/Immigration-Law">Immigration Law</Link>
                             </p>
@@ -107,11 +103,11 @@ function MenuOpen({ open, close  ,isAnimating}) {
                             {/* <p className="text-[20px] fgt-ff-light sx:text-[16px] text-[#403C5C]">Testimonials</p> */}
                         </span>
                         <span className="flex flex-col gap-2 text-black">
-                            <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
+                            {/* <h1 className="fgt-ff-medium text-[27px] sx:text-[18px] xs:pt-4 flex gap-[10px] flex-wrap">
                                 <img src={stay} alt="Stay Informed" /> Stay Informed
-                            </h1>
+                            </h1> */}
                             {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C] pt-2">Blogs</p> */}
-                            <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link> </p>
+                            {/* <p className="text-[20px]  sx:text-[16px] fgt-ff-light text-[#403C5C]"><Link to="/news&events">News & Events</Link> </p> */}
                             {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Press Releases & Publications</p> */}
                             {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Subscribe to Newsletter</p> */}
                             {/* <p className="text-[20px] sx:text-[16px] fgt-ff-light text-[#403C5C]">Unsubscribe</p> */}

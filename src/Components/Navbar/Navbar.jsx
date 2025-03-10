@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <Link to="/boir">
-        <div id='topscroll'>
+        {/* <div id='topscroll'>
           <div className="bg-[#E0AF04] px-[5.2%] py-4">
             <div className="flex justify-between items-center">
               <p className="fgt-ff-medium sx:text-[12px] text-[24px] lg:text-[22px] text-white md:text-[20px]">
@@ -36,10 +36,9 @@ const Navbar = () => {
       <marquee className="bg-red-700 text-white py-1 fgt-ff-bold text-[16px]">
        BOIR UPDATE:In light of the pending lawsuits BOIR reporting is currently voluntary pending on March 25,2025. Stay tuned...    
        <span>
-        {/* <Link to="/boir" className="text-white hover:underline pl-1">    Learn more</Link> */}
        </span>
       </marquee>
-        </div>
+        </div> */}
       </Link>
     </>
   );

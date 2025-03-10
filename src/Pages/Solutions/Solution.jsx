@@ -93,7 +93,7 @@ const Solution = ({ title, description, buttonText, sections }) => {
 const App = () => {
   const sections = [
     { img: img1, title: 'Business Law',link:"/business" },
-    { img: img2, title: 'BOIR Compliance' ,link:"/boir"},
+    // { img: img2, title: 'BOIR Compliance' ,link:"/boir"},
     { img: img3, title: 'Immigration Law' ,link:"/immigration-law"},
     
   ];
